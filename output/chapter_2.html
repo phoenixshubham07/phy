@@ -6,6 +6,8 @@
     <title>2. PROJECTILE MOTION</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap">
     <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
     <div class="app-container">
@@ -58,13 +60,13 @@
 <div class="table-container"><table><thead>
 <tr><th>Axis</th><th>Force</th><th>Acceleration</th><th>Motion Type</th><th>Equation</th></tr>
 </thead><tbody>
-<tr><td><strong>Horizontal (X)</strong></td><td>None (0)</td><td><span class="math-inline">a<sub>x</sub> = 0</span></td><td><strong>Uniform Velocity</strong></td><td><span class="math-inline">x = u<sub>x</sub> t</span></td></tr>
-<tr><td><strong>Vertical (Y)</strong></td><td>Gravity (<span class="math-inline">mg</span>)</td><td><span class="math-inline">a<sub>y</sub> = -g</span></td><td><strong>Uniform Acceleration</strong></td><td><span class="math-inline">y = u<sub>y</sub> t - \frac{1}{2}gt^2</span></td></tr>
+<tr><td><strong>Horizontal (X)</strong></td><td>None (0)</td><td><span class="math-inline">\(a<sub>x</sub> = 0\)</span></td><td><strong>Uniform Velocity</strong></td><td><span class="math-inline">\(x = u<sub>x</sub> t\)</span></td></tr>
+<tr><td><strong>Vertical (Y)</strong></td><td>Gravity (<span class="math-inline">\(mg\)</span>)</td><td><span class="math-inline">\(a<sub>y</sub> = -g\)</span></td><td><strong>Uniform Acceleration</strong></td><td><span class="math-inline">\(y = u<sub>y</sub> t - \frac{1}{2}gt^2\)</span></td></tr>
 </tbody></table></div>
 <p><strong>Reasoning:</strong></p>
 <ul>
 <li>Forces are vectors.</li>
-<li>Gravity acts purely vertically (down). It has <strong>no component</strong> horizontally (<span class="math-inline">\cos 90^\circ = 0</span>).</li>
+<li>Gravity acts purely vertically (down). It has <strong>no component</strong> horizontally (<span class="math-inline">\(\cos 90^\circ = 0\)</span>).</li>
 <li>Therefore, the horizontal speed never changes (ignoring air), while the vertical speed changes constantly.</li>
 </ul>
 <hr>
@@ -100,23 +102,23 @@
                             <div class="answer-inner">
                                 <p>*</p>
 <p>&gt; <strong>Definitions:</strong></p>
-<p>&gt; *   <strong>Max Height (<span class="math-inline">H</span>):</strong> Vertical distance where <span class="math-inline">v<sub>y</sub> = 0</span>.</p>
-<p>&gt; *   <strong>Time of Flight (<span class="math-inline">T</span>):</strong> Total duration the projectile remains in air (<span class="math-inline">y_{final} = 0</span>).</p>
+<p>&gt; *   <strong>Max Height (<span class="math-inline">\(H\)</span>):</strong> Vertical distance where <span class="math-inline">\(v<sub>y</sub> = 0\)</span>.</p>
+<p>&gt; *   <strong>Time of Flight (<span class="math-inline">\(T\)</span>):</strong> Total duration the projectile remains in air (<span class="math-inline">\(y_{final} = 0\)</span>).</p>
 <p><strong>Derivation Steps:</strong></p>
 <div class="table-container"><table><thead>
 <tr><th>Parameter</th><th>Condition Used</th><th>Equation Derived</th></tr>
 </thead><tbody>
-<tr><td><strong>Max Height (<span class="math-inline">H</span>)</strong></td><td>At peak, vertical velocity <span class="math-inline">v<sub>y</sub> = 0</span></td><td><div class="math-block"> H = \frac{u^2 \sin^2 \theta}{2g} </div></td></tr>
-<tr><td><strong>Time of Flight (<span class="math-inline">T</span>)</strong></td><td>Total vertical displacement <span class="math-inline">y = 0</span></td><td><div class="math-block"> T = \frac{2u \sin \theta}{g} </div></td></tr>
+<tr><td><strong>Max Height (<span class="math-inline">\(H\)</span>)</strong></td><td>At peak, vertical velocity <span class="math-inline">\(v<sub>y</sub> = 0\)</span></td><td><div class="math-block">\[ H = \frac{u^2 \sin^2 \theta}{2g} \]</div></td></tr>
+<tr><td><strong>Time of Flight (<span class="math-inline">\(T\)</span>)</strong></td><td>Total vertical displacement <span class="math-inline">\(y = 0\)</span></td><td><div class="math-block">\[ T = \frac{2u \sin \theta}{g} \]</div></td></tr>
 </tbody></table></div>
 <p><strong>Detailed Proof:</strong></p>
-<p>1.  <strong>For H:</strong> Use <span class="math-inline">v^2 - u^2 = 2as</span>.</p>
+<p>1.  <strong>For H:</strong> Use <span class="math-inline">\(v^2 - u^2 = 2as\)</span>.</p>
 <ul>
-<li><span class="math-inline">0^2 - (u \sin \theta)^2 = 2(-g)H \implies H = \frac{u^2 \sin^2 \theta}{2g}</span></li>
+<li><span class="math-inline">\(0^2 - (u \sin \theta)^2 = 2(-g)H \implies H = \frac{u^2 \sin^2 \theta}{2g}\)</span></li>
 </ul>
-<p>2.  <strong>For T:</strong> Use <span class="math-inline">y = ut + \frac{1}{2}at^2</span>.</p>
+<p>2.  <strong>For T:</strong> Use <span class="math-inline">\(y = ut + \frac{1}{2}at^2\)</span>.</p>
 <ul>
-<li><span class="math-inline">0 = (u \sin \theta)T - \frac{1}{2}gT^2 \implies T = \frac{2u \sin \theta}{g}</span></li>
+<li><span class="math-inline">\(0 = (u \sin \theta)T - \frac{1}{2}gT^2 \implies T = \frac{2u \sin \theta}{g}\)</span></li>
 </ul>
 <hr>
                             </div>
@@ -153,18 +155,18 @@
 <p>&gt; <strong>Definition (Range):</strong></p>
 <p>&gt; Horizontal distance covered during the time of flight. Determined by the product of horizontal velocity and total time.</p>
 <p><strong>Formula:</strong></p>
-<p><div class="math-block"> R = \frac{u^2 \sin 2\theta}{g} </div></p>
+<p><div class="math-block">\[ R = \frac{u^2 \sin 2\theta}{g} \]</div></p>
 <p><strong>Logic Table:</strong></p>
 <div class="table-container"><table><thead>
 <tr><th>Case</th><th>Angle</th><th>Mathematical Reason</th><th>Result</th></tr>
 </thead><tbody>
-<tr><td><strong>Max Range</strong></td><td><span class="math-inline">\theta = 45^\circ</span></td><td><span class="math-inline">\sin 2\theta</span> reaches max value (1) at <span class="math-inline">90^\circ</span> (<span class="math-inline">2\times45</span>).</td><td><span class="math-inline">R_{max} = u^2/g</span></td></tr>
-<tr><td><strong>Complementary</strong></td><td><span class="math-inline">90^\circ - \theta</span></td><td><span class="math-inline">\sin(2(90-\theta)) = \sin(180-2\theta) = \sin 2\theta</span></td><td>Ranges are <strong>Equal</strong></td></tr>
+<tr><td><strong>Max Range</strong></td><td><span class="math-inline">\(\theta = 45^\circ\)</span></td><td><span class="math-inline">\(\sin 2\theta\)</span> reaches max value (1) at <span class="math-inline">\(90^\circ\)</span> (<span class="math-inline">\(2\times45\)</span>).</td><td><span class="math-inline">\(R_{max} = u^2/g\)</span></td></tr>
+<tr><td><strong>Complementary</strong></td><td><span class="math-inline">\(90^\circ - \theta\)</span></td><td><span class="math-inline">\(\sin(2(90-\theta)) = \sin(180-2\theta) = \sin 2\theta\)</span></td><td>Ranges are <strong>Equal</strong></td></tr>
 </tbody></table></div>
 <p><strong>Interpretation:</strong></p>
 <ul>
 <li><strong>45°:</strong> The perfect compromise between &quot;Going High&quot; (Time) and &quot;Going Fast Forward&quot; (Speed).</li>
-<li><strong>Complementary:</strong> A high lob (<span class="math-inline">60^\circ</span>) and a low drive (<span class="math-inline">30^\circ</span>) land at the same spot, though their flight times differ.</li>
+<li><strong>Complementary:</strong> A high lob (<span class="math-inline">\(60^\circ\)</span>) and a low drive (<span class="math-inline">\(30^\circ\)</span>) land at the same spot, though their flight times differ.</li>
 </ul>
 <hr>
                             </div>
@@ -209,32 +211,32 @@
 <p><strong>Concept:</strong></p>
 <p><strong>Horizontal Projectile Motion:</strong> Launch angle is 0°.</p>
 <ul>
-<li>Initial Velocity: <span class="math-inline">u<sub>x</sub> = 40, u<sub>y</sub> = 0</span>.</li>
+<li>Initial Velocity: <span class="math-inline">\(u<sub>x</sub> = 40, u<sub>y</sub> = 0\)</span>.</li>
 <li>Motion acts like &quot;Free Fall&quot; + &quot;Constant Drift&quot;.</li>
 </ul>
 <p><strong>Input Data Table:</strong></p>
 <div class="table-container"><table><thead>
 <tr><th>Variable</th><th>Value</th></tr>
 </thead><tbody>
-<tr><td>Initial Velocity (<span class="math-inline">u<sub>x</sub></span>)</td><td>40 m/s</td></tr>
-<tr><td>Height (<span class="math-inline">h</span>)</td><td>80 m</td></tr>
-<tr><td>Gravity (<span class="math-inline">g</span>)</td><td>10 m/s²</td></tr>
-<tr><td>Initial Vertical (<span class="math-inline">u<sub>y</sub></span>)</td><td>0 m/s</td></tr>
+<tr><td>Initial Velocity (<span class="math-inline">\(u<sub>x</sub>\)</span>)</td><td>40 m/s</td></tr>
+<tr><td>Height (<span class="math-inline">\(h\)</span>)</td><td>80 m</td></tr>
+<tr><td>Gravity (<span class="math-inline">\(g\)</span>)</td><td>10 m/s²</td></tr>
+<tr><td>Initial Vertical (<span class="math-inline">\(u<sub>y</sub>\)</span>)</td><td>0 m/s</td></tr>
 </tbody></table></div>
 <p><strong>Calculations:</strong></p>
-<p><strong>(a) Time of Flight (<span class="math-inline">t</span>):</strong></p>
-<p>Using <span class="math-inline">h = \frac{1}{2}gt^2</span>:</p>
-<p><div class="math-block"> 80 = \frac{1}{2}(10)t^2 \implies 16 = t^2 \implies \mathbf{t = 4 \text{ s}} </div></p>
-<p><strong>(b) Horizontal Range (<span class="math-inline">R</span>):</strong></p>
-<p><div class="math-block"> R = u<sub>x</sub> \times t = 40 \times 4 = \mathbf{160 \text{ m}} </div></p>
-<p><strong>(c) Final Velocity (<span class="math-inline">v</span>):</strong></p>
+<p><strong>(a) Time of Flight (<span class="math-inline">\(t\)</span>):</strong></p>
+<p>Using <span class="math-inline">\(h = \frac{1}{2}gt^2\)</span>:</p>
+<p><div class="math-block">\[ 80 = \frac{1}{2}(10)t^2 \implies 16 = t^2 \implies \mathbf{t = 4 \text{ s}} \]</div></p>
+<p><strong>(b) Horizontal Range (<span class="math-inline">\(R\)</span>):</strong></p>
+<p><div class="math-block">\[ R = u<sub>x</sub> \times t = 40 \times 4 = \mathbf{160 \text{ m}} \]</div></p>
+<p><strong>(c) Final Velocity (<span class="math-inline">\(v\)</span>):</strong></p>
 <ul>
-<li><span class="math-inline">v<sub>x</sub> = 40</span> m/s (Constant)</li>
-<li><span class="math-inline">v<sub>y</sub> = gt = 10(4) = 40</span> m/s</li>
-<li>Resultant: <span class="math-inline">v = \sqrt{40^2 + 40^2} = \mathbf{56.57 \text{ m/s}} </span></li>
+<li><span class="math-inline">\(v<sub>x</sub> = 40\)</span> m/s (Constant)</li>
+<li><span class="math-inline">\(v<sub>y</sub> = gt = 10(4) = 40\)</span> m/s</li>
+<li>Resultant: <span class="math-inline">\(v = \sqrt{40^2 + 40^2} = \mathbf{56.57 \text{ m/s}} \)</span></li>
 </ul>
-<p><strong>(d) Angle (<span class="math-inline">\alpha</span>):</strong></p>
-<p><div class="math-block"> \tan \alpha = \frac{v<sub>y</sub>}{v<sub>x</sub>} = \frac{40}{40} = 1 \implies \mathbf{\alpha = 45^\circ} </div></p>
+<p><strong>(d) Angle (<span class="math-inline">\(\alpha\)</span>):</strong></p>
+<p><div class="math-block">\[ \tan \alpha = \frac{v<sub>y</sub>}{v<sub>x</sub>} = \frac{40}{40} = 1 \implies \mathbf{\alpha = 45^\circ} \]</div></p>
 <hr>
                             </div>
                             <div class="gemini-section">
@@ -429,7 +431,7 @@
 <p>y = (u sinθ)[x / (u cosθ)] - ½g[x / (u cosθ)]²</p>
 <p><strong>y = x tanθ - (gx²)/(2u²cos²θ)</strong></p>
 <p><strong>Conclusion:</strong></p>
-<p>This calculates a parabola (<span class="math-inline">y = ax - bx^2</span>).</p>
+<p>This calculates a parabola (<span class="math-inline">\(y = ax - bx^2\)</span>).</p>
 <hr>
                             </div>
                             <div class="gemini-section">

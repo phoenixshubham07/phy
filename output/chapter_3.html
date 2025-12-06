@@ -6,6 +6,8 @@
     <title>3. WORK, ENERGY & MOMENTUM</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap">
     <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
     <div class="app-container">
@@ -58,15 +60,15 @@
 <div class="table-container"><table><thead>
 <tr><th>Feature</th><th>Constant Force</th><th>Variable Force</th></tr>
 </thead><tbody>
-<tr><td><strong>Force Nature</strong></td><td>Uniform magnitude</td><td>Changes with position (<span class="math-inline">x</span>)</td></tr>
-<tr><td><strong>Calculation</strong></td><td>Multiplication (<span class="math-inline">W = F \cdot s</span>)</td><td>Calculus (<span class="math-inline">W = \int F dx</span>)</td></tr>
-<tr><td><strong>Example</strong></td><td>Pushing a box on smooth floor</td><td>Stretching a spring (<span class="math-inline">F = -kx</span>)</td></tr>
+<tr><td><strong>Force Nature</strong></td><td>Uniform magnitude</td><td>Changes with position (<span class="math-inline">\(x\)</span>)</td></tr>
+<tr><td><strong>Calculation</strong></td><td>Multiplication (<span class="math-inline">\(W = F \cdot s\)</span>)</td><td>Calculus (<span class="math-inline">\(W = \int F dx\)</span>)</td></tr>
+<tr><td><strong>Example</strong></td><td>Pushing a box on smooth floor</td><td>Stretching a spring (<span class="math-inline">\(F = -kx\)</span>)</td></tr>
 </tbody></table></div>
 <p><strong>Spring Example:</strong></p>
 <ul>
 <li>As you stretch a spring, it fights back harder (Force increases).</li>
 <li>We sum up the work done for every tiny millimeter of stretch.</li>
-<li>Result: <span class="math-inline">W = \frac{1}{2}kx^2</span> (Area under F-x graph).</li>
+<li>Result: <span class="math-inline">\(W = \frac{1}{2}kx^2\)</span> (Area under F-x graph).</li>
 </ul>
 <hr>
                             </div>
@@ -102,15 +104,15 @@
                                 <p>*</p>
 <p>&gt; <strong>Theorem:</strong></p>
 <p>&gt; The <strong>Net Work</strong> done on an object by all forces acts to change its <strong>Kinetic Energy</strong>.</p>
-<p>&gt; <div class="math-block"> W_{net} = \Delta K = K<sub>f</sub> - K<sub>i</sub> </div></p>
+<p>&gt; <div class="math-block">\[ W_{net} = \Delta K = K<sub>f</sub> - K<sub>i</sub> \]</div></p>
 <p><strong>Derivation Flow:</strong></p>
-<p>1.  <strong>Newton&#x27;s Second Law:</strong> <span class="math-inline">F = ma</span></p>
-<p>2.  <strong>Definition of Work:</strong> <span class="math-inline">W = \int F dx = \int m a dx</span></p>
-<p>3.  <strong>Chain Rule Trick:</strong> <span class="math-inline">a = \frac{dv}{dt} = \frac{dv}{dx} \frac{dx}{dt} = v \frac{dv}{dx}</span></p>
+<p>1.  <strong>Newton&#x27;s Second Law:</strong> <span class="math-inline">\(F = ma\)</span></p>
+<p>2.  <strong>Definition of Work:</strong> <span class="math-inline">\(W = \int F dx = \int m a dx\)</span></p>
+<p>3.  <strong>Chain Rule Trick:</strong> <span class="math-inline">\(a = \frac{dv}{dt} = \frac{dv}{dx} \frac{dx}{dt} = v \frac{dv}{dx}\)</span></p>
 <p>4.  <strong>Substitution:</strong></p>
-<p><div class="math-block"> W = \int m \left( v \frac{dv}{dx} \right) dx = \int m v dv </div></p>
+<p><div class="math-block">\[ W = \int m \left( v \frac{dv}{dx} \right) dx = \int m v dv \]</div></p>
 <p>5.  <strong>Integration:</strong></p>
-<p><div class="math-block"> W = m \left[ \frac{v^2}{2} \right]_{u}^{v} = \frac{1}{2}mv^2 - \frac{1}{2}mu^2 </div></p>
+<p><div class="math-block">\[ W = m \left[ \frac{v^2}{2} \right]_{u}^{v} = \frac{1}{2}mv^2 - \frac{1}{2}mu^2 \]</div></p>
 <p><strong>Physical Meaning:</strong></p>
 <p>It connects <strong>Force</strong> (Cause) acting over distance to <strong>Speed</strong> (Effect). If you do positive work, you speed it up. Negative work slows it down.</p>
 <hr>
@@ -146,15 +148,15 @@
                             <div class="answer-inner">
                                 <p>*</p>
 <p>&gt; <strong>Definition:</strong></p>
-<p>&gt; <strong>Impulse (<span class="math-inline">J</span>)</strong> is the product of average force and the time interval during which it acts. It equals the total Change in Momentum.</p>
+<p>&gt; <strong>Impulse (<span class="math-inline">\(J\)</span>)</strong> is the product of average force and the time interval during which it acts. It equals the total Change in Momentum.</p>
 <p><strong>Formula:</strong></p>
-<p><div class="math-block"> J = \int F dt = \mathbf{\Delta p} </div></p>
+<p><div class="math-block">\[ J = \int F dt = \mathbf{\Delta p} \]</div></p>
 <p><strong>Real World Application: Airbags</strong></p>
 <ul>
-<li><strong>Goal:</strong> Survivor must come to rest (<span class="math-inline">\Delta p</span> is fixed).</li>
-<li><strong>Relation:</strong> <span class="math-inline">F_{avg} = \frac{\Delta p}{\Delta t}</span>.</li>
-<li><strong>Mechanism:</strong> Airbags are soft; they increase the collision time (<span class="math-inline">\Delta t</span>) significantly.</li>
-<li><strong>Result:</strong> Since <span class="math-inline">\Delta t</span> goes UP, Impact Force (<span class="math-inline">F_{avg}</span>) comes DOWN.</li>
+<li><strong>Goal:</strong> Survivor must come to rest (<span class="math-inline">\(\Delta p\)</span> is fixed).</li>
+<li><strong>Relation:</strong> <span class="math-inline">\(F_{avg} = \frac{\Delta p}{\Delta t}\)</span>.</li>
+<li><strong>Mechanism:</strong> Airbags are soft; they increase the collision time (<span class="math-inline">\(\Delta t\)</span>) significantly.</li>
+<li><strong>Result:</strong> Since <span class="math-inline">\(\Delta t\)</span> goes UP, Impact Force (<span class="math-inline">\(F_{avg}\)</span>) comes DOWN.</li>
 </ul>
 <p><strong>Analogy:</strong></p>
 <p>Jumping onto concrete (instant stop, high pain) vs. Jumping onto a mattress (slow stop, no pain).</p>
@@ -192,7 +194,7 @@
                                 <p>*</p>
 <p>&gt; <strong>Law of Conservation of Momentum:</strong></p>
 <p>&gt; In an isolated system (no external forces), the total momentum remains constant before and after a collision.</p>
-<p>&gt; <div class="math-block"> p_{initial} = p_{final} </div></p>
+<p>&gt; <div class="math-block">\[ p_{initial} = p_{final} \]</div></p>
 <p><strong>Collision Types Table:</strong></p>
 <div class="table-container"><table><thead>
 <tr><th>Collision Type</th><th>Momentum</th><th>Kinetic Energy</th><th>Why?</th></tr>
@@ -456,7 +458,7 @@
 <div class="table-container"><table><thead>
 <tr><th>Feature</th><th>Conservative</th><th>Non-Conservative</th></tr>
 </thead><tbody>
-<tr><td><strong>Path Dependence</strong></td><td>Independent (Start <span class="math-inline">\to</span> End)</td><td>Dependent (Longer path = More work)</td></tr>
+<tr><td><strong>Path Dependence</strong></td><td>Independent (Start <span class="math-inline">\(\to\)</span> End)</td><td>Dependent (Longer path = More work)</td></tr>
 <tr><td><strong>Round Trip Work</strong></td><td>Zero</td><td>Non-Zero (Negative)</td></tr>
 <tr><td><strong>Energy Storage</strong></td><td>Stored as Potential Energy</td><td>Lost as Heat/Sound</td></tr>
 <tr><td><strong>Examples</strong></td><td>Gravity, Spring Force, Electrostatic</td><td>Friction, Air Resistance, Viscosity</td></tr>

@@ -6,6 +6,8 @@
     <title>1. VECTOR ALGEBRA & RELATIVE VELOCITY</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap">
     <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
     <div class="app-container">
@@ -114,7 +116,7 @@
 <tr><td><strong>Parallelogram Law</strong></td><td>Forces, Simultaneous Pulls</td><td>Tail-to-Tail (Concurrent)</td></tr>
 </tbody></table></div>
 <p><strong>Formula:</strong></p>
-<p><div class="math-block"> |R| = \sqrt{A^2 + B^2 + 2AB \cos \theta} </div></p>
+<p><div class="math-block">\[ |R| = \sqrt{A^2 + B^2 + 2AB \cos \theta} \]</div></p>
 <hr>
                             </div>
                             <div class="gemini-section">
@@ -155,17 +157,17 @@
 <li><strong>Meaning:</strong> It tells you &quot;How much of Vector A is pointing along Vector B?&quot;.</li>
 </ul>
 <p><strong>Formula:</strong></p>
-<p><div class="math-block"> \vec{A} \cdot \vec{B} = |\vec{A}| |\vec{B}| \cos \theta </div></p>
+<p><div class="math-block">\[ \vec{A} \cdot \vec{B} = |\vec{A}| |\vec{B}| \cos \theta \]</div></p>
 <p><strong>Key Cases Table:</strong></p>
 <div class="table-container"><table><thead>
-<tr><th>Condition</th><th>Angle (<span class="math-inline">\theta</span>)</th><th>Dot Product</th><th>Interpretation</th></tr>
+<tr><th>Condition</th><th>Angle (<span class="math-inline">\(\theta\)</span>)</th><th>Dot Product</th><th>Interpretation</th></tr>
 </thead><tbody>
-<tr><td><strong>Parallel</strong></td><td><span class="math-inline">0^\circ</span></td><td><span class="math-inline">+</td><td>A</td><td>B</td><td></span></td><td>Maximum positive overlap</td></tr>
-<tr><td><strong>Perpendicular</strong></td><td><span class="math-inline">90^\circ</span></td><td><span class="math-inline">0</span></td><td><strong>Orthogonal (No overlap)</strong></td></tr>
-<tr><td><strong>Anti-Parallel</strong></td><td><span class="math-inline">180^\circ</span></td><td><span class="math-inline">-</td><td>A</td><td>B</td><td></span></td><td>Maximum opposing overlap</td></tr>
+<tr><td><strong>Parallel</strong></td><td><span class="math-inline">\(0^\circ\)</span></td><td><span class="math-inline">\(+</td><td>A</td><td>B</td><td>\)</span></td><td>Maximum positive overlap</td></tr>
+<tr><td><strong>Perpendicular</strong></td><td><span class="math-inline">\(90^\circ\)</span></td><td><span class="math-inline">\(0\)</span></td><td><strong>Orthogonal (No overlap)</strong></td></tr>
+<tr><td><strong>Anti-Parallel</strong></td><td><span class="math-inline">\(180^\circ\)</span></td><td><span class="math-inline">\(-</td><td>A</td><td>B</td><td>\)</span></td><td>Maximum opposing overlap</td></tr>
 </tbody></table></div>
 <p><strong>Finding Angle:</strong></p>
-<p><div class="math-block"> \theta = \cos^{-1} \left( \frac{\vec{A} \cdot \vec{B}}{|\vec{A}| |\vec{B}|} \right) </div></p>
+<p><div class="math-block">\[ \theta = \cos^{-1} \left( \frac{\vec{A} \cdot \vec{B}}{|\vec{A}| |\vec{B}|} \right) \]</div></p>
 <hr>
                             </div>
                             <div class="gemini-section">
@@ -201,10 +203,10 @@
 <p>&gt; <strong>Definition:</strong></p>
 <p>&gt; <strong>Relative Velocity</strong> is the velocity of an object observed from a specific reference frame (which itself might be moving). It is the vector difference between velocities.</p>
 <p><strong>Formula:</strong></p>
-<p><div class="math-block"> \vec{v}_{rel} = \vec{v}_{object} - \vec{v}_{observer} </div></p>
+<p><div class="math-block">\[ \vec{v}_{rel} = \vec{v}_{object} - \vec{v}_{observer} \]</div></p>
 <p><strong>Boat Analysis:</strong></p>
 <ul>
-<li><strong>Scenario:</strong> Boat tries to go North (<span class="math-inline">10\hat{j}</span>), River flows East (<span class="math-inline">4\hat{i}</span>).</li>
+<li><strong>Scenario:</strong> Boat tries to go North (<span class="math-inline">\(10\hat{j}\)</span>), River flows East (<span class="math-inline">\(4\hat{i}\)</span>).</li>
 <li><strong>Observer on Ground:</strong> Sees the boat moving diagonally because it participates in <em>both</em> motions.</li>
 <li><strong>Result Matrix:</strong></li>
 </ul>
@@ -213,7 +215,7 @@
 </thead><tbody>
 <tr><td><strong>Vertical</strong></td><td>10 m/s</td><td>Engine</td></tr>
 <tr><td><strong>Horizontal</strong></td><td>4 m/s</td><td>Current</td></tr>
-<tr><td><strong>Resultant</strong></td><td><span class="math-inline">\sqrt{10^2+4^2}</span></td><td>Combined Motion</td></tr>
+<tr><td><strong>Resultant</strong></td><td><span class="math-inline">\(\sqrt{10^2+4^2}\)</span></td><td>Combined Motion</td></tr>
 </tbody></table></div>
 <hr>
                             </div>

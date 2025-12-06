@@ -6,6 +6,8 @@
     <title>4. ADVANCED MECHANICS (ROTATION, GRAVITATION, ORBITS)</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap">
     <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
     <div class="app-container">
@@ -53,18 +55,18 @@
                             <div class="answer-inner">
                                 <p>*</p>
 <p>&gt; <strong>Definition:</strong></p>
-<p>&gt; <strong>Moment of Inertia (<span class="math-inline">I</span>)</strong> is the rotational equivalent of mass. It measures an object&#x27;s resistance to angular acceleration.</p>
+<p>&gt; <strong>Moment of Inertia (<span class="math-inline">\(I\)</span>)</strong> is the rotational equivalent of mass. It measures an object&#x27;s resistance to angular acceleration.</p>
 <p><strong>Mass vs. Moment of Inertia:</strong></p>
 <div class="table-container"><table><thead>
-<tr><th>Property</th><th>Linear Motion (Mass <span class="math-inline">m</span>)</th><th>Rotational Motion (MOI <span class="math-inline">I</span>)</th></tr>
+<tr><th>Property</th><th>Linear Motion (Mass <span class="math-inline">\(m\)</span>)</th><th>Rotational Motion (MOI <span class="math-inline">\(I\)</span>)</th></tr>
 </thead><tbody>
 <tr><td><strong>Role</strong></td><td>Resistance to Force</td><td>Resistance to Torque</td></tr>
-<tr><td><strong>Dependence</strong></td><td>Amount of Matter</td><td>Amount of Matter + <strong>Distribution (<span class="math-inline">r^2</span>)</strong></td></tr>
-<tr><td><strong>Equation</strong></td><td><span class="math-inline">F = ma</span></td><td><span class="math-inline">\tau = I \alpha</span></td></tr>
+<tr><td><strong>Dependence</strong></td><td>Amount of Matter</td><td>Amount of Matter + <strong>Distribution (<span class="math-inline">\(r^2\)</span>)</strong></td></tr>
+<tr><td><strong>Equation</strong></td><td><span class="math-inline">\(F = ma\)</span></td><td><span class="math-inline">\(\tau = I \alpha\)</span></td></tr>
 </tbody></table></div>
-<p><em>Rod leads to <span class="math-inline">ML^2/12</span> if center, <span class="math-inline">ML^2/3</span> if end.</em></p>
+<p><em>Rod leads to <span class="math-inline">\(ML^2/12\)</span> if center, <span class="math-inline">\(ML^2/3\)</span> if end.</em></p>
 <p><strong>Formula:</strong></p>
-<p><div class="math-block"> I = \int r^2 dm </div></p>
+<p><div class="math-block">\[ I = \int r^2 dm \]</div></p>
 <hr>
                             </div>
                             <div class="gemini-section">
@@ -98,13 +100,13 @@
                             <div class="answer-inner">
                                 <p>*</p>
 <p>&gt; <strong>Concept:</strong></p>
-<p>&gt; <strong>Rolling Without Slipping</strong> is a hybrid motion: Translation of Center + Rotation about Center. The point of contact is instantaneously at rest (<span class="math-inline">v = \omega r</span>).</p>
+<p>&gt; <strong>Rolling Without Slipping</strong> is a hybrid motion: Translation of Center + Rotation about Center. The point of contact is instantaneously at rest (<span class="math-inline">\(v = \omega r\)</span>).</p>
 <p><strong>Energy Comparison:</strong></p>
 <div class="table-container"><table><thead>
 <tr><th>Motion Type</th><th>Energy Components</th><th>Final Velocity Formula</th><th>Speed Rank</th></tr>
 </thead><tbody>
-<tr><td><strong>Sliding</strong></td><td>Only Translational KE (<span class="math-inline">\frac{1}{2}mv^2</span>)</td><td><span class="math-inline">v = \sqrt{2gh}</span></td><td><strong>Fastest</strong></td></tr>
-<tr><td><strong>Rolling</strong></td><td>Trans KE + Rot KE (<span class="math-inline">\frac{1}{2}I\omega^2</span>)</td><td><span class="math-inline">v = \sqrt{\frac{2gh}{1+k^2/r^2}}</span></td><td><strong>Slower</strong></td></tr>
+<tr><td><strong>Sliding</strong></td><td>Only Translational KE (<span class="math-inline">\(\frac{1}{2}mv^2\)</span>)</td><td><span class="math-inline">\(v = \sqrt{2gh}\)</span></td><td><strong>Fastest</strong></td></tr>
+<tr><td><strong>Rolling</strong></td><td>Trans KE + Rot KE (<span class="math-inline">\(\frac{1}{2}I\omega^2\)</span>)</td><td><span class="math-inline">\(v = \sqrt{\frac{2gh}{1+k^2/r^2}}\)</span></td><td><strong>Slower</strong></td></tr>
 </tbody></table></div>
 <p><strong>Reasoning:</strong></p>
 <p>In rolling, some &quot;Potential Energy&quot; budget is spent on &quot;Spinning&quot;. In sliding, 100% of the budget goes to &quot;Moving Forward&quot;. Thus, rolling is slower.</p>
@@ -147,8 +149,8 @@
 <p>2.  <strong>Plane:</strong> Must orbit in the <strong>Equatorial Plane</strong> (0° latitude).</p>
 <p>3.  <strong>Direction:</strong> Must rotate <strong>West to East</strong> (same as Earth).</p>
 <p><strong>Radius Calculation:</strong></p>
-<p>Since <span class="math-inline">T</span> is fixed (24h) and <span class="math-inline">M</span> (Earth mass) is fixed, Kepler&#x27;s Law dictates a specific radius:</p>
-<p><div class="math-block"> r^3 = \frac{GMT^2}{4\pi^2} \implies r \approx 42,000 \text{ km} </div></p>
+<p>Since <span class="math-inline">\(T\)</span> is fixed (24h) and <span class="math-inline">\(M\)</span> (Earth mass) is fixed, Kepler&#x27;s Law dictates a specific radius:</p>
+<p><div class="math-block">\[ r^3 = \frac{GMT^2}{4\pi^2} \implies r \approx 42,000 \text{ km} \]</div></p>
 <p>There is only <em>one</em> parking spot for a 24-hour orbit.</p>
 <hr>
                             </div>
@@ -364,13 +366,13 @@
 <div class="table-container"><table><thead>
 <tr><th>Theorem</th><th>Applicability</th><th>Formula</th><th>Visual</th></tr>
 </thead><tbody>
-<tr><td><strong>Perpendicular Axis</strong></td><td><strong>Planar (2D) Objects</strong> (e.g., Disk, Ring)</td><td><span class="math-inline">I<sub>z</sub> = I<sub>x</sub> + I<sub>y</sub></span></td><td>Z-axis = Sum of X and Y</td></tr>
-<tr><td><strong>Parallel Axis</strong></td><td><strong>Any Object</strong> (2D or 3D)</td><td><span class="math-inline">I = I_{cm} + Md^2</span></td><td>New Axis = Center Axis + &quot;Shift&quot;</td></tr>
+<tr><td><strong>Perpendicular Axis</strong></td><td><strong>Planar (2D) Objects</strong> (e.g., Disk, Ring)</td><td><span class="math-inline">\(I<sub>z</sub> = I<sub>x</sub> + I<sub>y</sub>\)</span></td><td>Z-axis = Sum of X and Y</td></tr>
+<tr><td><strong>Parallel Axis</strong></td><td><strong>Any Object</strong> (2D or 3D)</td><td><span class="math-inline">\(I = I_{cm} + Md^2\)</span></td><td>New Axis = Center Axis + &quot;Shift&quot;</td></tr>
 </tbody></table></div>
 <p>&gt; <strong>Definitions:</strong></p>
-<p>&gt; *   <span class="math-inline">I_{cm}</span>: Moment of Inertia about Center of Mass.</p>
-<p>&gt; *   <span class="math-inline">d</span>: Perpendicular distance between the two parallel axes.</p>
-<p>&gt; *   <span class="math-inline">I<sub>z</sub></span>: Axis perpendicular to the plane.</p>
+<p>&gt; *   <span class="math-inline">\(I_{cm}\)</span>: Moment of Inertia about Center of Mass.</p>
+<p>&gt; *   <span class="math-inline">\(d\)</span>: Perpendicular distance between the two parallel axes.</p>
+<p>&gt; *   <span class="math-inline">\(I<sub>z</sub>\)</span>: Axis perpendicular to the plane.</p>
 <p><strong>Significance:</strong></p>
 <p>These theorems allow us to calculate MOI for any axis (e.g., edge of a disk) if we know the MOI for the center.</p>
 <hr>
@@ -408,7 +410,7 @@
 <p>&gt; <strong>Definition:</strong></p>
 <p>&gt; The point where the entire mass of a system can be theoretically concentrated to model its translational motion. It is the &quot;weighted average&quot; position of mass.</p>
 <p><strong>Formula (Two-Body System):</strong></p>
-<p><div class="math-block"> R_{cm} = \frac{m<sub>1</sub> r<sub>1</sub> + m<sub>2</sub> r<sub>2</sub>}{m<sub>1</sub> + m<sub>2</sub>} </div></p>
+<p><div class="math-block">\[ R_{cm} = \frac{m<sub>1</sub> r<sub>1</sub> + m<sub>2</sub> r<sub>2</sub>}{m<sub>1</sub> + m<sub>2</sub>} \]</div></p>
 <p><em>If M1 &gt; M2, the CM shifts closer to M1.</em></p>
 <hr>
                             </div>

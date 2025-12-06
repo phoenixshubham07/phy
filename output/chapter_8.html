@@ -6,6 +6,8 @@
     <title>8. FLUIDS & CONTINUITY</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap">
     <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
     <div class="app-container">
@@ -60,7 +62,7 @@
 <div class="table-container"><table><thead>
 <tr><th>Assumption</th><th>Meaning</th><th>Why needed?</th></tr>
 </thead><tbody>
-<tr><td><strong>Incompressible</strong></td><td>Density <span class="math-inline">\rho</span> is constant</td><td>No squeezing allowed</td></tr>
+<tr><td><strong>Incompressible</strong></td><td>Density <span class="math-inline">\(\rho\)</span> is constant</td><td>No squeezing allowed</td></tr>
 <tr><td><strong>Non-Viscous</strong></td><td>No friction</td><td>No energy lost to heat</td></tr>
 <tr><td><strong>Streamline Flow</strong></td><td>Smooth path</td><td>No turbulence</td></tr>
 <tr><td><strong>Steady Flow</strong></td><td>Velocity constant at a point</td><td>Time independent</td></tr>
@@ -68,7 +70,7 @@
 <p><strong>Energy Trade-off Explanation:</strong></p>
 <ul>
 <li>Fluid has a fixed &quot;Energy Budget&quot;.</li>
-<li>If it spends budget on <strong>Speed</strong> (<span class="math-inline">v \uparrow</span>), it must reduce spending on <strong>Pressure</strong> (<span class="math-inline">P \downarrow</span>).</li>
+<li>If it spends budget on <strong>Speed</strong> (<span class="math-inline">\(v \uparrow\)</span>), it must reduce spending on <strong>Pressure</strong> (<span class="math-inline">\(P \downarrow\)</span>).</li>
 <li><em>Application:</em> Airplane wings (Fast air on top = Low Pressure = Lift).</li>
 </ul>
 <p><strong>Derivation:</strong></p>
@@ -139,18 +141,18 @@
 <p>&gt; <strong>Conservation of Mass.</strong> The amount of water entering a pipe must equal the amount leaving it (if no leaks).</p>
 <p><strong>Flow Relationship:</strong></p>
 <div class="table-container"><table><thead>
-<tr><th>Pipe Section</th><th>Area (<span class="math-inline">A</span>)</th><th>Speed (<span class="math-inline">v</span>)</th></tr>
+<tr><th>Pipe Section</th><th>Area (<span class="math-inline">\(A\)</span>)</th><th>Speed (<span class="math-inline">\(v\)</span>)</th></tr>
 </thead><tbody>
 <tr><td><strong>Wide</strong></td><td>Large</td><td>Slow</td></tr>
 <tr><td><strong>Narrow</strong></td><td>Small</td><td>Fast</td></tr>
 </tbody></table></div>
 <p><strong>Formula:</strong></p>
-<p><div class="math-block"> A<sub>1</sub> v<sub>1</sub> = A<sub>2</sub> v<sub>2</sub> </div></p>
+<p><div class="math-block">\[ A<sub>1</sub> v<sub>1</sub> = A<sub>2</sub> v<sub>2</sub> \]</div></p>
 <p><strong>Derivation:</strong></p>
 <p>1.  Mass In = Mass Out</p>
-<p>2.  <span class="math-inline">\rho A<sub>1</sub> (v<sub>1</sub> \Delta t) = \rho A<sub>2</sub> (v<sub>2</sub> \Delta t)</span></p>
-<p>3.  Cancel <span class="math-inline">\rho</span> and <span class="math-inline">\Delta t</span>.</p>
-<p>4.  <strong>Result:</strong> <span class="math-inline">A<sub>1</sub> v<sub>1</sub> = A<sub>2</sub> v<sub>2</sub> = Q</span> (Flow Rate).</p>
+<p>2.  <span class="math-inline">\(\rho A<sub>1</sub> (v<sub>1</sub> \Delta t) = \rho A<sub>2</sub> (v<sub>2</sub> \Delta t)\)</span></p>
+<p>3.  Cancel <span class="math-inline">\(\rho\)</span> and <span class="math-inline">\(\Delta t\)</span>.</p>
+<p>4.  <strong>Result:</strong> <span class="math-inline">\(A<sub>1</sub> v<sub>1</sub> = A<sub>2</sub> v<sub>2</sub> = Q\)</span> (Flow Rate).</p>
 <hr>
                             </div>
                             <div class="gemini-section">
@@ -207,12 +209,12 @@
 <div class="table-container"><table><thead>
 <tr><th>Parameter</th><th>Wide Section (1)</th><th>Narrow Section (2)</th></tr>
 </thead><tbody>
-<tr><td><strong>Diameter (<span class="math-inline">D</span>)</strong></td><td>10 cm (0.1 m)</td><td>5 cm (0.05 m)</td></tr>
-<tr><td><strong>Radius (<span class="math-inline">r</span>)</strong></td><td>5 cm (0.05 m)</td><td>2.5 cm (0.025 m)</td></tr>
-<tr><td><strong>Pressure (<span class="math-inline">P</span>)</strong></td><td>50 kPa</td><td>?</td></tr>
-<tr><td><strong>Velocity (<span class="math-inline">v</span>)</strong></td><td>1 m/s</td><td>?</td></tr>
+<tr><td><strong>Diameter (<span class="math-inline">\(D\)</span>)</strong></td><td>10 cm (0.1 m)</td><td>5 cm (0.05 m)</td></tr>
+<tr><td><strong>Radius (<span class="math-inline">\(r\)</span>)</strong></td><td>5 cm (0.05 m)</td><td>2.5 cm (0.025 m)</td></tr>
+<tr><td><strong>Pressure (<span class="math-inline">\(P\)</span>)</strong></td><td>50 kPa</td><td>?</td></tr>
+<tr><td><strong>Velocity (<span class="math-inline">\(v\)</span>)</strong></td><td>1 m/s</td><td>?</td></tr>
 </tbody></table></div>
-<p><em>Density of water <span class="math-inline">\rho = 1000</span> kg/m³</em></p>
+<p><em>Density of water <span class="math-inline">\(\rho = 1000\)</span> kg/m³</em></p>
 <p><strong>(a) Velocity in Narrow Section (v₂):</strong></p>
 <p>Using continuity equation: A₁v₁ = A₂v₂</p>
 <p>Since A = πr², then πr₁²v₁ = πr₂²v₂</p>

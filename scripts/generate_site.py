@@ -213,9 +213,14 @@ def parse_markdown(file_path):
                     final_html = re.sub(r'\*(.*?)\*', r'<em>\1</em>', final_html)
                     # Subscripts
                     final_html = re.sub(r'([a-zA-Z])_([a-zA-Z0-9]+)', r'\1<sub>\2</sub>', final_html)
-                    # Math (Basic) $$..$$
-                    final_html = re.sub(r'\$\$(.*?)\$\$', r'<div class="math-block">\1</div>', final_html)
-                    final_html = re.sub(r'\$(.*?)\$', r'<span class="math-inline">\1</span>', final_html)
+                    # Math (Basic) $$..$$ -> \[..\] for MathJax
+                    # We wrap block math in a div to keep our styling, but use \[ \] inside
+                    final_html = re.sub(r'\$\$(.*?)\$\$', r'<div class="math-block">\[\1\]</div>', final_html, flags=re.DOTALL)
+                    
+                    # Inline Math $..$ -> \(..\)
+                    # We use a negative lookbehind/lookahead to avoid matching currency like $50
+                    # Standard simple logic: match $...$ where ... doesn't start/end with space
+                    final_html = re.sub(r'(?<!\\)\$([^\$]+?)\$', r'<span class="math-inline">\(\1\)</span>', final_html)
                     
                     return final_html
 
@@ -248,6 +253,8 @@ def generate_html(chapters):
     <title>{title}</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap">
     <link rel="stylesheet" href="{STYLES_PATH}">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
     <div class="app-container">
