@@ -52,22 +52,10 @@
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Principle:</strong> In projectile motion, the horizontal and vertical components of velocity are independent. The motion in one direction doesn&#x27;t affect the motion in the perpendicular direction.</p><p><strong>Why they&#x27;re independent:</strong></p><p>1. <strong>No Acceleration Horizontally:</strong> 
-<div class="list-item">• Neglecting air resistance, no horizontal force acts on the projectile</div>
-<div class="list-item">• Horizontal acceleration = 0</div>
-<div class="list-item">• Therefore, horizontal velocity remains constant throughout the flight</div></p><p>2. <strong>Vertical Acceleration Only:</strong>
-<div class="list-item">• Only gravity acts vertically (downward)</div>
-<div class="list-item">• Vertical acceleration = -g (constant)</div>
-<div class="list-item">• This doesn&#x27;t affect horizontal motion</div></p><p>3. <strong>Mathematical Independence:</strong>
-<div class="list-item">• Horizontal: x = v<sub>x</sub> × t (uniform motion equation)</div>
-<div class="list-item">• Vertical: y = v<sub>y</sub>₀ × t - ½gt² (uniformly accelerated motion)</div>
-<div class="list-item">• Each equation is independent; t is the only common variable</div></p><p>4. <strong>Parabolic Trajectory Result:</strong>
-<div class="list-item">• Combining both equations (eliminating t) gives the trajectory equation:</div>
-<div class="list-item">• y = x tanθ - (gx²)/(2u² cos²θ)</div>
-<div class="list-item">• This parabolic shape naturally emerges from independent linear and quadratic components</div></p><p><strong>Practical Example:</strong> A ball rolled off a table:
-<div class="list-item">• Horizontal velocity: constant</div>
-<div class="list-item">• Vertical velocity: increases due to gravity</div>
-<div class="list-item">• Both happen simultaneously but independently</div></p><p>---</p>
+<strong>Principle:</strong> Horizontal and Vertical motions are <strong>independent</strong>.
+*   <strong>Horizontal:</strong> No acceleration (a<sub>x</sub> = 0). Velocity is constant.
+*   <strong>Vertical:</strong> Constant acceleration due to gravity (a<sub>y</sub> = -g).</p><p><strong>Why separate?</strong>
+Gravity acts <strong>only vertically</strong>. It does not affect horizontal speed. We can solve x and y equations separately and combine them via time &#x27;t&#x27;.</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q2.1')">
@@ -99,21 +87,16 @@
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Maximum Height Derivation:</strong></p><p>At maximum height, vertical velocity v<sub>y</sub> = 0.
-Using v<sub>y</sub>² = u<sub>y</sub>² - 2gH:
-0 = (u sinθ)² - 2gH
-<strong>H = (u² sin²θ) / (2g)</strong></p><p><strong>Alternative using time:</strong>
-Time to reach max height: t<sub>max</sub> = (u sinθ) / g
-H = u sinθ × t<sub>max</sub> - ½g(t<sub>max</sub>)²
-H = u sinθ × (u sinθ)/g - ½g × ((u sinθ)/g)²
-<strong>H = (u² sin²θ) / (2g)</strong></p><p><strong>Time of Flight Derivation:</strong></p><p>Total vertical displacement for complete flight = 0 (returns to launch height)
-Using s = u<sub>y</sub> × t - ½gt²:
-0 = u sinθ × T - ½gT²
-0 = T(u sinθ - ½gT)
-T = 0 (initial) or <strong>T = (2u sinθ) / g</strong></p><p><strong>Special Cases:</strong>
-<div class="list-item">• At 45°: Maximum range occurs. H = u²/(4g), T = (2u)/√2g = (√2 u)/g</div>
-<div class="list-item">• At 90°: Maximum height. H = u²/(2g), T = (2u)/g</div>
-<div class="list-item">• Time to reach half max height: t = (u sinθ)/(2g)</div></p><p>---</p>
+<strong>1. Max Height (H):</strong>
+At top, vertical velocity v<sub>y</sub> = 0.
+Using v² - u² = 2as:
+0 - (u sinθ)² = 2(-g)H
+<strong>H = (u² sin²θ) / 2g</strong></p><p><strong>2. Time of Flight (T):</strong>
+Total vertical displacement = 0.
+Using s = ut + ½at²:
+0 = (u sinθ)T - ½gT²
+T(u sinθ - ½gT) = 0
+<strong>T = (2u sinθ) / g</strong></p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q2.2')">
@@ -145,20 +128,12 @@ T = 0 (initial) or <strong>T = (2u sinθ) / g</strong></p><p><strong>Special Cas
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Range Derivation:</strong></p><p>Horizontal range R = horizontal velocity × time of flight
-R = u cosθ × (2u sinθ)/g
-<strong>R = (u² sin2θ) / g</strong></p><p><strong>Maximum Range at 45°:</strong></p><p>R is maximum when sin2θ is maximum.
-sin2θ is maximum when 2θ = 90°
-Therefore, <strong>θ = 45°</strong></p><p>R<sub>max</sub> = u²/g (at 45°)</p><p><strong>Complementary Angles Give Same Range:</strong></p><p>For angles θ and (90° - θ):</p><p>R₁ = (u² sin2θ) / g
-R₂ = (u² sin(2(90° - θ))) / g = (u² sin(180° - 2θ)) / g = (u² sin2θ) / g</p><p>Since sin(180° - 2θ) = sin(2θ):
-<strong>R₁ = R₂</strong></p><p><strong>Example:</strong> 30° and 60° both give the same range:
-<div class="list-item">• At 30°: sin(60°) = 0.866</div>
-<div class="list-item">• At 60°: sin(120°) = sin(180° - 120°) = sin(60°) = 0.866</div></p><p><strong>Physical Interpretation:</strong>
-<div class="list-item">• 30°: Low angle, higher speed component in horizontal direction, shorter flight time</div>
-<div class="list-item">• 60°: High angle, lower horizontal component, longer flight time</div>
-<div class="list-item">• These effects exactly compensate, giving equal ranges</div></p><p><strong>However, heights and trajectories differ:</strong>
-<div class="list-item">• 30° gives flatter trajectory, lower maximum height</div>
-<div class="list-item">• 60° gives steeper trajectory, higher maximum height, same range</div></p><p>---</p>
+<strong>Range Formula:</strong> R = (u² sin2θ) / g</p><p><strong>Max Range:</strong>
+*   R is max when sin2θ = 1.
+*   2θ = 90° → <strong>θ = 45°</strong>.</p><p><strong>Complementary Angles:</strong>
+*   For angle θ: R = u² sin(2θ) / g
+*   For angle (90-θ): R = u² sin(180-2θ) / g
+*   Since sin(180-x) = sin(x), <strong>Ranges are equal</strong>.</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q2.3')">
@@ -372,12 +347,10 @@ Range = 58.75 m (slightly before 60 m)</p><p><strong>At 60 m distance (beyond no
                             <div class="answer-inner">
                                 <p>*
 <strong>Derivation:</strong>
-Horizontal motion: x = (u cosθ)t  →  t = x / (u cosθ)
-Vertical motion: y = (u sinθ)t - ½gt²</p><p>Substitute t:
+1.  <strong>x</strong> = (u cosθ)t  →  <strong>t</strong> = x / (u cosθ)
+2.  <strong>y</strong> = (u sinθ)t - ½gt²</p><p><strong>Substitute t:</strong>
 y = (u sinθ)(x / u cosθ) - ½g(x / u cosθ)²
-y = x(sinθ/cosθ) - (gx²) / (2u²cos²θ)
-<strong>y = x tanθ - (gx²)/(2u²cos²θ)</strong></p><p><strong>Parabolic Nature:</strong>
-This is of the form y = ax - bx², which is the equation of a parabola opening downwards. Hence, the path is parabolic.</p><p>---</p>
+<strong>y = x tanθ - (gx²)/(2u²cos²θ)</strong></p><p><strong>Conclusion:</strong> Equation is <strong>quadratic</strong> in x ($y = ax - bx^2$). Hence, the path is a <strong>parabola</strong>.</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q2.8')">

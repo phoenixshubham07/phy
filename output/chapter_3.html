@@ -52,27 +52,14 @@
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Work by Constant Force:</strong>
-W = F · s = Fs cosθ
-Work is simply force multiplied by displacement.</p><p><strong>Work by Variable Force:</strong>
-W = ∫ F(x) dx (from initial to final position)
-The force changes with position, so we cannot use simple multiplication.</p><p><strong>Derivation for Spring:</strong>
-For a spring obeying Hooke&#x27;s Law: F = -kx (restoring force)
-When stretching the spring by distance x, work done against spring force:</p><p>W = ∫₀ˣ kx&#x27; dx&#x27; = k[x&#x27;²/2]₀ˣ = <strong>½kx²</strong></p><p><strong>Physical Differences:</strong>
+<strong>Constant Force:</strong> W = F·s (Simple product).
+<strong>Variable Force:</strong> W = ∫ F(x) dx (Integration required).</p><p><strong>Spring Example:</strong>
+Force F = -kx (Variable, depends on x).
+Work to stretch:
+W = ∫₀ˣ kx dx = k[x²/2] = <strong>½kx²</strong></p><p><strong>Physical Differences:</strong>
 1. <strong>Graphical Interpretation:</strong>
 <div class="list-item">• Constant force: W = F × s (rectangle under F-s graph)</div>
-<div class="list-item">• Variable force: W = Area under F-s curve</div></p><p>2. <strong>Spring Comparison:</strong>
-<div class="list-item">• Initial force: 0 (at natural length)</div>
-<div class="list-item">• Final force: kx (at extension x)</div>
-<div class="list-item">• Average force: kx/2</div>
-<div class="list-item">• Work = average force × displacement = (kx/2) × x = ½kx²</div></p><p>3. <strong>Energy Stored:</strong>
-<div class="list-item">• In spring, work done equals elastic potential energy stored</div>
-<div class="list-item">• This energy is recoverable (when spring returns to natural length)</div></p><p>4. <strong>Calculus Necessity:</strong>
-<div class="list-item">• Constant force: Simple algebra</div>
-<div class="list-item">• Variable force: Integration required because F changes continuously</div></p><p><strong>Real-world Examples:</strong>
-<div class="list-item">• Spring compression/extension: W = ½kx²</div>
-<div class="list-item">• Gravitational force (at large distances): W = GMm/r (integration of F = GMm/r²)</div>
-<div class="list-item">• Friction with varying normal force: W = ∫ μ(x)mg dx</div></p><p>---</p>
+<div class="list-item">• Variable force: W = Area under F-s curve</div></p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q3.1')">
@@ -104,23 +91,16 @@ When stretching the spring by distance x, work done against spring force:</p><p>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Statement:</strong> The net work done on an object equals the change in its kinetic energy.
-<strong>W<sub>net</sub> = ΔKE = KE<sub>final</sub> - KE<sub>initial</sub></strong></p><p><strong>Derivation:</strong>
-Starting with Newton&#x27;s second law:
-F<sub>net</sub> = ma</p><p>Taking dot product with displacement ds:
-F<sub>net</sub> · ds = ma · ds</p><p>Integrating from initial to final position:
-∫ F<sub>net</sub> · ds = ∫ ma · ds</p><p>Since a = dv/dt and ds = v dt:
-W<sub>net</sub> = ∫ m(dv/dt) × v dt = ∫ m v dv = m[v²/2]ᵤᵥ</p><p><strong>W<sub>net</sub> = ½mv² - ½mu² = ½m(v² - u²)</strong></p><p><strong>Therefore: W<sub>net</sub> = ΔKE</strong> ✓</p><p><strong>Physical Meaning:</strong>
+<strong>Statement:</strong>
+Total Work Done = Change in Kinetic Energy
+<strong>W<sub>net</sub> = ΔK = K<sub>final</sub> - K<sub>initial</sub></strong></p><p><strong>Derivation (1D):</strong>
+W = ∫ F dx = ∫ (ma) dx
+W = m ∫ (v dv/dx) dx = m ∫ v dv
+W = m [v²/2] from u to v
+<strong>W = ½mv² - ½mu²</strong></p><p><strong>Physical Meaning:</strong>
 1. <strong>Positive Work:</strong> W &gt; 0 → ΔKE &gt; 0 → Object speeds up
-   (Force and displacement in similar directions)</p><p>2. <strong>Negative Work:</strong> W &lt; 0 → ΔKE &lt; 0 → Object slows down
-   (Force opposes motion)</p><p>3. <strong>Zero Work:</strong> W = 0 → ΔKE = 0 → Constant speed
-   (Force perpendicular to motion, like circular motion)</p><p><strong>Practical Applications:</strong>
-<div class="list-item">• <strong>Braking:</strong> Friction does negative work, reducing KE</div>
-<div class="list-item">• <strong>Acceleration:</strong> Engine force does positive work, increasing KE</div>
-<div class="list-item">• <strong>Circular motion:</strong> Centripetal force does zero work (perpendicular), speed stays constant</div>
-<div class="list-item">• <strong>Incline:</strong> Component of gravity along motion does work</div></p><p><strong>Advantage over Newton&#x27;s Laws:</strong>
-<div class="list-item">• Newton: Requires knowledge of acceleration (complex for variable forces)</div>
-<div class="list-item">• Work-Energy: Only need initial and final velocities (simpler!)</div></p><p>---</p>
+2. <strong>Negative Work:</strong> W &lt; 0 → ΔKE &lt; 0 → Object slows down
+3. <strong>Zero Work:</strong> W = 0 → ΔKE = 0 → Constant speed</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q3.2')">
@@ -152,28 +132,13 @@ W<sub>net</sub> = ∫ m(dv/dt) × v dt = ∫ m v dv = m[v²/2]ᵤᵥ</p><p><stro
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Momentum (p):</strong>
-p = mv (product of mass and velocity)
-Direction: same as velocity
-It represents the &quot;quantity of motion&quot; of a body.</p><p><strong>Impulse (J):</strong>
-J = Δp = p<sub>final</sub> - p<sub>initial</sub> (change in momentum)
-Also: J = F<sub>avg</sub> × Δt (average force × time interval)</p><p><strong>Impulse-Momentum Theorem:</strong>
-J = F<sub>avg</sub> × Δt = Δp = m(v<sub>f</sub> - v<sub>i</sub>)</p><p>Therefore: <strong>F<sub>avg</sub> = Δp / Δt = m(v<sub>f</sub> - v<sub>i</sub>) / Δt</strong></p><p><strong>Derivation:</strong>
-From Newton&#x27;s second law: F = dp/dt
-Integrating: ∫ F dt = ∫ dp = Δp
-Therefore: J = ∫ F dt = Δp ✓</p><p><strong>Why Airbags Extend Impact Time:</strong></p><p><strong>Without Airbag:</strong>
-<div class="list-item">• Collision time: Δt₁ = very small (0.01 s)</div>
-<div class="list-item">• Momentum change: Δp = same (from v to 0)</div>
-<div class="list-item">• Required force: F₁ = Δp / Δt₁ = <strong>VERY LARGE</strong></div>
-<div class="list-item">• Result: Person gets crushed by large impact force</div></p><p><strong>With Airbag:</strong>
-<div class="list-item">• Collision time: Δt₂ = larger (0.1 s) (airbag cushions gradually)</div>
-<div class="list-item">• Momentum change: Δp = same (from v to 0)</div>
-<div class="list-item">• Required force: F₂ = Δp / Δt₂ = <strong>MUCH SMALLER</strong></div>
-<div class="list-item">• Result: Person experiences reduced force, survives impact</div></p><p><strong>Mathematical Comparison:</strong>
-If Δt₂ = 10 × Δt₁, then F₂ = F₁/10 (force reduces by 90%!)</p><p><strong>Other Examples:</strong>
-<div class="list-item">• Cricket fielder pulling arms back while catching (extends time)</div>
-<div class="list-item">• Gymnastics landing on mat vs concrete (mat extends time)</div>
-<div class="list-item">• Crumple zones in cars (extend deformation time, reduce peak force)</div></p><p>---</p>
+<strong>Momentum (p):</strong> p = mv (mass × velocity). Vector quantity.
+<strong>Impulse (J):</strong> J = F<sub>avg</sub> × Δt (average force × time interval). Vector quantity.</p><p><strong>Impulse-Momentum Theorem:</strong>
+Impulse equals the change in momentum: <strong>J = Δp = p<sub>final</sub> - p<sub>initial</sub></strong></p><p><strong>Airbags and Impact Time:</strong>
+<div class="list-item">• From J = F<sub>avg</sub> × Δt, we have <strong>F<sub>avg</sub> = Δp / Δt</strong>.</div>
+<div class="list-item">• Airbags increase the collision time (Δt) for the occupant.</div>
+<div class="list-item">• Since Δp (change in momentum) is fixed (from initial speed to zero), increasing Δt <strong>reduces the average force (F<sub>avg</sub>)</strong> experienced by the occupant.</div>
+<div class="list-item">• This prevents severe injury by spreading the force over a longer period.</div></p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q3.3')">
@@ -206,25 +171,11 @@ If Δt₂ = 10 × Δt₁, then F₂ = F₁/10 (force reduces by 90%!)</p><p><str
                             <div class="answer-inner">
                                 <p>*
 <strong>Law of Conservation of Momentum:</strong>
-In an isolated system (no external forces), the total momentum before any collision equals the total momentum after the collision.</p><p><strong>p<sub>before</sub> = p<sub>after</sub></strong>
-<strong>m₁u₁ + m₂u₂ = m₁v₁ + m₂v₂</strong></p><p><strong>Why Momentum is Always Conserved in Collisions:</strong></p><p>The collision forces are <strong>internal forces</strong> between the two objects.
-<div class="list-item">• By Newton&#x27;s 3rd Law: F₁₂ = -F₂₁ (equal and opposite)</div>
-<div class="list-item">• Impulse on object 1: J₁ = -Impulse on object 2: J₂</div>
-<div class="list-item">• Change in p₁ = -Change in p₂</div>
-<div class="list-item">• Therefore: Δ(m₁u₁ + m₂u₂) = 0</div>
-<div class="list-item">• <strong>Total momentum unchanged</strong> ✓</div></p><p>External forces (air resistance, friction with ground) are negligible during brief collision.</p><p><strong>Why Kinetic Energy is NOT Conserved in Inelastic Collisions:</strong></p><p><strong>Elastic Collision (KE Conserved):</strong>
-<div class="list-item">• No deformation of objects</div>
-<div class="list-item">• All kinetic energy converted back to motion</div>
-<div class="list-item">• ½m₁u₁² + ½m₂u₂² = ½m₁v₁² + ½m₂v₂²</div>
-<div class="list-item">• Example: Billiard balls colliding</div></p><p><strong>Inelastic Collision (KE NOT Conserved):</strong>
-<div class="list-item">• Objects deform, stick together, or produce sound</div>
-<div class="list-item">• Some kinetic energy converts to other forms:</div>
-<div class="list-item">• Heat energy</div>
-<div class="list-item">• Sound energy</div>
-<div class="list-item">• Deformation/strain energy</div>
-<div class="list-item">• Internal energy</div></p><p><strong>Perfectly Inelastic Collision:</strong>
-Objects stick together after collision: v₁ = v₂ = v<sub>common</sub></p><p>m₁u₁ + m₂u₂ = (m₁ + m₂)v<sub>common</sub></p><p>KE<sub>before</sub> = ½m₁u₁² + ½m₂u₂²
-KE<sub>after</sub> = ½(m₁ + m₂)v²_common</p><p><strong>KE<sub>after</sub> &lt; KE<sub>before</sub></strong> (energy &quot;lost&quot; to heat, sound, deformation)</p><p><strong>Energy &quot;Loss&quot; Calculation:</strong>
+In an isolated system (no external forces), the total momentum before a collision equals the total momentum after the collision.
+<strong>p<sub>before</sub> = p<sub>after</sub></strong> (m₁u₁ + m₂u₂ = m₁v₁ + m₂v₂)</p><p><strong>Why Momentum is Conserved:</strong>
+<div class="list-item">• Collision forces are internal forces (Newton&#x27;s 3rd Law: F₁₂ = -F₂₁).</div>
+<div class="list-item">• The impulse on one object is equal and opposite to the impulse on the other, leading to equal and opposite changes in momentum.</div>
+<div class="list-item">• Thus, the total momentum of the system remains constant.</div></p><p><strong>Why Kinetic Energy is NOT Conserved in Inelastic Collisions:</strong></p><p><strong>KE<sub>after</sub> &lt; KE<sub>before</sub></strong> (energy &quot;lost&quot; to heat, sound, deformation)</p><p><strong>Energy &quot;Loss&quot; Calculation:</strong>
 ΔKE = KE<sub>after</sub> - KE<sub>before</sub> &lt; 0 (negative means energy lost)</p><p>This &quot;lost&quot; energy becomes internal energy, heat, etc.</p><p><strong>Key Point:</strong> Momentum is ALWAYS conserved (vector law), but mechanical energy (KE + PE) is conserved only in elastic processes. Inelastic processes dissipate mechanical energy.</p><p>---</p>
                             </div>
                             <div class="gemini-section">
@@ -446,13 +397,9 @@ Ratio = F<sub>avg</sub> / F<sub>avg</sub>&#x27; = 300,000 / 60,000 = <strong>5 t
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Conservative Forces:</strong>
-<div class="list-item">• Work done depends only on initial and final positions, not the path taken.</div>
-<div class="list-item">• Work done in a closed loop is zero.</div>
-<div class="list-item">• <strong>Examples:</strong> Gravitational force, Electrostatic force, Spring force.</div></p><p><strong>Non-Conservative Forces:</strong>
-<div class="list-item">• Work done depends on the path taken.</div>
-<div class="list-item">• Energy is dissipated as heat/sound.</div>
-<div class="list-item">• <strong>Examples:</strong> Friction, Air resistance, Viscous drag.</div></p><p>---</p>
+<strong>Conservative:</strong> Work depends only on End Points. Loop Work = 0.
+*   Examples: Gravity, Spring Force.</p><p><strong>Non-Conservative:</strong> Work depends on Path. Energy lost as heat.
+*   Examples: Friction, Air Drag.</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q3.9')">
@@ -484,13 +431,10 @@ Ratio = F<sub>avg</sub> / F<sub>avg</sub>&#x27; = 300,000 / 60,000 = <strong>5 t
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-Work done (W) = mgh = 100 × 10 × 20 = 20,000 J
-Time (t) = 10 s</p><p>Power (P) = W / t
+<strong>Given:</strong> m=100 kg, h=20 m, t=10 s.</p><p><strong>Power (P) = Work / Time</strong>
+W = mgh = 100 × 10 × 20 = 20,000 J
 P = 20,000 / 10
-<strong>P = 2,000 Watts = 2 kW</strong></p><p>Alternatively using P = F·v:
- F = mg = 1000 N
- v = h/t = 20/10 = 2 m/s
- P = 1000 × 2 = <strong>2000 W</strong></p><p>---</p>
+<strong>P = 2,000 W = 2 kW</strong></p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q3.10')">

@@ -52,11 +52,11 @@
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Scalars:</strong> Physical quantities that have only magnitude, no direction.
-<div class="list-item">• Examples: Mass (5 kg), Temperature (30°C), Speed (25 m/s), Energy (100 J), Density (800 kg/m³)</div></p><p><strong>Vectors:</strong> Physical quantities that have both magnitude and direction.
-<div class="list-item">• Examples: Displacement (50 m, North), Velocity (25 m/s, East), Force (100 N, downward), Acceleration (9.8 m/s², downward), Momentum (p = mv, in direction of motion)</div></p><p><strong>Why position is a vector but distance is a scalar:</strong>
-<div class="list-item">• <strong>Distance:</strong> The total length of path traveled—only tells &quot;how much&quot; without direction. It&#x27;s always positive and path-dependent.</div>
-<div class="list-item">• <strong>Position:</strong> Describes &quot;where&quot; an object is relative to a reference point with both magnitude AND direction. A person at 50 m North vs 50 m South is at different positions despite same distance from origin.</div></p><p>---</p>
+<strong>Scalars:</strong> Magnitude only.
+*   <strong>Examples:</strong> Mass, Speed, Energy.</p><p><strong>Vectors:</strong> Magnitude + Direction.
+*   <strong>Examples:</strong> Velocity, Force, Displacement.</p><p><strong>Position vs Distance:</strong>
+*   <strong>Distance:</strong> Total path covered (Scalar).
+*   <strong>Position:</strong> Location relative to origin with direction (Vector).</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q1.1')">
@@ -88,14 +88,12 @@
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Triangle Law of Vector Addition:</strong>
-<div class="list-item">• When two vectors <strong>A</strong> and <strong>B</strong> are represented as two sides of a triangle, their resultant <strong>R</strong> = <strong>A</strong> + <strong>B</strong> is represented by the third side of the triangle.</div>
-<div class="list-item">• The resultant vector is drawn from the starting point of the first vector to the endpoint of the second vector.</div>
-<div class="list-item">• <strong>Formula:</strong> |<strong>R</strong>| = √(A² + B² + 2AB cosθ)</div>
-<div class="list-item">• <strong>Use when:</strong> Adding vectors in sequence (e.g., displacement in two stages)</div></p><p><strong>Parallelogram Law of Vector Addition:</strong>
-<div class="list-item">• When two vectors <strong>A</strong> and <strong>B</strong> are represented as adjacent sides of a parallelogram, their resultant <strong>R</strong> is represented by the diagonal of the parallelogram.</div>
-<div class="list-item">• Both vectors start from the same point.</div>
-<div class="list-item">• <strong>Use when:</strong> Two forces/velocities/displacements act simultaneously from the same point</div></p><p><strong>Key Difference:</strong> Triangle law is sequential (one after another), parallelogram law is simultaneous (from same point).</p><p>---</p>
+<strong>1. Triangle Law:</strong>
+*   <strong>Use when:</strong> Vectors are sequential (head-to-tail).
+*   <strong>Statement:</strong> If two vectors are sides of a triangle, resultant is the third side (start to end).
+*   <strong>Formula:</strong> |<strong>R</strong>| = √(A² + B² + 2AB cosθ)</p><p><strong>2. Parallelogram Law:</strong>
+*   <strong>Use when:</strong> Vectors act simultaneously from one point (tail-to-tail).
+*   <strong>Statement:</strong> Resultant is the diagonal of the parallelogram formed by the two vectors.</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q1.2')">
@@ -127,12 +125,11 @@
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Dot Product Definition:</strong>
-The dot product of vectors <strong>A</strong> and <strong>B</strong> is: <strong>A</strong> · <strong>B</strong> = AB cosθ</p><p>Where A and B are magnitudes, θ is the angle between them.</p><p><strong>Algebraic Form:</strong> <strong>A</strong> · <strong>B</strong> = A<sub>x</sub> B<sub>x</sub> + A<sub>y</sub> B<sub>y</sub> + A<sub>z</sub> B<sub>z</sub></p><p><strong>Finding Angle Between Vectors:</strong>
-cosθ = (<strong>A</strong> · <strong>B</strong>) / (|<strong>A</strong>| |<strong>B</strong>|)
-θ = cos⁻¹[(<strong>A</strong> · <strong>B</strong>) / (|<strong>A</strong>| |<strong>B</strong>|)]</p><p><strong>Why A·B = 0 means perpendicular:</strong>
-If <strong>A</strong> · <strong>B</strong> = AB cosθ = 0, and A ≠ 0, B ≠ 0, then cosθ = 0
-This means θ = 90°, indicating perpendicular vectors.</p><p><strong>Geometric Interpretation:</strong> Dot product measures how much one vector &quot;points in the direction&quot; of another. If they point at right angles, there&#x27;s zero projection, hence zero dot product.</p><p>---</p>
+<strong>Definition:</strong> <strong>A</strong> · <strong>B</strong> = |<strong>A</strong>||<strong>B</strong>| cosθ
+(Product of magnitudes and cosine of angle).</p><p><strong>Finding Angle:</strong>
+*   cosθ = (<strong>A</strong> · <strong>B</strong>) / (|<strong>A</strong>| |<strong>B</strong>|)</p><p><strong>Perpendicular Condition:</strong>
+*   If <strong>A</strong> · <strong>B</strong> = 0, then cosθ = 0 → <strong>θ = 90°</strong>.
+*   Zero dot product = Perpendicular vectors.</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q1.3')">
@@ -164,21 +161,17 @@ This means θ = 90°, indicating perpendicular vectors.</p><p><strong>Geometric 
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Relative Velocity Definition:</strong> The velocity of an object as observed from another moving reference frame.</p><p><strong>Boat Problem Setup:</strong>
-<div class="list-item">• <strong>v<sub>boat</sub> (in water)</strong> = 10 m/s (boat&#x27;s speed relative to water)</div>
-<div class="list-item">• <strong>v<sub>river</sub> (current)</strong> = 4 m/s (water&#x27;s speed relative to ground)</div>
-<div class="list-item">• <strong>v<sub>boat</sub> relative to ground</strong> = <strong>v<sub>boat</sub></strong> + <strong>v<sub>river</sub></strong> (vector addition)</div></p><p><strong>Velocity Diagram:</strong>
-<pre><code>
-        v<sub>boat</sub> = 10 m/s (upriver)
-             ↑
-             |
-             |___→ v<sub>river</sub> = 4 m/s
-            /
-           / v<sub>resultant</sub>
-          / (boat relative to ground)
-</code></pre></p><p><strong>If boat moves perpendicular to river:</strong>
-|v<sub>resultant</sub>| = √(10² + 4²) = √116 = 10.77 m/s at angle tan⁻¹(4/10) = 21.8° downstream</p><p><strong>If boat moves directly upriver (opposite to current):</strong>
-|v<sub>resultant</sub>| = 10 - 4 = 6 m/s upstream</p><p><strong>Meaning:</strong> The velocity relative to the ground is what an observer standing on the bank would measure. It&#x27;s the combination of the boat&#x27;s motion through water AND the water&#x27;s motion.</p><p>---</p>
+<strong>Relative Velocity:</strong> Velocity of an object observed from a moving frame.</p><p><strong>Boat Example:</strong>
+*   <strong>v<sub>boat</sub></strong> = 10 m/s (in water)
+*   <strong>v<sub>current</sub></strong> = 4 m/s (river)
+*   <strong>Resultant</strong> = Vector sum of boat speed + current.</p><p><strong>Diagram:</strong>
+      10 m/s (Boat)
+        ↑
+        |
+________|____→ 4 m/s (Current)
+        /
+       / Resultant
+      /</p><p><strong>Meaning:</strong> An observer on the bank sees the boat move diagonally at the resultant speed.</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q1.4')">
@@ -348,11 +341,11 @@ tan(φ) = 80/60 = 4/3
 <strong>A</strong> × <strong>B</strong> = (3<strong>i</strong> + 4<strong>j</strong>) × (<strong>i</strong> + <strong>j</strong>)
 = 3(<strong>i</strong>×<strong>i</strong>) + 3(<strong>i</strong>×<strong>j</strong>) + 4(<strong>j</strong>×<strong>i</strong>) + 4(<strong>j</strong>×<strong>j</strong>)
 = 0 + 3(<strong>k</strong>) + 4(-<strong>k</strong>) + 0
-= -<strong>k</strong></p><p><strong>(b) Projection of A on B:</strong>
-Projection = (<strong>A</strong>·<strong>B</strong>) / |<strong>B</strong>|
+= <strong>-k</strong></p><p><strong>(b) Projection of A on B:</strong>
+Proj = (<strong>A</strong>·<strong>B</strong>) / |<strong>B</strong>|
 <strong>A</strong>·<strong>B</strong> = (3)(1) + (4)(1) = 7
 |<strong>B</strong>| = √(1² + 1²) = √2
-Projection = 7/√2 = <strong>4.95</strong></p><p>---</p>
+<strong>Projection = 7/√2 = 4.95</strong></p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q1.8')">
