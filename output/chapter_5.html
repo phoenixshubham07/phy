@@ -52,26 +52,14 @@
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Simple Harmonic Motion (SHM) Definition:</strong>
-SHM is periodic motion where the restoring force is proportional to displacement from equilibrium and directed towards it.</p><p><strong>Conditions for SHM:</strong>
-1.  <strong>Restoring Force:</strong> Must be proportional to displacement (F ∝ -x).
-2.  <strong>Direction:</strong> Force always acts towards the mean position.</p><p><strong>Differential Equation:</strong>
-d²x/dt² + ω²x = 0
-(Where ω = angular frequency)</p><p><strong>Equation of Motion Derivation:</strong></p><p>Newton&#x27;s second law: F = ma
--kx = m(d²x/dt²)
-d²x/dt² + (k/m)x = 0</p><p>Let ω² = k/m (ω is angular frequency)</p><p><strong>d²x/dt² + ω²x = 0</strong> (Differential equation of SHM)</p><p><strong>Solution:</strong>
-x(t) = A cos(ωt + φ)</p><p>Or: x(t) = A cos(ωt) + B sin(ωt)</p><p>Where:
-<div class="list-item">• A is amplitude (maximum displacement)</div>
-<div class="list-item">• ω is angular frequency</div>
-<div class="list-item">• φ is phase constant</div>
-<div class="list-item">• T = 2π/ω is period</div>
-<div class="list-item">• f = ω/2π is frequency</div></p><p><strong>Properties of SHM:</strong>
-1. Acceleration: a(t) = -ω²A cos(ωt + φ) = -ω²x
-2. Velocity: v(t) = -ωA sin(ωt + φ)
-3. Maximum velocity: v<sub>max</sub> = ωA (at equilibrium)
-4. Maximum acceleration: a<sub>max</sub> = ω²A (at extreme positions)
-5. Period is independent of amplitude
-6. Energy oscillates between potential and kinetic</p><p>---</p>
+<strong>Concept:</strong>
+SHM is periodic motion where restoring force is proportional to displacement and directed towards equilibrium.</p><p><strong>Formula:</strong>
+*   <strong>Force:</strong> F = -kx
+*   <strong>Differential Equation:</strong> d²x/dt² + ω²x = 0
+*   <strong>Solution:</strong> x(t) = A cos(ωt + φ)</p><p><strong>Key Properties:</strong>
+1.  <strong>Acceleration:</strong> a = -ω²x (Max at extremes)
+2.  <strong>Velocity:</strong> v = ±ω√(A²-x²) (Max at center)
+3.  <strong>Period:</strong> Independent of Amplitude.</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q5.1')">
@@ -103,38 +91,13 @@ x(t) = A cos(ωt + φ)</p><p>Or: x(t) = A cos(ωt) + B sin(ωt)</p><p>Where:
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Energy in SHM:</strong></p><p>For SHM: x(t) = A cos(ωt)
-v(t) = dx/dt = -Aω sin(ωt)</p><p><strong>Potential Energy:</strong>
-U(t) = ½kx² = ½mω²x²
-U(t) = ½mω²A² cos²(ωt)</p><p><strong>Kinetic Energy:</strong>
-K(t) = ½mv² = ½m(-Aω sin(ωt))²
-K(t) = ½mω²A² sin²(ωt)</p><p><strong>Total Energy:</strong>
-E<sub>total</sub> = K + U
-E<sub>total</sub> = ½mω²A² sin²(ωt) + ½mω²A² cos²(ωt)
-E<sub>total</sub> = ½mω²A²[sin²(ωt) + cos²(ωt)]
-<strong>E<sub>total</sub> = ½mω²A² = ½kA²</strong> (constant!)</p><p><strong>Energy Distribution:</strong></p><p>At different positions:
-1. <strong>At Equilibrium (x = 0):</strong>
-<div class="list-item">• U = 0 (all energy is kinetic)</div>
-<div class="list-item">• K = ½mω²A² = E<sub>total</sub></div>
-<div class="list-item">• v is maximum</div></p><p>2. <strong>At Amplitude (x = ±A):</strong>
-<div class="list-item">• U = ½kA² = E<sub>total</sub> (all energy is potential)</div>
-<div class="list-item">• K = 0</div>
-<div class="list-item">• v = 0 (momentary rest)</div></p><p>3. <strong>At x = A/2:</strong>
-<div class="list-item">• U = ½k(A/2)² = ⅛kA²</div>
-<div class="list-item">• K = ½kA² - ⅛kA² = ⅜kA²</div>
-<div class="list-item">• K:U ratio = 3:1</div></p><p><strong>Energy Oscillation Frequency:</strong>
-E<sub>oscillates</sub> with twice the frequency of motion (SHM frequency = f, energy oscillation = 2f)</p><p><strong>Graphical Representation:</strong>
-<pre><code>
-Energy
-   |     Total Energy = constant
-   |     /‾‾\     /‾‾\
-   |    /    \   /    \  (KE oscillates)
-   |   /      \_/      \
-   |  /   (PE oscillates)
-   |_/_________________(KE+PE)
-   +--+--+--+--+--+--+--
-      At x=0  At x=±A
-</code></pre></p><p>---</p>
+<strong>Concept:</strong>
+Total Mechanical Energy (E) in SHM is conserved. It oscillates between Kinetic (K) and Potential (U) forms.</p><p><strong>Formula:</strong>
+*   U = ½kx² = ½mω²x²
+*   K = ½mv² = ½mω²(A²-x²)
+*   E<sub>total</sub> = K + U = ½kA²</p><p><strong>Energy Distribution:</strong>
+*   <strong>Equilibrium (x=0):</strong> Max K, Zero U.
+*   <strong>Extremes (x=±A):</strong> Max U, Zero K.</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q5.2')">
@@ -174,14 +137,20 @@ Energy
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*</p><p><strong>Given:</strong> m = 0.5 kg, k = 200 N/m, A = 0.05 m</p><p><strong>(a) Period:</strong>
-T = 2π√(m/k) = 2π√(0.5/200)
-T = 2π√(0.0025) = 2π(0.05)
-<strong>T = 0.314 seconds</strong></p><p><strong>(b) Frequency:</strong>
-f = 1/T = 1/0.314 = <strong>3.18 Hz</strong></p><p><strong>(c) Angular Frequency:</strong>
-ω = 2πf = 2π(3.18) = <strong>20 rad/s</strong></p><p>Or: ω = √(k/m) = √(200/0.5) = √400 = 20 rad/s ✓</p><p><strong>(d) Maximum Velocity:</strong>
-v<sub>max</sub> = ωA = 20 × 0.05 = <strong>1.0 m/s</strong></p><p>Occurs when passing through equilibrium.</p><p><strong>(e) Maximum Acceleration:</strong>
-a<sub>max</sub> = ω²A = 20² × 0.05 = 400 × 0.05 = <strong>20 m/s²</strong></p><p>Occurs at maximum displacement (±A).</p><p>---</p>
+                                <p>*
+<strong>Concept:</strong>
+Period depends on mass and stiffness (k). Velocity and acceleration depend on amplitude and frequency.</p><p><strong>Formula:</strong>
+*   T = 2π√(m/k)
+*   ω = 2π/T
+*   v<sub>max</sub> = ωA
+*   a<sub>max</sub> = ω²A</p><p><strong>Calculation:</strong>
+Given: m=0.5, k=200, A=0.05.</p><p><strong>(a) Period:</strong>
+T = 2π√(0.5/200) = 2π√(0.0025) = 2π(0.05)
+<strong>T = 0.314 s</strong></p><p><strong>(b) Frequency:</strong>
+f = 1/T = <strong>3.18 Hz</strong></p><p><strong>(c) Angular Freq:</strong>
+ω = 200/0.5 = √400 = <strong>20 rad/s</strong></p><p><strong>(d) Max Velocity:</strong>
+v<sub>max</sub> = 20(0.05) = <strong>1 m/s</strong></p><p><strong>(e) Max Acceleration:</strong>
+a<sub>max</sub> = 20²(0.05) = 400(0.05) = <strong>20 m/s²</strong></p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q5.3')">

@@ -52,14 +52,18 @@
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Bernoulli&#x27;s Principle:</strong>
+<strong>Concept:</strong>
+Bernoulli&#x27;s Principle is conservation of energy for flowing fluids. It relates Pressure, Kinetic Energy, and Potential Energy.</p><p><strong>Formula:</strong>
+P + ½ρv² + ρgh = Constant</p><p><strong>Solution:</strong>
+<strong>Statement:</strong>
 For an ideal fluid flowing along a streamline, the sum of pressure energy, kinetic energy, and potential energy per unit volume remains constant.</p><p><strong>Bernoulli&#x27;s Equation:</strong>
 P + ½ρv² + ρgh = <strong>constant</strong> (along a streamline)</p><p>Or, between two points:
 P₁ + ½ρv₁² + ρgh₁ = P₂ + ½ρv₂² + ρgh₂</p><p><strong>With head terms:</strong>
 (P/ρg) + (v²/2g) + h = <strong>constant</strong></p><p>Where:
 <div class="list-item">• P/ρg = pressure head</div>
 <div class="list-item">• v²/2g = velocity head</div>
-<div class="list-item">• h = gravitational head</div></p><p><strong>Derivation:</strong></p><p>Consider fluid element moving along streamline.
+<div class="list-item">• h = gravitational head</div></p><p><strong>Derivation:</strong>
+Consider fluid element moving along streamline.
 Work-energy theorem:
 W<sub>total</sub> = ΔKE + ΔPE</p><p>Work by pressure forces:
 W<sub>pressure</sub> = P₁A₁L₁ - P₂A₂L₂</p><p>Using continuity: A₁L₁ = A₂L₂ = ΔV (volume)
@@ -107,27 +111,19 @@ P₁ - P₂ = ½ρ(v₂² - v₁²) + ρgΔh</p><p>Rearranging:
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Continuity Equation (Conservation of Mass):</strong></p><p>For incompressible, steady flow through a pipe:
-<strong>A₁v₁ = A₂v₂</strong> (mass flow rate is constant)</p><p>Or: <strong>A·v = constant</strong> (volumetric flow rate is constant)</p><p><strong>Derivation:</strong></p><p>Consider a pipe with varying cross-section.
-In time dt, fluid travels distances:
-<div class="list-item">• At section 1: L₁ = v₁ dt</div>
-<div class="list-item">• At section 2: L₂ = v₂ dt</div></p><p><strong>Volume entering at section 1:</strong>
-V₁ = A₁ × L₁ = A₁ × v₁ × dt</p><p><strong>Volume leaving at section 2:</strong>
-V₂ = A₂ × L₂ = A₂ × v₂ × dt</p><p>For incompressible fluid (ρ = constant):
-<strong>Mass entering = Mass leaving</strong></p><p>ρA₁v₁dt = ρA₂v₂dt</p><p>Canceling ρdt:
-<strong>A₁v₁ = A₂v₂</strong> ✓</p><p><strong>Volumetric Flow Rate:</strong>
-Q = A × v = constant</p><p>Units: m³/s</p><p><strong>Physical Interpretation:</strong></p><p>When pipe narrows:
-<div class="list-item">• A decreases → v must increase</div>
-<div class="list-item">• Faster flow in narrow sections</div>
-<div class="list-item">• Example: Water spraying far from a nozzle (narrower opening → faster water)</div></p><p>When pipe widens:
-<div class="list-item">• A increases → v must decrease</div>
-<div class="list-item">• Slower flow in wide sections</div></p><p><strong>Combined with Bernoulli&#x27;s Equation:</strong></p><p>P + ½ρv² + ρgh = constant</p><p>In narrow section:
-<div class="list-item">• v is large (from continuity)</div>
-<div class="list-item">• P must be small (from Bernoulli)</div>
-<div class="list-item">• This is why pressure drops in narrow sections</div></p><p><strong>Practical Applications:</strong>
-1. <strong>Carburetors:</strong> Narrow passages create low pressure to draw fuel
-2. <strong>Airplane wings:</strong> Curved top surface accelerates air (low pressure = lift)
-3. <strong>Water meters:</strong> Constriction increases velocity, pressure drop indicates flow</p><p>---</p>
+<strong>Concept:</strong>
+Continuity Equation is conservation of mass for incompressible fluids. Flow rate is constant throughout a pipe.</p><p><strong>Formula:</strong>
+A₁v₁ = A₂v₂</p><p><strong>Solution:</strong>
+<strong>Physical Meaning:</strong>
+Fluid speeds up in narrow sections (small A, large v) and slows down in wide sections.</p><p><strong>Derivation:</strong>
+Consider a fluid flowing through a pipe of varying cross-sectional area.
+Mass flow rate (ṁ) is the mass of fluid passing through a cross-section per unit time.
+ṁ = ρAv (where ρ is density, A is cross-sectional area, v is fluid velocity)</p><p>For steady flow, mass is conserved, so the mass flow rate must be constant at any cross-section of the pipe.
+ṁ₁ = ṁ₂
+ρ₁A₁v₁ = ρ₂A₂v₂</p><p>For an <strong>incompressible fluid</strong>, the density ρ is constant (ρ₁ = ρ₂ = ρ).
+Therefore, we can cancel ρ from both sides:
+<strong>A₁v₁ = A₂v₂</strong></p><p>This equation shows that the product of the cross-sectional area and the fluid velocity is constant along a streamline for an incompressible fluid. This product (Av) is also known as the volumetric flow rate (Q).
+Q = A₁v₁ = A₂v₂ = constant.</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q8.2')">
@@ -166,26 +162,42 @@ Q = A × v = constant</p><p>Units: m³/s</p><p><strong>Physical Interpretation:<
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*</p><p><strong>Given:</strong>
-<div class="list-item">• Wide section: D₁ = 10 cm, r₁ = 5 cm, P₁ = 50 kPa = 50,000 Pa, v₁ = 1 m/s</div>
-<div class="list-item">• Narrow section: D₂ = 5 cm, r₂ = 2.5 cm</div>
-<div class="list-item">• ρ = 1000 kg/m³ (water)</div></p><p><strong>(a) Velocity in Narrow Section:</strong></p><p>Using continuity equation: A₁v₁ = A₂v₂</p><p>A₁ = πr₁² = π(0.05)² = 0.00785 m²
-A₂ = πr₂² = π(0.025)² = 0.00196 m²</p><p>v₂ = A₁v₁/A₂ = (0.00785 × 1)/0.00196
-v₂ = 0.00785/0.00196 = <strong>4 m/s</strong></p><p>Check: (0.05/0.025)² = 2² = 4 (area ratio inverse = velocity ratio) ✓</p><p><strong>(b) Pressure in Narrow Section:</strong></p><p>Using Bernoulli&#x27;s equation (horizontal pipe, h₁ = h₂):
-P₁ + ½ρv₁² = P₂ + ½ρv₂²</p><p>P₂ = P₁ + ½ρ(v₁² - v₂²)
-P₂ = 50,000 + ½(1000)(1² - 4²)
+                                <p>*
+<strong>Concept:</strong>
+Continuity equation (conservation of mass) relates velocities in different sections. Bernoulli&#x27;s equation (conservation of energy) relates pressure and velocity changes in a horizontal pipe.</p><p><strong>Formula:</strong>
+*   Continuity: A₁v₁ = A₂v₂
+*   Bernoulli (horizontal pipe): P₁ + ½ρv₁² = P₂ + ½ρv₂²
+*   Volumetric Flow Rate: Q = Av</p><p><strong>Calculation:</strong>
+Given:
+<div class="list-item">• Wide section: D₁ = 10 cm = 0.1 m, r₁ = 5 cm = 0.05 m, P₁ = 50 kPa = 50,000 Pa, v₁ = 1 m/s</div>
+<div class="list-item">• Narrow section: D₂ = 5 cm = 0.05 m, r₂ = 2.5 cm = 0.025 m</div>
+<div class="list-item">• Density of water ρ = 1000 kg/m³</div></p><p><strong>(a) Velocity in Narrow Section (v₂):</strong>
+Using continuity equation: A₁v₁ = A₂v₂
+Since A = πr², then πr₁²v₁ = πr₂²v₂
+r₁²v₁ = r₂²v₂
+v₂ = v₁ × (r₁/r₂)²
+v₂ = 1 m/s × (0.05 m / 0.025 m)²
+v₂ = 1 m/s × (2)²
+v₂ = <strong>4 m/s</strong></p><p><strong>(b) Pressure in Narrow Section (P₂):</strong>
+Using Bernoulli&#x27;s equation (horizontal pipe, h₁ = h₂):
+P₁ + ½ρv₁² = P₂ + ½ρv₂²
+P₂ = P₁ + ½ρ(v₁² - v₂²)
+P₂ = 50,000 Pa + ½(1000 kg/m³)((1 m/s)² - (4 m/s)²)
 P₂ = 50,000 + 500(1 - 16)
 P₂ = 50,000 + 500(-15)
 P₂ = 50,000 - 7,500
-<strong>P₂ = 42,500 Pa = 42.5 kPa</strong></p><p><strong>Pressure drops by 7.5 kPa (15% drop)</strong></p><p><strong>(c) Volumetric Flow Rate:</strong></p><p>Q = A₁v₁ = 0.00785 × 1 = <strong>0.00785 m³/s = 7.85 L/s</strong></p><p>Or: Q = A₂v₂ = 0.00196 × 4 = 0.00784 ≈ 0.00785 m³/s ✓</p><p><strong>(d) Why Pressure Decreases:</strong></p><p>From Bernoulli&#x27;s principle:
-<div class="list-item">• As water enters narrow section, it must speed up (continuity)</div>
-<div class="list-item">• Higher speed → higher kinetic energy (½ρv²)</div>
-<div class="list-item">• Total energy must be constant</div>
-<div class="list-item">• Therefore, pressure energy (P) must decrease</div>
-<div class="list-item">• <strong>Pressure converts to kinetic energy</strong></div></p><p>This is characteristic of Bernoulli&#x27;s principle:
-<div class="list-item">• Pressure head + Velocity head + Elevation head = constant</div>
-<div class="list-item">• High velocity region has low pressure</div>
-<div class="list-item">• Low velocity region has high pressure</div></p><p>---</p>
+P₂ = <strong>42,500 Pa = 42.5 kPa</strong></p><p><strong>(c) Volumetric Flow Rate (Q):</strong>
+Q = A₁v₁ = πr₁²v₁
+Q = π(0.05 m)² × 1 m/s
+Q = π(0.0025) m³/s
+Q ≈ <strong>0.00785 m³/s</strong> (or 7.85 L/s)</p><p><strong>(d) Why does pressure decrease in the narrow section?</strong>
+<strong>Explanation:</strong>
+From Bernoulli&#x27;s principle, the total energy (pressure energy + kinetic energy + potential energy) along a streamline remains constant.
+<div class="list-item">• As the water flows into the narrower section, its velocity must increase due to the continuity equation (conservation of mass).</div>
+<div class="list-item">• An increase in velocity means an increase in the kinetic energy (½ρv²) of the fluid.</div>
+<div class="list-item">• Since the pipe is horizontal, the potential energy (ρgh) remains constant.</div>
+<div class="list-item">• To keep the total energy constant, the pressure energy (P) must decrease to compensate for the increase in kinetic energy.</div>
+<div class="list-item">• Therefore, <strong>pressure converts to kinetic energy</strong> in the narrow section.</div></p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q8.3')">

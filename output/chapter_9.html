@@ -52,14 +52,14 @@
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>First Law of Thermodynamics:</strong>
-The heat energy supplied to a system equals the sum of the change in internal energy and the work done by the system.</p><p><strong>ΔQ = ΔU + ΔW</strong></p><p>Or: <strong>ΔQ = ΔU + PΔV</strong> (for constant pressure)</p><p><strong>Definitions:</strong></p><p>1. <strong>Internal Energy (U):</strong>
-<div class="list-item">• Total kinetic and potential energy of all molecules in the system</div>
-<div class="list-item">• Depends only on temperature (for ideal gas)</div>
-<div class="list-item">• State function (depends only on current state, not path)</div>
-<div class="list-item">• Increases with temperature</div></p><p>2. <strong>Heat (Q):</strong>
-<div class="list-item">• Energy transferred due to temperature difference</div>
-<div class="list-item">• <strong>Positive (Q &gt; 0):</strong> Heat absorbed by system</div>
+<strong>Concept:</strong>
+First Law is Conservation of Energy applied to heat and work. Energy supplied = Internal Energy increase + Work done.</p><p><strong>Formula:</strong>
+ΔQ = ΔU + ΔW</p><p><strong>Sign Convention:</strong>
+*   <strong>Heat Added (ΔQ):</strong> Positive
+*   <strong>Work by System (ΔW):</strong> Positive (Expansion)
+*   <strong>Internal Energy Increase (ΔU):</strong> Positive (Temp rise)</p><p><strong>Solution:</strong>
+The heat energy supplied to a system equals the sum of the change in internal energy and the work done by the system.
+This can also be written as: <strong>ΔQ = ΔU + PΔV</strong> (for constant pressure)</p><p><strong>Definitions:</strong>
 <div class="list-item">• <strong>Negative (Q &lt; 0):</strong> Heat released by system</div>
 <div class="list-item">• Path function (depends on how energy is transferred)</div></p><p>3. <strong>Work (W):</strong>
 <div class="list-item">• Energy transferred by mechanical means (expansion/compression)</div>
@@ -107,28 +107,11 @@ The heat energy supplied to a system equals the sum of the change in internal en
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Second Law - Kelvin-Planck Statement:</strong>
-It is impossible to construct an engine that operates in a cycle, producing only work and absorbing energy from a single thermal reservoir. Some heat must be rejected to a cold reservoir.</p><p><strong>Implication:</strong> Heat cannot be completely converted to work in a cyclic process.</p><p><strong>Second Law - Clausius Statement:</strong>
-It is impossible for heat to flow spontaneously from a cold body to a hot body without external work being done.</p><p><strong>Implication:</strong> Heat flows naturally from hot to cold, never spontaneously reverse.</p><p><strong>Why Perfect Heat Engines Are Impossible:</strong></p><p>A &quot;perfect&quot; engine would:
-<div class="list-item">• Take heat Q<sub>h</sub> from hot reservoir (at temperature T<sub>h</sub>)</div>
-<div class="list-item">• Convert ALL of it to useful work (W = Q<sub>h</sub>)</div>
-<div class="list-item">• Reject NO heat to cold reservoir (Q<sub>c</sub> = 0)</div></p><p><strong>This violates the second law</strong> because:
-1. <strong>Energy alone isn&#x27;t sufficient:</strong>
-<div class="list-item">• First law doesn&#x27;t forbid this (ΔU = 0 for cycle)</div>
-<div class="list-item">• Energy is conserved, but it&#x27;s thermodynamically forbidden</div></p><p>2. <strong>Entropy Argument:</strong>
-<div class="list-item">• Heat extraction decreases hot reservoir&#x27;s entropy: ΔS<sub>h</sub> = -Q<sub>h</sub>/T<sub>h</sub></div>
-<div class="list-item">• No heat added to cold reservoir: ΔS<sub>c</sub> = 0</div>
-<div class="list-item">• Total entropy: ΔS<sub>total</sub> = -Q<sub>h</sub>/T<sub>h</sub> &lt; 0</div>
-<div class="list-item">• <strong>Entropy decreases, violating second law!</strong></div>
-<div class="list-item">• Second law requires: ΔS<sub>total</sub> ≥ 0</div></p><p>3. <strong>Maximum Efficiency (Carnot Limit):</strong>
-Actual efficiency: η = W/Q<sub>h</sub> = (Q<sub>h</sub> - Q<sub>c</sub>)/Q<sub>h</sub> = 1 - (Q<sub>c</sub>/Q<sub>h</sub>)</p><p>For Carnot engine (idealized, reversible):
-η_Carnot = 1 - T<sub>c</sub>/T<sub>h</sub></p><p>Even this perfect engine cannot achieve 100% efficiency:
-<div class="list-item">• If T<sub>c</sub> = 0 K: η = 100% (only theoretically)</div>
-<div class="list-item">• In practice: T<sub>c</sub> &gt; 0, so η &lt; 1</div></p><p><strong>Why All Real Engines Are Less Efficient:</strong>
-1. Friction and dissipation
-2. Irreversible processes
-3. Non-ideal heat transfer
-4. Pressure/temperature losses</p><p>---</p>
+<strong>Concept:</strong>
+Second Law dictates direction of natural processes. Perfect efficiency is impossible because some heat must always be rejected to a lower temperature sink.</p><p><strong>Statement:</strong>
+*   <strong>Kelvin-Planck:</strong> No cyclic engine can convert heat completely into work. (Efficiency &lt; 100%).
+*   <strong>Clausius:</strong> Heat cannot flow spontaneously from cold to hot.</p><p><strong>Why Impossible:</strong>
+A perfect engine implies ΔS<sub>total</sub> &lt; 0 for the universe, which violates the Entropy principle (ΔS ≥ 0).</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q9.2')">
@@ -167,27 +150,18 @@ Actual efficiency: η = W/Q<sub>h</sub> = (Q<sub>h</sub> - Q<sub>c</sub>)/Q<sub>
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*</p><p><strong>Given:</strong>
-<div class="list-item">• n = 1 mole</div>
-<div class="list-item">• T = 300 K (constant, isothermal)</div>
-<div class="list-item">• V₁ = 2 L = 2 × 10⁻³ m³</div>
-<div class="list-item">• V₂ = 10 L = 10 × 10⁻³ m³</div>
-<div class="list-item">• P₁ = 10 atm = 1,013,250 Pa</div></p><p><strong>(a) Work Done by Gas:</strong></p><p>For isothermal process:
-W = nRT ln(V₂/V₁)
-W = 1 × 8.314 × 300 × ln(10/2)
-W = 2494.2 × ln(5)
-W = 2494.2 × 1.609
-<strong>W = 4,012 J ≈ 4.01 kJ</strong></p><p>Positive work indicates expansion (work done by gas).</p><p><strong>(b) Heat Absorbed:</strong></p><p>For ideal gas in isothermal process:
-ΔU = 0 (internal energy depends only on temperature, which is constant)</p><p>From first law:
-ΔQ = ΔU + W = 0 + 4,012
-<strong>ΔQ = 4,012 J ≈ 4.01 kJ</strong></p><p>Heat is absorbed by system (positive Q).</p><p><strong>(c) Change in Internal Energy:</strong></p><p>For isothermal process (T = constant):
-<strong>ΔU = 0</strong> (no change in temperature)</p><p><strong>(d) Verify First Law:</strong></p><p>ΔQ = ΔU + W
-4,012 = 0 + 4,012
-<strong>4,012 = 4,012</strong> ✓</p><p><strong>Physical Interpretation:</strong>
-<div class="list-item">• Gas expands at constant temperature</div>
-<div class="list-item">• All heat absorbed goes into doing work on surroundings</div>
-<div class="list-item">• No temperature change means no change in molecular kinetic energy</div>
-<div class="list-item">• This is an idealized process (perfect thermal contact with heat reservoir)</div></p><p>---</p>
+                                <p>*
+<strong>Concept:</strong>
+Isothermal expansion occurs at constant T. Internal energy change ideal gas is zero.</p><p><strong>Formula:</strong>
+*   W = nRT ln(V₂/V₁)
+*   ΔU = nCvΔT
+*   ΔQ = ΔU + W</p><p><strong>Calculation:</strong>
+Given: n=1, T=300, V₁=2L, V₂=10L.</p><p><strong>(a) Work Done:</strong>
+W = (1)(8.314)(300) ln(10/2)
+W = 2494.2 × 1.609 = <strong>4013 J</strong></p><p><strong>(b) Heat Absorbed:</strong>
+Since ΔU = 0, ΔQ = W = <strong>4013 J</strong></p><p><strong>(c) Internal Energy:</strong>
+<strong>ΔU = 0</strong> (Isothermal)</p><p><strong>(d) Verification:</strong>
+4013 = 0 + 4013 (First Law Holds).</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q9.3')">
@@ -222,24 +196,17 @@ W = 2494.2 × 1.609
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*</p><p><strong>Given:</strong>
-<div class="list-item">• T<sub>h</sub> = 500 K (hot reservoir)</div>
-<div class="list-item">• T<sub>c</sub> = 300 K (cold reservoir)</div>
-<div class="list-item">• Q<sub>h</sub> = 1000 J (heat absorbed from hot reservoir)</div></p><p><strong>(a) Carnot Efficiency (Maximum Possible):</strong></p><p>η_Carnot = 1 - T<sub>c</sub>/T<sub>h</sub> = 1 - 300/500
-η_Carnot = 1 - 0.6 = 0.4
-<strong>η_Carnot = 40% (maximum possible)</strong></p><p><strong>(b) Actual Efficiency:</strong></p><p>η_actual = 0.6 × η_Carnot = 0.6 × 0.4 = 0.24
-<strong>η_actual = 24%</strong></p><p><strong>(c) Work Output:</strong></p><p>W = η_actual × Q<sub>h</sub> = 0.24 × 1000
-<strong>W = 240 J</strong> (useful work output)</p><p><strong>(d) Heat Rejected:</strong></p><p>From first law (cyclic process, ΔU = 0):
-Q<sub>h</sub> = W + Q<sub>c</sub>
-Q<sub>c</sub> = Q<sub>h</sub> - W = 1000 - 240
-<strong>Q<sub>c</sub> = 760 J</strong> (wasted heat)</p><p><strong>Energy Flow:</strong>
-<div class="list-item">• In: 1000 J from hot source</div>
-<div class="list-item">• Out: 240 J as work, 760 J as heat to cold source</div>
-<div class="list-item">• Efficiency: 240/1000 = 24%</div></p><p><strong>Why Not Carnot Efficiency?</strong></p><p>If actual engine operated at Carnot efficiency (40%):
-<div class="list-item">• W = 0.40 × 1000 = 400 J</div>
-<div class="list-item">• Q<sub>c</sub> = 600 J</div></p><p>But the problem states efficiency is 60% of Carnot (60% of ideal), so:
-<div class="list-item">• W = 240 J</div>
-<div class="list-item">• Q<sub>c</sub> = 760 J</div></p><p><strong>This is more realistic</strong> (real engines are less efficient due to irreversibility).</p><p>---</p>
+                                <p>*
+<strong>Concept:</strong>
+Heat Engine efficiency is work output divided by heat input. Carnot efficiency is the theoretical maximum determined by temperatures.</p><p><strong>Formula:</strong>
+*   η_carnot = 1 - T<sub>c</sub>/T<sub>h</sub>
+*   η = W / Q<sub>h</sub>
+*   W = Q<sub>h</sub> - Q<sub>c</sub></p><p><strong>Calculation:</strong>
+<strong>(a) Carnot Efficiency:</strong>
+η = 1 - 300/500 = 1 - 0.6 = <strong>0.4 (40%)</strong></p><p><strong>(b) Actual Efficiency:</strong>
+η_act = 0.6 × 0.4 = <strong>0.24 (24%)</strong></p><p><strong>(c) Work Output:</strong>
+W = 0.24 × 1000 = <strong>240 J</strong></p><p><strong>(d) Heat Rejected:</strong>
+Q<sub>c</sub> = Q<sub>h</sub> - W = 1000 - 240 = <strong>760 J</strong></p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q9.4')">
@@ -271,14 +238,13 @@ Q<sub>c</sub> = Q<sub>h</sub> - W = 1000 - 240
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Pressure Equation:</strong>
-According to the kinetic theory, gas pressure arises from molecular collisions with container walls.</p><p><strong>Formula:</strong>
-<strong>PV = (1/3) N m &lt;v²&gt;</strong></p><p>Where:
-<div class="list-item">• P = Pressure</div>
-<div class="list-item">• V = Volume</div>
-<div class="list-item">• N = Total number of molecules</div>
-<div class="list-item">• m = Mass of one molecule</div>
-<div class="list-item">• &lt;v²&gt; = Mean square velocity</div></p><p>This relates macroscopic pressure to microscopic molecular motion.</p><p>---</p><p>---</p>
+<strong>Concept:</strong>
+Kinetic Theory relates microscopic motion to macroscopic pressure. Pressure is due to momentum transfer during collisions.</p><p><strong>Formula:</strong>
+PV = (1/3) N m &lt;v²&gt;</p><p><strong>Meaning:</strong>
+*   N: Number of molecules
+*   m: Mass per molecule
+*   &lt;v²&gt;: Mean square speed
+*   Pressure is proportional to kinetic energy density.</p><p>---</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q9.5')">
@@ -396,12 +362,13 @@ f<sub>open</sub> / f<sub>closed</sub> = (v/2L) / (v/4L) = 2
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Derivation:</strong>
-1.  First Law: ΔQ = ΔU + ΔW
-2.  <strong>Constant Volume:</strong> ΔQ = CvΔT, ΔW=0 → <strong>ΔU = CvΔT</strong>
-3.  <strong>Constant Pressure:</strong> ΔQ = CpΔT, ΔW = PΔV = RΔT
-4.  Substitute:
-    CpΔT = CvΔT + RΔT
+<strong>Concept:</strong>
+Specific heat at constant Pressure (Cp) is greater than at constant Volume (Cv) because work is done during expansion.</p><p><strong>Derivation:</strong>
+1.  <strong>First Law:</strong> ΔQ = ΔU + PΔV
+2.  At Constant V: ΔW=0 → ΔQ<sub>v</sub> = ΔU = nCvΔT
+3.  At Constant P: ΔQ<sub>p</sub> = ΔU + PΔV = nCpΔT
+4.  Since PΔV = nRΔT (Ideal Gas Law):
+    nCpΔT = nCvΔT + nRΔT
     <strong>Cp - Cv = R</strong></p><p>---</p>
                             </div>
                             <div class="gemini-section">
@@ -434,10 +401,11 @@ f<sub>open</sub> / f<sub>closed</sub> = (v/2L) / (v/4L) = 2
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Formula:</strong> v<sub>rms</sub> = √(3RT/M)
-<strong>Given:</strong> M = 28 g = 0.028 kg, T = 300 K.
-v = √(3 × 8.314 × 300 / 0.028)
-v = √(267235)
+<strong>Concept:</strong>
+RMS speed is the square root of the average of squared speeds. Depends on T and Molar Mass.</p><p><strong>Formula:</strong>
+v<sub>rms</sub> = √(3RT/M)</p><p><strong>Calculation:</strong>
+Given: T=300 K, M(N₂)=28e-3 kg/mol.</p><p>v = √(3 × 8.314 × 300 / 0.028)
+v = √(7482.6 / 0.028) = √267235
 <strong>v = 517 m/s</strong></p><p>---</p>
                             </div>
                             <div class="gemini-section">

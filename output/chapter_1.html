@@ -52,11 +52,12 @@
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Scalars:</strong> Magnitude only.
-*   <strong>Examples:</strong> Mass, Speed, Energy.</p><p><strong>Vectors:</strong> Magnitude + Direction.
-*   <strong>Examples:</strong> Velocity, Force, Displacement.</p><p><strong>Position vs Distance:</strong>
-*   <strong>Distance:</strong> Total path covered (Scalar).
-*   <strong>Position:</strong> Location relative to origin with direction (Vector).</p><p>---</p>
+<strong>Concept:</strong>
+Scalars imply magnitude only, while vectors possess both magnitude and direction. Position is a vector because it specifies location relative to an origin (direction matters), whereas distance is the total path length (direction irrelevant).</p><p><strong>Formula:</strong>
+*   Scalar: Magnitude
+*   Vector: Magnitude + Direction</p><p><strong>Key Examples:</strong>
+*   <strong>Scalars:</strong> Mass, Speed, Energy.
+*   <strong>Vectors:</strong> Velocity, Force, Displacement.</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q1.1')">
@@ -88,12 +89,12 @@
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>1. Triangle Law:</strong>
-*   <strong>Use when:</strong> Vectors are sequential (head-to-tail).
-*   <strong>Statement:</strong> If two vectors are sides of a triangle, resultant is the third side (start to end).
-*   <strong>Formula:</strong> |<strong>R</strong>| = √(A² + B² + 2AB cosθ)</p><p><strong>2. Parallelogram Law:</strong>
-*   <strong>Use when:</strong> Vectors act simultaneously from one point (tail-to-tail).
-*   <strong>Statement:</strong> Resultant is the diagonal of the parallelogram formed by the two vectors.</p><p>---</p>
+<strong>Concept:</strong>
+Vector addition rules depend on how vectors are arranged. Triangle law is for sequential vectors; Parallelogram law is for co-initial vectors.</p><p><strong>Formula:</strong>
+*   <strong>Triangle Law:</strong> <strong>R</strong> = <strong>A</strong> + <strong>B</strong> (Third side closing the triangle)
+*   <strong>Resultant Magnitude:</strong> |<strong>R</strong>| = √(A² + B² + 2AB cosθ)</p><p><strong>Application:</strong>
+1.  <strong>Triangle Law:</strong> Use for sequential vectors (head-to-tail).
+2.  <strong>Parallelogram Law:</strong> Use for simultaneous vectors from one point (tail-to-tail).</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q1.2')">
@@ -125,11 +126,11 @@
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Definition:</strong> <strong>A</strong> · <strong>B</strong> = |<strong>A</strong>||<strong>B</strong>| cosθ
-(Product of magnitudes and cosine of angle).</p><p><strong>Finding Angle:</strong>
-*   cosθ = (<strong>A</strong> · <strong>B</strong>) / (|<strong>A</strong>| |<strong>B</strong>|)</p><p><strong>Perpendicular Condition:</strong>
-*   If <strong>A</strong> · <strong>B</strong> = 0, then cosθ = 0 → <strong>θ = 90°</strong>.
-*   Zero dot product = Perpendicular vectors.</p><p>---</p>
+<strong>Concept:</strong>
+The dot product is a scalar quantity obtained by multiplying magnitudes of two vectors with the cosine of the angle between them. It measures how much one vector extends in the direction of the other.</p><p><strong>Formula:</strong>
+<strong>A</strong> · <strong>B</strong> = |<strong>A</strong>||<strong>B</strong>| cosθ</p><p><strong>Key Points:</strong>
+*   <strong>Finding Angle:</strong> cosθ = (<strong>A</strong> · <strong>B</strong>) / (|<strong>A</strong>| |<strong>B</strong>|)
+*   <strong>Perpendicular Condition:</strong> If <strong>A</strong> · <strong>B</strong> = 0, then θ = 90° (Vectors are orthogonal).</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q1.3')">
@@ -161,17 +162,19 @@
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Relative Velocity:</strong> Velocity of an object observed from a moving frame.</p><p><strong>Boat Example:</strong>
+<strong>Concept:</strong>
+Relative velocity is the velocity of an object as observed from a moving reference frame. It is the vector difference between individual velocities.</p><p><strong>Formula:</strong>
+<strong>v<sub>rel</sub></strong> = <strong>v<sub>object</sub></strong> - <strong>v<sub>observer</sub></strong> (Vector Subtraction)</p><p><strong>Solution (Boat Example):</strong>
 *   <strong>v<sub>boat</sub></strong> = 10 m/s (in water)
 *   <strong>v<sub>current</sub></strong> = 4 m/s (river)
-*   <strong>Resultant</strong> = Vector sum of boat speed + current.</p><p><strong>Diagram:</strong>
+*   <strong>Resultant Velocity:</strong> <strong>v<sub>R</sub></strong> = <strong>v<sub>boat</sub></strong> + <strong>v<sub>current</sub></strong> (since current carries boat)</p><p><strong>Diagram:</strong>
       10 m/s (Boat)
         ↑
         |
 ________|____→ 4 m/s (Current)
         /
        / Resultant
-      /</p><p><strong>Meaning:</strong> An observer on the bank sees the boat move diagonally at the resultant speed.</p><p>---</p>
+      /</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q1.4')">
@@ -207,20 +210,17 @@ ________|____→ 4 m/s (Current)
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-Given: F₁ = 12 N, F₂ = 16 N, θ = 60°</p><p><strong>(a) Magnitude of Resultant:</strong>
-R = √(F₁² + F₂² + 2F₁F₂ cosθ)
+<strong>Concept:</strong>
+The resultant of two vectors acting at an angle θ is found using the Law of Cosines. The direction is found using the Sine Rule.</p><p><strong>Formula:</strong>
+*   R = √(F₁² + F₂² + 2F₁F₂ cosθ)
+*   Direction (α): sin(α)/F₂ = sin(θ)/R</p><p><strong>Calculation:</strong>
+Given: F₁ = 12 N, F₂ = 16 N, θ = 60°</p><p><strong>(a) Magnitude:</strong>
 R = √(12² + 16² + 2(12)(16) cos60°)
-R = √(144 + 256 + 2(12)(16)(0.5))
-R = √(144 + 256 + 192)
-R = √592 = <strong>24.33 N</strong></p><p><strong>(b) Angle with 12 N force (α):</strong>
-Using sine rule: sin(α)/F₂ = sin(θ)/R
-sin(α) = F₂ sin(θ) / R
-sin(α) = 16 × sin(60°) / 24.33
-sin(α) = 16 × 0.866 / 24.33
-sin(α) = 13.856 / 24.33 = 0.569
+R = √(144 + 256 + 192) = √592
+<strong>R = 24.33 N</strong></p><p><strong>(b) Angle with 12 N force (α):</strong>
+sin(α) = (16 × sin60°) / 24.33 = 13.856 / 24.33 = 0.569
 <strong>α = 34.7°</strong></p><p><strong>(c) Angle with 16 N force (β):</strong>
-β = θ - α = 60° - 34.7° = <strong>25.3°</strong></p><p>Or using: sin(β)/F₁ = sin(θ)/R
-sin(β) = 12 × sin(60°) / 24.33 = 0.427
+β = 60° - 34.7°
 <strong>β = 25.3°</strong></p><p>---</p>
                             </div>
                             <div class="gemini-section">
@@ -255,14 +255,19 @@ sin(β) = 12 × sin(60°) / 24.33 = 0.427
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*</p><p><strong>(a) Direction to head perpendicular to banks:</strong>
-To go perpendicular, the boat&#x27;s velocity component parallel to the current must equal and opposite to the current.</p><p>Let θ be the angle upstream from perpendicular.
-<div class="list-item">• Perpendicular component needed: v_⊥ = √(8² - 6²) = √(64 - 36) = √28 = 5.29 m/s</div>
-<div class="list-item">• Parallel component (upstream): v_∥ = 6 m/s</div></p><p>sin(θ) = 6/8 = 0.75
-<strong>θ = 48.6° upstream from perpendicular</strong> (or 41.4° from the bank)</p><p><strong>(b) Time to cross:</strong>
-The perpendicular component carries the boat across:
-t = width / v_⊥ = 240 / 5.29 = <strong>45.4 seconds</strong></p><p><strong>(c) Resultant velocity:</strong>
-Since boat crosses perpendicular, resultant velocity = perpendicular component = <strong>5.29 m/s perpendicular to banks</strong></p><p>(The parallel components cancel, so the boat moves straight across)</p><p>---</p>
+                                <p>*
+<strong>Concept:</strong>
+To cross a river perpendicular to flow, the boat must head upstream such that the current cancels its horizontal component. Components of velocity are independent.</p><p><strong>Formula:</strong>
+*   sinθ = v<sub>river</sub> / v<sub>boat</sub> (Direction)
+*   t = width / v<sub>perpendicular</sub> (Time)</p><p><strong>Calculation:</strong>
+<strong>(a) Direction:</strong>
+sinθ = 6 / 8 = 0.75
+<strong>θ = 48.6° upstream from vertical</strong></p><p><strong>(b) Time to Cross:</strong>
+v_⊥ = √(8² - 6²) = √28 = 5.29 m/s
+t = 240 / 5.29
+<strong>t = 45.4 s</strong></p><p><strong>(c) Resultant Velocity:</strong>
+Since horizontal components cancel, v<sub>R</sub> = v_⊥
+<strong>v<sub>R</sub> = 5.29 m/s</strong></p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q1.6')">
@@ -293,17 +298,17 @@ Since boat crosses perpendicular, resultant velocity = perpendicular component =
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*</p><p><strong>Given:</strong>
-<div class="list-item">• <strong>v<sub>A</sub></strong> = 60 km/h due East</div>
-<div class="list-item">• <strong>v<sub>B</sub></strong> = 80 km/h due North</div></p><p><strong>Velocity of B relative to A:</strong>
-<strong>v<sub>BA</sub></strong> = <strong>v<sub>B</sub></strong> - <strong>v<sub>A</sub></strong></p><p>In component form:
-<div class="list-item">• <strong>v<sub>A</sub></strong> = 60<strong>i</strong> + 0<strong>j</strong> km/h</div>
-<div class="list-item">• <strong>v<sub>B</sub></strong> = 0<strong>i</strong> + 80<strong>j</strong> km/h</div>
-<div class="list-item">• <strong>v<sub>BA</sub></strong> = (0-60)<strong>i</strong> + (80-0)<strong>j</strong> = -60<strong>i</strong> + 80<strong>j</strong> km/h</div></p><p><strong>Magnitude:</strong>
-|<strong>v<sub>BA</sub></strong>| = √((-60)² + 80²) = √(3600 + 6400) = √10000 = <strong>100 km/h</strong></p><p><strong>Direction:</strong>
-The velocity of B relative to A makes an angle with the negative x-axis (West direction):
-tan(φ) = 80/60 = 4/3
-φ = 53.1° <strong>North of West</strong> (or 126.9° from East)</p><p><strong>Interpretation:</strong> From car A&#x27;s perspective, car B appears to move at 100 km/h in a direction 53.1° North of West.</p><p>---</p>
+                                <p>*
+<strong>Concept:</strong>
+Relative velocity <strong>v<sub>BA</sub></strong> is the velocity of B as seen by A. It is obtained by vector subtraction.</p><p><strong>Formula:</strong>
+<strong>v<sub>BA</sub></strong> = <strong>v<sub>B</sub></strong> - <strong>v<sub>A</sub></strong></p><p><strong>Calculation:</strong>
+<strong>v<sub>A</sub></strong> = 60<strong>i</strong> (East)
+<strong>v<sub>B</sub></strong> = 80<strong>j</strong> (North)
+<strong>v<sub>BA</sub></strong> = -60<strong>i</strong> + 80<strong>j</strong></p><p><strong>Magnitude:</strong>
+|<strong>v<sub>BA</sub></strong>| = √((-60)² + 80²) = √10000
+<strong>|v<sub>BA</sub>| = 100 km/h</strong></p><p><strong>Direction:</strong>
+tan φ = 80/60 = 4/3
+<strong>φ = 53.1° North of West</strong></p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q1.7')">
@@ -337,14 +342,16 @@ tan(φ) = 80/60 = 4/3
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
+<strong>Concept:</strong>
+Cross product gives a perpendicular vector, Projection gives component length.</p><p><strong>Formula:</strong>
+*   <strong>A</strong> × <strong>B</strong> = Determinant or Distributive Law
+*   Projection = (<strong>A</strong>·<strong>B</strong>) / |<strong>B</strong>|</p><p><strong>Calculation:</strong>
 <strong>(a) Cross Product:</strong>
 <strong>A</strong> × <strong>B</strong> = (3<strong>i</strong> + 4<strong>j</strong>) × (<strong>i</strong> + <strong>j</strong>)
-= 3(<strong>i</strong>×<strong>i</strong>) + 3(<strong>i</strong>×<strong>j</strong>) + 4(<strong>j</strong>×<strong>i</strong>) + 4(<strong>j</strong>×<strong>j</strong>)
-= 0 + 3(<strong>k</strong>) + 4(-<strong>k</strong>) + 0
-= <strong>-k</strong></p><p><strong>(b) Projection of A on B:</strong>
-Proj = (<strong>A</strong>·<strong>B</strong>) / |<strong>B</strong>|
-<strong>A</strong>·<strong>B</strong> = (3)(1) + (4)(1) = 7
-|<strong>B</strong>| = √(1² + 1²) = √2
+= 3(<strong>i</strong>×<strong>j</strong>) + 4(<strong>j</strong>×<strong>i</strong>) = 3<strong>k</strong> - 4<strong>k</strong>
+<strong>= -k</strong></p><p><strong>(b) Projection:</strong>
+<strong>A</strong>·<strong>B</strong> = 3(1) + 4(1) = 7
+|<strong>B</strong>| = √(1²+1²) = √2
 <strong>Projection = 7/√2 = 4.95</strong></p><p>---</p>
                             </div>
                             <div class="gemini-section">

@@ -52,14 +52,12 @@
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Constant Force:</strong> W = F·s (Simple product).
-<strong>Variable Force:</strong> W = ∫ F(x) dx (Integration required).</p><p><strong>Spring Example:</strong>
-Force F = -kx (Variable, depends on x).
-Work to stretch:
-W = ∫₀ˣ kx dx = k[x²/2] = <strong>½kx²</strong></p><p><strong>Physical Differences:</strong>
-1. <strong>Graphical Interpretation:</strong>
-<div class="list-item">• Constant force: W = F × s (rectangle under F-s graph)</div>
-<div class="list-item">• Variable force: W = Area under F-s curve</div></p><p>---</p>
+<strong>Concept:</strong>
+Work depends on the nature of force. Constant force involves simple multiplication, while variable force requires integration over the path (summing small works).</p><p><strong>Formula:</strong>
+*   <strong>Constant:</strong> W = F·s
+*   <strong>Variable:</strong> W = ∫ F(x) dx
+*   <strong>Spring Work:</strong> W = ∫ kx dx = ½kx²</p><p><strong>Key Difference:</strong>
+Constant force implies uniform push/pull. Variable force (like a spring) changes magnitude with position, so average force or calculus is needed.</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q3.1')">
@@ -91,16 +89,13 @@ W = ∫₀ˣ kx dx = k[x²/2] = <strong>½kx²</strong></p><p><strong>Physical D
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Statement:</strong>
-Total Work Done = Change in Kinetic Energy
-<strong>W<sub>net</sub> = ΔK = K<sub>final</sub> - K<sub>initial</sub></strong></p><p><strong>Derivation (1D):</strong>
-W = ∫ F dx = ∫ (ma) dx
-W = m ∫ (v dv/dx) dx = m ∫ v dv
-W = m [v²/2] from u to v
-<strong>W = ½mv² - ½mu²</strong></p><p><strong>Physical Meaning:</strong>
-1. <strong>Positive Work:</strong> W &gt; 0 → ΔKE &gt; 0 → Object speeds up
-2. <strong>Negative Work:</strong> W &lt; 0 → ΔKE &lt; 0 → Object slows down
-3. <strong>Zero Work:</strong> W = 0 → ΔKE = 0 → Constant speed</p><p>---</p>
+<strong>Concept:</strong>
+The Net Work done on an object results in a change in its Kinetic Energy. This connects work (force × distance) directly to speed.</p><p><strong>Formula:</strong>
+W<sub>net</sub> = ΔK = K<sub>final</sub> - K<sub>initial</sub></p><p><strong>Derivation:</strong>
+1.  W = ∫ F dx = ∫ (ma) dx
+2.  a dx = (v dv/dx) dx = v dv
+3.  W = m ∫ v dv = m [v²/2]
+4.  <strong>W = ½mv² - ½mu²</strong></p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q3.2')">
@@ -132,13 +127,13 @@ W = m [v²/2] from u to v
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Momentum (p):</strong> p = mv (mass × velocity). Vector quantity.
-<strong>Impulse (J):</strong> J = F<sub>avg</sub> × Δt (average force × time interval). Vector quantity.</p><p><strong>Impulse-Momentum Theorem:</strong>
-Impulse equals the change in momentum: <strong>J = Δp = p<sub>final</sub> - p<sub>initial</sub></strong></p><p><strong>Airbags and Impact Time:</strong>
-<div class="list-item">• From J = F<sub>avg</sub> × Δt, we have <strong>F<sub>avg</sub> = Δp / Δt</strong>.</div>
-<div class="list-item">• Airbags increase the collision time (Δt) for the occupant.</div>
-<div class="list-item">• Since Δp (change in momentum) is fixed (from initial speed to zero), increasing Δt <strong>reduces the average force (F<sub>avg</sub>)</strong> experienced by the occupant.</div>
-<div class="list-item">• This prevents severe injury by spreading the force over a longer period.</div></p><p>---</p>
+<strong>Concept:</strong>
+Impulse is the integral of force over time, equivalent to the Change in Momentum. Airbags increase collision time to decrease force.</p><p><strong>Formula:</strong>
+*   J = F<sub>avg</sub> × Δt = Δp
+*   F<sub>avg</sub> = Δp / Δt</p><p><strong>Application (Airbags):</strong>
+*   <strong>Goal:</strong> Reduce Force (F<sub>avg</sub>).
+*   <strong>Method:</strong> Increase time (Δt) using airbag cushioning.
+*   Since Δp is fixed (impact speed to zero), increasing Δt lowers F<sub>avg</sub>.</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q3.3')">
@@ -170,13 +165,13 @@ Impulse equals the change in momentum: <strong>J = Δp = p<sub>final</sub> - p<s
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Law of Conservation of Momentum:</strong>
-In an isolated system (no external forces), the total momentum before a collision equals the total momentum after the collision.
-<strong>p<sub>before</sub> = p<sub>after</sub></strong> (m₁u₁ + m₂u₂ = m₁v₁ + m₂v₂)</p><p><strong>Why Momentum is Conserved:</strong>
-<div class="list-item">• Collision forces are internal forces (Newton&#x27;s 3rd Law: F₁₂ = -F₂₁).</div>
-<div class="list-item">• The impulse on one object is equal and opposite to the impulse on the other, leading to equal and opposite changes in momentum.</div>
-<div class="list-item">• Thus, the total momentum of the system remains constant.</div></p><p><strong>Why Kinetic Energy is NOT Conserved in Inelastic Collisions:</strong></p><p><strong>KE<sub>after</sub> &lt; KE<sub>before</sub></strong> (energy &quot;lost&quot; to heat, sound, deformation)</p><p><strong>Energy &quot;Loss&quot; Calculation:</strong>
-ΔKE = KE<sub>after</sub> - KE<sub>before</sub> &lt; 0 (negative means energy lost)</p><p>This &quot;lost&quot; energy becomes internal energy, heat, etc.</p><p><strong>Key Point:</strong> Momentum is ALWAYS conserved (vector law), but mechanical energy (KE + PE) is conserved only in elastic processes. Inelastic processes dissipate mechanical energy.</p><p>---</p>
+<strong>Concept:</strong>
+Momentum is conserved in <strong>all</strong> isolated collisions due to Newton&#x27;s 3rd Law (internal forces cancel). Kinetic Energy is only conserved in elastic collisions.</p><p><strong>Formula:</strong>
+p<sub>i</sub> = p<sub>f</sub> (m₁u₁ + m₂u₂ = m₁v₁ + m₂v₂)</p><p><strong>Why KE not conserved in Inelastic:</strong>
+In inelastic collisions, energy transforms into:
+1.  Heat/Sound.
+2.  Permanent deformation.
+3.  So, K<sub>final</sub> &lt; K<sub>initial</sub>.</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q3.4')">
@@ -211,13 +206,17 @@ In an isolated system (no external forces), the total momentum before a collisio
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*</p><p><strong>Given:</strong> F(x) = 3x + 2, m = 2 kg, initial position = 0, final position = 4 m, u = 0</p><p><strong>(a) Work Done:</strong>
-W = ∫₀⁴ F(x) dx = ∫₀⁴ (3x + 2) dx</p><p>W = [3x²/2 + 2x]₀⁴</p><p>W = [3(4)²/2 + 2(4)] - [0]</p><p>W = [3(16)/2 + 8] = [24 + 8]</p><p><strong>W = 32 Joules</strong></p><p><strong>(b) Final Velocity:</strong>
-Using work-energy theorem: W = ΔKE = ½mv² - ½mu²</p><p>32 = ½(2)v² - 0</p><p>32 = v²</p><p><strong>v = √32 = 4√2 = 5.66 m/s</strong></p><p><strong>Verification using integration:</strong>
-Using F = ma = m(dv/dt):
-3x + 2 = 2(dv/dt)</p><p>Using dv/dt = v(dv/dx):
-3x + 2 = 2v(dv/dx)</p><p>(3x + 2)dx = 2v dv</p><p>Integrating both sides:
-∫₀⁴ (3x + 2)dx = ∫₀ᵥ 2v dv</p><p>32 = [v²]₀ᵥ = v² ✓</p><p>---</p>
+                                <p>*
+<strong>Concept:</strong>
+Work is done by a variable force, so utilize integration. Then apply Work-Energy Theorem for velocity.</p><p><strong>Formula:</strong>
+*   W = ∫ F dx
+*   W = ½mv²</p><p><strong>Calculation:</strong>
+<strong>(a) Work Done:</strong>
+W = ∫₀⁴ (3x + 2) dx = [1.5x² + 2x]₀⁴
+W = 1.5(16) + 2(4) = 24 + 8 = <strong>32 J</strong></p><p><strong>(b) Final Velocity:</strong>
+32 = ½(2)v²
+v² = 32
+<strong>v = 5.66 m/s</strong></p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q3.5')">
@@ -253,22 +252,17 @@ Using F = ma = m(dv/dt):
                             <div class="answer-inner">
                                 <p>*</p><p><strong>Given:</strong>
 <div class="list-item">• Object 1: m₁ = 3 kg, u₁ = 8 m/s (let&#x27;s say rightward, positive)</div>
-<div class="list-item">• Object 2: m₂ = 2 kg, u₂ = -5 m/s (leftward, opposite, negative)</div></p><p><strong>(a) Velocity After Collision:</strong></p><p>Using conservation of momentum:
-m₁u₁ + m₂u₂ = (m₁ + m₂)v</p><p>3(8) + 2(-5) = (3 + 2)v</p><p>24 - 10 = 5v</p><p>14 = 5v</p><p><strong>v = 2.8 m/s</strong> (rightward, positive direction)</p><p><strong>(b) Kinetic Energy Before and After:</strong></p><p>KE<sub>before</sub> = ½m₁u₁² + ½m₂u₂²
-= ½(3)(8)² + ½(2)(5)²
-= ½(3)(64) + ½(2)(25)
-= 96 + 25
-= <strong>121 Joules</strong></p><p>KE<sub>after</sub> = ½(m₁ + m₂)v²
-= ½(5)(2.8)²
-= ½(5)(7.84)
-= <strong>19.6 Joules</strong></p><p><strong>(c) Loss in Kinetic Energy:</strong></p><p>ΔKE = KE<sub>after</sub> - KE<sub>before</sub>
-= 19.6 - 121
-= <strong>-101.4 Joules</strong></p><p><strong>Energy &quot;lost&quot; (converted to other forms) = 101.4 J</strong></p><p>This energy becomes:
-<div class="list-item">• Heat (warming objects)</div>
-<div class="list-item">• Sound (collision noise)</div>
-<div class="list-item">• Deformation energy</div>
-<div class="list-item">• Internal energy</div></p><p><strong>Percentage of energy lost:</strong>
-= (101.4 / 121) × 100% = <strong>83.8%</strong></p><p>Only 16.2% of initial KE remains in the moving combined mass.</p><p>---</p>
+<div class="list-item">• Object 2: m₂ = 2 kg, u₂ = -5 m/s (leftward, opposite, negative)</div></p><p><strong>Solution:</strong>
+<strong>Concept:</strong>
+Perfectly inelastic collision means objects stick together. Momentum is conserved.</p><p><strong>Formula:</strong>
+m₁u₁ + m₂u₂ = (m₁ + m₂)v</p><p><strong>Calculation:</strong>
+<strong>(a) Final Velocity:</strong>
+3(8) + 2(-5) = (3+2)v
+24 - 10 = 5v
+14 = 5v → <strong>v = 2.8 m/s</strong></p><p><strong>(b) Energy Loss:</strong>
+K<sub>i</sub> = ½(3)(64) + ½(2)(25) = 96 + 25 = 121 J
+K<sub>f</sub> = ½(5)(2.8)² = 19.6 J
+Loss = 121 - 19.6 = <strong>101.4 J</strong></p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q3.6')">
@@ -301,25 +295,13 @@ m₁u₁ + m₂u₂ = (m₁ + m₂)v</p><p>3(8) + 2(-5) = (3 + 2)v</p><p>24 - 10
                             <div class="answer-inner">
                                 <p>*</p><p><strong>Given:</strong>
 <div class="list-item">• m₁ = 4 kg, u₁ = 6 m/s</div>
-<div class="list-item">• m₂ = 2 kg, u₂ = 0</div></p><p><strong>For Elastic Collision, we use two equations:</strong></p><p>1) <strong>Conservation of Momentum:</strong>
-m₁u₁ + m₂u₂ = m₁v₁ + m₂v₂
-4(6) + 2(0) = 4v₁ + 2v₂
-24 = 4v₁ + 2v₂  ... (1)</p><p>2) <strong>Conservation of KE:</strong>
-½m₁u₁² + ½m₂u₂² = ½m₁v₁² + ½m₂v₂²
-½(4)(36) + 0 = ½(4)v₁² + ½(2)v₂²
-72 = 2v₁² + v₂²  ... (2)</p><p><strong>Using Formulas for Elastic Collision:</strong></p><p>v₁ = ((m₁ - m₂)u₁ + 2m₂u₂) / (m₁ + m₂)
-v₁ = ((4 - 2)(6) + 0) / (4 + 2)
-v₁ = (2 × 6) / 6
-<strong>v₁ = 2 m/s</strong></p><p>v₂ = ((m₂ - m₁)u₂ + 2m₁u₁) / (m₁ + m₂)
-v₂ = ((2 - 4)(0) + 2(4)(6)) / 6
-v₂ = (0 + 48) / 6
-<strong>v₂ = 8 m/s</strong></p><p><strong>Verification:</strong>
-Momentum before: 4(6) + 2(0) = 24 kg·m/s
-Momentum after: 4(2) + 2(8) = 8 + 16 = 24 kg·m/s ✓</p><p>KE before: ½(4)(36) + 0 = 72 J
-KE after: ½(4)(4) + ½(2)(64) = 8 + 64 = 72 J ✓</p><p><strong>Physical Interpretation:</strong>
-<div class="list-item">• Ball 1 slows from 6 m/s to 2 m/s (hits ball 2)</div>
-<div class="list-item">• Ball 2 accelerates from 0 to 8 m/s (being struck)</div>
-<div class="list-item">• Ball 2 moves faster than ball 1 after collision (characteristic of elastic collision with lighter object)</div></p><p>---</p>
+<div class="list-item">• m₂ = 2 kg, u₂ = 0</div></p><p><strong>Solution:</strong>
+<strong>Concept:</strong>
+Elastic collision conserves both Momentum and Kinetic Energy.</p><p><strong>Formula:</strong>
+*   m₁u₁ + m₂u₂ = m₁v₁ + m₂v₂
+*   v₁ = [(m₁-m₂)u₁ + 2m₂u₂] / (m₁+m₂)</p><p><strong>Calculation:</strong>
+m₁=4, u₁=6; m₂=2, u₂=0.</p><p>v₁ = [(2)(6)] / 6 = <strong>2 m/s</strong>
+v₂ = [2(4)(6)] / 6 = <strong>8 m/s</strong></p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q3.7')">
@@ -354,18 +336,14 @@ KE after: ½(4)(4) + ½(2)(64) = 8 + 64 = 72 J ✓</p><p><strong>Physical Interp
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*</p><p><strong>Given:</strong> m = 1500 kg, u = 20 m/s, v = 0, t₁ = 0.1 s, t₂ = 0.5 s</p><p><strong>(a) Change in Momentum:</strong>
-Δp = m(v - u) = 1500(0 - 20) = <strong>-30,000 kg·m/s</strong></p><p>The negative sign indicates the momentum change is opposite to initial motion.
-Magnitude: |Δp| = 30,000 kg·m/s</p><p><strong>(b) Average Force Without Airbag:</strong>
-Using impulse-momentum theorem:
-F<sub>avg</sub> = |Δp| / t₁ = 30,000 / 0.1 = <strong>300,000 N = 300 kN</strong></p><p>This is an enormous force! (equivalent to weight of 30,000 kg or 30 tons!)</p><p><strong>(c) Average Force With Airbag:</strong>
-F<sub>avg</sub>&#x27; = |Δp| / t₂ = 30,000 / 0.5 = <strong>60,000 N = 60 kN</strong></p><p><strong>(d) Force Reduction Factor:</strong>
-Ratio = F<sub>avg</sub> / F<sub>avg</sub>&#x27; = 300,000 / 60,000 = <strong>5 times reduction</strong></p><p>Or: Ratio = t₂ / t₁ = 0.5 / 0.1 = 5</p><p><strong>Physical Implications:</strong>
-<div class="list-item">• Without airbag: 300 kN can cause severe injuries, crushing organs</div>
-<div class="list-item">• With airbag: 60 kN spread over body, survivable force level</div>
-<div class="list-item">• By extending collision time 5×, force reduced by 5×</div>
-<div class="list-item">• Typical airbag force threshold for survival: 40-80 kN</div>
-<div class="list-item">• Therefore, airbag keeps force within survivable range</div></p><p><strong>This demonstrates why airbags are crucial safety devices!</strong></p><p>---</p>
+                                <p>*</p><p><strong>Given:</strong> m = 1500 kg, u = 20 m/s, v = 0, t₁ = 0.1 s, t₂ = 0.5 s</p><p><strong>Solution:</strong>
+<strong>Concept:</strong>
+Impulse equals change in momentum. Average force acts over time duration.</p><p><strong>Formula:</strong>
+F<sub>avg</sub> = Δp / Δt</p><p><strong>Calculation:</strong>
+<strong>(a) Δp:</strong> 1500(0 - 20) = <strong>-30,000 kgm/s</strong>
+<strong>(b) Force (No Airbag):</strong> F = 30000 / 0.1 = <strong>300 kN</strong>
+<strong>(c) Force (Airbag):</strong> F = 30000 / 0.5 = <strong>60 kN</strong>
+<strong>(d) Reduction:</strong> 300/60 = <strong>5 times</strong></p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q3.8')">
@@ -397,9 +375,10 @@ Ratio = F<sub>avg</sub> / F<sub>avg</sub>&#x27; = 300,000 / 60,000 = <strong>5 t
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Conservative:</strong> Work depends only on End Points. Loop Work = 0.
-*   Examples: Gravity, Spring Force.</p><p><strong>Non-Conservative:</strong> Work depends on Path. Energy lost as heat.
-*   Examples: Friction, Air Drag.</p><p>---</p>
+<strong>Concept:</strong>
+Forces are classified by path dependence of work.</p><p><strong>Comparision:</strong>
+*   <strong>Conservative:</strong> Work depends only on endpoints. (e.g., Gravity, Spring). W<sub>loop</sub> = 0.
+*   <strong>Non-Conservative:</strong> Work depends on path. (e.g., Friction). Energy lost as heat.</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q3.9')">
@@ -431,10 +410,12 @@ Ratio = F<sub>avg</sub> / F<sub>avg</sub>&#x27; = 300,000 / 60,000 = <strong>5 t
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Given:</strong> m=100 kg, h=20 m, t=10 s.</p><p><strong>Power (P) = Work / Time</strong>
-W = mgh = 100 × 10 × 20 = 20,000 J
+<strong>Concept:</strong>
+Power is the rate of doing work.</p><p><strong>Formula:</strong>
+P = W/t = mgh/t</p><p><strong>Calculation:</strong>
+W = 100 × 10 × 20 = 20,000 J
 P = 20,000 / 10
-<strong>P = 2,000 W = 2 kW</strong></p><p>---</p>
+<strong>P = 2000 W = 2 kW</strong></p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q3.10')">
