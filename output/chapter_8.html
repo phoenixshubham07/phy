@@ -51,35 +51,59 @@
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*
-&gt; <strong>Principle:</strong>
-&gt; For an ideal fluid streamline, the sum of Pressure Energy, Kinetic Energy, and Potential Energy per unit volume is constant.
-&gt; &quot;Where speed is high, pressure is low.&quot;</p><p><strong>Bernoulli Equation:</strong></p><p><strong>Assumptions Table:</strong></p><p>| Assumption | Meaning | Why needed? |
-| :--- | :--- | :--- |
-| <strong>Incompressible</strong> | Density $\rho$ is constant | No squeezing allowed |
-| <strong>Non-Viscous</strong> | No friction | No energy lost to heat |
-| <strong>Streamline Flow</strong> | Smooth path | No turbulence |
-| <strong>Steady Flow</strong> | Velocity constant at a point | Time independent |</p><p><strong>Energy Trade-off Explanation:</strong>
-*   Fluid has a fixed &quot;Energy Budget&quot;.
-*   If it spends budget on <strong>Speed</strong> ($v \uparrow$), it must reduce spending on <strong>Pressure</strong> ($P \downarrow$).
-*   *Application:* Airplane wings (Fast air on top = Low Pressure = Lift).</p><p><strong>Derivation:</strong>
-Consider fluid element moving along streamline.
-Work-energy theorem:
-W<sub>total</sub> = ΔKE + ΔPE</p><p>Work by pressure forces:
-W<sub>pressure</sub> = P₁A₁L₁ - P₂A₂L₂</p><p>Using continuity: A₁L₁ = A₂L₂ = ΔV (volume)
-W<sub>pressure</sub> = (P₁ - P₂)ΔV</p><p>Change in KE:
-ΔKE = ½m(v₂² - v₁²) = ½ρΔV(v₂² - v₁²)</p><p>Change in PE:
-ΔPE = mgΔh = ρgΔVΔh</p><p>Applying work-energy theorem:
-(P₁ - P₂)ΔV = ½ρΔV(v₂² - v₁²) + ρgΔVΔh</p><p>Dividing by ΔV:
-P₁ - P₂ = ½ρ(v₂² - v₁²) + ρgΔh</p><p>Rearranging:
-<strong>P₁ + ½ρv₁² + ρgh₁ = P₂ + ½ρv₂² + ρgh₂</strong> ✓</p><p><strong>Assumptions:</strong></p><p>1. <strong>Incompressible fluid:</strong> Density ρ is constant
-2. <strong>Non-viscous:</strong> No friction/viscous forces
-3. <strong>Steady flow:</strong> Velocity at any point doesn&#x27;t change with time
-4. <strong>Along a streamline:</strong> Valid only for points on same streamline
-5. <strong>No external work:</strong> No pumps or turbines</p><p><strong>Physical Meaning:</strong></p><p>Where velocity is high → pressure is low (and vice versa)</p><p>This explains:
-<div class="list-item">• Airplane wing lift (fast air over top = lower pressure)</div>
-<div class="list-item">• Water jet from pipe narrows (higher velocity in narrower region)</div>
-<div class="list-item">• Venturi effect (pressure decreases in narrow section)</div></p><p>---</p>
+                                <p>*</p>
+<p>&gt; <strong>Principle:</strong></p>
+<p>&gt; For an ideal fluid streamline, the sum of Pressure Energy, Kinetic Energy, and Potential Energy per unit volume is constant.</p>
+<p>&gt; &quot;Where speed is high, pressure is low.&quot;</p>
+<p><strong>Bernoulli Equation:</strong></p>
+<p><strong>Assumptions Table:</strong></p>
+<div class="table-container"><table><thead>
+<tr><th>Assumption</th><th>Meaning</th><th>Why needed?</th></tr>
+</thead><tbody>
+<tr><td><strong>Incompressible</strong></td><td>Density <span class="math-inline">\rho</span> is constant</td><td>No squeezing allowed</td></tr>
+<tr><td><strong>Non-Viscous</strong></td><td>No friction</td><td>No energy lost to heat</td></tr>
+<tr><td><strong>Streamline Flow</strong></td><td>Smooth path</td><td>No turbulence</td></tr>
+<tr><td><strong>Steady Flow</strong></td><td>Velocity constant at a point</td><td>Time independent</td></tr>
+</tbody></table></div>
+<p><strong>Energy Trade-off Explanation:</strong></p>
+<ul>
+<li>Fluid has a fixed &quot;Energy Budget&quot;.</li>
+<li>If it spends budget on <strong>Speed</strong> (<span class="math-inline">v \uparrow</span>), it must reduce spending on <strong>Pressure</strong> (<span class="math-inline">P \downarrow</span>).</li>
+<li><em>Application:</em> Airplane wings (Fast air on top = Low Pressure = Lift).</li>
+</ul>
+<p><strong>Derivation:</strong></p>
+<p>Consider fluid element moving along streamline.</p>
+<p>Work-energy theorem:</p>
+<p>W<sub>total</sub> = ΔKE + ΔPE</p>
+<p>Work by pressure forces:</p>
+<p>W<sub>pressure</sub> = P₁A₁L₁ - P₂A₂L₂</p>
+<p>Using continuity: A₁L₁ = A₂L₂ = ΔV (volume)</p>
+<p>W<sub>pressure</sub> = (P₁ - P₂)ΔV</p>
+<p>Change in KE:</p>
+<p>ΔKE = ½m(v₂² - v₁²) = ½ρΔV(v₂² - v₁²)</p>
+<p>Change in PE:</p>
+<p>ΔPE = mgΔh = ρgΔVΔh</p>
+<p>Applying work-energy theorem:</p>
+<p>(P₁ - P₂)ΔV = ½ρΔV(v₂² - v₁²) + ρgΔVΔh</p>
+<p>Dividing by ΔV:</p>
+<p>P₁ - P₂ = ½ρ(v₂² - v₁²) + ρgΔh</p>
+<p>Rearranging:</p>
+<p><strong>P₁ + ½ρv₁² + ρgh₁ = P₂ + ½ρv₂² + ρgh₂</strong> ✓</p>
+<p><strong>Assumptions:</strong></p>
+<p>1. <strong>Incompressible fluid:</strong> Density ρ is constant</p>
+<p>2. <strong>Non-viscous:</strong> No friction/viscous forces</p>
+<p>3. <strong>Steady flow:</strong> Velocity at any point doesn&#x27;t change with time</p>
+<p>4. <strong>Along a streamline:</strong> Valid only for points on same streamline</p>
+<p>5. <strong>No external work:</strong> No pumps or turbines</p>
+<p><strong>Physical Meaning:</strong></p>
+<p>Where velocity is high → pressure is low (and vice versa)</p>
+<p>This explains:</p>
+<ul>
+<li>Airplane wing lift (fast air over top = lower pressure)</li>
+<li>Water jet from pipe narrows (higher velocity in narrower region)</li>
+<li>Venturi effect (pressure decreases in narrow section)</li>
+</ul>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q8.1')">
@@ -110,17 +134,24 @@ P₁ - P₂ = ½ρ(v₂² - v₁²) + ρgΔh</p><p>Rearranging:
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*
-&gt; <strong>Concept:</strong>
-&gt; <strong>Conservation of Mass.</strong> The amount of water entering a pipe must equal the amount leaving it (if no leaks).</p><p><strong>Flow Relationship:</strong></p><p>| Pipe Section | Area ($A$) | Speed ($v$) |
-| :--- | :--- | :--- |
-| <strong>Wide</strong> | Large | Slow |
-| <strong>Narrow</strong> | Small | Fast |</p><p><strong>Formula:</strong>
-$$ A<sub>1</sub> v<sub>1</sub> = A<sub>2</sub> v<sub>2</sub> $$</p><p><strong>Derivation:</strong>
-1.  Mass In = Mass Out
-2.  $\rho A<sub>1</sub> (v<sub>1</sub> \Delta t) = \rho A<sub>2</sub> (v<sub>2</sub> \Delta t)$
-3.  Cancel $\rho$ and $\Delta t$.
-4.  <strong>Result:</strong> $A<sub>1</sub> v<sub>1</sub> = A<sub>2</sub> v<sub>2</sub> = Q$ (Flow Rate).</p><p>---</p>
+                                <p>*</p>
+<p>&gt; <strong>Concept:</strong></p>
+<p>&gt; <strong>Conservation of Mass.</strong> The amount of water entering a pipe must equal the amount leaving it (if no leaks).</p>
+<p><strong>Flow Relationship:</strong></p>
+<div class="table-container"><table><thead>
+<tr><th>Pipe Section</th><th>Area (<span class="math-inline">A</span>)</th><th>Speed (<span class="math-inline">v</span>)</th></tr>
+</thead><tbody>
+<tr><td><strong>Wide</strong></td><td>Large</td><td>Slow</td></tr>
+<tr><td><strong>Narrow</strong></td><td>Small</td><td>Fast</td></tr>
+</tbody></table></div>
+<p><strong>Formula:</strong></p>
+<p><div class="math-block"> A<sub>1</sub> v<sub>1</sub> = A<sub>2</sub> v<sub>2</sub> </div></p>
+<p><strong>Derivation:</strong></p>
+<p>1.  Mass In = Mass Out</p>
+<p>2.  <span class="math-inline">\rho A<sub>1</sub> (v<sub>1</sub> \Delta t) = \rho A<sub>2</sub> (v<sub>2</sub> \Delta t)</span></p>
+<p>3.  Cancel <span class="math-inline">\rho</span> and <span class="math-inline">\Delta t</span>.</p>
+<p>4.  <strong>Result:</strong> <span class="math-inline">A<sub>1</sub> v<sub>1</sub> = A<sub>2</sub> v<sub>2</sub> = Q</span> (Flow Rate).</p>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q8.2')">
@@ -147,11 +178,11 @@ $$ A<sub>1</sub> v<sub>1</sub> = A<sub>2</sub> v<sub>2</sub> $$</p><p><strong>De
                         <h3 class="question-title">Q8.3: Bernoulli's Equation Application [5 marks]</h3>
                     </div>
                     <div class="question-body">
-                        <p>Water flows through a horizontal pipe that narrows from diameter 10 cm to 5 cm. The pressure at the wide section is 50 kPa and velocity is 1 m/s. Find:
-(a) Velocity in narrow section
-(b) Pressure in narrow section
-(c) Volumetric flow rate
-(d) Why does pressure decrease in the narrow section?</p>
+                        <p>Water flows through a horizontal pipe that narrows from diameter 10 cm to 5 cm. The pressure at the wide section is 50 kPa and velocity is 1 m/s. Find:</p>
+<p>(a) Velocity in narrow section</p>
+<p>(b) Pressure in narrow section</p>
+<p>(c) Volumetric flow rate</p>
+<p>(d) Why does pressure decrease in the narrow section?</p>
                     </div>
                     <div class="answer-section">
                         <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
@@ -159,48 +190,62 @@ $$ A<sub>1</sub> v<sub>1</sub> = A<sub>2</sub> v<sub>2</sub> $$</p><p><strong>De
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*
-<strong>Concept:</strong>
-We use two main tools:
-1.  <strong>Continuity:</strong> &quot;Pipe gets narrower → Water travels faster.&quot;
-2.  <strong>Bernoulli:</strong> &quot;Water travels faster → Pressure drops.&quot;
-So, in the narrow part of the pipe, we expect high speed and low pressure.</p><p><strong>Formula:</strong>
-*   Continuity: A₁v₁ = A₂v₂
-*   Bernoulli (horizontal pipe): P₁ + ½ρv₁² = P₂ + ½ρv₂²
-*   Volumetric Flow Rate: Q = Av</p><p><strong>Calculation:</strong>
-<strong>Input Data Table:</strong></p><p>| Parameter | Wide Section (1) | Narrow Section (2) |
-| :--- | :--- | :--- |
-| <strong>Diameter ($D$)</strong> | 10 cm (0.1 m) | 5 cm (0.05 m) |
-| <strong>Radius ($r$)</strong> | 5 cm (0.05 m) | 2.5 cm (0.025 m) |
-| <strong>Pressure ($P$)</strong> | 50 kPa | ? |
-| <strong>Velocity ($v$)</strong> | 1 m/s | ? |
-*Density of water $\rho = 1000$ kg/m³*</p><p><strong>(a) Velocity in Narrow Section (v₂):</strong>
-Using continuity equation: A₁v₁ = A₂v₂
-Since A = πr², then πr₁²v₁ = πr₂²v₂
-r₁²v₁ = r₂²v₂
-v₂ = v₁ × (r₁/r₂)²
-v₂ = 1 m/s × (0.05 m / 0.025 m)²
-v₂ = 1 m/s × (2)²
-v₂ = <strong>4 m/s</strong></p><p><strong>(b) Pressure in Narrow Section (P₂):</strong>
-Using Bernoulli&#x27;s equation (horizontal pipe, h₁ = h₂):
-P₁ + ½ρv₁² = P₂ + ½ρv₂²
-P₂ = P₁ + ½ρ(v₁² - v₂²)
-P₂ = 50,000 Pa + ½(1000 kg/m³)((1 m/s)² - (4 m/s)²)
-P₂ = 50,000 + 500(1 - 16)
-P₂ = 50,000 + 500(-15)
-P₂ = 50,000 - 7,500
-P₂ = <strong>42,500 Pa = 42.5 kPa</strong></p><p><strong>(c) Volumetric Flow Rate (Q):</strong>
-Q = A₁v₁ = πr₁²v₁
-Q = π(0.05 m)² × 1 m/s
-Q = π(0.0025) m³/s
-Q ≈ <strong>0.00785 m³/s</strong> (or 7.85 L/s)</p><p><strong>(d) Why does pressure decrease in the narrow section?</strong>
-<strong>Explanation:</strong>
-From Bernoulli&#x27;s principle, the total energy (pressure energy + kinetic energy + potential energy) along a streamline remains constant.
-<div class="list-item">• As the water flows into the narrower section, its velocity must increase due to the continuity equation (conservation of mass).</div>
-<div class="list-item">• An increase in velocity means an increase in the kinetic energy (½ρv²) of the fluid.</div>
-<div class="list-item">• Since the pipe is horizontal, the potential energy (ρgh) remains constant.</div>
-<div class="list-item">• To keep the total energy constant, the pressure energy (P) must decrease to compensate for the increase in kinetic energy.</div>
-<div class="list-item">• Therefore, <strong>pressure converts to kinetic energy</strong> in the narrow section.</div></p><p>---</p>
+                                <p>*</p>
+<p><strong>Concept:</strong></p>
+<p>We use two main tools:</p>
+<p>1.  <strong>Continuity:</strong> &quot;Pipe gets narrower → Water travels faster.&quot;</p>
+<p>2.  <strong>Bernoulli:</strong> &quot;Water travels faster → Pressure drops.&quot;</p>
+<p>So, in the narrow part of the pipe, we expect high speed and low pressure.</p>
+<p><strong>Formula:</strong></p>
+<ul>
+<li>Continuity: A₁v₁ = A₂v₂</li>
+<li>Bernoulli (horizontal pipe): P₁ + ½ρv₁² = P₂ + ½ρv₂²</li>
+<li>Volumetric Flow Rate: Q = Av</li>
+</ul>
+<p><strong>Calculation:</strong></p>
+<p><strong>Input Data Table:</strong></p>
+<div class="table-container"><table><thead>
+<tr><th>Parameter</th><th>Wide Section (1)</th><th>Narrow Section (2)</th></tr>
+</thead><tbody>
+<tr><td><strong>Diameter (<span class="math-inline">D</span>)</strong></td><td>10 cm (0.1 m)</td><td>5 cm (0.05 m)</td></tr>
+<tr><td><strong>Radius (<span class="math-inline">r</span>)</strong></td><td>5 cm (0.05 m)</td><td>2.5 cm (0.025 m)</td></tr>
+<tr><td><strong>Pressure (<span class="math-inline">P</span>)</strong></td><td>50 kPa</td><td>?</td></tr>
+<tr><td><strong>Velocity (<span class="math-inline">v</span>)</strong></td><td>1 m/s</td><td>?</td></tr>
+</tbody></table></div>
+<p><em>Density of water <span class="math-inline">\rho = 1000</span> kg/m³</em></p>
+<p><strong>(a) Velocity in Narrow Section (v₂):</strong></p>
+<p>Using continuity equation: A₁v₁ = A₂v₂</p>
+<p>Since A = πr², then πr₁²v₁ = πr₂²v₂</p>
+<p>r₁²v₁ = r₂²v₂</p>
+<p>v₂ = v₁ × (r₁/r₂)²</p>
+<p>v₂ = 1 m/s × (0.05 m / 0.025 m)²</p>
+<p>v₂ = 1 m/s × (2)²</p>
+<p>v₂ = <strong>4 m/s</strong></p>
+<p><strong>(b) Pressure in Narrow Section (P₂):</strong></p>
+<p>Using Bernoulli&#x27;s equation (horizontal pipe, h₁ = h₂):</p>
+<p>P₁ + ½ρv₁² = P₂ + ½ρv₂²</p>
+<p>P₂ = P₁ + ½ρ(v₁² - v₂²)</p>
+<p>P₂ = 50,000 Pa + ½(1000 kg/m³)((1 m/s)² - (4 m/s)²)</p>
+<p>P₂ = 50,000 + 500(1 - 16)</p>
+<p>P₂ = 50,000 + 500(-15)</p>
+<p>P₂ = 50,000 - 7,500</p>
+<p>P₂ = <strong>42,500 Pa = 42.5 kPa</strong></p>
+<p><strong>(c) Volumetric Flow Rate (Q):</strong></p>
+<p>Q = A₁v₁ = πr₁²v₁</p>
+<p>Q = π(0.05 m)² × 1 m/s</p>
+<p>Q = π(0.0025) m³/s</p>
+<p>Q ≈ <strong>0.00785 m³/s</strong> (or 7.85 L/s)</p>
+<p><strong>(d) Why does pressure decrease in the narrow section?</strong></p>
+<p><strong>Explanation:</strong></p>
+<p>From Bernoulli&#x27;s principle, the total energy (pressure energy + kinetic energy + potential energy) along a streamline remains constant.</p>
+<ul>
+<li>As the water flows into the narrower section, its velocity must increase due to the continuity equation (conservation of mass).</li>
+<li>An increase in velocity means an increase in the kinetic energy (½ρv²) of the fluid.</li>
+<li>Since the pipe is horizontal, the potential energy (ρgh) remains constant.</li>
+<li>To keep the total energy constant, the pressure energy (P) must decrease to compensate for the increase in kinetic energy.</li>
+<li>Therefore, <strong>pressure converts to kinetic energy</strong> in the narrow section.</li>
+</ul>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q8.3')">
@@ -231,14 +276,19 @@ From Bernoulli&#x27;s principle, the total energy (pressure energy + kinetic ene
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*
-<strong>Archimedes&#x27; Principle:</strong>
-A body wholly or partially submerged in a fluid experiences an upward buoyant force equal to the weight of the fluid it displaces.</p><p><strong>Formula:</strong>
-<strong>F<sub>b</sub> = ρ g V</strong></p><p>Where:
-<div class="list-item">• F<sub>b</sub> = Buoyant force</div>
-<div class="list-item">• ρ = Density of the fluid</div>
-<div class="list-item">• g = Acceleration due to gravity</div>
-<div class="list-item">• V = Volume of fluid displaced (volume of submerged part of body)</div></p><p>---</p>
+                                <p>*</p>
+<p><strong>Archimedes&#x27; Principle:</strong></p>
+<p>A body wholly or partially submerged in a fluid experiences an upward buoyant force equal to the weight of the fluid it displaces.</p>
+<p><strong>Formula:</strong></p>
+<p><strong>F<sub>b</sub> = ρ g V</strong></p>
+<p>Where:</p>
+<ul>
+<li>F<sub>b</sub> = Buoyant force</li>
+<li>ρ = Density of the fluid</li>
+<li>g = Acceleration due to gravity</li>
+<li>V = Volume of fluid displaced (volume of submerged part of body)</li>
+</ul>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q8.4')">
@@ -269,11 +319,14 @@ A body wholly or partially submerged in a fluid experiences an upward buoyant fo
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*
-<strong>Statement:</strong>
-Pressure applied to an enclosed fluid is transmitted undiminished to every portion of the fluid and the walls of the containing vessel.</p><p><strong>Formula:</strong>
-<strong>P = F₁/A₁ = F₂/A₂</strong></p><p><strong>Application:</strong>
-<strong>Hydraulic Lift:</strong> A small force applied on a small piston creates a large pressure, which translates to a large force on a larger piston, effectively multiplying the force. Used in car brakes and heavy lifting.</p><p>---</p>
+                                <p>*</p>
+<p><strong>Statement:</strong></p>
+<p>Pressure applied to an enclosed fluid is transmitted undiminished to every portion of the fluid and the walls of the containing vessel.</p>
+<p><strong>Formula:</strong></p>
+<p><strong>P = F₁/A₁ = F₂/A₂</strong></p>
+<p><strong>Application:</strong></p>
+<p><strong>Hydraulic Lift:</strong> A small force applied on a small piston creates a large pressure, which translates to a large force on a larger piston, effectively multiplying the force. Used in car brakes and heavy lifting.</p>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q8.5')">
@@ -304,15 +357,20 @@ Pressure applied to an enclosed fluid is transmitted undiminished to every porti
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*
-<strong>Variation with Depth:</strong>
-Pressure increases with depth due to the weight of the liquid column above.</p><p><strong>Formula:</strong>
-<strong>P = P₀ + ρgh</strong></p><p>Where:
-<div class="list-item">• P = Pressure at depth h</div>
-<div class="list-item">• P₀ = Atmospheric pressure (at surface)</div>
-<div class="list-item">• ρ = Density of fluid</div>
-<div class="list-item">• g = Acceleration due to gravity</div>
-<div class="list-item">• h = Depth below surface</div></p><p>---</p>
+                                <p>*</p>
+<p><strong>Variation with Depth:</strong></p>
+<p>Pressure increases with depth due to the weight of the liquid column above.</p>
+<p><strong>Formula:</strong></p>
+<p><strong>P = P₀ + ρgh</strong></p>
+<p>Where:</p>
+<ul>
+<li>P = Pressure at depth h</li>
+<li>P₀ = Atmospheric pressure (at surface)</li>
+<li>ρ = Density of fluid</li>
+<li>g = Acceleration due to gravity</li>
+<li>h = Depth below surface</li>
+</ul>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q8.6')">
@@ -335,9 +393,9 @@ Pressure increases with depth due to the weight of the liquid column above.</p><
                         <h3 class="question-title">Q8.7: Hydraulic Lift Problem [5 marks]</h3>
                     </div>
                     <div class="question-body">
-                        <p>In a hydraulic lift, the input piston has a radius of 1 cm and the output piston has a radius of 10 cm. A force of 50 N is applied to the input piston.
-(a) What force is exerted by the output piston?
-(b) If the input piston moves down 10 cm, how much does the output piston move up?</p>
+                        <p>In a hydraulic lift, the input piston has a radius of 1 cm and the output piston has a radius of 10 cm. A force of 50 N is applied to the input piston.</p>
+<p>(a) What force is exerted by the output piston?</p>
+<p>(b) If the input piston moves down 10 cm, how much does the output piston move up?</p>
                     </div>
                     <div class="answer-section">
                         <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
@@ -345,15 +403,17 @@ Pressure increases with depth due to the weight of the liquid column above.</p><
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*
-<strong>(a) Force Output:</strong>
-Pascal&#x27;s Law: F₁/A₁ = F₂/A₂
-F₂ = F₁ × (A₂/A₁)
-Ratio of Areas = (r₂/r₁)² = (10/1)² = 100
-F₂ = 50 × 100 = <strong>5000 N</strong></p><p><strong>(b) Distance Moved:</strong>
-Volume Conserved: A₁d₁ = A₂d₂
-d₂ = d₁ × (A₁/A₂) = 10 × (1/100)
-<strong>d₂ = 0.1 cm</strong></p><p>---</p>
+                                <p>*</p>
+<p><strong>(a) Force Output:</strong></p>
+<p>Pascal&#x27;s Law: F₁/A₁ = F₂/A₂</p>
+<p>F₂ = F₁ × (A₂/A₁)</p>
+<p>Ratio of Areas = (r₂/r₁)² = (10/1)² = 100</p>
+<p>F₂ = 50 × 100 = <strong>5000 N</strong></p>
+<p><strong>(b) Distance Moved:</strong></p>
+<p>Volume Conserved: A₁d₁ = A₂d₂</p>
+<p>d₂ = d₁ × (A₁/A₂) = 10 × (1/100)</p>
+<p><strong>d₂ = 0.1 cm</strong></p>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q8.7')">

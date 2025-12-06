@@ -51,19 +51,27 @@
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*
-&gt; <strong>Definition:</strong>
-&gt; *   <strong>Scalar:</strong> A quantity having only magnitude (size) and no direction.
-&gt; *   <strong>Vector:</strong> A quantity having both magnitude and direction, obeying vector laws.</p><p><strong>Comparison Table:</strong></p><p>| Feature | Scalar | Vector |
-| :--- | :--- | :--- |
-| <strong>Magnitude</strong> | Yes | Yes |
-| <strong>Direction</strong> | No | Yes |
-| <strong>Addition</strong> | Simple Algebra (2+3=5) | Vector Algebra (Triangle Law) |
-| <strong>Example</strong> | Mass, Time, Speed | Force, Velocity, Position |</p><p><strong>Relationship Explanation:</strong>
-*   <strong>Distance vs. Position:</strong>
-    *   <strong>Distance (Scalar):</strong> &quot;How much ground covered?&quot; (e.g., 5 meters). Direction implies nothing.
-    *   <strong>Position (Vector):</strong> &quot;Where are you relative to start?&quot; (e.g., 5 meters *North*). Direction constitutes the definition.
-    *   *Analogy:* &quot;Distance&quot; is the odometer reading on your car. &quot;Position&quot; is the GPS pin on a map.</p><p>---</p>
+                                <p>*</p>
+<p>&gt; <strong>Definition:</strong></p>
+<p>&gt; *   <strong>Scalar:</strong> A quantity having only magnitude (size) and no direction.</p>
+<p>&gt; *   <strong>Vector:</strong> A quantity having both magnitude and direction, obeying vector laws.</p>
+<p><strong>Comparison Table:</strong></p>
+<div class="table-container"><table><thead>
+<tr><th>Feature</th><th>Scalar</th><th>Vector</th></tr>
+</thead><tbody>
+<tr><td><strong>Magnitude</strong></td><td>Yes</td><td>Yes</td></tr>
+<tr><td><strong>Direction</strong></td><td>No</td><td>Yes</td></tr>
+<tr><td><strong>Addition</strong></td><td>Simple Algebra (2+3=5)</td><td>Vector Algebra (Triangle Law)</td></tr>
+<tr><td><strong>Example</strong></td><td>Mass, Time, Speed</td><td>Force, Velocity, Position</td></tr>
+</tbody></table></div>
+<p><strong>Relationship Explanation:</strong></p>
+<ul>
+<li><strong>Distance vs. Position:</strong></li>
+<li><strong>Distance (Scalar):</strong> &quot;How much ground covered?&quot; (e.g., 5 meters). Direction implies nothing.</li>
+<li><strong>Position (Vector):</strong> &quot;Where are you relative to start?&quot; (e.g., 5 meters <em>North</em>). Direction constitutes the definition.</li>
+<li><em>Analogy:</em> &quot;Distance&quot; is the odometer reading on your car. &quot;Position&quot; is the GPS pin on a map.</li>
+</ul>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q1.1')">
@@ -94,14 +102,20 @@
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*
-&gt; <strong>Definition:</strong>
-&gt; *   <strong>Triangle Law:</strong> If two vectors are represented by two sides of a triangle in sequence, their sum is the third closing side.
-&gt; *   <strong>Parallelogram Law:</strong> If two vectors originate from a point, their sum is the diagonal of the parallelogram formed by them.</p><p><strong>Usage Table:</strong></p><p>| Method | Best Used For | Arrangement |
-| :--- | :--- | :--- |
-| <strong>Triangle Law</strong> | Displacement, Sequential Motion | Head-to-Tail (Chain) |
-| <strong>Parallelogram Law</strong> | Forces, Simultaneous Pulls | Tail-to-Tail (Concurrent) |</p><p><strong>Formula:</strong>
-$$ |R| = \sqrt{A^2 + B^2 + 2AB \cos \theta} $$</p><p>---</p>
+                                <p>*</p>
+<p>&gt; <strong>Definition:</strong></p>
+<p>&gt; *   <strong>Triangle Law:</strong> If two vectors are represented by two sides of a triangle in sequence, their sum is the third closing side.</p>
+<p>&gt; *   <strong>Parallelogram Law:</strong> If two vectors originate from a point, their sum is the diagonal of the parallelogram formed by them.</p>
+<p><strong>Usage Table:</strong></p>
+<div class="table-container"><table><thead>
+<tr><th>Method</th><th>Best Used For</th><th>Arrangement</th></tr>
+</thead><tbody>
+<tr><td><strong>Triangle Law</strong></td><td>Displacement, Sequential Motion</td><td>Head-to-Tail (Chain)</td></tr>
+<tr><td><strong>Parallelogram Law</strong></td><td>Forces, Simultaneous Pulls</td><td>Tail-to-Tail (Concurrent)</td></tr>
+</tbody></table></div>
+<p><strong>Formula:</strong></p>
+<p><div class="math-block"> |R| = \sqrt{A^2 + B^2 + 2AB \cos \theta} </div></p>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q1.2')">
@@ -132,17 +146,27 @@ $$ |R| = \sqrt{A^2 + B^2 + 2AB \cos \theta} $$</p><p>---</p>
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*
-&gt; <strong>Definition:</strong>
-&gt; The <strong>Dot Product</strong> (Scalar Product) is the product of the magnitudes of two vectors and the cosine of the angle between them. It measures &quot;parallel projection&quot;.</p><p><strong>Relationship Explanation:</strong>
-*   <strong>Scalar Result:</strong> The output is a simple number, not an arrow.
-*   <strong>Meaning:</strong> It tells you &quot;How much of Vector A is pointing along Vector B?&quot;.</p><p><strong>Formula:</strong>
-$$ \vec{A} \cdot \vec{B} = |\vec{A}| |\vec{B}| \cos \theta $$</p><p><strong>Key Cases Table:</strong></p><p>| Condition | Angle ($\theta$) | Dot Product | Interpretation |
-| :--- | :--- | :--- | :--- |
-| <strong>Parallel</strong> | $0^\circ$ | $+|A||B|$ | Maximum positive overlap |
-| <strong>Perpendicular</strong> | $90^\circ$ | $0$ | <strong>Orthogonal (No overlap)</strong> |
-| <strong>Anti-Parallel</strong> | $180^\circ$ | $-|A||B|$ | Maximum opposing overlap |</p><p><strong>Finding Angle:</strong>
-$$ \theta = \cos^{-1} \left( \frac{\vec{A} \cdot \vec{B}}{|\vec{A}| |\vec{B}|} \right) $$</p><p>---</p>
+                                <p>*</p>
+<p>&gt; <strong>Definition:</strong></p>
+<p>&gt; The <strong>Dot Product</strong> (Scalar Product) is the product of the magnitudes of two vectors and the cosine of the angle between them. It measures &quot;parallel projection&quot;.</p>
+<p><strong>Relationship Explanation:</strong></p>
+<ul>
+<li><strong>Scalar Result:</strong> The output is a simple number, not an arrow.</li>
+<li><strong>Meaning:</strong> It tells you &quot;How much of Vector A is pointing along Vector B?&quot;.</li>
+</ul>
+<p><strong>Formula:</strong></p>
+<p><div class="math-block"> \vec{A} \cdot \vec{B} = |\vec{A}| |\vec{B}| \cos \theta </div></p>
+<p><strong>Key Cases Table:</strong></p>
+<div class="table-container"><table><thead>
+<tr><th>Condition</th><th>Angle (<span class="math-inline">\theta</span>)</th><th>Dot Product</th><th>Interpretation</th></tr>
+</thead><tbody>
+<tr><td><strong>Parallel</strong></td><td><span class="math-inline">0^\circ</span></td><td><span class="math-inline">+</td><td>A</td><td>B</td><td></span></td><td>Maximum positive overlap</td></tr>
+<tr><td><strong>Perpendicular</strong></td><td><span class="math-inline">90^\circ</span></td><td><span class="math-inline">0</span></td><td><strong>Orthogonal (No overlap)</strong></td></tr>
+<tr><td><strong>Anti-Parallel</strong></td><td><span class="math-inline">180^\circ</span></td><td><span class="math-inline">-</td><td>A</td><td>B</td><td></span></td><td>Maximum opposing overlap</td></tr>
+</tbody></table></div>
+<p><strong>Finding Angle:</strong></p>
+<p><div class="math-block"> \theta = \cos^{-1} \left( \frac{\vec{A} \cdot \vec{B}}{|\vec{A}| |\vec{B}|} \right) </div></p>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q1.3')">
@@ -173,17 +197,25 @@ $$ \theta = \cos^{-1} \left( \frac{\vec{A} \cdot \vec{B}}{|\vec{A}| |\vec{B}|} \
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*
-&gt; <strong>Definition:</strong>
-&gt; <strong>Relative Velocity</strong> is the velocity of an object observed from a specific reference frame (which itself might be moving). It is the vector difference between velocities.</p><p><strong>Formula:</strong>
-$$ \vec{v}_{rel} = \vec{v}_{object} - \vec{v}_{observer} $$</p><p><strong>Boat Analysis:</strong>
-*   <strong>Scenario:</strong> Boat tries to go North ($10\hat{j}$), River flows East ($4\hat{i}$).
-*   <strong>Observer on Ground:</strong> Sees the boat moving diagonally because it participates in *both* motions.
-*   <strong>Result Matrix:</strong></p><p>| Component | Value | Source |
-| :--- | :--- | :--- |
-| <strong>Vertical</strong> | 10 m/s | Engine |
-| <strong>Horizontal</strong> | 4 m/s | Current |
-| <strong>Resultant</strong> | $\sqrt{10^2+4^2}$ | Combined Motion |</p><p>---</p>
+                                <p>*</p>
+<p>&gt; <strong>Definition:</strong></p>
+<p>&gt; <strong>Relative Velocity</strong> is the velocity of an object observed from a specific reference frame (which itself might be moving). It is the vector difference between velocities.</p>
+<p><strong>Formula:</strong></p>
+<p><div class="math-block"> \vec{v}_{rel} = \vec{v}_{object} - \vec{v}_{observer} </div></p>
+<p><strong>Boat Analysis:</strong></p>
+<ul>
+<li><strong>Scenario:</strong> Boat tries to go North (<span class="math-inline">10\hat{j}</span>), River flows East (<span class="math-inline">4\hat{i}</span>).</li>
+<li><strong>Observer on Ground:</strong> Sees the boat moving diagonally because it participates in <em>both</em> motions.</li>
+<li><strong>Result Matrix:</strong></li>
+</ul>
+<div class="table-container"><table><thead>
+<tr><th>Component</th><th>Value</th><th>Source</th></tr>
+</thead><tbody>
+<tr><td><strong>Vertical</strong></td><td>10 m/s</td><td>Engine</td></tr>
+<tr><td><strong>Horizontal</strong></td><td>4 m/s</td><td>Current</td></tr>
+<tr><td><strong>Resultant</strong></td><td><span class="math-inline">\sqrt{10^2+4^2}</span></td><td>Combined Motion</td></tr>
+</tbody></table></div>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q1.4')">
@@ -218,19 +250,27 @@ $$ \vec{v}_{rel} = \vec{v}_{object} - \vec{v}_{observer} $$</p><p><strong>Boat A
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*
-<strong>Concept:</strong>
-When two forces pull on an object at an angle, they don&#x27;t just add up simply (12+16=28 is wrong!). We use a special formula (Law of Cosines) to find the &quot;diagonal&quot; or combined effect vector. To find the exact direction, we use the Sine Rule which relates angles to side lengths.</p><p><strong>Formula:</strong>
-*   R = √(F₁² + F₂² + 2F₁F₂ cosθ)
-*   Direction (α): sin(α)/F₂ = sin(θ)/R</p><p><strong>Calculation:</strong>
-Given: F₁ = 12 N, F₂ = 16 N, θ = 60°</p><p><strong>(a) Magnitude:</strong>
-R = √(12² + 16² + 2(12)(16) cos60°)
-R = √(144 + 256 + 192) = √592
-<strong>R = 24.33 N</strong></p><p><strong>(b) Angle with 12 N force (α):</strong>
-sin(α) = (16 × sin60°) / 24.33 = 13.856 / 24.33 = 0.569
-<strong>α = 34.7°</strong></p><p><strong>(c) Angle with 16 N force (β):</strong>
-β = 60° - 34.7°
-<strong>β = 25.3°</strong></p><p>---</p>
+                                <p>*</p>
+<p><strong>Concept:</strong></p>
+<p>When two forces pull on an object at an angle, they don&#x27;t just add up simply (12+16=28 is wrong!). We use a special formula (Law of Cosines) to find the &quot;diagonal&quot; or combined effect vector. To find the exact direction, we use the Sine Rule which relates angles to side lengths.</p>
+<p><strong>Formula:</strong></p>
+<ul>
+<li>R = √(F₁² + F₂² + 2F₁F₂ cosθ)</li>
+<li>Direction (α): sin(α)/F₂ = sin(θ)/R</li>
+</ul>
+<p><strong>Calculation:</strong></p>
+<p>Given: F₁ = 12 N, F₂ = 16 N, θ = 60°</p>
+<p><strong>(a) Magnitude:</strong></p>
+<p>R = √(12² + 16² + 2(12)(16) cos60°)</p>
+<p>R = √(144 + 256 + 192) = √592</p>
+<p><strong>R = 24.33 N</strong></p>
+<p><strong>(b) Angle with 12 N force (α):</strong></p>
+<p>sin(α) = (16 × sin60°) / 24.33 = 13.856 / 24.33 = 0.569</p>
+<p><strong>α = 34.7°</strong></p>
+<p><strong>(c) Angle with 16 N force (β):</strong></p>
+<p>β = 60° - 34.7°</p>
+<p><strong>β = 25.3°</strong></p>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q1.5')">
@@ -253,10 +293,10 @@ sin(α) = (16 × sin60°) / 24.33 = 13.856 / 24.33 = 0.569
                         <h3 class="question-title">Q1.6: River-Boat Problem [5 marks]</h3>
                     </div>
                     <div class="question-body">
-                        <p>A boat capable of moving at 8 m/s in still water wants to cross a river of width 240 m. The current flows at 6 m/s. 
-(a) In what direction should the boat head to cross perpendicular to the banks?
-(b) How long will it take to cross?
-(c) What is the resultant velocity of the boat?</p>
+                        <p>A boat capable of moving at 8 m/s in still water wants to cross a river of width 240 m. The current flows at 6 m/s.</p>
+<p>(a) In what direction should the boat head to cross perpendicular to the banks?</p>
+<p>(b) How long will it take to cross?</p>
+<p>(c) What is the resultant velocity of the boat?</p>
                     </div>
                     <div class="answer-section">
                         <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
@@ -264,22 +304,31 @@ sin(α) = (16 × sin60°) / 24.33 = 13.856 / 24.33 = 0.569
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*
-<strong>Concept:</strong>
-Think of crossing a moving conveyor belt. If you aim straight across, the belt drags you sideways. To go straight across (perpendicular), you must aim *upstream* (against the flow) so the current pushes you back onto the straight path.
-*   Your engine pushes you diagonally.
-*   The river pushes you downstream.
-*   The result is you moving straight across.</p><p><strong>Formula:</strong>
-*   sinθ = v<sub>river</sub> / v<sub>boat</sub> (Direction)
-*   t = width / v<sub>perpendicular</sub> (Time)</p><p><strong>Calculation:</strong>
-<strong>(a) Direction:</strong>
-sinθ = 6 / 8 = 0.75
-<strong>θ = 48.6° upstream from vertical</strong></p><p><strong>(b) Time to Cross:</strong>
-v_⊥ = √(8² - 6²) = √28 = 5.29 m/s
-t = 240 / 5.29
-<strong>t = 45.4 s</strong></p><p><strong>(c) Resultant Velocity:</strong>
-Since horizontal components cancel, v<sub>R</sub> = v_⊥
-<strong>v<sub>R</sub> = 5.29 m/s</strong></p><p>---</p>
+                                <p>*</p>
+<p><strong>Concept:</strong></p>
+<p>Think of crossing a moving conveyor belt. If you aim straight across, the belt drags you sideways. To go straight across (perpendicular), you must aim <em>upstream</em> (against the flow) so the current pushes you back onto the straight path.</p>
+<ul>
+<li>Your engine pushes you diagonally.</li>
+<li>The river pushes you downstream.</li>
+<li>The result is you moving straight across.</li>
+</ul>
+<p><strong>Formula:</strong></p>
+<ul>
+<li>sinθ = v<sub>river</sub> / v<sub>boat</sub> (Direction)</li>
+<li>t = width / v<sub>perpendicular</sub> (Time)</li>
+</ul>
+<p><strong>Calculation:</strong></p>
+<p><strong>(a) Direction:</strong></p>
+<p>sinθ = 6 / 8 = 0.75</p>
+<p><strong>θ = 48.6° upstream from vertical</strong></p>
+<p><strong>(b) Time to Cross:</strong></p>
+<p>v_⊥ = √(8² - 6²) = √28 = 5.29 m/s</p>
+<p>t = 240 / 5.29</p>
+<p><strong>t = 45.4 s</strong></p>
+<p><strong>(c) Resultant Velocity:</strong></p>
+<p>Since horizontal components cancel, v<sub>R</sub> = v_⊥</p>
+<p><strong>v<sub>R</sub> = 5.29 m/s</strong></p>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q1.6')">
@@ -310,18 +359,28 @@ Since horizontal components cancel, v<sub>R</sub> = v_⊥
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*
-<strong>Concept:</strong>
-Imagine you are sitting in Car A. You feel like you are still, and the whole world is moving past you. To calculate the velocity of Car B relative to you (<strong>v<sub>BA</sub></strong>), you mathematically &quot;stop&quot; Car A by subtracting its velocity from Car B.
-*   <strong>Rule:</strong> Relative Velocity = (Velocity of Object) - (Velocity of Observer).</p><p><strong>Formula:</strong>
-<strong>v<sub>BA</sub></strong> = <strong>v<sub>B</sub></strong> - <strong>v<sub>A</sub></strong></p><p><strong>Calculation:</strong>
-<strong>v<sub>A</sub></strong> = 60<strong>i</strong> (East)
-<strong>v<sub>B</sub></strong> = 80<strong>j</strong> (North)
-<strong>v<sub>BA</sub></strong> = -60<strong>i</strong> + 80<strong>j</strong></p><p><strong>Magnitude:</strong>
-|<strong>v<sub>BA</sub></strong>| = √((-60)² + 80²) = √10000
-<strong>|v<sub>BA</sub>| = 100 km/h</strong></p><p><strong>Direction:</strong>
-tan φ = 80/60 = 4/3
-<strong>φ = 53.1° North of West</strong></p><p>---</p>
+                                <p>*</p>
+<p><strong>Concept:</strong></p>
+<p>Imagine you are sitting in Car A. You feel like you are still, and the whole world is moving past you. To calculate the velocity of Car B relative to you (<strong>v<sub>BA</sub></strong>), you mathematically &quot;stop&quot; Car A by subtracting its velocity from Car B.</p>
+<ul>
+<li><strong>Rule:</strong> Relative Velocity = (Velocity of Object) - (Velocity of Observer).</li>
+</ul>
+<p><strong>Formula:</strong></p>
+<p><strong>v<sub>BA</sub></strong> = <strong>v<sub>B</sub></strong> - <strong>v<sub>A</sub></strong></p>
+<p><strong>Calculation:</strong></p>
+<p><strong>v<sub>A</sub></strong> = 60<strong>i</strong> (East)</p>
+<p><strong>v<sub>B</sub></strong> = 80<strong>j</strong> (North)</p>
+<p><strong>v<sub>BA</sub></strong> = -60<strong>i</strong> + 80<strong>j</strong></p>
+<p><strong>Magnitude:</strong></p>
+<div class="table-container"><table><thead>
+<tr><th><strong>v<sub>BA</sub></strong></th><th>= √((-60)² + 80²) = √10000</th></tr>
+</thead><tbody>
+</tbody></table></div>
+<p><strong>|v<sub>BA</sub>| = 100 km/h</strong></p>
+<p><strong>Direction:</strong></p>
+<p>tan φ = 80/60 = 4/3</p>
+<p><strong>φ = 53.1° North of West</strong></p>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q1.7')">
@@ -344,9 +403,9 @@ tan φ = 80/60 = 4/3
                         <h3 class="question-title">Q1.8: Cross Product & Projection [5 marks]</h3>
                     </div>
                     <div class="question-body">
-                        <p>Given vectors <strong>A</strong> = 3<strong>i</strong> + 4<strong>j</strong> and <strong>B</strong> = <strong>i</strong> + <strong>j</strong>. Find:
-(a) The cross product <strong>A</strong> × <strong>B</strong>.
-(b) The projection of <strong>A</strong> on <strong>B</strong>.</p>
+                        <p>Given vectors <strong>A</strong> = 3<strong>i</strong> + 4<strong>j</strong> and <strong>B</strong> = <strong>i</strong> + <strong>j</strong>. Find:</p>
+<p>(a) The cross product <strong>A</strong> × <strong>B</strong>.</p>
+<p>(b) The projection of <strong>A</strong> on <strong>B</strong>.</p>
                     </div>
                     <div class="answer-section">
                         <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
@@ -354,19 +413,30 @@ tan φ = 80/60 = 4/3
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*
-<strong>Concept:</strong>
-*   <strong>Cross Product:</strong> Creates a brand new vector that sticks out <strong>perpendicular</strong> to both original vectors (like the thumb in the Right-Hand Rule).
-*   <strong>Projection:</strong> Think of it as a &quot;shadow&quot;. It calculates the length of vector A&#x27;s shadow falling onto line B.</p><p><strong>Formula:</strong>
-*   <strong>A</strong> × <strong>B</strong> = Determinant or Distributive Law
-*   Projection = (<strong>A</strong>·<strong>B</strong>) / |<strong>B</strong>|</p><p><strong>Calculation:</strong>
-<strong>(a) Cross Product:</strong>
-<strong>A</strong> × <strong>B</strong> = (3<strong>i</strong> + 4<strong>j</strong>) × (<strong>i</strong> + <strong>j</strong>)
-= 3(<strong>i</strong>×<strong>j</strong>) + 4(<strong>j</strong>×<strong>i</strong>) = 3<strong>k</strong> - 4<strong>k</strong>
-<strong>= -k</strong></p><p><strong>(b) Projection:</strong>
-<strong>A</strong>·<strong>B</strong> = 3(1) + 4(1) = 7
-|<strong>B</strong>| = √(1²+1²) = √2
-<strong>Projection = 7/√2 = 4.95</strong></p><p>---</p>
+                                <p>*</p>
+<p><strong>Concept:</strong></p>
+<ul>
+<li><strong>Cross Product:</strong> Creates a brand new vector that sticks out <strong>perpendicular</strong> to both original vectors (like the thumb in the Right-Hand Rule).</li>
+<li><strong>Projection:</strong> Think of it as a &quot;shadow&quot;. It calculates the length of vector A&#x27;s shadow falling onto line B.</li>
+</ul>
+<p><strong>Formula:</strong></p>
+<ul>
+<li><strong>A</strong> × <strong>B</strong> = Determinant or Distributive Law</li>
+<li>Projection = (<strong>A</strong>·<strong>B</strong>) / |<strong>B</strong>|</li>
+</ul>
+<p><strong>Calculation:</strong></p>
+<p><strong>(a) Cross Product:</strong></p>
+<p><strong>A</strong> × <strong>B</strong> = (3<strong>i</strong> + 4<strong>j</strong>) × (<strong>i</strong> + <strong>j</strong>)</p>
+<p>= 3(<strong>i</strong>×<strong>j</strong>) + 4(<strong>j</strong>×<strong>i</strong>) = 3<strong>k</strong> - 4<strong>k</strong></p>
+<p><strong>= -k</strong></p>
+<p><strong>(b) Projection:</strong></p>
+<p><strong>A</strong>·<strong>B</strong> = 3(1) + 4(1) = 7</p>
+<div class="table-container"><table><thead>
+<tr><th><strong>B</strong></th><th>= √(1²+1²) = √2</th></tr>
+</thead><tbody>
+</tbody></table></div>
+<p><strong>Projection = 7/√2 = 4.95</strong></p>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q1.8')">

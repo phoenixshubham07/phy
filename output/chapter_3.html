@@ -51,16 +51,24 @@
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*
-&gt; <strong>Definition:</strong>
-&gt; Work is the energy transferred to or from an object via the application of force along a displacement. For a variable force, it is the integration of force over position.</p><p><strong>Comparison Table:</strong></p><p>| Feature | Constant Force | Variable Force |
-| :--- | :--- | :--- |
-| <strong>Force Nature</strong> | Uniform magnitude | Changes with position ($x$) |
-| <strong>Calculation</strong> | Multiplication ($W = F \cdot s$) | Calculus ($W = \int F dx$) |
-| <strong>Example</strong> | Pushing a box on smooth floor | Stretching a spring ($F = -kx$) |</p><p><strong>Spring Example:</strong>
-*   As you stretch a spring, it fights back harder (Force increases).
-*   We sum up the work done for every tiny millimeter of stretch.
-*   Result: $W = \frac{1}{2}kx^2$ (Area under F-x graph).</p><p>---</p>
+                                <p>*</p>
+<p>&gt; <strong>Definition:</strong></p>
+<p>&gt; Work is the energy transferred to or from an object via the application of force along a displacement. For a variable force, it is the integration of force over position.</p>
+<p><strong>Comparison Table:</strong></p>
+<div class="table-container"><table><thead>
+<tr><th>Feature</th><th>Constant Force</th><th>Variable Force</th></tr>
+</thead><tbody>
+<tr><td><strong>Force Nature</strong></td><td>Uniform magnitude</td><td>Changes with position (<span class="math-inline">x</span>)</td></tr>
+<tr><td><strong>Calculation</strong></td><td>Multiplication (<span class="math-inline">W = F \cdot s</span>)</td><td>Calculus (<span class="math-inline">W = \int F dx</span>)</td></tr>
+<tr><td><strong>Example</strong></td><td>Pushing a box on smooth floor</td><td>Stretching a spring (<span class="math-inline">F = -kx</span>)</td></tr>
+</tbody></table></div>
+<p><strong>Spring Example:</strong></p>
+<ul>
+<li>As you stretch a spring, it fights back harder (Force increases).</li>
+<li>We sum up the work done for every tiny millimeter of stretch.</li>
+<li>Result: <span class="math-inline">W = \frac{1}{2}kx^2</span> (Area under F-x graph).</li>
+</ul>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q3.1')">
@@ -91,17 +99,21 @@
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*
-&gt; <strong>Theorem:</strong>
-&gt; The <strong>Net Work</strong> done on an object by all forces acts to change its <strong>Kinetic Energy</strong>.
-&gt; $$ W_{net} = \Delta K = K<sub>f</sub> - K<sub>i</sub> $$</p><p><strong>Derivation Flow:</strong></p><p>1.  <strong>Newton&#x27;s Second Law:</strong> $F = ma$
-2.  <strong>Definition of Work:</strong> $W = \int F dx = \int m a dx$
-3.  <strong>Chain Rule Trick:</strong> $a = \frac{dv}{dt} = \frac{dv}{dx} \frac{dx}{dt} = v \frac{dv}{dx}$
-4.  <strong>Substitution:</strong>
-    $$ W = \int m \left( v \frac{dv}{dx} \right) dx = \int m v dv $$
-5.  <strong>Integration:</strong>
-    $$ W = m \left[ \frac{v^2}{2} \right]_{u}^{v} = \frac{1}{2}mv^2 - \frac{1}{2}mu^2 $$</p><p><strong>Physical Meaning:</strong>
-It connects <strong>Force</strong> (Cause) acting over distance to <strong>Speed</strong> (Effect). If you do positive work, you speed it up. Negative work slows it down.</p><p>---</p>
+                                <p>*</p>
+<p>&gt; <strong>Theorem:</strong></p>
+<p>&gt; The <strong>Net Work</strong> done on an object by all forces acts to change its <strong>Kinetic Energy</strong>.</p>
+<p>&gt; <div class="math-block"> W_{net} = \Delta K = K<sub>f</sub> - K<sub>i</sub> </div></p>
+<p><strong>Derivation Flow:</strong></p>
+<p>1.  <strong>Newton&#x27;s Second Law:</strong> <span class="math-inline">F = ma</span></p>
+<p>2.  <strong>Definition of Work:</strong> <span class="math-inline">W = \int F dx = \int m a dx</span></p>
+<p>3.  <strong>Chain Rule Trick:</strong> <span class="math-inline">a = \frac{dv}{dt} = \frac{dv}{dx} \frac{dx}{dt} = v \frac{dv}{dx}</span></p>
+<p>4.  <strong>Substitution:</strong></p>
+<p><div class="math-block"> W = \int m \left( v \frac{dv}{dx} \right) dx = \int m v dv </div></p>
+<p>5.  <strong>Integration:</strong></p>
+<p><div class="math-block"> W = m \left[ \frac{v^2}{2} \right]_{u}^{v} = \frac{1}{2}mv^2 - \frac{1}{2}mu^2 </div></p>
+<p><strong>Physical Meaning:</strong></p>
+<p>It connects <strong>Force</strong> (Cause) acting over distance to <strong>Speed</strong> (Effect). If you do positive work, you speed it up. Negative work slows it down.</p>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q3.2')">
@@ -132,15 +144,21 @@ It connects <strong>Force</strong> (Cause) acting over distance to <strong>Speed
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*
-&gt; <strong>Definition:</strong>
-&gt; <strong>Impulse ($J$)</strong> is the product of average force and the time interval during which it acts. It equals the total Change in Momentum.</p><p><strong>Formula:</strong>
-$$ J = \int F dt = \mathbf{\Delta p} $$</p><p><strong>Real World Application: Airbags</strong>
-*   <strong>Goal:</strong> Survivor must come to rest ($\Delta p$ is fixed).
-*   <strong>Relation:</strong> $F_{avg} = \frac{\Delta p}{\Delta t}$.
-*   <strong>Mechanism:</strong> Airbags are soft; they increase the collision time ($\Delta t$) significantly.
-*   <strong>Result:</strong> Since $\Delta t$ goes UP, Impact Force ($F_{avg}$) comes DOWN.</p><p><strong>Analogy:</strong>
-Jumping onto concrete (instant stop, high pain) vs. Jumping onto a mattress (slow stop, no pain).</p><p>---</p>
+                                <p>*</p>
+<p>&gt; <strong>Definition:</strong></p>
+<p>&gt; <strong>Impulse (<span class="math-inline">J</span>)</strong> is the product of average force and the time interval during which it acts. It equals the total Change in Momentum.</p>
+<p><strong>Formula:</strong></p>
+<p><div class="math-block"> J = \int F dt = \mathbf{\Delta p} </div></p>
+<p><strong>Real World Application: Airbags</strong></p>
+<ul>
+<li><strong>Goal:</strong> Survivor must come to rest (<span class="math-inline">\Delta p</span> is fixed).</li>
+<li><strong>Relation:</strong> <span class="math-inline">F_{avg} = \frac{\Delta p}{\Delta t}</span>.</li>
+<li><strong>Mechanism:</strong> Airbags are soft; they increase the collision time (<span class="math-inline">\Delta t</span>) significantly.</li>
+<li><strong>Result:</strong> Since <span class="math-inline">\Delta t</span> goes UP, Impact Force (<span class="math-inline">F_{avg}</span>) comes DOWN.</li>
+</ul>
+<p><strong>Analogy:</strong></p>
+<p>Jumping onto concrete (instant stop, high pain) vs. Jumping onto a mattress (slow stop, no pain).</p>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q3.3')">
@@ -171,14 +189,20 @@ Jumping onto concrete (instant stop, high pain) vs. Jumping onto a mattress (slo
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*
-&gt; <strong>Law of Conservation of Momentum:</strong>
-&gt; In an isolated system (no external forces), the total momentum remains constant before and after a collision.
-&gt; $$ p_{initial} = p_{final} $$</p><p><strong>Collision Types Table:</strong></p><p>| Collision Type | Momentum | Kinetic Energy | Why? |
-| :--- | :--- | :--- | :--- |
-| <strong>Elastic</strong> | Conserved | Conserved | No deformation or heat loss. |
-| <strong>Inelastic</strong> | Conserved | <strong>Not Conserved</strong> | Energy lost to <strong>Deformation, Heat, Sound</strong>. |</p><p><strong>Reasoning:</strong>
-Momentum is conserved because internal forces (Newton&#x27;s 3rd Law) cancel out. Energy is not conserved in inelastic collisions because &quot;crumpling a clear&quot; or &quot;making a loud bang&quot; costs energy!</p><p>---</p>
+                                <p>*</p>
+<p>&gt; <strong>Law of Conservation of Momentum:</strong></p>
+<p>&gt; In an isolated system (no external forces), the total momentum remains constant before and after a collision.</p>
+<p>&gt; <div class="math-block"> p_{initial} = p_{final} </div></p>
+<p><strong>Collision Types Table:</strong></p>
+<div class="table-container"><table><thead>
+<tr><th>Collision Type</th><th>Momentum</th><th>Kinetic Energy</th><th>Why?</th></tr>
+</thead><tbody>
+<tr><td><strong>Elastic</strong></td><td>Conserved</td><td>Conserved</td><td>No deformation or heat loss.</td></tr>
+<tr><td><strong>Inelastic</strong></td><td>Conserved</td><td><strong>Not Conserved</strong></td><td>Energy lost to <strong>Deformation, Heat, Sound</strong>.</td></tr>
+</tbody></table></div>
+<p><strong>Reasoning:</strong></p>
+<p>Momentum is conserved because internal forces (Newton&#x27;s 3rd Law) cancel out. Energy is not conserved in inelastic collisions because &quot;crumpling a clear&quot; or &quot;making a loud bang&quot; costs energy!</p>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q3.4')">
@@ -213,19 +237,25 @@ Momentum is conserved because internal forces (Newton&#x27;s 3rd Law) cancel out
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*
-<strong>Concept:</strong>
-We are given a force `F = 3x + 2` that changes as the object moves (depends on x).
-1.  <strong>Find Work:</strong> Since force changes, we integrate (sum up) the force over the distance.
-2.  <strong>Find Speed:</strong> Use the Work-Energy Theorem: &quot;Total Work Done = Kinetic Energy Gained&quot;.</p><p><strong>Formula:</strong>
-*   W = ∫ F dx
-*   W = ½mv²</p><p><strong>Calculation:</strong>
-<strong>(a) Work Done:</strong>
-W = ∫₀⁴ (3x + 2) dx = [1.5x² + 2x]₀⁴
-W = 1.5(16) + 2(4) = 24 + 8 = <strong>32 J</strong></p><p><strong>(b) Final Velocity:</strong>
-32 = ½(2)v²
-v² = 32
-<strong>v = 5.66 m/s</strong></p><p>---</p>
+                                <p>*</p>
+<p><strong>Concept:</strong></p>
+<p>We are given a force `F = 3x + 2` that changes as the object moves (depends on x).</p>
+<p>1.  <strong>Find Work:</strong> Since force changes, we integrate (sum up) the force over the distance.</p>
+<p>2.  <strong>Find Speed:</strong> Use the Work-Energy Theorem: &quot;Total Work Done = Kinetic Energy Gained&quot;.</p>
+<p><strong>Formula:</strong></p>
+<ul>
+<li>W = ∫ F dx</li>
+<li>W = ½mv²</li>
+</ul>
+<p><strong>Calculation:</strong></p>
+<p><strong>(a) Work Done:</strong></p>
+<p>W = ∫₀⁴ (3x + 2) dx = [1.5x² + 2x]₀⁴</p>
+<p>W = 1.5(16) + 2(4) = 24 + 8 = <strong>32 J</strong></p>
+<p><strong>(b) Final Velocity:</strong></p>
+<p>32 = ½(2)v²</p>
+<p>v² = 32</p>
+<p><strong>v = 5.66 m/s</strong></p>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q3.5')">
@@ -248,10 +278,10 @@ v² = 32
                         <h3 class="question-title">Q3.6: Momentum Conservation - Perfectly Inelastic Collision [5 marks]</h3>
                     </div>
                     <div class="question-body">
-                        <p>A 3 kg object moving at 8 m/s collides head-on with a 2 kg object moving at 5 m/s in the opposite direction. They stick together after collision. Find:
-(a) Velocity and direction after collision
-(b) Loss in kinetic energy
-(c) Energy converted to other forms</p>
+                        <p>A 3 kg object moving at 8 m/s collides head-on with a 2 kg object moving at 5 m/s in the opposite direction. They stick together after collision. Find:</p>
+<p>(a) Velocity and direction after collision</p>
+<p>(b) Loss in kinetic energy</p>
+<p>(c) Energy converted to other forms</p>
                     </div>
                     <div class="answer-section">
                         <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
@@ -259,20 +289,30 @@ v² = 32
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*</p><p><strong>Given:</strong>
-<div class="list-item">• Object 1: m₁ = 3 kg, u₁ = 8 m/s (let&#x27;s say rightward, positive)</div>
-<div class="list-item">• Object 2: m₂ = 2 kg, u₂ = -5 m/s (leftward, opposite, negative)</div></p><p><strong>Solution:</strong>
-<strong>Concept:</strong>
-&quot;Perfectly Inelastic&quot; implies the objects crash and <strong>stick together</strong> like wet clay. They move as one single blob afterwards.
-*   <strong>Conservation:</strong> Momentum is still conserved! Total momentum before = Total momentum of the &quot;blob&quot; after.</p><p><strong>Formula:</strong>
-m₁u₁ + m₂u₂ = (m₁ + m₂)v</p><p><strong>Calculation:</strong>
-<strong>(a) Final Velocity:</strong>
-3(8) + 2(-5) = (3+2)v
-24 - 10 = 5v
-14 = 5v → <strong>v = 2.8 m/s</strong></p><p><strong>(b) Energy Loss:</strong>
-K<sub>i</sub> = ½(3)(64) + ½(2)(25) = 96 + 25 = 121 J
-K<sub>f</sub> = ½(5)(2.8)² = 19.6 J
-Loss = 121 - 19.6 = <strong>101.4 J</strong></p><p>---</p>
+                                <p>*</p>
+<p><strong>Given:</strong></p>
+<ul>
+<li>Object 1: m₁ = 3 kg, u₁ = 8 m/s (let&#x27;s say rightward, positive)</li>
+<li>Object 2: m₂ = 2 kg, u₂ = -5 m/s (leftward, opposite, negative)</li>
+</ul>
+<p><strong>Solution:</strong></p>
+<p><strong>Concept:</strong></p>
+<p>&quot;Perfectly Inelastic&quot; implies the objects crash and <strong>stick together</strong> like wet clay. They move as one single blob afterwards.</p>
+<ul>
+<li><strong>Conservation:</strong> Momentum is still conserved! Total momentum before = Total momentum of the &quot;blob&quot; after.</li>
+</ul>
+<p><strong>Formula:</strong></p>
+<p>m₁u₁ + m₂u₂ = (m₁ + m₂)v</p>
+<p><strong>Calculation:</strong></p>
+<p><strong>(a) Final Velocity:</strong></p>
+<p>3(8) + 2(-5) = (3+2)v</p>
+<p>24 - 10 = 5v</p>
+<p>14 = 5v → <strong>v = 2.8 m/s</strong></p>
+<p><strong>(b) Energy Loss:</strong></p>
+<p>K<sub>i</sub> = ½(3)(64) + ½(2)(25) = 96 + 25 = 121 J</p>
+<p>K<sub>f</sub> = ½(5)(2.8)² = 19.6 J</p>
+<p>Loss = 121 - 19.6 = <strong>101.4 J</strong></p>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q3.6')">
@@ -303,17 +343,29 @@ Loss = 121 - 19.6 = <strong>101.4 J</strong></p><p>---</p>
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*</p><p><strong>Given:</strong>
-<div class="list-item">• m₁ = 4 kg, u₁ = 6 m/s</div>
-<div class="list-item">• m₂ = 2 kg, u₂ = 0</div></p><p><strong>Solution:</strong>
-<strong>Concept:</strong>
-&quot;Elastic&quot; implies a bouncy collision (like superballs).
-*   No energy is lost to heat or deformation.
-*   We use <strong>two</strong> rules: (1) Conservation of Momentum AND (2) Conservation of Kinetic Energy. This lets us solve for the two unknown final speeds.</p><p><strong>Formula:</strong>
-*   m₁u₁ + m₂u₂ = m₁v₁ + m₂v₂
-*   v₁ = [(m₁-m₂)u₁ + 2m₂u₂] / (m₁+m₂)</p><p><strong>Calculation:</strong>
-m₁=4, u₁=6; m₂=2, u₂=0.</p><p>v₁ = [(2)(6)] / 6 = <strong>2 m/s</strong>
-v₂ = [2(4)(6)] / 6 = <strong>8 m/s</strong></p><p>---</p>
+                                <p>*</p>
+<p><strong>Given:</strong></p>
+<ul>
+<li>m₁ = 4 kg, u₁ = 6 m/s</li>
+<li>m₂ = 2 kg, u₂ = 0</li>
+</ul>
+<p><strong>Solution:</strong></p>
+<p><strong>Concept:</strong></p>
+<p>&quot;Elastic&quot; implies a bouncy collision (like superballs).</p>
+<ul>
+<li>No energy is lost to heat or deformation.</li>
+<li>We use <strong>two</strong> rules: (1) Conservation of Momentum AND (2) Conservation of Kinetic Energy. This lets us solve for the two unknown final speeds.</li>
+</ul>
+<p><strong>Formula:</strong></p>
+<ul>
+<li>m₁u₁ + m₂u₂ = m₁v₁ + m₂v₂</li>
+<li>v₁ = [(m₁-m₂)u₁ + 2m₂u₂] / (m₁+m₂)</li>
+</ul>
+<p><strong>Calculation:</strong></p>
+<p>m₁=4, u₁=6; m₂=2, u₂=0.</p>
+<p>v₁ = [(2)(6)] / 6 = <strong>2 m/s</strong></p>
+<p>v₂ = [2(4)(6)] / 6 = <strong>8 m/s</strong></p>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q3.7')">
@@ -336,11 +388,11 @@ v₂ = [2(4)(6)] / 6 = <strong>8 m/s</strong></p><p>---</p>
                         <h3 class="question-title">Q3.8: Impulse-Momentum Problem [5 marks]</h3>
                     </div>
                     <div class="question-body">
-                        <p>A car of mass 1500 kg moving at 20 m/s hits a wall. The collision lasts 0.1 seconds. The car comes to rest. Find:
-(a) Change in momentum
-(b) Average force during collision
-(c) If with an airbag the collision time extends to 0.5 seconds, what is the new average force?
-(d) How many times is the force reduced?</p>
+                        <p>A car of mass 1500 kg moving at 20 m/s hits a wall. The collision lasts 0.1 seconds. The car comes to rest. Find:</p>
+<p>(a) Change in momentum</p>
+<p>(b) Average force during collision</p>
+<p>(c) If with an airbag the collision time extends to 0.5 seconds, what is the new average force?</p>
+<p>(d) How many times is the force reduced?</p>
                     </div>
                     <div class="answer-section">
                         <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
@@ -348,17 +400,24 @@ v₂ = [2(4)(6)] / 6 = <strong>8 m/s</strong></p><p>---</p>
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*</p><p><strong>Given:</strong> m = 1500 kg, u = 20 m/s, v = 0, t₁ = 0.1 s, t₂ = 0.5 s</p><p><strong>Solution:</strong>
-<strong>Concept:</strong>
-This problem compares a &quot;hard crash&quot; vs a &quot;soft crash&quot;.
-*   <strong>Impulse:</strong> The total change in motion (Momentum) is the same in both cases (Car stops).
-*   <strong>Force:</strong> Force = (Change in Momentum) / (Time taken).
-*   If we make the time 5x longer (using airbag), the crashing force becomes 5x smaller!</p><p><strong>Formula:</strong>
-F<sub>avg</sub> = Δp / Δt</p><p><strong>Calculation:</strong>
-<strong>(a) Δp:</strong> 1500(0 - 20) = <strong>-30,000 kgm/s</strong>
-<strong>(b) Force (No Airbag):</strong> F = 30000 / 0.1 = <strong>300 kN</strong>
-<strong>(c) Force (Airbag):</strong> F = 30000 / 0.5 = <strong>60 kN</strong>
-<strong>(d) Reduction:</strong> 300/60 = <strong>5 times</strong></p><p>---</p>
+                                <p>*</p>
+<p><strong>Given:</strong> m = 1500 kg, u = 20 m/s, v = 0, t₁ = 0.1 s, t₂ = 0.5 s</p>
+<p><strong>Solution:</strong></p>
+<p><strong>Concept:</strong></p>
+<p>This problem compares a &quot;hard crash&quot; vs a &quot;soft crash&quot;.</p>
+<ul>
+<li><strong>Impulse:</strong> The total change in motion (Momentum) is the same in both cases (Car stops).</li>
+<li><strong>Force:</strong> Force = (Change in Momentum) / (Time taken).</li>
+<li>If we make the time 5x longer (using airbag), the crashing force becomes 5x smaller!</li>
+</ul>
+<p><strong>Formula:</strong></p>
+<p>F<sub>avg</sub> = Δp / Δt</p>
+<p><strong>Calculation:</strong></p>
+<p><strong>(a) Δp:</strong> 1500(0 - 20) = <strong>-30,000 kgm/s</strong></p>
+<p><strong>(b) Force (No Airbag):</strong> F = 30000 / 0.1 = <strong>300 kN</strong></p>
+<p><strong>(c) Force (Airbag):</strong> F = 30000 / 0.5 = <strong>60 kN</strong></p>
+<p><strong>(d) Reduction:</strong> 300/60 = <strong>5 times</strong></p>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q3.8')">
@@ -389,15 +448,20 @@ F<sub>avg</sub> = Δp / Δt</p><p><strong>Calculation:</strong>
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*
-&gt; <strong>Distinction:</strong>
-&gt; *   <strong>Conservative:</strong> Work done is independent of the path taken. Energy is reversible (stored as potential).
-&gt; *   <strong>Non-Conservative:</strong> Work done depends on path length. Energy is dissipated (lost as heat).</p><p><strong>Comparison Table:</strong></p><p>| Feature | Conservative | Non-Conservative |
-| :--- | :--- | :--- |
-| <strong>Path Dependence</strong> | Independent (Start $\to$ End) | Dependent (Longer path = More work) |
-| <strong>Round Trip Work</strong> | Zero | Non-Zero (Negative) |
-| <strong>Energy Storage</strong> | Stored as Potential Energy | Lost as Heat/Sound |
-| <strong>Examples</strong> | Gravity, Spring Force, Electrostatic | Friction, Air Resistance, Viscosity |</p><p>---</p>
+                                <p>*</p>
+<p>&gt; <strong>Distinction:</strong></p>
+<p>&gt; *   <strong>Conservative:</strong> Work done is independent of the path taken. Energy is reversible (stored as potential).</p>
+<p>&gt; *   <strong>Non-Conservative:</strong> Work done depends on path length. Energy is dissipated (lost as heat).</p>
+<p><strong>Comparison Table:</strong></p>
+<div class="table-container"><table><thead>
+<tr><th>Feature</th><th>Conservative</th><th>Non-Conservative</th></tr>
+</thead><tbody>
+<tr><td><strong>Path Dependence</strong></td><td>Independent (Start <span class="math-inline">\to</span> End)</td><td>Dependent (Longer path = More work)</td></tr>
+<tr><td><strong>Round Trip Work</strong></td><td>Zero</td><td>Non-Zero (Negative)</td></tr>
+<tr><td><strong>Energy Storage</strong></td><td>Stored as Potential Energy</td><td>Lost as Heat/Sound</td></tr>
+<tr><td><strong>Examples</strong></td><td>Gravity, Spring Force, Electrostatic</td><td>Friction, Air Resistance, Viscosity</td></tr>
+</tbody></table></div>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q3.9')">
@@ -428,13 +492,16 @@ F<sub>avg</sub> = Δp / Δt</p><p><strong>Calculation:</strong>
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*
-<strong>Concept:</strong>
-Power is the rate of doing work.</p><p><strong>Formula:</strong>
-P = W/t = mgh/t</p><p><strong>Calculation:</strong>
-W = 100 × 10 × 20 = 20,000 J
-P = 20,000 / 10
-<strong>P = 2000 W = 2 kW</strong></p><p>---</p>
+                                <p>*</p>
+<p><strong>Concept:</strong></p>
+<p>Power is the rate of doing work.</p>
+<p><strong>Formula:</strong></p>
+<p>P = W/t = mgh/t</p>
+<p><strong>Calculation:</strong></p>
+<p>W = 100 × 10 × 20 = 20,000 J</p>
+<p>P = 20,000 / 10</p>
+<p><strong>P = 2000 W = 2 kW</strong></p>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q3.10')">

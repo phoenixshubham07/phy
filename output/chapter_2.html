@@ -51,15 +51,23 @@
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*
-&gt; <strong>Principle:</strong>
-&gt; The horizontal and vertical components of projectile motion are <strong>completely independent</strong> of each other. Motion along one axis has zero effect on motion along the perpendicular axis.</p><p><strong>Axis Analysis Table:</strong></p><p>| Axis | Force | Acceleration | Motion Type | Equation |
-| :--- | :--- | :--- | :--- | :--- |
-| <strong>Horizontal (X)</strong> | None (0) | $a<sub>x</sub> = 0$ | <strong>Uniform Velocity</strong> | $x = u<sub>x</sub> t$ |
-| <strong>Vertical (Y)</strong> | Gravity ($mg$) | $a<sub>y</sub> = -g$ | <strong>Uniform Acceleration</strong> | $y = u<sub>y</sub> t - \frac{1}{2}gt^2$ |</p><p><strong>Reasoning:</strong>
-*   Forces are vectors.
-*   Gravity acts purely vertically (down). It has <strong>no component</strong> horizontally ($\cos 90^\circ = 0$).
-*   Therefore, the horizontal speed never changes (ignoring air), while the vertical speed changes constantly.</p><p>---</p>
+                                <p>*</p>
+<p>&gt; <strong>Principle:</strong></p>
+<p>&gt; The horizontal and vertical components of projectile motion are <strong>completely independent</strong> of each other. Motion along one axis has zero effect on motion along the perpendicular axis.</p>
+<p><strong>Axis Analysis Table:</strong></p>
+<div class="table-container"><table><thead>
+<tr><th>Axis</th><th>Force</th><th>Acceleration</th><th>Motion Type</th><th>Equation</th></tr>
+</thead><tbody>
+<tr><td><strong>Horizontal (X)</strong></td><td>None (0)</td><td><span class="math-inline">a<sub>x</sub> = 0</span></td><td><strong>Uniform Velocity</strong></td><td><span class="math-inline">x = u<sub>x</sub> t</span></td></tr>
+<tr><td><strong>Vertical (Y)</strong></td><td>Gravity (<span class="math-inline">mg</span>)</td><td><span class="math-inline">a<sub>y</sub> = -g</span></td><td><strong>Uniform Acceleration</strong></td><td><span class="math-inline">y = u<sub>y</sub> t - \frac{1}{2}gt^2</span></td></tr>
+</tbody></table></div>
+<p><strong>Reasoning:</strong></p>
+<ul>
+<li>Forces are vectors.</li>
+<li>Gravity acts purely vertically (down). It has <strong>no component</strong> horizontally (<span class="math-inline">\cos 90^\circ = 0</span>).</li>
+<li>Therefore, the horizontal speed never changes (ignoring air), while the vertical speed changes constantly.</li>
+</ul>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q2.1')">
@@ -90,16 +98,27 @@
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*</p><p>&gt; <strong>Definitions:</strong>
-&gt; *   <strong>Max Height ($H$):</strong> Vertical distance where $v<sub>y</sub> = 0$.
-&gt; *   <strong>Time of Flight ($T$):</strong> Total duration the projectile remains in air ($y_{final} = 0$).</p><p><strong>Derivation Steps:</strong></p><p>| Parameter | Condition Used | Equation Derived |
-| :--- | :--- | :--- |
-| <strong>Max Height ($H$)</strong> | At peak, vertical velocity $v<sub>y</sub> = 0$ | $$ H = \frac{u^2 \sin^2 \theta}{2g} $$ |
-| <strong>Time of Flight ($T$)</strong> | Total vertical displacement $y = 0$ | $$ T = \frac{2u \sin \theta}{g} $$ |</p><p><strong>Detailed Proof:</strong>
-1.  <strong>For H:</strong> Use $v^2 - u^2 = 2as$.
-    *   $0^2 - (u \sin \theta)^2 = 2(-g)H \implies H = \frac{u^2 \sin^2 \theta}{2g}$
-2.  <strong>For T:</strong> Use $y = ut + \frac{1}{2}at^2$.
-    *   $0 = (u \sin \theta)T - \frac{1}{2}gT^2 \implies T = \frac{2u \sin \theta}{g}$</p><p>---</p>
+                                <p>*</p>
+<p>&gt; <strong>Definitions:</strong></p>
+<p>&gt; *   <strong>Max Height (<span class="math-inline">H</span>):</strong> Vertical distance where <span class="math-inline">v<sub>y</sub> = 0</span>.</p>
+<p>&gt; *   <strong>Time of Flight (<span class="math-inline">T</span>):</strong> Total duration the projectile remains in air (<span class="math-inline">y_{final} = 0</span>).</p>
+<p><strong>Derivation Steps:</strong></p>
+<div class="table-container"><table><thead>
+<tr><th>Parameter</th><th>Condition Used</th><th>Equation Derived</th></tr>
+</thead><tbody>
+<tr><td><strong>Max Height (<span class="math-inline">H</span>)</strong></td><td>At peak, vertical velocity <span class="math-inline">v<sub>y</sub> = 0</span></td><td><div class="math-block"> H = \frac{u^2 \sin^2 \theta}{2g} </div></td></tr>
+<tr><td><strong>Time of Flight (<span class="math-inline">T</span>)</strong></td><td>Total vertical displacement <span class="math-inline">y = 0</span></td><td><div class="math-block"> T = \frac{2u \sin \theta}{g} </div></td></tr>
+</tbody></table></div>
+<p><strong>Detailed Proof:</strong></p>
+<p>1.  <strong>For H:</strong> Use <span class="math-inline">v^2 - u^2 = 2as</span>.</p>
+<ul>
+<li><span class="math-inline">0^2 - (u \sin \theta)^2 = 2(-g)H \implies H = \frac{u^2 \sin^2 \theta}{2g}</span></li>
+</ul>
+<p>2.  <strong>For T:</strong> Use <span class="math-inline">y = ut + \frac{1}{2}at^2</span>.</p>
+<ul>
+<li><span class="math-inline">0 = (u \sin \theta)T - \frac{1}{2}gT^2 \implies T = \frac{2u \sin \theta}{g}</span></li>
+</ul>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q2.2')">
@@ -130,15 +149,24 @@
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*
-&gt; <strong>Definition (Range):</strong>
-&gt; Horizontal distance covered during the time of flight. Determined by the product of horizontal velocity and total time.</p><p><strong>Formula:</strong>
-$$ R = \frac{u^2 \sin 2\theta}{g} $$</p><p><strong>Logic Table:</strong></p><p>| Case | Angle | Mathematical Reason | Result |
-| :--- | :--- | :--- | :--- |
-| <strong>Max Range</strong> | $\theta = 45^\circ$ | $\sin 2\theta$ reaches max value (1) at $90^\circ$ ($2\times45$). | $R_{max} = u^2/g$ |
-| <strong>Complementary</strong> | $90^\circ - \theta$ | $\sin(2(90-\theta)) = \sin(180-2\theta) = \sin 2\theta$ | Ranges are <strong>Equal</strong> |</p><p><strong>Interpretation:</strong>
-*   <strong>45°:</strong> The perfect compromise between &quot;Going High&quot; (Time) and &quot;Going Fast Forward&quot; (Speed).
-*   <strong>Complementary:</strong> A high lob ($60^\circ$) and a low drive ($30^\circ$) land at the same spot, though their flight times differ.</p><p>---</p>
+                                <p>*</p>
+<p>&gt; <strong>Definition (Range):</strong></p>
+<p>&gt; Horizontal distance covered during the time of flight. Determined by the product of horizontal velocity and total time.</p>
+<p><strong>Formula:</strong></p>
+<p><div class="math-block"> R = \frac{u^2 \sin 2\theta}{g} </div></p>
+<p><strong>Logic Table:</strong></p>
+<div class="table-container"><table><thead>
+<tr><th>Case</th><th>Angle</th><th>Mathematical Reason</th><th>Result</th></tr>
+</thead><tbody>
+<tr><td><strong>Max Range</strong></td><td><span class="math-inline">\theta = 45^\circ</span></td><td><span class="math-inline">\sin 2\theta</span> reaches max value (1) at <span class="math-inline">90^\circ</span> (<span class="math-inline">2\times45</span>).</td><td><span class="math-inline">R_{max} = u^2/g</span></td></tr>
+<tr><td><strong>Complementary</strong></td><td><span class="math-inline">90^\circ - \theta</span></td><td><span class="math-inline">\sin(2(90-\theta)) = \sin(180-2\theta) = \sin 2\theta</span></td><td>Ranges are <strong>Equal</strong></td></tr>
+</tbody></table></div>
+<p><strong>Interpretation:</strong></p>
+<ul>
+<li><strong>45°:</strong> The perfect compromise between &quot;Going High&quot; (Time) and &quot;Going Fast Forward&quot; (Speed).</li>
+<li><strong>Complementary:</strong> A high lob (<span class="math-inline">60^\circ</span>) and a low drive (<span class="math-inline">30^\circ</span>) land at the same spot, though their flight times differ.</li>
+</ul>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q2.3')">
@@ -165,11 +193,11 @@ $$ R = \frac{u^2 \sin 2\theta}{g} $$</p><p><strong>Logic Table:</strong></p><p>|
                         <h3 class="question-title">Q2.4: Basic Projectile Calculation [5 marks]</h3>
                     </div>
                     <div class="question-body">
-                        <p>A projectile is fired horizontally with initial velocity 40 m/s from the top of a cliff 80 m high. Find:
-(a) Time of flight
-(b) Horizontal range
-(c) Velocity when it hits the ground
-(d) Angle of velocity at impact</p>
+                        <p>A projectile is fired horizontally with initial velocity 40 m/s from the top of a cliff 80 m high. Find:</p>
+<p>(a) Time of flight</p>
+<p>(b) Horizontal range</p>
+<p>(c) Velocity when it hits the ground</p>
+<p>(d) Angle of velocity at impact</p>
                     </div>
                     <div class="answer-section">
                         <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
@@ -177,23 +205,37 @@ $$ R = \frac{u^2 \sin 2\theta}{g} $$</p><p><strong>Logic Table:</strong></p><p>|
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*
-<strong>Concept:</strong>
-<strong>Horizontal Projectile Motion:</strong> Launch angle is 0°.
-*   Initial Velocity: $u<sub>x</sub> = 40, u<sub>y</sub> = 0$.
-*   Motion acts like &quot;Free Fall&quot; + &quot;Constant Drift&quot;.</p><p><strong>Input Data Table:</strong></p><p>| Variable | Value |
-| :--- | :--- |
-| Initial Velocity ($u<sub>x</sub>$) | 40 m/s |
-| Height ($h$) | 80 m |
-| Gravity ($g$) | 10 m/s² |
-| Initial Vertical ($u<sub>y</sub>$) | 0 m/s |</p><p><strong>Calculations:</strong></p><p><strong>(a) Time of Flight ($t$):</strong>
-Using $h = \frac{1}{2}gt^2$:
-$$ 80 = \frac{1}{2}(10)t^2 \implies 16 = t^2 \implies \mathbf{t = 4 \text{ s}} $$</p><p><strong>(b) Horizontal Range ($R$):</strong>
-$$ R = u<sub>x</sub> \times t = 40 \times 4 = \mathbf{160 \text{ m}} $$</p><p><strong>(c) Final Velocity ($v$):</strong>
-*   $v<sub>x</sub> = 40$ m/s (Constant)
-*   $v<sub>y</sub> = gt = 10(4) = 40$ m/s
-*   Resultant: $v = \sqrt{40^2 + 40^2} = \mathbf{56.57 \text{ m/s}} $</p><p><strong>(d) Angle ($\alpha$):</strong>
-$$ \tan \alpha = \frac{v<sub>y</sub>}{v<sub>x</sub>} = \frac{40}{40} = 1 \implies \mathbf{\alpha = 45^\circ} $$</p><p>---</p>
+                                <p>*</p>
+<p><strong>Concept:</strong></p>
+<p><strong>Horizontal Projectile Motion:</strong> Launch angle is 0°.</p>
+<ul>
+<li>Initial Velocity: <span class="math-inline">u<sub>x</sub> = 40, u<sub>y</sub> = 0</span>.</li>
+<li>Motion acts like &quot;Free Fall&quot; + &quot;Constant Drift&quot;.</li>
+</ul>
+<p><strong>Input Data Table:</strong></p>
+<div class="table-container"><table><thead>
+<tr><th>Variable</th><th>Value</th></tr>
+</thead><tbody>
+<tr><td>Initial Velocity (<span class="math-inline">u<sub>x</sub></span>)</td><td>40 m/s</td></tr>
+<tr><td>Height (<span class="math-inline">h</span>)</td><td>80 m</td></tr>
+<tr><td>Gravity (<span class="math-inline">g</span>)</td><td>10 m/s²</td></tr>
+<tr><td>Initial Vertical (<span class="math-inline">u<sub>y</sub></span>)</td><td>0 m/s</td></tr>
+</tbody></table></div>
+<p><strong>Calculations:</strong></p>
+<p><strong>(a) Time of Flight (<span class="math-inline">t</span>):</strong></p>
+<p>Using <span class="math-inline">h = \frac{1}{2}gt^2</span>:</p>
+<p><div class="math-block"> 80 = \frac{1}{2}(10)t^2 \implies 16 = t^2 \implies \mathbf{t = 4 \text{ s}} </div></p>
+<p><strong>(b) Horizontal Range (<span class="math-inline">R</span>):</strong></p>
+<p><div class="math-block"> R = u<sub>x</sub> \times t = 40 \times 4 = \mathbf{160 \text{ m}} </div></p>
+<p><strong>(c) Final Velocity (<span class="math-inline">v</span>):</strong></p>
+<ul>
+<li><span class="math-inline">v<sub>x</sub> = 40</span> m/s (Constant)</li>
+<li><span class="math-inline">v<sub>y</sub> = gt = 10(4) = 40</span> m/s</li>
+<li>Resultant: <span class="math-inline">v = \sqrt{40^2 + 40^2} = \mathbf{56.57 \text{ m/s}} </span></li>
+</ul>
+<p><strong>(d) Angle (<span class="math-inline">\alpha</span>):</strong></p>
+<p><div class="math-block"> \tan \alpha = \frac{v<sub>y</sub>}{v<sub>x</sub>} = \frac{40}{40} = 1 \implies \mathbf{\alpha = 45^\circ} </div></p>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q2.4')">
@@ -216,12 +258,12 @@ $$ \tan \alpha = \frac{v<sub>y</sub>}{v<sub>x</sub>} = \frac{40}{40} = 1 \implie
                         <h3 class="question-title">Q2.5: Projectile at an Angle [5 marks]</h3>
                     </div>
                     <div class="question-body">
-                        <p>A projectile is launched at 30° to the horizontal with initial speed 50 m/s. Find:
-(a) Maximum height reached
-(b) Time to reach maximum height
-(c) Horizontal range
-(d) Time of flight
-(Use g = 10 m/s²)</p>
+                        <p>A projectile is launched at 30° to the horizontal with initial speed 50 m/s. Find:</p>
+<p>(a) Maximum height reached</p>
+<p>(b) Time to reach maximum height</p>
+<p>(c) Horizontal range</p>
+<p>(d) Time of flight</p>
+<p>(Use g = 10 m/s²)</p>
                     </div>
                     <div class="answer-section">
                         <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
@@ -229,19 +271,30 @@ $$ \tan \alpha = \frac{v<sub>y</sub>}{v<sub>x</sub>} = \frac{40}{40} = 1 \implie
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*
-<strong>Concept:</strong>
-This is a standard &quot;cannonball&quot; problem. We take the launch velocity (50 m/s) and split it into two parts:
-*   <strong>Upward part (u sinθ):</strong> Fights gravity, decides height and time.
-*   <strong>Forward part (u cosθ):</strong> Drives the distance (range).</p><p><strong>Formula:</strong>
-*   H = (u² sin²θ) / 2g
-*   R = (u² sin2θ) / g
-*   T = (2u sinθ) / g</p><p><strong>Calculation:</strong>
-Given: u=50, θ=30°, g=10.</p><p><strong>(a) Max Height:</strong>
-H = (50² × 0.5²) / 20 = 625/20 = <strong>31.25 m</strong></p><p><strong>(b) Time to Max Height:</strong>
-t = (u sinθ)/g = (50×0.5)/10 = <strong>2.5 s</strong></p><p><strong>(c) Range:</strong>
-R = (2500 × sin60°)/10 = 250(0.866) = <strong>216.5 m</strong></p><p><strong>(d) Total Time:</strong>
-T = 2 × 2.5 = <strong>5 s</strong></p><p>---</p>
+                                <p>*</p>
+<p><strong>Concept:</strong></p>
+<p>This is a standard &quot;cannonball&quot; problem. We take the launch velocity (50 m/s) and split it into two parts:</p>
+<ul>
+<li><strong>Upward part (u sinθ):</strong> Fights gravity, decides height and time.</li>
+<li><strong>Forward part (u cosθ):</strong> Drives the distance (range).</li>
+</ul>
+<p><strong>Formula:</strong></p>
+<ul>
+<li>H = (u² sin²θ) / 2g</li>
+<li>R = (u² sin2θ) / g</li>
+<li>T = (2u sinθ) / g</li>
+</ul>
+<p><strong>Calculation:</strong></p>
+<p>Given: u=50, θ=30°, g=10.</p>
+<p><strong>(a) Max Height:</strong></p>
+<p>H = (50² × 0.5²) / 20 = 625/20 = <strong>31.25 m</strong></p>
+<p><strong>(b) Time to Max Height:</strong></p>
+<p>t = (u sinθ)/g = (50×0.5)/10 = <strong>2.5 s</strong></p>
+<p><strong>(c) Range:</strong></p>
+<p>R = (2500 × sin60°)/10 = 250(0.866) = <strong>216.5 m</strong></p>
+<p><strong>(d) Total Time:</strong></p>
+<p>T = 2 × 2.5 = <strong>5 s</strong></p>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q2.5')">
@@ -272,17 +325,22 @@ T = 2 × 2.5 = <strong>5 s</strong></p><p>---</p>
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*
-<strong>Concept:</strong>
-We need to find the height (y) of the ball exactly when it is 30m away (x=30).
-Think of the path as a curve (parabola). We use the <strong>Equation of Trajectory</strong> which gives us the height &#x27;y&#x27; for any horizontal distance &#x27;x&#x27;. If at x=30, the ball&#x27;s height y is more than 5m, it clears the wall!</p><p><strong>Formula:</strong>
-Trajectory Equation: y = x tanθ - (gx²)/(2u² cos²θ)</p><p><strong>Calculation:</strong>
-x = 30, θ = 37°, u = 20.</p><p>y = 30(0.75) - [10(900)] / [2(400)(0.64)]
-y = 22.5 - 9000/512
-y = 22.5 - 17.58
-<strong>y = 4.92 m</strong></p><p><strong>Conclusion:</strong>
-Wall height = 5 m. Projectile height = 4.92 m.
-<strong>Ball falls short by 0.08 m (Hits the wall).</strong></p><p>---</p>
+                                <p>*</p>
+<p><strong>Concept:</strong></p>
+<p>We need to find the height (y) of the ball exactly when it is 30m away (x=30).</p>
+<p>Think of the path as a curve (parabola). We use the <strong>Equation of Trajectory</strong> which gives us the height &#x27;y&#x27; for any horizontal distance &#x27;x&#x27;. If at x=30, the ball&#x27;s height y is more than 5m, it clears the wall!</p>
+<p><strong>Formula:</strong></p>
+<p>Trajectory Equation: y = x tanθ - (gx²)/(2u² cos²θ)</p>
+<p><strong>Calculation:</strong></p>
+<p>x = 30, θ = 37°, u = 20.</p>
+<p>y = 30(0.75) - [10(900)] / [2(400)(0.64)]</p>
+<p>y = 22.5 - 9000/512</p>
+<p>y = 22.5 - 17.58</p>
+<p><strong>y = 4.92 m</strong></p>
+<p><strong>Conclusion:</strong></p>
+<p>Wall height = 5 m. Projectile height = 4.92 m.</p>
+<p><strong>Ball falls short by 0.08 m (Hits the wall).</strong></p>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q2.6')">
@@ -313,14 +371,19 @@ Wall height = 5 m. Projectile height = 4.92 m.
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*
-<strong>Concept:</strong>
-The catch is that the second cricketer is standing <strong>60m away</strong>, but we calculate the ball&#x27;s natural range first. If the ball naturally lands at 58m, it will never reach the guy at 60m in the air! It will bounce on the ground first. So the &quot;catch height&quot; is effectively ground level.</p><p><strong>Formula:</strong>
-y = x tanθ - (gx²)/(2u² cos²θ)</p><p><strong>Calculation:</strong>
-x = 60 m, u = 25 m/s, θ = 35°.
-Actual Range R = (625 × 0.94)/10 = 58.75 m.</p><p>Since target distance 60 m &gt; Range 58.75 m, the ball hits the ground before reaching the fielder.
-<strong>Height at x=60 m is effectively 0 (Ground level).</strong></p><p><strong>Conclusion:</strong>
-Fielder can catch it at ground level (0 m) if he moves slightly forward to 58.75 m.</p><p>---</p>
+                                <p>*</p>
+<p><strong>Concept:</strong></p>
+<p>The catch is that the second cricketer is standing <strong>60m away</strong>, but we calculate the ball&#x27;s natural range first. If the ball naturally lands at 58m, it will never reach the guy at 60m in the air! It will bounce on the ground first. So the &quot;catch height&quot; is effectively ground level.</p>
+<p><strong>Formula:</strong></p>
+<p>y = x tanθ - (gx²)/(2u² cos²θ)</p>
+<p><strong>Calculation:</strong></p>
+<p>x = 60 m, u = 25 m/s, θ = 35°.</p>
+<p>Actual Range R = (625 × 0.94)/10 = 58.75 m.</p>
+<p>Since target distance 60 m &gt; Range 58.75 m, the ball hits the ground before reaching the fielder.</p>
+<p><strong>Height at x=60 m is effectively 0 (Ground level).</strong></p>
+<p><strong>Conclusion:</strong></p>
+<p>Fielder can catch it at ground level (0 m) if he moves slightly forward to 58.75 m.</p>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q2.7')">
@@ -351,17 +414,23 @@ Fielder can catch it at ground level (0 m) if he moves slightly forward to 58.75
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*
-<strong>Concept:</strong>
-We usually have two equations: one for x (distance) involving time &#x27;t&#x27;, and one for y (height) involving time &#x27;t&#x27;.
-To see the *shape* of the path, we need to remove &#x27;t&#x27; from the picture. By plugging the time from x-equation into the y-equation, we get a single formula linking Height (y) directly to Distance (x). This formula looks like `y = ax - bx²`, which is the mathematical shape of a Parabola.</p><p><strong>Formula:</strong>
-*   x = (u cosθ)t
-*   y = (u sinθ)t - ½gt²</p><p><strong>Derivation:</strong>
-1.  From x-eqn: t = x / (u cosθ)
-2.  Substitute into y-eqn:
-    y = (u sinθ)[x / (u cosθ)] - ½g[x / (u cosθ)]²
-    <strong>y = x tanθ - (gx²)/(2u²cos²θ)</strong></p><p><strong>Conclusion:</strong>
-This calculates a parabola ($y = ax - bx^2$).</p><p>---</p>
+                                <p>*</p>
+<p><strong>Concept:</strong></p>
+<p>We usually have two equations: one for x (distance) involving time &#x27;t&#x27;, and one for y (height) involving time &#x27;t&#x27;.</p>
+<p>To see the <em>shape</em> of the path, we need to remove &#x27;t&#x27; from the picture. By plugging the time from x-equation into the y-equation, we get a single formula linking Height (y) directly to Distance (x). This formula looks like `y = ax - bx²`, which is the mathematical shape of a Parabola.</p>
+<p><strong>Formula:</strong></p>
+<ul>
+<li>x = (u cosθ)t</li>
+<li>y = (u sinθ)t - ½gt²</li>
+</ul>
+<p><strong>Derivation:</strong></p>
+<p>1.  From x-eqn: t = x / (u cosθ)</p>
+<p>2.  Substitute into y-eqn:</p>
+<p>y = (u sinθ)[x / (u cosθ)] - ½g[x / (u cosθ)]²</p>
+<p><strong>y = x tanθ - (gx²)/(2u²cos²θ)</strong></p>
+<p><strong>Conclusion:</strong></p>
+<p>This calculates a parabola (<span class="math-inline">y = ax - bx^2</span>).</p>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q2.8')">

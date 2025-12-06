@@ -51,14 +51,21 @@
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*
-&gt; <strong>Definition:</strong>
-&gt; <strong>Moment of Inertia ($I$)</strong> is the rotational equivalent of mass. It measures an object&#x27;s resistance to angular acceleration.</p><p><strong>Mass vs. Moment of Inertia:</strong></p><p>| Property | Linear Motion (Mass $m$) | Rotational Motion (MOI $I$) |
-| :--- | :--- | :--- |
-| <strong>Role</strong> | Resistance to Force | Resistance to Torque |
-| <strong>Dependence</strong> | Amount of Matter | Amount of Matter + <strong>Distribution ($r^2$)</strong> |
-| <strong>Equation</strong> | $F = ma$ | $\tau = I \alpha$ |</p><p>*Rod leads to $ML^2/12$ if center, $ML^2/3$ if end.*</p><p><strong>Formula:</strong>
-$$ I = \int r^2 dm $$</p><p>---</p>
+                                <p>*</p>
+<p>&gt; <strong>Definition:</strong></p>
+<p>&gt; <strong>Moment of Inertia (<span class="math-inline">I</span>)</strong> is the rotational equivalent of mass. It measures an object&#x27;s resistance to angular acceleration.</p>
+<p><strong>Mass vs. Moment of Inertia:</strong></p>
+<div class="table-container"><table><thead>
+<tr><th>Property</th><th>Linear Motion (Mass <span class="math-inline">m</span>)</th><th>Rotational Motion (MOI <span class="math-inline">I</span>)</th></tr>
+</thead><tbody>
+<tr><td><strong>Role</strong></td><td>Resistance to Force</td><td>Resistance to Torque</td></tr>
+<tr><td><strong>Dependence</strong></td><td>Amount of Matter</td><td>Amount of Matter + <strong>Distribution (<span class="math-inline">r^2</span>)</strong></td></tr>
+<tr><td><strong>Equation</strong></td><td><span class="math-inline">F = ma</span></td><td><span class="math-inline">\tau = I \alpha</span></td></tr>
+</tbody></table></div>
+<p><em>Rod leads to <span class="math-inline">ML^2/12</span> if center, <span class="math-inline">ML^2/3</span> if end.</em></p>
+<p><strong>Formula:</strong></p>
+<p><div class="math-block"> I = \int r^2 dm </div></p>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q4.1')">
@@ -89,13 +96,19 @@ $$ I = \int r^2 dm $$</p><p>---</p>
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*
-&gt; <strong>Concept:</strong>
-&gt; <strong>Rolling Without Slipping</strong> is a hybrid motion: Translation of Center + Rotation about Center. The point of contact is instantaneously at rest ($v = \omega r$).</p><p><strong>Energy Comparison:</strong></p><p>| Motion Type | Energy Components | Final Velocity Formula | Speed Rank |
-| :--- | :--- | :--- | :--- |
-| <strong>Sliding</strong> | Only Translational KE ($\frac{1}{2}mv^2$) | $v = \sqrt{2gh}$ | <strong>Fastest</strong> |
-| <strong>Rolling</strong> | Trans KE + Rot KE ($\frac{1}{2}I\omega^2$) | $v = \sqrt{\frac{2gh}{1+k^2/r^2}}$ | <strong>Slower</strong> |</p><p><strong>Reasoning:</strong>
-In rolling, some &quot;Potential Energy&quot; budget is spent on &quot;Spinning&quot;. In sliding, 100% of the budget goes to &quot;Moving Forward&quot;. Thus, rolling is slower.</p><p>---</p>
+                                <p>*</p>
+<p>&gt; <strong>Concept:</strong></p>
+<p>&gt; <strong>Rolling Without Slipping</strong> is a hybrid motion: Translation of Center + Rotation about Center. The point of contact is instantaneously at rest (<span class="math-inline">v = \omega r</span>).</p>
+<p><strong>Energy Comparison:</strong></p>
+<div class="table-container"><table><thead>
+<tr><th>Motion Type</th><th>Energy Components</th><th>Final Velocity Formula</th><th>Speed Rank</th></tr>
+</thead><tbody>
+<tr><td><strong>Sliding</strong></td><td>Only Translational KE (<span class="math-inline">\frac{1}{2}mv^2</span>)</td><td><span class="math-inline">v = \sqrt{2gh}</span></td><td><strong>Fastest</strong></td></tr>
+<tr><td><strong>Rolling</strong></td><td>Trans KE + Rot KE (<span class="math-inline">\frac{1}{2}I\omega^2</span>)</td><td><span class="math-inline">v = \sqrt{\frac{2gh}{1+k^2/r^2}}</span></td><td><strong>Slower</strong></td></tr>
+</tbody></table></div>
+<p><strong>Reasoning:</strong></p>
+<p>In rolling, some &quot;Potential Energy&quot; budget is spent on &quot;Spinning&quot;. In sliding, 100% of the budget goes to &quot;Moving Forward&quot;. Thus, rolling is slower.</p>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q4.2')">
@@ -126,14 +139,18 @@ In rolling, some &quot;Potential Energy&quot; budget is spent on &quot;Spinning&
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*
-&gt; <strong>Definition:</strong>
-&gt; A satellite that appears <strong>stationary</strong> relative to a fixed point on Earth. It orbits at the exact same angular speed as Earth&#x27;s rotation.</p><p><strong>Essential Conditions:</strong></p><p>1.  <strong>Time Period:</strong> Must be exactly <strong>24 hours</strong> (sync with Earth).
-2.  <strong>Plane:</strong> Must orbit in the <strong>Equatorial Plane</strong> (0° latitude).
-3.  <strong>Direction:</strong> Must rotate <strong>West to East</strong> (same as Earth).</p><p><strong>Radius Calculation:</strong>
-Since $T$ is fixed (24h) and $M$ (Earth mass) is fixed, Kepler&#x27;s Law dictates a specific radius:
-$$ r^3 = \frac{GMT^2}{4\pi^2} \implies r \approx 42,000 \text{ km} $$
-There is only *one* parking spot for a 24-hour orbit.</p><p>---</p>
+                                <p>*</p>
+<p>&gt; <strong>Definition:</strong></p>
+<p>&gt; A satellite that appears <strong>stationary</strong> relative to a fixed point on Earth. It orbits at the exact same angular speed as Earth&#x27;s rotation.</p>
+<p><strong>Essential Conditions:</strong></p>
+<p>1.  <strong>Time Period:</strong> Must be exactly <strong>24 hours</strong> (sync with Earth).</p>
+<p>2.  <strong>Plane:</strong> Must orbit in the <strong>Equatorial Plane</strong> (0° latitude).</p>
+<p>3.  <strong>Direction:</strong> Must rotate <strong>West to East</strong> (same as Earth).</p>
+<p><strong>Radius Calculation:</strong></p>
+<p>Since <span class="math-inline">T</span> is fixed (24h) and <span class="math-inline">M</span> (Earth mass) is fixed, Kepler&#x27;s Law dictates a specific radius:</p>
+<p><div class="math-block"> r^3 = \frac{GMT^2}{4\pi^2} \implies r \approx 42,000 \text{ km} </div></p>
+<p>There is only <em>one</em> parking spot for a 24-hour orbit.</p>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q4.3')">
@@ -160,11 +177,12 @@ There is only *one* parking spot for a 24-hour orbit.</p><p>---</p>
                         <h3 class="question-title">Q4.4: Rolling Sphere on Incline [5 marks]</h3>
                     </div>
                     <div class="question-body">
-                        <p>A uniform solid sphere of radius 0.2 m and mass 2 kg rolls without slipping down an incline of height 5 m. Find:
-(a) Velocity of center of mass at bottom
-(b) Angular velocity at bottom
-(c) Rotational kinetic energy at bottom
-(d) Translational kinetic energy at bottom</p><p>(For solid sphere, I = ⅖mr², g = 10 m/s²)</p>
+                        <p>A uniform solid sphere of radius 0.2 m and mass 2 kg rolls without slipping down an incline of height 5 m. Find:</p>
+<p>(a) Velocity of center of mass at bottom</p>
+<p>(b) Angular velocity at bottom</p>
+<p>(c) Rotational kinetic energy at bottom</p>
+<p>(d) Translational kinetic energy at bottom</p>
+<p>(For solid sphere, I = ⅖mr², g = 10 m/s²)</p>
                     </div>
                     <div class="answer-section">
                         <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
@@ -172,23 +190,33 @@ There is only *one* parking spot for a 24-hour orbit.</p><p>---</p>
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*</p><p><strong>Given:</strong> r = 0.2 m, m = 2 kg, h = 5 m, I = ⅖mr² = ⅖(2)(0.2)² = 0.032 kg·m²</p><p><strong>Solution:</strong>
-<strong>Concept:</strong>
-The ball starts at the top with Potential Energy (Height).
-As it rolls down, this energy turns into two things:
-1.  <strong>Speed (Translational KE):</strong> Moving forward.
-2.  <strong>Spin (Rotational KE):</strong> Spinning around.
-We use Conservation of Energy to find the final speed.</p><p><strong>Formula:</strong>
-mgh = ½mv²(1 + k)
-*   For sphere, k = 2/5 = 0.4.</p><p><strong>Calculation:</strong>
-<strong>(a) Velocity:</strong>
-mgh = ½mv²(1.4)
-10(5) = 0.7v²
-50 = 0.7v² → v² = 71.4
-<strong>v = 8.45 m/s</strong></p><p><strong>(b) Angular Velocity:</strong>
-ω = v/r = 8.45/0.2 = <strong>42.25 rad/s</strong></p><p><strong>(c) Rotational KE:</strong>
-K<sub>rot</sub> = ½(⅖mr²)ω² = ⅕mv² = 0.2(2)(71.4) = <strong>28.6 J</strong></p><p><strong>(d) Translational KE:</strong>
-K<sub>trans</sub> = ½mv² = 0.5(2)(71.4) = <strong>71.4 J</strong></p><p>---</p>
+                                <p>*</p>
+<p><strong>Given:</strong> r = 0.2 m, m = 2 kg, h = 5 m, I = ⅖mr² = ⅖(2)(0.2)² = 0.032 kg·m²</p>
+<p><strong>Solution:</strong></p>
+<p><strong>Concept:</strong></p>
+<p>The ball starts at the top with Potential Energy (Height).</p>
+<p>As it rolls down, this energy turns into two things:</p>
+<p>1.  <strong>Speed (Translational KE):</strong> Moving forward.</p>
+<p>2.  <strong>Spin (Rotational KE):</strong> Spinning around.</p>
+<p>We use Conservation of Energy to find the final speed.</p>
+<p><strong>Formula:</strong></p>
+<p>mgh = ½mv²(1 + k)</p>
+<ul>
+<li>For sphere, k = 2/5 = 0.4.</li>
+</ul>
+<p><strong>Calculation:</strong></p>
+<p><strong>(a) Velocity:</strong></p>
+<p>mgh = ½mv²(1.4)</p>
+<p>10(5) = 0.7v²</p>
+<p>50 = 0.7v² → v² = 71.4</p>
+<p><strong>v = 8.45 m/s</strong></p>
+<p><strong>(b) Angular Velocity:</strong></p>
+<p>ω = v/r = 8.45/0.2 = <strong>42.25 rad/s</strong></p>
+<p><strong>(c) Rotational KE:</strong></p>
+<p>K<sub>rot</sub> = ½(⅖mr²)ω² = ⅕mv² = 0.2(2)(71.4) = <strong>28.6 J</strong></p>
+<p><strong>(d) Translational KE:</strong></p>
+<p>K<sub>trans</sub> = ½mv² = 0.5(2)(71.4) = <strong>71.4 J</strong></p>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q4.4')">
@@ -211,10 +239,13 @@ K<sub>trans</sub> = ½mv² = 0.5(2)(71.4) = <strong>71.4 J</strong></p><p>---</p
                         <h3 class="question-title">Q4.5: Geostationary Satellite Orbital Velocity [5 marks]</h3>
                     </div>
                     <div class="question-body">
-                        <p>Calculate the orbital velocity of a geostationary satellite. Use:
-<div class="list-item">• Earth&#x27;s mass: M = 6 × 10²⁴ kg</div>
-<div class="list-item">• G = 6.67 × 10⁻¹¹ N·m²/kg²</div>
-<div class="list-item">• Orbital radius: r = 4.2 × 10⁷ m</div></p><p>Also find the velocity change needed if the satellite moves to a polar orbit at radius 6.6 × 10⁶ m.</p>
+                        <p>Calculate the orbital velocity of a geostationary satellite. Use:</p>
+<ul>
+<li>Earth&#x27;s mass: M = 6 × 10²⁴ kg</li>
+<li>G = 6.67 × 10⁻¹¹ N·m²/kg²</li>
+<li>Orbital radius: r = 4.2 × 10⁷ m</li>
+</ul>
+<p>Also find the velocity change needed if the satellite moves to a polar orbit at radius 6.6 × 10⁶ m.</p>
                     </div>
                     <div class="answer-section">
                         <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
@@ -222,11 +253,29 @@ K<sub>trans</sub> = ½mv² = 0.5(2)(71.4) = <strong>71.4 J</strong></p><p>---</p
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*</p><p><strong>(a) Geostationary Orbital Velocity:</strong></p><p>For circular orbit:
-v = √(GM/r)</p><p>v<sub>geo</sub> = √(6.67 × 10⁻¹¹ × 6 × 10²⁴ / (4.2 × 10⁷))</p><p>v<sub>geo</sub> = √(40.02 × 10¹³ / (4.2 × 10⁷))</p><p>v<sub>geo</sub> = √(9.53 × 10⁶)</p><p><strong>v<sub>geo</sub> = 3,087 m/s = 3.09 km/s</strong></p><p><strong>Verification using T = 24 hours:</strong>
-v = 2πr/T = (2π × 4.2 × 10⁷) / 86,400 = 2.64 × 10⁸ / 86,400 = 3,056 m/s ✓
-(Close match, slight difference due to rounding)</p><p><strong>(b) Polar Orbit at Lower Altitude:</strong></p><p>r<sub>polar</sub> = 6.6 × 10⁶ m</p><p>v<sub>polar</sub> = √(GM/r<sub>polar</sub>)</p><p>v<sub>polar</sub> = √(6.67 × 10⁻¹¹ × 6 × 10²⁴ / (6.6 × 10⁶))</p><p>v<sub>polar</sub> = √(40.02 × 10¹³ / (6.6 × 10⁶))</p><p>v<sub>polar</sub> = √(6.06 × 10⁶)</p><p><strong>v<sub>polar</sub> = 2,462 m/s = 2.46 km/s</strong></p><p><strong>(c) Change in Velocity:</strong>
-Δv = v<sub>geo</sub> - v<sub>polar</sub> = 3,087 - 2,462 = <strong>625 m/s</strong></p><p>This is the <strong>reduction</strong> in orbital velocity when moving to lower orbit (higher speed needed to be closer to Earth for same period).</p><p><strong>Note:</strong> Actually, for a polar orbit to be stable, we need different equations, but this shows the basic orbital mechanics principle: closer orbits require lower velocities.</p><p>---</p>
+                                <p>*</p>
+<p><strong>(a) Geostationary Orbital Velocity:</strong></p>
+<p>For circular orbit:</p>
+<p>v = √(GM/r)</p>
+<p>v<sub>geo</sub> = √(6.67 × 10⁻¹¹ × 6 × 10²⁴ / (4.2 × 10⁷))</p>
+<p>v<sub>geo</sub> = √(40.02 × 10¹³ / (4.2 × 10⁷))</p>
+<p>v<sub>geo</sub> = √(9.53 × 10⁶)</p>
+<p><strong>v<sub>geo</sub> = 3,087 m/s = 3.09 km/s</strong></p>
+<p><strong>Verification using T = 24 hours:</strong></p>
+<p>v = 2πr/T = (2π × 4.2 × 10⁷) / 86,400 = 2.64 × 10⁸ / 86,400 = 3,056 m/s ✓</p>
+<p>(Close match, slight difference due to rounding)</p>
+<p><strong>(b) Polar Orbit at Lower Altitude:</strong></p>
+<p>r<sub>polar</sub> = 6.6 × 10⁶ m</p>
+<p>v<sub>polar</sub> = √(GM/r<sub>polar</sub>)</p>
+<p>v<sub>polar</sub> = √(6.67 × 10⁻¹¹ × 6 × 10²⁴ / (6.6 × 10⁶))</p>
+<p>v<sub>polar</sub> = √(40.02 × 10¹³ / (6.6 × 10⁶))</p>
+<p>v<sub>polar</sub> = √(6.06 × 10⁶)</p>
+<p><strong>v<sub>polar</sub> = 2,462 m/s = 2.46 km/s</strong></p>
+<p><strong>(c) Change in Velocity:</strong></p>
+<p>Δv = v<sub>geo</sub> - v<sub>polar</sub> = 3,087 - 2,462 = <strong>625 m/s</strong></p>
+<p>This is the <strong>reduction</strong> in orbital velocity when moving to lower orbit (higher speed needed to be closer to Earth for same period).</p>
+<p><strong>Note:</strong> Actually, for a polar orbit to be stable, we need different equations, but this shows the basic orbital mechanics principle: closer orbits require lower velocities.</p>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q4.5')">
@@ -249,11 +298,11 @@ v = 2πr/T = (2π × 4.2 × 10⁷) / 86,400 = 2.64 × 10⁸ / 86,400 = 3,056 m/s
                         <h3 class="question-title">Q4.6: Moment of Inertia Calculation [5 marks]</h3>
                     </div>
                     <div class="question-body">
-                        <p>A uniform disk of radius R = 0.3 m and mass M = 5 kg is rotated about its center. A point mass m = 1 kg is placed at distance r = 0.2 m from the axis. Find:
-(a) Moment of inertia of disk alone
-(b) Moment of inertia of point mass
-(c) Total moment of inertia
-(d) Angular acceleration if a torque of 2 N·m is applied</p>
+                        <p>A uniform disk of radius R = 0.3 m and mass M = 5 kg is rotated about its center. A point mass m = 1 kg is placed at distance r = 0.2 m from the axis. Find:</p>
+<p>(a) Moment of inertia of disk alone</p>
+<p>(b) Moment of inertia of point mass</p>
+<p>(c) Total moment of inertia</p>
+<p>(d) Angular acceleration if a torque of 2 N·m is applied</p>
                     </div>
                     <div class="answer-section">
                         <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
@@ -261,17 +310,25 @@ v = 2πr/T = (2π × 4.2 × 10⁷) / 86,400 = 2.64 × 10⁸ / 86,400 = 3,056 m/s
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*</p><p><strong>(a) Moment of Inertia of Uniform Disk:</strong>
-For disk about center:
-I<sub>disk</sub> = ½MR² = ½(5)(0.3)² = ½(5)(0.09) = <strong>0.225 kg·m²</strong></p><p><strong>(b) Moment of Inertia of Point Mass:</strong>
-I<sub>mass</sub> = mr² = 1 × (0.2)² = <strong>0.04 kg·m²</strong></p><p><strong>(c) Total Moment of Inertia:</strong>
-I<sub>total</sub> = I<sub>disk</sub> + I<sub>mass</sub> = 0.225 + 0.04 = <strong>0.265 kg·m²</strong></p><p><strong>(d) Angular Acceleration:</strong>
-Using τ = Iα:
-α = τ / I<sub>total</sub> = 2 / 0.265 = <strong>7.55 rad/s²</strong></p><p><strong>Physical Interpretation:</strong>
-<div class="list-item">• The disk contributes 85% of total rotational inertia (0.225/0.265)</div>
-<div class="list-item">• The point mass contributes only 15%</div>
-<div class="list-item">• Even though the point mass is small, its effect on angular acceleration is significant</div>
-<div class="list-item">• The system resists angular acceleration with I = 0.265 kg·m²</div></p><p>---</p>
+                                <p>*</p>
+<p><strong>(a) Moment of Inertia of Uniform Disk:</strong></p>
+<p>For disk about center:</p>
+<p>I<sub>disk</sub> = ½MR² = ½(5)(0.3)² = ½(5)(0.09) = <strong>0.225 kg·m²</strong></p>
+<p><strong>(b) Moment of Inertia of Point Mass:</strong></p>
+<p>I<sub>mass</sub> = mr² = 1 × (0.2)² = <strong>0.04 kg·m²</strong></p>
+<p><strong>(c) Total Moment of Inertia:</strong></p>
+<p>I<sub>total</sub> = I<sub>disk</sub> + I<sub>mass</sub> = 0.225 + 0.04 = <strong>0.265 kg·m²</strong></p>
+<p><strong>(d) Angular Acceleration:</strong></p>
+<p>Using τ = Iα:</p>
+<p>α = τ / I<sub>total</sub> = 2 / 0.265 = <strong>7.55 rad/s²</strong></p>
+<p><strong>Physical Interpretation:</strong></p>
+<ul>
+<li>The disk contributes 85% of total rotational inertia (0.225/0.265)</li>
+<li>The point mass contributes only 15%</li>
+<li>Even though the point mass is small, its effect on angular acceleration is significant</li>
+<li>The system resists angular acceleration with I = 0.265 kg·m²</li>
+</ul>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q4.6')">
@@ -302,15 +359,21 @@ Using τ = Iα:
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*
-<strong>Comparison of Theorems:</strong></p><p>| Theorem | Applicability | Formula | Visual |
-| :--- | :--- | :--- | :--- |
-| <strong>Perpendicular Axis</strong> | <strong>Planar (2D) Objects</strong> (e.g., Disk, Ring) | $I<sub>z</sub> = I<sub>x</sub> + I<sub>y</sub>$ | Z-axis = Sum of X and Y |
-| <strong>Parallel Axis</strong> | <strong>Any Object</strong> (2D or 3D) | $I = I_{cm} + Md^2$ | New Axis = Center Axis + &quot;Shift&quot; |</p><p>&gt; <strong>Definitions:</strong>
-&gt; *   $I_{cm}$: Moment of Inertia about Center of Mass.
-&gt; *   $d$: Perpendicular distance between the two parallel axes.
-&gt; *   $I<sub>z</sub>$: Axis perpendicular to the plane.</p><p><strong>Significance:</strong>
-These theorems allow us to calculate MOI for any axis (e.g., edge of a disk) if we know the MOI for the center.</p><p>---</p>
+                                <p>*</p>
+<p><strong>Comparison of Theorems:</strong></p>
+<div class="table-container"><table><thead>
+<tr><th>Theorem</th><th>Applicability</th><th>Formula</th><th>Visual</th></tr>
+</thead><tbody>
+<tr><td><strong>Perpendicular Axis</strong></td><td><strong>Planar (2D) Objects</strong> (e.g., Disk, Ring)</td><td><span class="math-inline">I<sub>z</sub> = I<sub>x</sub> + I<sub>y</sub></span></td><td>Z-axis = Sum of X and Y</td></tr>
+<tr><td><strong>Parallel Axis</strong></td><td><strong>Any Object</strong> (2D or 3D)</td><td><span class="math-inline">I = I_{cm} + Md^2</span></td><td>New Axis = Center Axis + &quot;Shift&quot;</td></tr>
+</tbody></table></div>
+<p>&gt; <strong>Definitions:</strong></p>
+<p>&gt; *   <span class="math-inline">I_{cm}</span>: Moment of Inertia about Center of Mass.</p>
+<p>&gt; *   <span class="math-inline">d</span>: Perpendicular distance between the two parallel axes.</p>
+<p>&gt; *   <span class="math-inline">I<sub>z</sub></span>: Axis perpendicular to the plane.</p>
+<p><strong>Significance:</strong></p>
+<p>These theorems allow us to calculate MOI for any axis (e.g., edge of a disk) if we know the MOI for the center.</p>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q4.8')">
@@ -341,10 +404,13 @@ These theorems allow us to calculate MOI for any axis (e.g., edge of a disk) if 
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*
-&gt; <strong>Definition:</strong>
-&gt; The point where the entire mass of a system can be theoretically concentrated to model its translational motion. It is the &quot;weighted average&quot; position of mass.</p><p><strong>Formula (Two-Body System):</strong>
-$$ R_{cm} = \frac{m<sub>1</sub> r<sub>1</sub> + m<sub>2</sub> r<sub>2</sub>}{m<sub>1</sub> + m<sub>2</sub>} $$</p><p>*If M1 &gt; M2, the CM shifts closer to M1.*</p><p>---</p>
+                                <p>*</p>
+<p>&gt; <strong>Definition:</strong></p>
+<p>&gt; The point where the entire mass of a system can be theoretically concentrated to model its translational motion. It is the &quot;weighted average&quot; position of mass.</p>
+<p><strong>Formula (Two-Body System):</strong></p>
+<p><div class="math-block"> R_{cm} = \frac{m<sub>1</sub> r<sub>1</sub> + m<sub>2</sub> r<sub>2</sub>}{m<sub>1</sub> + m<sub>2</sub>} </div></p>
+<p><em>If M1 &gt; M2, the CM shifts closer to M1.</em></p>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q4.7')">

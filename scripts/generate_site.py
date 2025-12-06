@@ -89,33 +89,138 @@ def parse_markdown(file_path):
                 # Convert Markdown to basic HTML (paragraphs, code blocks)
                 # Simple converter for this specific format
                 def md_to_html(text):
-                    # Escape HTML
+                    # Pre-process: Escape HTML
                     text = html.escape(text)
                     
+                    lines = text.split('\n')
+                    html_output = []
+                    
+                    state = 'neutral' # neutral, list, table, blockquote
+                    
+                    i = 0
+                    while i < len(lines):
+                        line = lines[i].strip()
+                        
+                        # --- 0. Empty Lines ---
+                        if not line:
+                            if state == 'list':
+                                html_output.append('</ul>')
+                                state = 'neutral'
+                            elif state == 'table':
+                                html_output.append('</tbody></table></div>')
+                                state = 'neutral'
+                            elif state == 'blockquote':
+                                html_output.append('</blockquote>')
+                                state = 'neutral'
+                            i += 1
+                            continue
+
+                        # --- 1. Tables ---
+                        if line.startswith('|'):
+                            if state != 'table':
+                                # Close previous states if any
+                                if state == 'list': html_output.append('</ul>')
+                                if state == 'blockquote': html_output.append('</blockquote>')
+                                
+                                # Start Table
+                                html_output.append('<div class="table-container"><table><thead>')
+                                # Process Header
+                                cols = [c.strip() for c in line.split('|') if c.strip()]
+                                html_output.append('<tr>' + ''.join([f'<th>{c}</th>' for c in cols]) + '</tr>')
+                                html_output.append('</thead><tbody>')
+                                state = 'table'
+                                
+                                # Skip separator line if it exists (e.g., |---|---|)
+                                if i + 1 < len(lines) and '---' in lines[i+1]:
+                                    i += 1
+                            else:
+                                # Normal Table Row
+                                # Ignore separator lines if we encounter them later
+                                if '---' in line:
+                                    i += 1
+                                    continue
+                                    
+                                cols = [c.strip() for c in line.split('|') if c.strip()]
+                                html_output.append('<tr>' + ''.join([f'<td>{c}</td>' for c in cols]) + '</tr>')
+                            
+                            i += 1
+                            continue
+
+                        # --- 2. Blockquotes ---
+                        if line.startswith('>'):
+                            content = line.lstrip('>').strip()
+                            if state != 'blockquote':
+                                if state == 'list': html_output.append('</ul>')
+                                if state == 'table': html_output.append('</tbody></table></div>')
+                                html_output.append('<blockquote>')
+                                state = 'blockquote'
+                            
+                            html_output.append(f'<p>{content}</p>')
+                            i += 1
+                            continue
+
+                        # --- 3. Lists ---
+                        if line.startswith('- ') or line.startswith('* '):
+                            content = line[2:].strip()
+                            if state != 'list':
+                                if state == 'table': html_output.append('</tbody></table></div>')
+                                if state == 'blockquote': html_output.append('</blockquote>')
+                                html_output.append('<ul>')
+                                state = 'list'
+                            
+                            html_output.append(f'<li>{content}</li>')
+                            i += 1
+                            continue
+
+                        # --- 4. Headings (H4, H5... since H3 is Question Title) ---
+                        if line.startswith('#### '):
+                            if state == 'list': html_output.append('</ul>'); state = 'neutral'
+                            if state == 'table': html_output.append('</tbody></table></div>'); state = 'neutral'
+                            if state == 'blockquote': html_output.append('</blockquote>'); state = 'neutral'
+                            html_output.append(f'<h4>{line[5:]}</h4>')
+                            i += 1
+                            continue
+
+                        # --- 5. Horizontal Rules ---
+                        if line == '---' or line == '***':
+                            if state == 'list': html_output.append('</ul>'); state = 'neutral'
+                            if state == 'table': html_output.append('</tbody></table></div>'); state = 'neutral'
+                            if state == 'blockquote': html_output.append('</blockquote>'); state = 'neutral'
+                            html_output.append('<hr>')
+                            i += 1
+                            continue
+                            
+                        # --- 6. Normal Paragraph ---
+                        # Close any special states
+                        if state == 'list': html_output.append('</ul>'); state = 'neutral'
+                        if state == 'table': html_output.append('</tbody></table></div>'); state = 'neutral'
+                        if state == 'blockquote': html_output.append('</blockquote>'); state = 'neutral'
+                        
+                        html_output.append(f'<p>{line}</p>')
+                        i += 1
+                    
+                    # Cleanup at end
+                    if state == 'list': html_output.append('</ul>')
+                    if state == 'table': html_output.append('</tbody></table></div>')
+                    if state == 'blockquote': html_output.append('</blockquote>')
+
+                    final_html = '\n'.join(html_output)
+                    
+                    # --- Inline Formatting ---
                     # Bold
-                    text = re.sub(r'\*\*(.*?)\*\*', r'<strong>\1</strong>', text)
+                    final_html = re.sub(r'\*\*(.*?)\*\*', r'<strong>\1</strong>', final_html)
+                    # Italics
+                    final_html = re.sub(r'\*(.*?)\*', r'<em>\1</em>', final_html)
+                    # Subscripts
+                    final_html = re.sub(r'([a-zA-Z])_([a-zA-Z0-9]+)', r'\1<sub>\2</sub>', final_html)
+                    # Math (Basic) $$..$$
+                    final_html = re.sub(r'\$\$(.*?)\$\$', r'<div class="math-block">\1</div>', final_html)
+                    final_html = re.sub(r'\$(.*?)\$', r'<span class="math-inline">\1</span>', final_html)
                     
-                    # Subscripts (e.g., v_x, F_1, v_boat)
-                    # Pattern: Letter followed by underscore and alphanumeric sequence
-                    # Avoid replacing if it looks like italic markdown (surrounded by underscores)
-                    # We handle simple variable subscripts: v_y, F_net, etc.
-                    text = re.sub(r'([a-zA-Z])_([a-zA-Z0-9]+)', r'\1<sub>\2</sub>', text)
-
-                    # Code blocks
-                    text = re.sub(r'```(.*?)```', r'<pre><code>\1</code></pre>', text, flags=re.DOTALL)
-                    
-                    # Lists
-                    text = re.sub(r'^\s*-\s+(.*)', r'<li>\1</li>', text, flags=re.MULTILINE)
-                    # Wrap adjacent lis in ul (simple hacky way: just let them be, or wrap later if needed. 
-                    # For now, let's just make them divs with class list-item to avoid breaking invalid HTML)
-                    text = re.sub(r'<li>(.*?)</li>', r'<div class="list-item">• \1</div>', text)
-
-                    # Paragraphs (double newline)
-                    paragraphs = text.split('\n\n')
-                    return "".join([f"<p>{p.strip()}</p>" for p in paragraphs if p.strip()])
+                    return final_html
 
                 section_data['questions'].append({
-                    'id': q_title_full.split(':')[0].split(' ')[0], # e.g. Q1.1
+                    'id': q_title_full.split(':')[0].split(' ')[0], 
                     'full_title': q_title_full,
                     'question_html': md_to_html(q_text_raw),
                     'answer_html': md_to_html(a_text_raw)

@@ -51,14 +51,21 @@
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*
-&gt; <strong>Definition:</strong>
-&gt; <strong>Standing Waves</strong> result from the superposition of two waves of identical frequency relative to opposite directions. They do not transmit energy; they oscillate in place.</p><p><strong>Wave Anatomy:</strong></p><p>| Part | Full Name | Motion | Displacement |
-| :--- | :--- | :--- | :--- |
-| <strong>Node</strong> | N | Stationary | <strong>Zero</strong> |
-| <strong>Antinode</strong> | A | Oscillating | <strong>Maximum</strong> |</p><p>*Nodes at Ends ($x=0, L$), Antinode in middle.*</p><p><strong>Formula:</strong>
-$$ v = \sqrt{\frac{T}{\mu}} $$
-($T$ = Tension, $\mu$ = Mass per unit length)</p><p>---</p>
+                                <p>*</p>
+<p>&gt; <strong>Definition:</strong></p>
+<p>&gt; <strong>Standing Waves</strong> result from the superposition of two waves of identical frequency relative to opposite directions. They do not transmit energy; they oscillate in place.</p>
+<p><strong>Wave Anatomy:</strong></p>
+<div class="table-container"><table><thead>
+<tr><th>Part</th><th>Full Name</th><th>Motion</th><th>Displacement</th></tr>
+</thead><tbody>
+<tr><td><strong>Node</strong></td><td>N</td><td>Stationary</td><td><strong>Zero</strong></td></tr>
+<tr><td><strong>Antinode</strong></td><td>A</td><td>Oscillating</td><td><strong>Maximum</strong></td></tr>
+</tbody></table></div>
+<p><em>Nodes at Ends (<span class="math-inline">x=0, L</span>), Antinode in middle.</em></p>
+<p><strong>Formula:</strong></p>
+<p><div class="math-block"> v = \sqrt{\frac{T}{\mu}} </div></p>
+<p>(<span class="math-inline">T</span> = Tension, <span class="math-inline">\mu</span> = Mass per unit length)</p>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q10.1')">
@@ -89,14 +96,21 @@ $$ v = \sqrt{\frac{T}{\mu}} $$
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*
-&gt; <strong>Definition:</strong>
-&gt; The apparent change in frequency of a wave due to relative motion between the source and the observer.</p><p><strong>Effect Summary:</strong></p><p>| Action | Frequency Change | Pitch Perception |
-| :--- | :--- | :--- |
-| <strong>Approaching</strong> | Increases ($\uparrow$) | <strong>Higher</strong> (&quot;Eeee&quot;) |
-| <strong>Receding</strong> | Decreases ($\downarrow$) | <strong>Lower</strong> (&quot;Oooo&quot;) |</p><p><strong>Formula:</strong>
-$$ f&#x27; = f \left( \frac{v \pm v<sub>o</sub>}{v \mp v<sub>s</sub>} \right) $$</p><p><strong>Analogy:</strong>
-A car approaching you crunches the sound waves together (shorter wavelength = higher freq). A car leaving stretches them out.</p><p>---</p>
+                                <p>*</p>
+<p>&gt; <strong>Definition:</strong></p>
+<p>&gt; The apparent change in frequency of a wave due to relative motion between the source and the observer.</p>
+<p><strong>Effect Summary:</strong></p>
+<div class="table-container"><table><thead>
+<tr><th>Action</th><th>Frequency Change</th><th>Pitch Perception</th></tr>
+</thead><tbody>
+<tr><td><strong>Approaching</strong></td><td>Increases (<span class="math-inline">\uparrow</span>)</td><td><strong>Higher</strong> (&quot;Eeee&quot;)</td></tr>
+<tr><td><strong>Receding</strong></td><td>Decreases (<span class="math-inline">\downarrow</span>)</td><td><strong>Lower</strong> (&quot;Oooo&quot;)</td></tr>
+</tbody></table></div>
+<p><strong>Formula:</strong></p>
+<p><div class="math-block"> f&#x27; = f \left( \frac{v \pm v<sub>o</sub>}{v \mp v<sub>s</sub>} \right) </div></p>
+<p><strong>Analogy:</strong></p>
+<p>A car approaching you crunches the sound waves together (shorter wavelength = higher freq). A car leaving stretches them out.</p>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q10.2')">
@@ -123,10 +137,10 @@ A car approaching you crunches the sound waves together (shorter wavelength = hi
                         <h3 class="question-title">Q10.3: String Tension and Frequency [5 marks]</h3>
                     </div>
                     <div class="question-body">
-                        <p>A guitar string of length 0.8 m and mass 4 grams is under a tension of 500 N.
-(a) Calculate the speed of the wave on the string.
-(b) Find the fundamental frequency (1st harmonic).
-(c) Find the frequency of the 3rd harmonic.</p>
+                        <p>A guitar string of length 0.8 m and mass 4 grams is under a tension of 500 N.</p>
+<p>(a) Calculate the speed of the wave on the string.</p>
+<p>(b) Find the fundamental frequency (1st harmonic).</p>
+<p>(c) Find the frequency of the 3rd harmonic.</p>
                     </div>
                     <div class="answer-section">
                         <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
@@ -134,21 +148,28 @@ A car approaching you crunches the sound waves together (shorter wavelength = hi
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*
-<strong>Concept:</strong>
-The &quot;Pitch&quot; (Frequency) of a string depends on 3 things:
-1.  <strong>Length:</strong> Short string = High pitch.
-2.  <strong>Tension:</strong> Tight string = High pitch.
-3.  <strong>Thickness (Mass):</strong> Heavy string = Low pitch.
-We calculate wave speed first, then frequency.</p><p><strong>Formula:</strong>
-*   μ = m/L
-*   v = √(T/μ)
-*   f<sub>n</sub> = n(v/2L)</p><p><strong>Calculation:</strong>
-<strong>(a) Wave Speed:</strong>
-μ = 0.004 / 0.8 = 0.005 kg/m.
-v = √(500/0.005) = √100,000 = <strong>316.2 m/s</strong></p><p><strong>(b) Fund. Freq (n=1):</strong>
-f₁ = 316.2 / (2 × 0.8) = 316.2/1.6 = <strong>197.6 Hz</strong></p><p><strong>(c) 3rd Harmonic (n=3):</strong>
-f₃ = 3f₁ = 3(197.6) = <strong>592.8 Hz</strong></p><p>---</p>
+                                <p>*</p>
+<p><strong>Concept:</strong></p>
+<p>The &quot;Pitch&quot; (Frequency) of a string depends on 3 things:</p>
+<p>1.  <strong>Length:</strong> Short string = High pitch.</p>
+<p>2.  <strong>Tension:</strong> Tight string = High pitch.</p>
+<p>3.  <strong>Thickness (Mass):</strong> Heavy string = Low pitch.</p>
+<p>We calculate wave speed first, then frequency.</p>
+<p><strong>Formula:</strong></p>
+<ul>
+<li>μ = m/L</li>
+<li>v = √(T/μ)</li>
+<li>f<sub>n</sub> = n(v/2L)</li>
+</ul>
+<p><strong>Calculation:</strong></p>
+<p><strong>(a) Wave Speed:</strong></p>
+<p>μ = 0.004 / 0.8 = 0.005 kg/m.</p>
+<p>v = √(500/0.005) = √100,000 = <strong>316.2 m/s</strong></p>
+<p><strong>(b) Fund. Freq (n=1):</strong></p>
+<p>f₁ = 316.2 / (2 × 0.8) = 316.2/1.6 = <strong>197.6 Hz</strong></p>
+<p><strong>(c) 3rd Harmonic (n=3):</strong></p>
+<p>f₃ = 3f₁ = 3(197.6) = <strong>592.8 Hz</strong></p>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q10.3')">
@@ -171,10 +192,10 @@ f₃ = 3f₁ = 3(197.6) = <strong>592.8 Hz</strong></p><p>---</p>
                         <h3 class="question-title">Q10.4: Doppler Effect Calculation [5 marks]</h3>
                     </div>
                     <div class="question-body">
-                        <p>A train blowing its whistle at frequency 400 Hz approaches a stationary observer on the platform at a speed of 36 km/h. The speed of sound in air is 340 m/s.
-(a) What is the apparent frequency heard by the observer as the train approaches?
-(b) What is the apparent frequency heard after the train passes the observer?
-(c) What is the change in frequency?</p>
+                        <p>A train blowing its whistle at frequency 400 Hz approaches a stationary observer on the platform at a speed of 36 km/h. The speed of sound in air is 340 m/s.</p>
+<p>(a) What is the apparent frequency heard by the observer as the train approaches?</p>
+<p>(b) What is the apparent frequency heard after the train passes the observer?</p>
+<p>(c) What is the change in frequency?</p>
                     </div>
                     <div class="answer-section">
                         <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
@@ -182,24 +203,35 @@ f₃ = 3f₁ = 3(197.6) = <strong>592.8 Hz</strong></p><p>---</p>
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*
-<strong>Concept:</strong>
-We need to calculate two different frequencies:
-1.  <strong>Train Coming:</strong> Frequency shifts UP (High Pitch).
-2.  <strong>Train Going:</strong> Frequency shifts DOWN (Low Pitch).
-The &quot;change&quot; is the difference between these two notes.</p><p><strong>Formula:</strong>
-*   Approach: f&#x27; = f [v / (v - v<sub>s</sub>)]
-*   Recede: f&#x27;&#x27; = f [v / (v + v<sub>s</sub>)]</p><p><strong>Calculation:</strong>
-<strong>Input Data Table:</strong></p><p>| Variable | Symbol | Value |
-| :--- | :--- | :--- |
-| <strong>Source Velocity</strong> | $v<sub>s</sub>$ | 36 km/h (10 m/s) |
-| <strong>Sound Speed</strong> | $v$ | 340 m/s |
-| <strong>Source Frequency</strong> | $f<sub>s</sub>$ | 400 Hz |</p><p><strong>(a) Approaching:</strong>
-f&#x27; = 400 [340 / (340-10)] = 400(340/330)
-<strong>f&#x27; = 412.1 Hz</strong></p><p><strong>(b) Receding:</strong>
-f&#x27;&#x27; = 400 [340 / (340+10)] = 400(340/350)
-<strong>f&#x27;&#x27; = 388.6 Hz</strong></p><p><strong>(c) Change:</strong>
-Δf = 412.1 - 388.6 = <strong>23.5 Hz</strong></p><p>---</p>
+                                <p>*</p>
+<p><strong>Concept:</strong></p>
+<p>We need to calculate two different frequencies:</p>
+<p>1.  <strong>Train Coming:</strong> Frequency shifts UP (High Pitch).</p>
+<p>2.  <strong>Train Going:</strong> Frequency shifts DOWN (Low Pitch).</p>
+<p>The &quot;change&quot; is the difference between these two notes.</p>
+<p><strong>Formula:</strong></p>
+<ul>
+<li>Approach: f&#x27; = f [v / (v - v<sub>s</sub>)]</li>
+<li>Recede: f&#x27;&#x27; = f [v / (v + v<sub>s</sub>)]</li>
+</ul>
+<p><strong>Calculation:</strong></p>
+<p><strong>Input Data Table:</strong></p>
+<div class="table-container"><table><thead>
+<tr><th>Variable</th><th>Symbol</th><th>Value</th></tr>
+</thead><tbody>
+<tr><td><strong>Source Velocity</strong></td><td><span class="math-inline">v<sub>s</sub></span></td><td>36 km/h (10 m/s)</td></tr>
+<tr><td><strong>Sound Speed</strong></td><td><span class="math-inline">v</span></td><td>340 m/s</td></tr>
+<tr><td><strong>Source Frequency</strong></td><td><span class="math-inline">f<sub>s</sub></span></td><td>400 Hz</td></tr>
+</tbody></table></div>
+<p><strong>(a) Approaching:</strong></p>
+<p>f&#x27; = 400 [340 / (340-10)] = 400(340/330)</p>
+<p><strong>f&#x27; = 412.1 Hz</strong></p>
+<p><strong>(b) Receding:</strong></p>
+<p>f&#x27;&#x27; = 400 [340 / (340+10)] = 400(340/350)</p>
+<p><strong>f&#x27;&#x27; = 388.6 Hz</strong></p>
+<p><strong>(c) Change:</strong></p>
+<p>Δf = 412.1 - 388.6 = <strong>23.5 Hz</strong></p>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q10.4')">
@@ -230,15 +262,17 @@ f&#x27;&#x27; = 400 [340 / (340+10)] = 400(340/350)
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*
-<strong>Newton&#x27;s Formula:</strong>
-Assumed isothermal propagation:
-v = √(P/ρ)
-This gave a value (~280 m/s) much lower than experimental results for air (332 m/s).</p><p><strong>Laplace&#x27;s Correction:</strong>
-Laplace suggested that sound propagation is an <strong>adiabatic process</strong> (rapid changes, no heat exchange).
-Formula: <strong>v = √(γP/ρ)</strong>
-Where γ = Cp/Cv (adiabatic index). For air, γ ≈ 1.4.
-This corrected formula matches experimental values accurately.</p><p>---</p>
+                                <p>*</p>
+<p><strong>Newton&#x27;s Formula:</strong></p>
+<p>Assumed isothermal propagation:</p>
+<p>v = √(P/ρ)</p>
+<p>This gave a value (~280 m/s) much lower than experimental results for air (332 m/s).</p>
+<p><strong>Laplace&#x27;s Correction:</strong></p>
+<p>Laplace suggested that sound propagation is an <strong>adiabatic process</strong> (rapid changes, no heat exchange).</p>
+<p>Formula: <strong>v = √(γP/ρ)</strong></p>
+<p>Where γ = Cp/Cv (adiabatic index). For air, γ ≈ 1.4.</p>
+<p>This corrected formula matches experimental values accurately.</p>
+<hr>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q10.5')">
@@ -269,23 +303,30 @@ This corrected formula matches experimental values accurately.</p><p>---</p>
                         </button>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
-                                <p>*
-<strong>1. Open Pipe (Open at both ends):</strong>
-Wavelength λ = 2L
-Frequency f<sub>open</sub> = v / 2L
-Harmonics: All harmonics present (f, 2f, 3f...)</p><p><strong>2. Closed Pipe (Closed at one end):</strong>
-Wavelength λ = 4L
-Frequency f<sub>closed</sub> = v / 4L
-Harmonics: Only odd harmonics present (f, 3f, 5f...)</p><p><strong>Comparison:</strong>
-f<sub>open</sub> / f<sub>closed</sub> = (v/2L) / (v/4L) = 2
-<strong>The fundamental frequency of an open pipe is twice that of a closed pipe of the same length.</strong></p><p>---</p><p>## END OF QUESTION BANK</p><p>### FINAL TIPS FOR SUCCESS:</p><p>1. <strong>Cover all theoretical questions first</strong> - they help understand concepts
-2. <strong>Practice all numerical problems</strong> - they build application skills
-3. <strong>Use formulas correctly</strong> - watch for sign conventions (especially in optics)
-4. <strong>Verify with dimensions</strong> - check if your answer makes physical sense
-5. <strong>Learn derivations</strong> - helps remember formulas and understand concepts
-6. <strong>Draw diagrams</strong> - especially for optics and mechanics problems
-7. <strong>Practice unit conversions</strong> - many errors come from unit mistakes
-8. <strong>Understand concepts before problems</strong> - memorizing won&#x27;t help</p><p><strong>GOOD LUCK WITH YOUR EXAMS!</strong> 🚀</p>
+                                <p>*</p>
+<p><strong>1. Open Pipe (Open at both ends):</strong></p>
+<p>Wavelength λ = 2L</p>
+<p>Frequency f<sub>open</sub> = v / 2L</p>
+<p>Harmonics: All harmonics present (f, 2f, 3f...)</p>
+<p><strong>2. Closed Pipe (Closed at one end):</strong></p>
+<p>Wavelength λ = 4L</p>
+<p>Frequency f<sub>closed</sub> = v / 4L</p>
+<p>Harmonics: Only odd harmonics present (f, 3f, 5f...)</p>
+<p><strong>Comparison:</strong></p>
+<p>f<sub>open</sub> / f<sub>closed</sub> = (v/2L) / (v/4L) = 2</p>
+<p><strong>The fundamental frequency of an open pipe is twice that of a closed pipe of the same length.</strong></p>
+<hr>
+<p>## END OF QUESTION BANK</p>
+<p>### FINAL TIPS FOR SUCCESS:</p>
+<p>1. <strong>Cover all theoretical questions first</strong> - they help understand concepts</p>
+<p>2. <strong>Practice all numerical problems</strong> - they build application skills</p>
+<p>3. <strong>Use formulas correctly</strong> - watch for sign conventions (especially in optics)</p>
+<p>4. <strong>Verify with dimensions</strong> - check if your answer makes physical sense</p>
+<p>5. <strong>Learn derivations</strong> - helps remember formulas and understand concepts</p>
+<p>6. <strong>Draw diagrams</strong> - especially for optics and mechanics problems</p>
+<p>7. <strong>Practice unit conversions</strong> - many errors come from unit mistakes</p>
+<p>8. <strong>Understand concepts before problems</strong> - memorizing won&#x27;t help</p>
+<p><strong>GOOD LUCK WITH YOUR EXAMS!</strong> 🚀</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q10.6')">

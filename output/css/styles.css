@@ -438,3 +438,89 @@ ul {
 .list-item {
     margin-bottom: 6px;
 }
+
+/* Enhanced Markdown Styles */
+blockquote {
+    border-left: 4px solid var(--accent-color);
+    padding: 10px 20px;
+    margin: 20px 0;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+    color: var(--text-secondary);
+}
+
+.table-container {
+    overflow-x: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 500px;
+}
+
+th, td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+th {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:hover td {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+ul {
+    list-style-position: inside;
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+li {
+    margin-bottom: 6px;
+    color: var(--text-secondary);
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border-color), transparent);
+    margin: 40px 0;
+}
+
+.math-block {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Times New Roman', serif;
+    font-size: 1.1rem;
+    background: rgba(0, 0, 0, 0.3);
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.math-inline {
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+    color: #ffd700;
+}
+
+h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: var(--text-primary);
+    font-size: 1rem;
+}
