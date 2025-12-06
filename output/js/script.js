@@ -92,8 +92,7 @@ function updateProgressCounters() {
     // Note: Global progress on index page also requires reading counts, simplified for static site.
 }
 
-// 4. Gemini API Integration
-const GEMINI_API_KEY = "AIzaSyA4meddsqrMMhQ47MSq2jHXDZF3Jwnyp-M";
+// 4. Gemini API Integration (via Vercel Function)
 
 window.askGemini = async function (btn, questionId) {
     const responseDiv = document.getElementById(`gemini-${questionId}`);
@@ -126,24 +125,22 @@ window.askGemini = async function (btn, questionId) {
     `;
 
     try {
-        const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}`, {
+        // Call our own backend API (Vercel Function)
+        const response = await fetch('/api/ask', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({
-                contents: [{
-                    parts: [{ text: prompt }]
-                }]
-            })
+            body: JSON.stringify({ prompt: prompt })
         });
 
         const data = await response.json();
 
         if (data.error) {
-            throw new Error(data.error.message);
+            throw new Error(data.error);
         }
 
+        // Gemini response structure
         const aiText = data.candidates[0].content.parts[0].text;
 
         // Simple Markdown parsing for the response
