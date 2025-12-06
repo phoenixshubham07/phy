@@ -52,21 +52,14 @@
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Concept:</strong>
-Imagine two ripples on a pond meeting.
-*   <strong>Interference:</strong> When waves overlap.
-*   <strong>Constructive (Bright):</strong> Peak meets Peak. They add up to make a bigger wave.
-*   <strong>Destructive (Dark):</strong> Peak meets Trough. They cancel out to make flatness (darkness).
-*   <strong>Coherent:</strong> Means the two wave sources dance to the exact same beat. If one changes rhythm, the pattern gets messy.</p><p><strong>Formula:</strong>
-*   <strong>Constructive Interference (Bright Fringes):</strong> Path difference Δx = mλ (m = 0, 1, 2...)
-*   <strong>Destructive Interference (Dark Fringes):</strong> Path difference Δx = (m + ½)λ (m = 0, 1, 2...)
-*   <strong>Intensity:</strong> I = I<sub>max</sub> cos²(δ/2) where δ is phase difference.</p><p><strong>Solution:</strong>
-<strong>Coherent Sources:</strong> Sources are coherent if they maintain a constant phase difference and have the same frequency. Waves from coherent sources can produce stable interference patterns.</p><p><strong>Conditions for Interference:</strong>
-1.  <strong>Coherent Sources:</strong> Essential for a stable pattern.
-2.  <strong>Monochromatic Light:</strong> Single wavelength.
-3.  <strong>Small Source Size:</strong> To ensure point sources.
-4.  <strong>Constant Phase Difference:</strong> Maintained over time.</p><p><strong>Why Ordinary Light is Incoherent:</strong>
-Ordinary light sources (like incandescent bulbs) emit light from individual atoms that radiate independently and for very short durations (~10⁻⁸ seconds). The phase of the emitted light changes randomly and rapidly. Therefore, two separate ordinary light sources cannot maintain a constant phase relationship, making them incoherent. This random phase variation prevents the formation of a stable, observable interference pattern. Lasers, on the other hand, produce coherent light through stimulated emission.</p><p>---</p>
+&gt; <strong>Definition:</strong>
+&gt; <strong>Coherent Sources</strong> are those that maintain a constant phase difference and have the same frequency. This stability is essential for stationary interference patterns.</p><p><strong>Interference Conditions Matrix:</strong></p><p>| Condition | Path Difference ($\Delta x$) | Phase Difference ($\delta$) | Result |
+| :--- | :--- | :--- | :--- |
+| <strong>Constructive</strong> | $n\lambda$ (Integral) | $2n\pi$ | Max Intensity (Bright) |
+| <strong>Destructive</strong> | $(n+0.5)\lambda$ (Half-Integral) | $(2n+1)\pi$ | Min Intensity (Dark) |</p><p><strong>Incoherence Explanation:</strong>
+*   <strong>Ordinary Light:</strong> Billions of atoms emit photons randomly (&quot;Burst of noise&quot;).
+*   <strong>Laser:</strong> Atoms march in lockstep (&quot;Orchestra&quot;).
+*   *Analogy:* Ordinary light is a crowd shouting. Coherent light is a choir singing.</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q6.1')">
@@ -98,23 +91,17 @@ Ordinary light sources (like incandescent bulbs) emit light from individual atom
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Concept:</strong>
-*   <strong>Interference:</strong> Two separate light beams mixing together (like two speakers playing music).
-*   <strong>Diffraction:</strong> One light beam bending around a corner or squeezing through a tiny door (slit). Light behaves like water flowing around a rock—it spreads out into the &quot;shadow&quot; area.</p><p><strong>Formula:</strong>
-*   <strong>Interference (Double Slit Bright):</strong> d sinθ = mλ
-*   <strong>Diffraction (Single Slit Minima):</strong> a sinθ = mλ
-(These formulas describe the positions of maxima/minima in their respective patterns.)</p><p><strong>Solution:</strong>
-<strong>Comparison:</strong></p><p>| Feature | Interference | Diffraction |
-|---------|--------------|------------|
-| <strong>Origin</strong> | Superposition of waves from two or more coherent sources | Bending of waves from a single wavefront around an obstacle/aperture |
-| <strong>Pattern</strong> | Well-defined, equally spaced bright and dark fringes (if sources are identical) | Central maximum is brightest and widest; subsequent maxima are progressively dimmer and narrower |
-| <strong>Conditions</strong> | Requires coherent sources, usually from division of wavefront or amplitude | Occurs with any wave when it encounters an obstacle/aperture of comparable size to its wavelength |
-| <strong>Dependence</strong> | Depends on distance between sources (d) | Depends on size of obstacle/aperture (a) |</p><p><strong>Why Diffraction Occurs:</strong>
-Diffraction occurs because, according to Huygens&#x27; Principle, every point on a wavefront acts as a source of secondary wavelets. When a wavefront encounters an obstacle or an aperture, the wavelets originating from the unblocked portions of the wavefront spread out into the region behind the obstacle or aperture, causing the wave to bend around corners and spread into areas that would otherwise be geometric shadows. This bending is more pronounced when the wavelength of the wave is comparable to the size of the obstacle or aperture.</p><p><strong>Can Both Occur Simultaneously?</strong>
-<strong>Yes, absolutely.</strong> In many practical situations, interference and diffraction occur together. A classic example is Young&#x27;s double-slit experiment.
-1.  <strong>Diffraction:</strong> As light passes through each of the two narrow slits, it undergoes diffraction, causing the light to spread out from each slit.
-2.  <strong>Interference:</strong> The diffracted waves from the two slits then overlap and interfere with each other, creating an interference pattern.
-The resulting pattern on the screen is an interference pattern (due to the two slits) whose intensity is modulated by the diffraction pattern of a single slit. This means the overall envelope of the interference fringes is determined by the single-slit diffraction pattern, causing the intensity of the interference fringes to decrease as you move away from the center.</p><p>---</p>
+&gt; <strong>Distinction:</strong>
+&gt; *   <strong>Interference:</strong> Interaction between waves from *two different* coherent sources.
+&gt; *   <strong>Diffraction:</strong> Bending of waves from a *single* source around an obstacle.</p><p><strong>Comparison Table:</strong></p><p>| Feature | Interference | Diffraction |
+| :--- | :--- | :--- |
+| <strong>Source</strong> | N Sources (2 slit) | 1 Source (Single slit) |
+| <strong>Fringe Width</strong> | Equal width ($\beta$) | Central max is double width |
+| <strong>Intensity</strong> | Fringes have equal brightness | Brightness drops rapidly |
+| <strong>Dark Fringes</strong> | Perfectly black | Not perfectly black |</p><p><strong>Visual Logic:</strong>
+*   <strong>Interference:</strong> &quot;Two singers harmonizing.&quot;
+*   <strong>Diffraction:</strong> &quot;One singer&#x27;s voice going around a corner.&quot;</p><p><strong>Simultaneity:</strong>
+Yes (e.g., Double Slit Experiment). The main pattern is <strong>Interference</strong>, but the intensity fades out at the edges due to <strong>Diffraction</strong> from the individual slits.</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q6.2')">
@@ -163,9 +150,11 @@ In Young&#x27;s Experiment, light shines through two tiny slits. The waves fan o
 *   Position of n-th Bright Fringe: y<sub>n</sub>_bright = nβ
 *   Position of n-th Dark Fringe: y<sub>n</sub>_dark = (n - 0.5)β
 *   Intensity at a point: I = I<sub>max</sub> cos²(δ/2) where δ = (2π/λ)Δx (Δx is path difference)</p><p><strong>Calculation:</strong>
-Given: λ = 600 nm = 600 × 10⁻⁹ m = 6 × 10⁻⁷ m
-d = 0.2 mm = 0.2 × 10⁻³ m = 2 × 10⁻⁴ m
-D = 1 m</p><p><strong>(a) Fringe Width (β):</strong>
+<strong>Input Data Table:</strong></p><p>| Variable | Symbol | Value | Converted SI |
+| :--- | :--- | :--- | :--- |
+| <strong>Wavelength</strong> | $\lambda$ | 600 nm | $6 \times 10^{-7}$ m |
+| <strong>Slit Separation</strong> | $d$ | 0.2 mm | $2 \times 10^{-4}$ m |
+| <strong>Screen Distance</strong> | $D$ | 1 m | 1 m |</p><p><strong>(a) Fringe Width (β):</strong>
 β = (λD) / d = (6 × 10⁻⁷ m × 1 m) / (2 × 10⁻⁴ m)
 β = 3 × 10⁻³ m = <strong>3 mm</strong></p><p><strong>(b) Distance of 3rd Bright Fringe from center (y₃_bright):</strong>
 For bright fringes, n = 3.

@@ -52,15 +52,18 @@
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Concept:</strong>
-<strong>Simple Harmonic Motion (SHM)</strong> is the perfect &quot;back-and-forth&quot; wiggles. (Think of a pendulum or a child on a swing).
-*   <strong>The Rule:</strong> The farther you push it away from the center, the harder it gets pulled back. (Push 2x far = Pulled back 2x hard). This specific &quot;pull-back&quot; force creates the smooth rhythm of SHM.</p><p><strong>Formula:</strong>
-*   <strong>Force:</strong> F = -kx
-*   <strong>Differential Equation:</strong> d²x/dt² + ω²x = 0
-*   <strong>Solution:</strong> x(t) = A cos(ωt + φ)</p><p><strong>Key Properties:</strong>
-1.  <strong>Acceleration:</strong> a = -ω²x (Max at extremes)
-2.  <strong>Velocity:</strong> v = ±ω√(A²-x²) (Max at center)
-3.  <strong>Period:</strong> Independent of Amplitude.</p><p>---</p>
+&gt; <strong>Definition:</strong>
+&gt; Periodic motion where the restoring force is directly proportional to the displacement and acts towards the equilibrium position.
+&gt; $$ F \propto -x $$</p><p><strong>Visual Model:</strong></p><p><pre><code>mermaid
+graph LR
+    Linear[Force F] --&gt;|Proportional to| Disp[Displacement -x]
+    Disp --&gt;|Causes| Acc[Acceleration -a]
+    Acc --&gt;|Restores| Equil((Equilibrium))
+</code></pre></p><p><strong>Key Equations:</strong></p><p>| Qty | Equation | Condition |
+| :--- | :--- | :--- |
+| <strong>Force</strong> | $F = -kx$ | Hooke&#x27;s Law |
+| <strong>Motion</strong> | $x(t) = A \cos(\omega t + \phi)$ | Position |
+| <strong>Accel</strong> | $a = -\omega^2 x$ | Max at Extremes |</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q5.1')">
@@ -92,16 +95,13 @@
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Concept:</strong>
-In SHM, energy plays a game of catch:
-*   <strong>At the Center:</strong> Speed is max, so Kinetic Energy is max. (Spring is relaxed).
-*   <strong>At the Edges:</strong> Speed is zero (turning around), so Potential Energy is max (Spring is stretched/compressed).
-*   The <strong>Total Energy</strong> stays the same forever (if no friction), just swapping back and forth between Motion and Tension.</p><p><strong>Formula:</strong>
-*   U = ½kx² = ½mω²x²
-*   K = ½mv² = ½mω²(A²-x²)
-*   E<sub>total</sub> = K + U = ½kA²</p><p><strong>Energy Distribution:</strong>
-*   <strong>Equilibrium (x=0):</strong> Max K, Zero U.
-*   <strong>Extremes (x=±A):</strong> Max U, Zero K.</p><p>---</p>
+&gt; <strong>Conservation Principle:</strong>
+&gt; In ideal SHM (no friction), energy continuously cycles between Kinetic (Motion) and Potential (Spring Stored), but the <strong>Total Energy ($E$) remains constant.</strong></p><p><strong>Energy Distribution Table:</strong></p><p>| Position | Displacement ($x$) | Kinetic Energy ($K$) | Potential Energy ($U$) |
+| :--- | :--- | :--- | :--- |
+| <strong>Mean</strong> | $0$ | <strong>Max</strong> ($\frac{1}{2}kA^2$) | <strong>Zero</strong> ($0$) |
+| <strong>Extreme</strong> | $\pm A$ | <strong>Zero</strong> ($0$) | <strong>Max</strong> ($\frac{1}{2}kA^2$) |
+| <strong>Any</strong> | $x$ | $\frac{1}{2}k(A^2-x^2)$ | $\frac{1}{2}kx^2$ |</p><p><strong>Visual Equation:</strong>
+$$ E_{total} = K + U = \frac{1}{2}kA^2 = \text{Constant} $$</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q5.2')">

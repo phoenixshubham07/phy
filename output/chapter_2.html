@@ -52,14 +52,14 @@
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Concept:</strong>
-This is the &quot;Secret Trick&quot; of projectile motion: <strong>Horizontal and Vertical movements don&#x27;t care about each other.</strong>
-*   <strong>Horizontal:</strong> The ball keeps moving at a constant speed because no force (gravity) pulls it sideways.
-*   <strong>Vertical:</strong> Gravity pulls the ball down faster and faster, exactly like a dropped stone.
-Because they are independent, we can solve the math for X and Y separately!</p><p><strong>Formula:</strong>
-*   x-axis: a<sub>x</sub> = 0  →  v<sub>x</sub> = constant
-*   y-axis: a<sub>y</sub> = -g →  v<sub>y</sub> changes</p><p><strong>Key Reasoning:</strong>
-Gravity acts only vertically. There is no force in the horizontal direction (neglecting air resistance). Thus, horizontal and vertical motions can be analyzed using separate independent equations connected only by time &#x27;t&#x27;.</p><p>---</p>
+&gt; <strong>Principle:</strong>
+&gt; The horizontal and vertical components of projectile motion are <strong>completely independent</strong> of each other. Motion along one axis has zero effect on motion along the perpendicular axis.</p><p><strong>Axis Analysis Table:</strong></p><p>| Axis | Force | Acceleration | Motion Type | Equation |
+| :--- | :--- | :--- | :--- | :--- |
+| <strong>Horizontal (X)</strong> | None (0) | $a<sub>x</sub> = 0$ | <strong>Uniform Velocity</strong> | $x = u<sub>x</sub> t$ |
+| <strong>Vertical (Y)</strong> | Gravity ($mg$) | $a<sub>y</sub> = -g$ | <strong>Uniform Acceleration</strong> | $y = u<sub>y</sub> t - \frac{1}{2}gt^2$ |</p><p><strong>Reasoning:</strong>
+*   Forces are vectors.
+*   Gravity acts purely vertically (down). It has <strong>no component</strong> horizontally ($\cos 90^\circ = 0$).
+*   Therefore, the horizontal speed never changes (ignoring air), while the vertical speed changes constantly.</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q2.1')">
@@ -91,18 +91,21 @@ Gravity acts only vertically. There is no force in the horizontal direction (neg
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Concept:</strong>
-*   <strong>Max Height (H):</strong> This is the &quot;turning point&quot;. As the ball goes up, gravity slows it down. At the very top, effectively for a split second, its vertical speed is <strong>zero</strong> before it starts falling.
-*   <strong>Time of Flight (T):</strong> This is simply how long the ball stays in the air. It&#x27;s the time it takes for gravity to pull it up to the peak and then back down to the ground.</p><p><strong>Formula:</strong>
-*   v² - u² = 2as
-*   s = ut + ½at²</p><p><strong>Derivation:</strong>
-<strong>1. Max Height (H):</strong>
-At top, v<sub>y</sub> = 0.
-0² - (u sinθ)² = 2(-g)H
-<strong>H = (u² sin²θ) / 2g</strong></p><p><strong>2. Time of Flight (T):</strong>
-Total vertical displacement y = 0.
-0 = (u sinθ)T - ½gT²
-<strong>T = (2u sinθ) / g</strong></p><p>---</p>
+<strong>Visual Trajectory:</strong></p><p><pre><code>mermaid
+graph LR
+    Start((Launch)) --&gt;|Rising| Peak((Max Height))
+    Peak --&gt;|Falling| End((Land))
+    style Peak fill:#ff9,stroke:#333
+</code></pre></p><p>&gt; <strong>Definitions:</strong>
+&gt; *   <strong>Max Height ($H$):</strong> Vertical distance where $v<sub>y</sub> = 0$.
+&gt; *   <strong>Time of Flight ($T$):</strong> Total duration the projectile remains in air ($y_{final} = 0$).</p><p><strong>Derivation Steps:</strong></p><p>| Parameter | Condition Used | Equation Derived |
+| :--- | :--- | :--- |
+| <strong>Max Height ($H$)</strong> | At peak, vertical velocity $v<sub>y</sub> = 0$ | $$ H = \frac{u^2 \sin^2 \theta}{2g} $$ |
+| <strong>Time of Flight ($T$)</strong> | Total vertical displacement $y = 0$ | $$ T = \frac{2u \sin \theta}{g} $$ |</p><p><strong>Detailed Proof:</strong>
+1.  <strong>For H:</strong> Use $v^2 - u^2 = 2as$.
+    *   $0^2 - (u \sin \theta)^2 = 2(-g)H \implies H = \frac{u^2 \sin^2 \theta}{2g}$
+2.  <strong>For T:</strong> Use $y = ut + \frac{1}{2}at^2$.
+    *   $0 = (u \sin \theta)T - \frac{1}{2}gT^2 \implies T = \frac{2u \sin \theta}{g}$</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q2.2')">
@@ -134,18 +137,14 @@ Total vertical displacement y = 0.
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Concept:</strong>
-<strong>Range</strong> is how far the ball travels across the ground.
-*   If you throw too high (large angle), it stays in air long but doesn&#x27;t go far forward.
-*   If you throw too low (small angle), it moves fast forward but hits the ground too soon.
-*   <strong>45°</strong> is the &quot;Goldilocks&quot; angle—perfect balance between height (time in air) and forward speed, giving maximum distance.</p><p><strong>Formula:</strong>
-R = (u² sin2θ) / g</p><p><strong>Explanation:</strong>
-<strong>1. Maximum Range:</strong>
-R is max when sin2θ = 1 → 2θ = 90° → <strong>θ = 45°</strong>.</p><p><strong>2. Complementary Angles:</strong>
-For angles θ and (90°-θ):
-*   sin(2θ)
-*   sin(2(90°-θ)) = sin(180°-2θ) = sin(2θ)
-*   Result: <strong>R₁ = R₂</strong> (Ranges are identical).</p><p>---</p>
+&gt; <strong>Definition (Range):</strong>
+&gt; Horizontal distance covered during the time of flight. Determined by the product of horizontal velocity and total time.</p><p><strong>Formula:</strong>
+$$ R = \frac{u^2 \sin 2\theta}{g} $$</p><p><strong>Logic Table:</strong></p><p>| Case | Angle | Mathematical Reason | Result |
+| :--- | :--- | :--- | :--- |
+| <strong>Max Range</strong> | $\theta = 45^\circ$ | $\sin 2\theta$ reaches max value (1) at $90^\circ$ ($2\times45$). | $R_{max} = u^2/g$ |
+| <strong>Complementary</strong> | $90^\circ - \theta$ | $\sin(2(90-\theta)) = \sin(180-2\theta) = \sin 2\theta$ | Ranges are <strong>Equal</strong> |</p><p><strong>Interpretation:</strong>
+*   <strong>45°:</strong> The perfect compromise between &quot;Going High&quot; (Time) and &quot;Going Fast Forward&quot; (Speed).
+*   <strong>Complementary:</strong> A high lob ($60^\circ$) and a low drive ($30^\circ$) land at the same spot, though their flight times differ.</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q2.3')">
@@ -186,21 +185,21 @@ For angles θ and (90°-θ):
                             <div class="answer-inner">
                                 <p>*
 <strong>Concept:</strong>
-Imagine rolling a ball off a table.
-1.  <strong>Sideways:</strong> It keeps moving at the same speed (40 m/s) because nothing slows it horizontal.
-2.  <strong>Downwards:</strong> It starts falling from rest, getting faster due to gravity.
-We combine these two motions to find where and when it hits.</p><p><strong>Formula:</strong>
-*   h = ½gt²
-*   R = u<sub>x</sub> × t
-*   v = √(v<sub>x</sub>² + v<sub>y</sub>²)</p><p><strong>Calculation:</strong>
-<strong>(a) Time of Flight:</strong>
-80 = ½(10)t² → t²=16
-<strong>t = 4 s</strong></p><p><strong>(b) Range:</strong>
-R = 40 × 4 = <strong>160 m</strong></p><p><strong>(c) Final Velocity:</strong>
-v<sub>x</sub> = 40 m/s
-v<sub>y</sub> = gt = 10(4) = 40 m/s
-v = √(40² + 40²) = <strong>56.57 m/s</strong></p><p><strong>(d) Angle:</strong>
-tan α = 40/40 = 1 → <strong>α = 45°</strong></p><p>---</p>
+<strong>Horizontal Projectile Motion:</strong> Launch angle is 0°.
+*   Initial Velocity: $u<sub>x</sub> = 40, u<sub>y</sub> = 0$.
+*   Motion acts like &quot;Free Fall&quot; + &quot;Constant Drift&quot;.</p><p><strong>Input Data Table:</strong></p><p>| Variable | Value |
+| :--- | :--- |
+| Initial Velocity ($u<sub>x</sub>$) | 40 m/s |
+| Height ($h$) | 80 m |
+| Gravity ($g$) | 10 m/s² |
+| Initial Vertical ($u<sub>y</sub>$) | 0 m/s |</p><p><strong>Calculations:</strong></p><p><strong>(a) Time of Flight ($t$):</strong>
+Using $h = \frac{1}{2}gt^2$:
+$$ 80 = \frac{1}{2}(10)t^2 \implies 16 = t^2 \implies \mathbf{t = 4 \text{ s}} $$</p><p><strong>(b) Horizontal Range ($R$):</strong>
+$$ R = u<sub>x</sub> \times t = 40 \times 4 = \mathbf{160 \text{ m}} $$</p><p><strong>(c) Final Velocity ($v$):</strong>
+*   $v<sub>x</sub> = 40$ m/s (Constant)
+*   $v<sub>y</sub> = gt = 10(4) = 40$ m/s
+*   Resultant: $v = \sqrt{40^2 + 40^2} = \mathbf{56.57 \text{ m/s}} $</p><p><strong>(d) Angle ($\alpha$):</strong>
+$$ \tan \alpha = \frac{v<sub>y</sub>}{v<sub>x</sub>} = \frac{40}{40} = 1 \implies \mathbf{\alpha = 45^\circ} $$</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q2.4')">

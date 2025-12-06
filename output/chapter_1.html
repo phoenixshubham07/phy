@@ -52,13 +52,18 @@
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Concept:</strong>
-Think of a <strong>Scalar</strong> as just a &quot;number&quot; or &quot;amount&quot; (like how much money you have). It only has size (magnitude).
-Think of a <strong>Vector</strong> as an &quot;arrow&quot;. It has both a size (length of the arrow) and a specific direction (where it points). For example, &quot;5 steps&quot; is a scalar (distance), but &quot;5 steps North&quot; is a vector (position) because knowing the direction is crucial to finding where you are.</p><p><strong>Formula:</strong>
-*   Scalar: Magnitude
-*   Vector: Magnitude + Direction</p><p><strong>Key Examples:</strong>
-*   <strong>Scalars:</strong> Mass, Speed, Energy.
-*   <strong>Vectors:</strong> Velocity, Force, Displacement.</p><p>---</p>
+&gt; <strong>Definition:</strong>
+&gt; *   <strong>Scalar:</strong> A quantity having only magnitude (size) and no direction.
+&gt; *   <strong>Vector:</strong> A quantity having both magnitude and direction, obeying vector laws.</p><p><strong>Comparison Table:</strong></p><p>| Feature | Scalar | Vector |
+| :--- | :--- | :--- |
+| <strong>Magnitude</strong> | Yes | Yes |
+| <strong>Direction</strong> | No | Yes |
+| <strong>Addition</strong> | Simple Algebra (2+3=5) | Vector Algebra (Triangle Law) |
+| <strong>Example</strong> | Mass, Time, Speed | Force, Velocity, Position |</p><p><strong>Relationship Explanation:</strong>
+*   <strong>Distance vs. Position:</strong>
+    *   <strong>Distance (Scalar):</strong> &quot;How much ground covered?&quot; (e.g., 5 meters). Direction implies nothing.
+    *   <strong>Position (Vector):</strong> &quot;Where are you relative to start?&quot; (e.g., 5 meters *North*). Direction constitutes the definition.
+    *   *Analogy:* &quot;Distance&quot; is the odometer reading on your car. &quot;Position&quot; is the GPS pin on a map.</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q1.1')">
@@ -90,14 +95,26 @@ Think of a <strong>Vector</strong> as an &quot;arrow&quot;. It has both a size (
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Concept:</strong>
-Imagine walking along a path.
-*   <strong>Triangle Law:</strong> If you walk from A to B, then B to C, your net result is the straight line from start (A) to finish (C). This is for vectors placed head-to-tail.
-*   <strong>Parallelogram Law:</strong> Imagine two people pulling a box from the same point but in different directions. The box moves in a &quot;resultant&quot; direction forming the diagonal of a parallelogram. This is for vectors starting from the same point.</p><p><strong>Formula:</strong>
-*   <strong>Triangle Law:</strong> <strong>R</strong> = <strong>A</strong> + <strong>B</strong> (Third side closing the triangle)
-*   <strong>Resultant Magnitude:</strong> |<strong>R</strong>| = √(A² + B² + 2AB cosθ)</p><p><strong>Application:</strong>
-1.  <strong>Triangle Law:</strong> Use for sequential vectors (head-to-tail).
-2.  <strong>Parallelogram Law:</strong> Use for simultaneous vectors from one point (tail-to-tail).</p><p>---</p>
+&gt; <strong>Definition:</strong>
+&gt; *   <strong>Triangle Law:</strong> If two vectors are represented by two sides of a triangle in sequence, their sum is the third closing side.
+&gt; *   <strong>Parallelogram Law:</strong> If two vectors originate from a point, their sum is the diagonal of the parallelogram formed by them.</p><p><strong>Visual Representation:</strong></p><p><pre><code>mermaid
+graph LR
+    subgraph Triangle<sub>Law</sub>
+    A((Start)) --&gt;|A| B
+    B --&gt;|B| C((End))
+    A -.-&gt;|Resultant R = A+B| C
+    end</p><p>subgraph Parallelogram<sub>Law</sub>
+    O((Origin)) --&gt;|P| X
+    O --&gt;|Q| Y
+    O -.-&gt;|Resultant R| Z
+    X -.-&gt; Z
+    Y -.-&gt; Z
+    end
+</code></pre></p><p><strong>Usage Table:</strong></p><p>| Method | Best Used For | Arrangement |
+| :--- | :--- | :--- |
+| <strong>Triangle Law</strong> | Displacement, Sequential Motion | Head-to-Tail (Chain) |
+| <strong>Parallelogram Law</strong> | Forces, Simultaneous Pulls | Tail-to-Tail (Concurrent) |</p><p><strong>Formula:</strong>
+$$ |R| = \sqrt{A^2 + B^2 + 2AB \cos \theta} $$</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q1.2')">
@@ -129,14 +146,16 @@ Imagine walking along a path.
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Concept:</strong>
-The <strong>Dot Product</strong> tells you how much one vector &quot;goes in the same direction&quot; as another. It multiplies the parts of the vectors that are parallel.
-*   The result is just a number (Scalar).
-*   If two vectors act together (parallel), the value is max.
-*   If they are perpendicular (90°), they don&#x27;t help each other at all, so the result is <strong>Zero</strong>.</p><p><strong>Formula:</strong>
-<strong>A</strong> · <strong>B</strong> = |<strong>A</strong>||<strong>B</strong>| cosθ</p><p><strong>Key Points:</strong>
-*   <strong>Finding Angle:</strong> cosθ = (<strong>A</strong> · <strong>B</strong>) / (|<strong>A</strong>| |<strong>B</strong>|)
-*   <strong>Perpendicular Condition:</strong> If <strong>A</strong> · <strong>B</strong> = 0, then θ = 90° (Vectors are orthogonal).</p><p>---</p>
+&gt; <strong>Definition:</strong>
+&gt; The <strong>Dot Product</strong> (Scalar Product) is the product of the magnitudes of two vectors and the cosine of the angle between them. It measures &quot;parallel projection&quot;.</p><p><strong>Relationship Explanation:</strong>
+*   <strong>Scalar Result:</strong> The output is a simple number, not an arrow.
+*   <strong>Meaning:</strong> It tells you &quot;How much of Vector A is pointing along Vector B?&quot;.</p><p><strong>Formula:</strong>
+$$ \vec{A} \cdot \vec{B} = |\vec{A}| |\vec{B}| \cos \theta $$</p><p><strong>Key Cases Table:</strong></p><p>| Condition | Angle ($\theta$) | Dot Product | Interpretation |
+| :--- | :--- | :--- | :--- |
+| <strong>Parallel</strong> | $0^\circ$ | $+|A||B|$ | Maximum positive overlap |
+| <strong>Perpendicular</strong> | $90^\circ$ | $0$ | <strong>Orthogonal (No overlap)</strong> |
+| <strong>Anti-Parallel</strong> | $180^\circ$ | $-|A||B|$ | Maximum opposing overlap |</p><p><strong>Finding Angle:</strong>
+$$ \theta = \cos^{-1} \left( \frac{\vec{A} \cdot \vec{B}}{|\vec{A}| |\vec{B}|} \right) $$</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q1.3')">
@@ -168,21 +187,22 @@ The <strong>Dot Product</strong> tells you how much one vector &quot;goes in the
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Concept:</strong>
-<strong>Relative Velocity</strong> is simply &quot;how fast something looks like it&#x27;s moving from *your* point of view.&quot;
-If you are running at 5 m/s and a friend runs next to you at 5 m/s, they look stationary relative to you (Relative Velocity = 0).
-For a boat in a river, the boat has its own engine speed, but the river also carries it. The total (resultant) velocity is the combination of both.</p><p><strong>Formula:</strong>
-<strong>v<sub>rel</sub></strong> = <strong>v<sub>object</sub></strong> - <strong>v<sub>observer</sub></strong> (Vector Subtraction)</p><p><strong>Solution (Boat Example):</strong>
-*   <strong>v<sub>boat</sub></strong> = 10 m/s (in water)
-*   <strong>v<sub>current</sub></strong> = 4 m/s (river)
-*   <strong>Resultant Velocity:</strong> <strong>v<sub>R</sub></strong> = <strong>v<sub>boat</sub></strong> + <strong>v<sub>current</sub></strong> (since current carries boat)</p><p><strong>Diagram:</strong>
-      10 m/s (Boat)
-        ↑
-        |
-________|____→ 4 m/s (Current)
-        /
-       / Resultant
-      /</p><p>---</p>
+&gt; <strong>Definition:</strong>
+&gt; <strong>Relative Velocity</strong> is the velocity of an object observed from a specific reference frame (which itself might be moving). It is the vector difference between velocities.</p><p><strong>Visual Diagram:</strong></p><p><pre><code>mermaid
+graph TD
+    Current[River Current (4 m/s)] --&gt;|Pushing East| Result
+    Boat[Boat Engine (10 m/s)] --&gt;|Pushing North| Result
+    Result[Resultant Velocity (Diagonal)]
+    style Result fill:#f9f,stroke:#333,stroke-width:2px
+</code></pre></p><p><strong>Formula:</strong>
+$$ \vec{v}_{rel} = \vec{v}_{object} - \vec{v}_{observer} $$</p><p><strong>Boat Analysis:</strong>
+*   <strong>Scenario:</strong> Boat tries to go North ($10\hat{j}$), River flows East ($4\hat{i}$).
+*   <strong>Observer on Ground:</strong> Sees the boat moving diagonally because it participates in *both* motions.
+*   <strong>Result Matrix:</strong></p><p>| Component | Value | Source |
+| :--- | :--- | :--- |
+| <strong>Vertical</strong> | 10 m/s | Engine |
+| <strong>Horizontal</strong> | 4 m/s | Current |
+| <strong>Resultant</strong> | $\sqrt{10^2+4^2}$ | Combined Motion |</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q1.4')">

@@ -52,16 +52,19 @@
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Concept:</strong>
-<strong>Standing Waves</strong> are what happen on guitar strings.
-*   You pluck a string, sending waves down the line. They hit the end and bounce back.
-*   The forward wave and backward wave mix together.
-*   <strong>Nodes:</strong> Dead spots that don&#x27;t move at all (safe to touch).
-*   <strong>Antinodes:</strong> Spots that wiggle the most (maximum sound).</p><p><strong>Formula:</strong>
-*   Wave Speed: v = √(T/μ)
-*   Frequency: f<sub>n</sub> = n(v/2L)</p><p><strong>Conditions:</strong>
-*   <strong>Nodes:</strong> Zero displacement (Destructive).
-*   <strong>Antinodes:</strong> Max displacement (Constructive).</p><p>---</p>
+&gt; <strong>Definition:</strong>
+&gt; <strong>Standing Waves</strong> result from the superposition of two waves of identical frequency relative to opposite directions. They do not transmit energy; they oscillate in place.</p><p><strong>Wave Anatomy:</strong></p><p>| Part | Full Name | Motion | Displacement |
+| :--- | :--- | :--- | :--- |
+| <strong>Node</strong> | N | Stationary | <strong>Zero</strong> |
+| <strong>Antinode</strong> | A | Oscillating | <strong>Maximum</strong> |</p><p><strong>Visual String:</strong>
+<pre><code>mermaid
+graph LR
+    Left[End] --- Loop((Loop)) --- Right[End]
+    style Loop fill:#ff9
+</code></pre>
+*Nodes at Ends ($x=0, L$), Antinode in middle.*</p><p><strong>Formula:</strong>
+$$ v = \sqrt{\frac{T}{\mu}} $$
+($T$ = Tension, $\mu$ = Mass per unit length)</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q10.1')">
@@ -93,14 +96,13 @@
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Concept:</strong>
-<strong>Doppler Effect</strong> is why a passing ambulance sounds like &quot;Neee-Nooo... Vrrrroooom!&quot;.
-*   <strong>Approaching:</strong> The car chases its own sound waves, squashing them together. Squashed waves = Higher Pitch (High Frequency).
-*   <strong>Receding:</strong> The car runs away from its sound, stretching the waves out. Stretched waves = Lower Pitch (Low Frequency).</p><p><strong>Formula:</strong>
-f&#x27; = f [(v ± v<sub>o</sub>) / (v ∓ v<sub>s</sub>)]</p><p><strong>Approaching Source:</strong>
-When source approaches stationary observer:
-*   Wavelength shortens (compressed).
-*   <strong>f&#x27; = f [v / (v - v<sub>s</sub>)]</strong> (Frequency increases).</p><p>---</p>
+&gt; <strong>Definition:</strong>
+&gt; The apparent change in frequency of a wave due to relative motion between the source and the observer.</p><p><strong>Effect Summary:</strong></p><p>| Action | Frequency Change | Pitch Perception |
+| :--- | :--- | :--- |
+| <strong>Approaching</strong> | Increases ($\uparrow$) | <strong>Higher</strong> (&quot;Eeee&quot;) |
+| <strong>Receding</strong> | Decreases ($\downarrow$) | <strong>Lower</strong> (&quot;Oooo&quot;) |</p><p><strong>Formula:</strong>
+$$ f&#x27; = f \left( \frac{v \pm v<sub>o</sub>}{v \mp v<sub>s</sub>} \right) $$</p><p><strong>Analogy:</strong>
+A car approaching you crunches the sound waves together (shorter wavelength = higher freq). A car leaving stretches them out.</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q10.2')">
@@ -194,7 +196,11 @@ We need to calculate two different frequencies:
 The &quot;change&quot; is the difference between these two notes.</p><p><strong>Formula:</strong>
 *   Approach: f&#x27; = f [v / (v - v<sub>s</sub>)]
 *   Recede: f&#x27;&#x27; = f [v / (v + v<sub>s</sub>)]</p><p><strong>Calculation:</strong>
-v<sub>s</sub> = 36 km/h = 10 m/s. v = 340 m/s.</p><p><strong>(a) Approaching:</strong>
+<strong>Input Data Table:</strong></p><p>| Variable | Symbol | Value |
+| :--- | :--- | :--- |
+| <strong>Source Velocity</strong> | $v<sub>s</sub>$ | 36 km/h (10 m/s) |
+| <strong>Sound Speed</strong> | $v$ | 340 m/s |
+| <strong>Source Frequency</strong> | $f<sub>s</sub>$ | 400 Hz |</p><p><strong>(a) Approaching:</strong>
 f&#x27; = 400 [340 / (340-10)] = 400(340/330)
 <strong>f&#x27; = 412.1 Hz</strong></p><p><strong>(b) Receding:</strong>
 f&#x27;&#x27; = 400 [340 / (340+10)] = 400(340/350)

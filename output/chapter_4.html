@@ -52,14 +52,19 @@
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Concept:</strong>
-<strong>Momentum of Inertia (I)</strong> is just &quot;Rotational Mass&quot;.
-*   Heavy objects are hard to push (Mass).
-*   Heavy spinning objects are hard to stop spinning (Momentum of Inertia).
-It depends not just on weight, but *where* the weight is. Weight far from the center = Harder to spin = Higher I.</p><p><strong>Formula:</strong>
-*   Torque: τ = Iα
-*   Angular Momentum: L = Iω</p><p><strong>Conservation:</strong>
-If τ_ext = 0, then Li = Lf. (I₁ω₁ = I₂ω₂)</p><p>---</p>
+&gt; <strong>Definition:</strong>
+&gt; <strong>Moment of Inertia ($I$)</strong> is the rotational equivalent of mass. It measures an object&#x27;s resistance to angular acceleration.</p><p><strong>Mass vs. Moment of Inertia:</strong></p><p>| Property | Linear Motion (Mass $m$) | Rotational Motion (MOI $I$) |
+| :--- | :--- | :--- |
+| <strong>Role</strong> | Resistance to Force | Resistance to Torque |
+| <strong>Dependence</strong> | Amount of Matter | Amount of Matter + <strong>Distribution ($r^2$)</strong> |
+| <strong>Equation</strong> | $F = ma$ | $\tau = I \alpha$ |</p><p><strong>Visual Rod:</strong></p><p><pre><code>mermaid
+graph LR
+    Axis((Axis)) ---|L/2| Center
+    Center ---|L/2| End
+    style Axis fill:#f9f
+</code></pre>
+*Rod leads to $ML^2/12$ if center, $ML^2/3$ if end.*</p><p><strong>Formula:</strong>
+$$ I = \int r^2 dm $$</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q4.1')">
@@ -91,15 +96,12 @@ If τ_ext = 0, then Li = Lf. (I₁ω₁ = I₂ω₂)</p><p>---</p>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Concept:</strong>
-<strong>Rolling</strong> is a special mix of two motions: Moving forward (Translation) + Spinning (Rotation).
-*   <strong>&quot;Without Slipping&quot;:</strong> Means the tire grips the road perfectly. The bottom point touching the ground is momentarily stuck (stationary), pushing the car forward.
-*   <strong>Energy Split:</strong> When an object rolls down a hill, gravity&#x27;s energy has to do two jobs: make it go fast AND make it spin. So it goes slower than a sliding block (which only needs to go fast).</p><p><strong>Formula:</strong>
-*   Condition: v = ωr
-*   v<sub>rolling</sub> = √(2gh / (1+k)) where I=kmr²</p><p><strong>Comparison:</strong>
-A rolling object stores energy in rotation, so less energy is available for speed compared to sliding.
-*   <strong>v<sub>sliding</sub></strong> = √(2gh) (Faster)
-*   <strong>v<sub>rolling</sub></strong> &lt; v<sub>sliding</sub> (Slower)</p><p>---</p>
+&gt; <strong>Concept:</strong>
+&gt; <strong>Rolling Without Slipping</strong> is a hybrid motion: Translation of Center + Rotation about Center. The point of contact is instantaneously at rest ($v = \omega r$).</p><p><strong>Energy Comparison:</strong></p><p>| Motion Type | Energy Components | Final Velocity Formula | Speed Rank |
+| :--- | :--- | :--- | :--- |
+| <strong>Sliding</strong> | Only Translational KE ($\frac{1}{2}mv^2$) | $v = \sqrt{2gh}$ | <strong>Fastest</strong> |
+| <strong>Rolling</strong> | Trans KE + Rot KE ($\frac{1}{2}I\omega^2$) | $v = \sqrt{\frac{2gh}{1+k^2/r^2}}$ | <strong>Slower</strong> |</p><p><strong>Reasoning:</strong>
+In rolling, some &quot;Potential Energy&quot; budget is spent on &quot;Spinning&quot;. In sliding, 100% of the budget goes to &quot;Moving Forward&quot;. Thus, rolling is slower.</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q4.2')">
@@ -131,15 +133,13 @@ A rolling object stores energy in rotation, so less energy is available for spee
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Concept:</strong>
-A <strong>Geostationary Satellite</strong> appears &quot;frozen&quot; in the sky to an observer on Earth.
-*   <strong>How?</strong> It orbits at the *exact same speed* that Earth turns. Earth takes 24 hours to spin once; the satellite takes 24 hours to orbit once.
-*   They move in sync, like two dancers holding hands.</p><p><strong>Requirements:</strong>
-1.  <strong>T = 24 hours.</strong>
-2.  <strong>Equatorial Orbit.</strong>
-3.  <strong>Rotation:</strong> West to East.</p><p><strong>Radius Formula:</strong>
-r = ∛[GMT²/(4π²)] ≈ 42,000 km.
-(Fixed value determined uniquely by T=24h).</p><p>---</p>
+&gt; <strong>Definition:</strong>
+&gt; A satellite that appears <strong>stationary</strong> relative to a fixed point on Earth. It orbits at the exact same angular speed as Earth&#x27;s rotation.</p><p><strong>Essential Conditions:</strong></p><p>1.  <strong>Time Period:</strong> Must be exactly <strong>24 hours</strong> (sync with Earth).
+2.  <strong>Plane:</strong> Must orbit in the <strong>Equatorial Plane</strong> (0° latitude).
+3.  <strong>Direction:</strong> Must rotate <strong>West to East</strong> (same as Earth).</p><p><strong>Radius Calculation:</strong>
+Since $T$ is fixed (24h) and $M$ (Earth mass) is fixed, Kepler&#x27;s Law dictates a specific radius:
+$$ r^3 = \frac{GMT^2}{4\pi^2} \implies r \approx 42,000 \text{ km} $$
+There is only *one* parking spot for a 24-hour orbit.</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q4.3')">
@@ -309,14 +309,14 @@ Using τ = Iα:
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Concept:</strong>
-Calculating Moment of Inertia (I) for weird axes can be hard. These two theorems are &quot;Shortcuts&quot;:
-*   <strong>Parallel Axis Theorem:</strong> If you know &#x27;I&#x27; through the center, you can easily find &#x27;I&#x27; for any other parallel axis (like swinging a bat from the handle vs center).
-*   <strong>Perpendicular Axis Theorem:</strong> For flat objects (like a pizza), the spin inertia around the vertical axis is just the sum of the other two axes.</p><p><strong>Formula:</strong>
-*   <strong>Parallel Axis:</strong> I = I<sub>cm</sub> + Md²
-*   <strong>Perpendicular Axis:</strong> I<sub>z</sub> = I<sub>x</sub> + I<sub>y</sub> (Planar objects only)</p><p><strong>Definitions:</strong>
-*   I<sub>cm</sub>: MOI through Center of Mass.
-*   d: perpendicular distance between axes.</p><p>---</p>
+<strong>Comparison of Theorems:</strong></p><p>| Theorem | Applicability | Formula | Visual |
+| :--- | :--- | :--- | :--- |
+| <strong>Perpendicular Axis</strong> | <strong>Planar (2D) Objects</strong> (e.g., Disk, Ring) | $I<sub>z</sub> = I<sub>x</sub> + I<sub>y</sub>$ | Z-axis = Sum of X and Y |
+| <strong>Parallel Axis</strong> | <strong>Any Object</strong> (2D or 3D) | $I = I_{cm} + Md^2$ | New Axis = Center Axis + &quot;Shift&quot; |</p><p>&gt; <strong>Definitions:</strong>
+&gt; *   $I_{cm}$: Moment of Inertia about Center of Mass.
+&gt; *   $d$: Perpendicular distance between the two parallel axes.
+&gt; *   $I<sub>z</sub>$: Axis perpendicular to the plane.</p><p><strong>Significance:</strong>
+These theorems allow us to calculate MOI for any axis (e.g., edge of a disk) if we know the MOI for the center.</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q4.8')">
@@ -348,14 +348,15 @@ Calculating Moment of Inertia (I) for weird axes can be hard. These two theorems
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Definition:</strong>
-The <strong>Center of Mass</strong> is the &quot;Balance Point&quot; of an object.
-*   If you balance a pen on your finger, your finger is at the CM.
-*   In physics, we pretend the *entire gravity* pulls on just this one single point to simplify math.</p><p><strong>Formula for Two-Body System:</strong>
-For two masses m₁ and m₂ at positions r₁ and r₂:
-<strong>R<sub>cm</sub> = (m₁r₁ + m₂r₂) / (m₁ + m₂)</strong></p><p><strong>Significance:</strong>
-<div class="list-item">• If m₁ &gt;&gt; m₂, the CM is closer to m₁.</div>
-<div class="list-item">• External forces act as if applied at the CM.</div></p><p>---</p>
+&gt; <strong>Definition:</strong>
+&gt; The point where the entire mass of a system can be theoretically concentrated to model its translational motion. It is the &quot;weighted average&quot; position of mass.</p><p><strong>Formula (Two-Body System):</strong>
+$$ R_{cm} = \frac{m<sub>1</sub> r<sub>1</sub> + m<sub>2</sub> r<sub>2</sub>}{m<sub>1</sub> + m<sub>2</sub>} $$</p><p><strong>Visual Balance:</strong></p><p><pre><code>mermaid
+graph LR
+    M1((Mass 1)) --- Link --- M2((Mass 2))
+    Link --- CM[Center of Mass]
+    style CM fill:#f96
+</code></pre>
+*If M1 &gt; M2, the CM shifts closer to M1.*</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q4.7')">

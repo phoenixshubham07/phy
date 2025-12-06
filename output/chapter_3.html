@@ -52,13 +52,15 @@
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Concept:</strong>
-*   <strong>Constant Force:</strong> Pushing a box on smooth floor. The push is same strength throughout. Work is simple multiplication.
-*   <strong>Variable Force:</strong> Stretching a rubber band. It gets *harder* to pull the more you stretch it. The force &quot;varies&quot; or changes. To calculate work here, we can&#x27;t just multiply—we assume we pull in tiny steps and add them all up (Integration).</p><p><strong>Formula:</strong>
-*   <strong>Constant:</strong> W = F·s
-*   <strong>Variable:</strong> W = ∫ F(x) dx
-*   <strong>Spring Work:</strong> W = ∫ kx dx = ½kx²</p><p><strong>Key Difference:</strong>
-Constant force implies uniform push/pull. Variable force (like a spring) changes magnitude with position, so average force or calculus is needed.</p><p>---</p>
+&gt; <strong>Definition:</strong>
+&gt; Work is the energy transferred to or from an object via the application of force along a displacement. For a variable force, it is the integration of force over position.</p><p><strong>Comparison Table:</strong></p><p>| Feature | Constant Force | Variable Force |
+| :--- | :--- | :--- |
+| <strong>Force Nature</strong> | Uniform magnitude | Changes with position ($x$) |
+| <strong>Calculation</strong> | Multiplication ($W = F \cdot s$) | Calculus ($W = \int F dx$) |
+| <strong>Example</strong> | Pushing a box on smooth floor | Stretching a spring ($F = -kx$) |</p><p><strong>Spring Example:</strong>
+*   As you stretch a spring, it fights back harder (Force increases).
+*   We sum up the work done for every tiny millimeter of stretch.
+*   Result: $W = \frac{1}{2}kx^2$ (Area under F-x graph).</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q3.1')">
@@ -90,16 +92,16 @@ Constant force implies uniform push/pull. Variable force (like a spring) changes
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Concept:</strong>
-The <strong>Work-Energy Theorem</strong> is the bridge between &quot;Action&quot; and &quot;Result&quot;.
-*   <strong>Action:</strong> You do Net Work on an object (push it).
-*   <strong>Result:</strong> The object speeds up (gains Kinetic Energy).
-It essentially says: &quot;The work you put in turns into the object&#x27;s speed energy.&quot;</p><p><strong>Formula:</strong>
-W<sub>net</sub> = ΔK = K<sub>final</sub> - K<sub>initial</sub></p><p><strong>Derivation:</strong>
-1.  W = ∫ F dx = ∫ (ma) dx
-2.  a dx = (v dv/dx) dx = v dv
-3.  W = m ∫ v dv = m [v²/2]
-4.  <strong>W = ½mv² - ½mu²</strong></p><p>---</p>
+&gt; <strong>Theorem:</strong>
+&gt; The <strong>Net Work</strong> done on an object by all forces acts to change its <strong>Kinetic Energy</strong>.
+&gt; $$ W_{net} = \Delta K = K<sub>f</sub> - K<sub>i</sub> $$</p><p><strong>Derivation Flow:</strong></p><p>1.  <strong>Newton&#x27;s Second Law:</strong> $F = ma$
+2.  <strong>Definition of Work:</strong> $W = \int F dx = \int m a dx$
+3.  <strong>Chain Rule Trick:</strong> $a = \frac{dv}{dt} = \frac{dv}{dx} \frac{dx}{dt} = v \frac{dv}{dx}$
+4.  <strong>Substitution:</strong>
+    $$ W = \int m \left( v \frac{dv}{dx} \right) dx = \int m v dv $$
+5.  <strong>Integration:</strong>
+    $$ W = m \left[ \frac{v^2}{2} \right]_{u}^{v} = \frac{1}{2}mv^2 - \frac{1}{2}mu^2 $$</p><p><strong>Physical Meaning:</strong>
+It connects <strong>Force</strong> (Cause) acting over distance to <strong>Speed</strong> (Effect). If you do positive work, you speed it up. Negative work slows it down.</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q3.2')">
@@ -131,15 +133,14 @@ W<sub>net</sub> = ΔK = K<sub>final</sub> - K<sub>initial</sub></p><p><strong>De
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Concept:</strong>
-<strong>Impulse</strong> is a large force acting for a very short time (like a bat hitting a ball). It causes a sudden change in momentum (speed).
-*   <strong>Airbags:</strong> They are soft pillows that make the collision last *longer* ( increase Δt).
-*   Since the total momentum change is fixed (stopping the car), increasing the *time* forces the *impact force* to be smaller. Longer time = Gentler hit.</p><p><strong>Formula:</strong>
-*   J = F<sub>avg</sub> × Δt = Δp
-*   F<sub>avg</sub> = Δp / Δt</p><p><strong>Application (Airbags):</strong>
-*   <strong>Goal:</strong> Reduce Force (F<sub>avg</sub>).
-*   <strong>Method:</strong> Increase time (Δt) using airbag cushioning.
-*   Since Δp is fixed (impact speed to zero), increasing Δt lowers F<sub>avg</sub>.</p><p>---</p>
+&gt; <strong>Definition:</strong>
+&gt; <strong>Impulse ($J$)</strong> is the product of average force and the time interval during which it acts. It equals the total Change in Momentum.</p><p><strong>Formula:</strong>
+$$ J = \int F dt = \mathbf{\Delta p} $$</p><p><strong>Real World Application: Airbags</strong>
+*   <strong>Goal:</strong> Survivor must come to rest ($\Delta p$ is fixed).
+*   <strong>Relation:</strong> $F_{avg} = \frac{\Delta p}{\Delta t}$.
+*   <strong>Mechanism:</strong> Airbags are soft; they increase the collision time ($\Delta t$) significantly.
+*   <strong>Result:</strong> Since $\Delta t$ goes UP, Impact Force ($F_{avg}$) comes DOWN.</p><p><strong>Analogy:</strong>
+Jumping onto concrete (instant stop, high pain) vs. Jumping onto a mattress (slow stop, no pain).</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q3.3')">
@@ -171,15 +172,13 @@ W<sub>net</sub> = ΔK = K<sub>final</sub> - K<sub>initial</sub></p><p><strong>De
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Concept:</strong>
-Imagine two billiard balls hitting.
-*   <strong>Momentum Conservation:</strong> Is *always* true. The total &quot;movement&quot; before crash = total &quot;movement&quot; after crash. (Newton&#x27;s Laws ensure this).
-*   <strong>Kinetic Energy:</strong> Is fragile. In real crashes (inelastic), some energy is lost to sound (&quot;Clack!&quot;), heat, or denting the ball. So KE is usually *not* conserved.</p><p><strong>Formula:</strong>
-p<sub>i</sub> = p<sub>f</sub> (m₁u₁ + m₂u₂ = m₁v₁ + m₂v₂)</p><p><strong>Why KE not conserved in Inelastic:</strong>
-In inelastic collisions, energy transforms into:
-1.  Heat/Sound.
-2.  Permanent deformation.
-3.  So, K<sub>final</sub> &lt; K<sub>initial</sub>.</p><p>---</p>
+&gt; <strong>Law of Conservation of Momentum:</strong>
+&gt; In an isolated system (no external forces), the total momentum remains constant before and after a collision.
+&gt; $$ p_{initial} = p_{final} $$</p><p><strong>Collision Types Table:</strong></p><p>| Collision Type | Momentum | Kinetic Energy | Why? |
+| :--- | :--- | :--- | :--- |
+| <strong>Elastic</strong> | Conserved | Conserved | No deformation or heat loss. |
+| <strong>Inelastic</strong> | Conserved | <strong>Not Conserved</strong> | Energy lost to <strong>Deformation, Heat, Sound</strong>. |</p><p><strong>Reasoning:</strong>
+Momentum is conserved because internal forces (Newton&#x27;s 3rd Law) cancel out. Energy is not conserved in inelastic collisions because &quot;crumpling a clear&quot; or &quot;making a loud bang&quot; costs energy!</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q3.4')">
@@ -391,9 +390,14 @@ F<sub>avg</sub> = Δp / Δt</p><p><strong>Calculation:</strong>
                         <div class="answer-content hidden">
                             <div class="answer-inner">
                                 <p>*
-<strong>Concept:</strong>
-*   <strong>Conservative Force (Reliable):</strong> Work done depends *only* on start and end points (not the path). Energy is &quot;stored&quot; and can be recovered completely (like gravity or springs).
-*   <strong>Non-Conservative Force (Wasteful):</strong> Work depends on the path taken. Energy is &quot;lost&quot; to heat/friction and cannot be fully recovered. Long path = more energy lost. Energy lost as heat.</p><p>---</p>
+&gt; <strong>Distinction:</strong>
+&gt; *   <strong>Conservative:</strong> Work done is independent of the path taken. Energy is reversible (stored as potential).
+&gt; *   <strong>Non-Conservative:</strong> Work done depends on path length. Energy is dissipated (lost as heat).</p><p><strong>Comparison Table:</strong></p><p>| Feature | Conservative | Non-Conservative |
+| :--- | :--- | :--- |
+| <strong>Path Dependence</strong> | Independent (Start $\to$ End) | Dependent (Longer path = More work) |
+| <strong>Round Trip Work</strong> | Zero | Non-Zero (Negative) |
+| <strong>Energy Storage</strong> | Stored as Potential Energy | Lost as Heat/Sound |
+| <strong>Examples</strong> | Gravity, Spring Force, Electrostatic | Friction, Air Resistance, Viscosity |</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q3.9')">
