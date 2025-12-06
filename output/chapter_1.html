@@ -97,20 +97,7 @@
                                 <p>*
 &gt; <strong>Definition:</strong>
 &gt; *   <strong>Triangle Law:</strong> If two vectors are represented by two sides of a triangle in sequence, their sum is the third closing side.
-&gt; *   <strong>Parallelogram Law:</strong> If two vectors originate from a point, their sum is the diagonal of the parallelogram formed by them.</p><p><strong>Visual Representation:</strong></p><p><pre><code>mermaid
-graph LR
-    subgraph Triangle<sub>Law</sub>
-    A((Start)) --&gt;|A| B
-    B --&gt;|B| C((End))
-    A -.-&gt;|Resultant R = A+B| C
-    end</p><p>subgraph Parallelogram<sub>Law</sub>
-    O((Origin)) --&gt;|P| X
-    O --&gt;|Q| Y
-    O -.-&gt;|Resultant R| Z
-    X -.-&gt; Z
-    Y -.-&gt; Z
-    end
-</code></pre></p><p><strong>Usage Table:</strong></p><p>| Method | Best Used For | Arrangement |
+&gt; *   <strong>Parallelogram Law:</strong> If two vectors originate from a point, their sum is the diagonal of the parallelogram formed by them.</p><p><strong>Usage Table:</strong></p><p>| Method | Best Used For | Arrangement |
 | :--- | :--- | :--- |
 | <strong>Triangle Law</strong> | Displacement, Sequential Motion | Head-to-Tail (Chain) |
 | <strong>Parallelogram Law</strong> | Forces, Simultaneous Pulls | Tail-to-Tail (Concurrent) |</p><p><strong>Formula:</strong>
@@ -188,13 +175,7 @@ $$ \theta = \cos^{-1} \left( \frac{\vec{A} \cdot \vec{B}}{|\vec{A}| |\vec{B}|} \
                             <div class="answer-inner">
                                 <p>*
 &gt; <strong>Definition:</strong>
-&gt; <strong>Relative Velocity</strong> is the velocity of an object observed from a specific reference frame (which itself might be moving). It is the vector difference between velocities.</p><p><strong>Visual Diagram:</strong></p><p><pre><code>mermaid
-graph TD
-    Current[River Current (4 m/s)] --&gt;|Pushing East| Result
-    Boat[Boat Engine (10 m/s)] --&gt;|Pushing North| Result
-    Result[Resultant Velocity (Diagonal)]
-    style Result fill:#f9f,stroke:#333,stroke-width:2px
-</code></pre></p><p><strong>Formula:</strong>
+&gt; <strong>Relative Velocity</strong> is the velocity of an object observed from a specific reference frame (which itself might be moving). It is the vector difference between velocities.</p><p><strong>Formula:</strong>
 $$ \vec{v}_{rel} = \vec{v}_{object} - \vec{v}_{observer} $$</p><p><strong>Boat Analysis:</strong>
 *   <strong>Scenario:</strong> Boat tries to go North ($10\hat{j}$), River flows East ($4\hat{i}$).
 *   <strong>Observer on Ground:</strong> Sees the boat moving diagonally because it participates in *both* motions.

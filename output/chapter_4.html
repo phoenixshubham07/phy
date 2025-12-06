@@ -57,13 +57,7 @@
 | :--- | :--- | :--- |
 | <strong>Role</strong> | Resistance to Force | Resistance to Torque |
 | <strong>Dependence</strong> | Amount of Matter | Amount of Matter + <strong>Distribution ($r^2$)</strong> |
-| <strong>Equation</strong> | $F = ma$ | $\tau = I \alpha$ |</p><p><strong>Visual Rod:</strong></p><p><pre><code>mermaid
-graph LR
-    Axis((Axis)) ---|L/2| Center
-    Center ---|L/2| End
-    style Axis fill:#f9f
-</code></pre>
-*Rod leads to $ML^2/12$ if center, $ML^2/3$ if end.*</p><p><strong>Formula:</strong>
+| <strong>Equation</strong> | $F = ma$ | $\tau = I \alpha$ |</p><p>*Rod leads to $ML^2/12$ if center, $ML^2/3$ if end.*</p><p><strong>Formula:</strong>
 $$ I = \int r^2 dm $$</p><p>---</p>
                             </div>
                             <div class="gemini-section">
@@ -350,13 +344,7 @@ These theorems allow us to calculate MOI for any axis (e.g., edge of a disk) if 
                                 <p>*
 &gt; <strong>Definition:</strong>
 &gt; The point where the entire mass of a system can be theoretically concentrated to model its translational motion. It is the &quot;weighted average&quot; position of mass.</p><p><strong>Formula (Two-Body System):</strong>
-$$ R_{cm} = \frac{m<sub>1</sub> r<sub>1</sub> + m<sub>2</sub> r<sub>2</sub>}{m<sub>1</sub> + m<sub>2</sub>} $$</p><p><strong>Visual Balance:</strong></p><p><pre><code>mermaid
-graph LR
-    M1((Mass 1)) --- Link --- M2((Mass 2))
-    Link --- CM[Center of Mass]
-    style CM fill:#f96
-</code></pre>
-*If M1 &gt; M2, the CM shifts closer to M1.*</p><p>---</p>
+$$ R_{cm} = \frac{m<sub>1</sub> r<sub>1</sub> + m<sub>2</sub> r<sub>2</sub>}{m<sub>1</sub> + m<sub>2</sub>} $$</p><p>*If M1 &gt; M2, the CM shifts closer to M1.*</p><p>---</p>
                             </div>
                             <div class="gemini-section">
                                 <button class="ask-gemini-btn" onclick="askGemini(this, 'Q4.7')">
