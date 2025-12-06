@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9. THERMODYNAMICS</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="brand">
+                <h1>Phoenix Physics</h1>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link ">Home</a>
+                <a href="chapter_1.html" class="nav-link ">1. VECTOR ALGEBRA & RELATIVE VELOCITY</a><a href="chapter_2.html" class="nav-link ">2. PROJECTILE MOTION</a><a href="chapter_3.html" class="nav-link ">3. WORK, ENERGY & MOMENTUM</a><a href="chapter_4.html" class="nav-link ">4. ADVANCED MECHANICS (ROTATION, GRAVITATION, ORBITS)</a><a href="chapter_5.html" class="nav-link ">5. OSCILLATIONS & SIMPLE HARMONIC MOTION</a><a href="chapter_6.html" class="nav-link ">6. WAVE OPTICS (INTERFERENCE & DIFFRACTION)</a><a href="chapter_7.html" class="nav-link ">7. GEOMETRICAL OPTICS (LENSES & MIRRORS)</a><a href="chapter_8.html" class="nav-link ">8. FLUIDS & CONTINUITY</a><a href="chapter_9.html" class="nav-link active">9. THERMODYNAMICS</a><a href="chapter_10.html" class="nav-link ">10. WAVES & SOUND</a>
+            </nav>
+        </aside>
+        
+        <main class="content-area">
+            
+        <header class="chapter-header">
+            <h1>9. THERMODYNAMICS</h1>
+            <div class="chapter-progress-container">
+                 <span id="chapter-progress-text">0/0 Completed</span>
+                 <div class="progress-bar-bg"><div class="progress-bar-fill" id="chapter-progress-bar"></div></div>
+            </div>
+        </header>
+        <div class="chapter-content">
+        
+            <section class="section-block">
+                <h2 class="section-title">A. THEORETICAL QUESTIONS (3 marks each)</h2>
+                <div class="questions-list">
+            
+                <div class="question-card" id="Q9.1">
+                    <div class="question-header">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="q-checkbox" data-id="Q9.1">
+                            <span class="checkmark"></span>
+                        </label>
+                        <h3 class="question-title">Q9.1: First Law of Thermodynamics [3 marks]</h3>
+                    </div>
+                    <div class="question-body">
+                        <p>State and explain the first law of thermodynamics. Define internal energy, heat, and work.</p>
+                    </div>
+                    <div class="answer-section">
+                        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
+                            <span class="icon">👁️</span> Show Answer
+                        </button>
+                        <div class="answer-content hidden">
+                            <div class="answer-inner">
+                                <p>*
+<strong>First Law of Thermodynamics:</strong>
+The heat energy supplied to a system equals the sum of the change in internal energy and the work done by the system.</p><p><strong>ΔQ = ΔU + ΔW</strong></p><p>Or: <strong>ΔQ = ΔU + PΔV</strong> (for constant pressure)</p><p><strong>Definitions:</strong></p><p>1. <strong>Internal Energy (U):</strong>
+<div class="list-item">• Total kinetic and potential energy of all molecules in the system</div>
+<div class="list-item">• Depends only on temperature (for ideal gas)</div>
+<div class="list-item">• State function (depends only on current state, not path)</div>
+<div class="list-item">• Increases with temperature</div></p><p>2. <strong>Heat (Q):</strong>
+<div class="list-item">• Energy transferred due to temperature difference</div>
+<div class="list-item">• <strong>Positive (Q &gt; 0):</strong> Heat absorbed by system</div>
+<div class="list-item">• <strong>Negative (Q &lt; 0):</strong> Heat released by system</div>
+<div class="list-item">• Path function (depends on how energy is transferred)</div></p><p>3. <strong>Work (W):</strong>
+<div class="list-item">• Energy transferred by mechanical means (expansion/compression)</div>
+<div class="list-item">• <strong>Positive (W &gt; 0):</strong> Work done BY system (expansion)</div>
+<div class="list-item">• <strong>Negative (W &lt; 0):</strong> Work done ON system (compression)</div>
+<div class="list-item">• W = PΔV for constant pressure</div></p><p><strong>First Law Interpretation:</strong></p><p>ΔQ = ΔU + W
+<div class="list-item">• Heat input = Increase in internal energy + Work done by system</div>
+<div class="list-item">• <strong>Energy conservation:</strong> Total energy input must equal total output</div></p><p><strong>Example Processes:</strong></p><p>1. <strong>Isothermal (T = constant):</strong>
+<div class="list-item">• ΔU = 0 (temperature constant)</div>
+<div class="list-item">• ΔQ = W (all heat converts to work)</div></p><p>2. <strong>Adiabatic (ΔQ = 0):</strong>
+<div class="list-item">• 0 = ΔU + W</div>
+<div class="list-item">• ΔU = -W (work done reduces internal energy, temperature drops)</div></p><p>3. <strong>Isochoric (V = constant):</strong>
+<div class="list-item">• W = 0 (no expansion)</div>
+<div class="list-item">• ΔQ = ΔU (all heat increases internal energy)</div></p><p>4. <strong>Isobaric (P = constant):</strong>
+<div class="list-item">• W = PΔV</div>
+<div class="list-item">• ΔQ = ΔU + PΔV</div></p><p>---</p>
+                            </div>
+                            <div class="gemini-section">
+                                <button class="ask-gemini-btn" onclick="askGemini(this, 'Q9.1')">
+                                    <span class="icon">✨</span> Ask Gemini to Explain
+                                </button>
+                                <div class="gemini-response hidden" id="gemini-Q9.1">
+                                    <div class="gemini-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="question-card" id="Q9.2">
+                    <div class="question-header">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="q-checkbox" data-id="Q9.2">
+                            <span class="checkmark"></span>
+                        </label>
+                        <h3 class="question-title">Q9.2: Second Law of Thermodynamics [3 marks]</h3>
+                    </div>
+                    <div class="question-body">
+                        <p>State the second law of thermodynamics in two forms. Explain why perfect heat engines are impossible.</p>
+                    </div>
+                    <div class="answer-section">
+                        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
+                            <span class="icon">👁️</span> Show Answer
+                        </button>
+                        <div class="answer-content hidden">
+                            <div class="answer-inner">
+                                <p>*
+<strong>Second Law - Kelvin-Planck Statement:</strong>
+It is impossible to construct an engine that operates in a cycle, producing only work and absorbing energy from a single thermal reservoir. Some heat must be rejected to a cold reservoir.</p><p><strong>Implication:</strong> Heat cannot be completely converted to work in a cyclic process.</p><p><strong>Second Law - Clausius Statement:</strong>
+It is impossible for heat to flow spontaneously from a cold body to a hot body without external work being done.</p><p><strong>Implication:</strong> Heat flows naturally from hot to cold, never spontaneously reverse.</p><p><strong>Why Perfect Heat Engines Are Impossible:</strong></p><p>A &quot;perfect&quot; engine would:
+<div class="list-item">• Take heat Q<sub>h</sub> from hot reservoir (at temperature T<sub>h</sub>)</div>
+<div class="list-item">• Convert ALL of it to useful work (W = Q<sub>h</sub>)</div>
+<div class="list-item">• Reject NO heat to cold reservoir (Q<sub>c</sub> = 0)</div></p><p><strong>This violates the second law</strong> because:
+1. <strong>Energy alone isn&#x27;t sufficient:</strong>
+<div class="list-item">• First law doesn&#x27;t forbid this (ΔU = 0 for cycle)</div>
+<div class="list-item">• Energy is conserved, but it&#x27;s thermodynamically forbidden</div></p><p>2. <strong>Entropy Argument:</strong>
+<div class="list-item">• Heat extraction decreases hot reservoir&#x27;s entropy: ΔS<sub>h</sub> = -Q<sub>h</sub>/T<sub>h</sub></div>
+<div class="list-item">• No heat added to cold reservoir: ΔS<sub>c</sub> = 0</div>
+<div class="list-item">• Total entropy: ΔS<sub>total</sub> = -Q<sub>h</sub>/T<sub>h</sub> &lt; 0</div>
+<div class="list-item">• <strong>Entropy decreases, violating second law!</strong></div>
+<div class="list-item">• Second law requires: ΔS<sub>total</sub> ≥ 0</div></p><p>3. <strong>Maximum Efficiency (Carnot Limit):</strong>
+Actual efficiency: η = W/Q<sub>h</sub> = (Q<sub>h</sub> - Q<sub>c</sub>)/Q<sub>h</sub> = 1 - (Q<sub>c</sub>/Q<sub>h</sub>)</p><p>For Carnot engine (idealized, reversible):
+η_Carnot = 1 - T<sub>c</sub>/T<sub>h</sub></p><p>Even this perfect engine cannot achieve 100% efficiency:
+<div class="list-item">• If T<sub>c</sub> = 0 K: η = 100% (only theoretically)</div>
+<div class="list-item">• In practice: T<sub>c</sub> &gt; 0, so η &lt; 1</div></p><p><strong>Why All Real Engines Are Less Efficient:</strong>
+1. Friction and dissipation
+2. Irreversible processes
+3. Non-ideal heat transfer
+4. Pressure/temperature losses</p><p>---</p>
+                            </div>
+                            <div class="gemini-section">
+                                <button class="ask-gemini-btn" onclick="askGemini(this, 'Q9.2')">
+                                    <span class="icon">✨</span> Ask Gemini to Explain
+                                </button>
+                                <div class="gemini-response hidden" id="gemini-Q9.2">
+                                    <div class="gemini-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div></section>
+            <section class="section-block">
+                <h2 class="section-title">B. NUMERICAL QUESTIONS (5 marks each)</h2>
+                <div class="questions-list">
+            
+                <div class="question-card" id="Q9.3">
+                    <div class="question-header">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="q-checkbox" data-id="Q9.3">
+                            <span class="checkmark"></span>
+                        </label>
+                        <h3 class="question-title">Q9.3: First Law - Isothermal Process [5 marks]</h3>
+                    </div>
+                    <div class="question-body">
+                        <p>One mole of an ideal gas at pressure 10 atm and volume 2 L undergoes isothermal expansion to 10 L at temperature 300 K. Find:
+(a) Work done by gas
+(b) Heat absorbed
+(c) Change in internal energy
+(d) Verify the first law</p><p>(1 atm = 101,325 Pa, R = 8.314 J/(mol·K))</p>
+                    </div>
+                    <div class="answer-section">
+                        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
+                            <span class="icon">👁️</span> Show Answer
+                        </button>
+                        <div class="answer-content hidden">
+                            <div class="answer-inner">
+                                <p>*</p><p><strong>Given:</strong>
+<div class="list-item">• n = 1 mole</div>
+<div class="list-item">• T = 300 K (constant, isothermal)</div>
+<div class="list-item">• V₁ = 2 L = 2 × 10⁻³ m³</div>
+<div class="list-item">• V₂ = 10 L = 10 × 10⁻³ m³</div>
+<div class="list-item">• P₁ = 10 atm = 1,013,250 Pa</div></p><p><strong>(a) Work Done by Gas:</strong></p><p>For isothermal process:
+W = nRT ln(V₂/V₁)
+W = 1 × 8.314 × 300 × ln(10/2)
+W = 2494.2 × ln(5)
+W = 2494.2 × 1.609
+<strong>W = 4,012 J ≈ 4.01 kJ</strong></p><p>Positive work indicates expansion (work done by gas).</p><p><strong>(b) Heat Absorbed:</strong></p><p>For ideal gas in isothermal process:
+ΔU = 0 (internal energy depends only on temperature, which is constant)</p><p>From first law:
+ΔQ = ΔU + W = 0 + 4,012
+<strong>ΔQ = 4,012 J ≈ 4.01 kJ</strong></p><p>Heat is absorbed by system (positive Q).</p><p><strong>(c) Change in Internal Energy:</strong></p><p>For isothermal process (T = constant):
+<strong>ΔU = 0</strong> (no change in temperature)</p><p><strong>(d) Verify First Law:</strong></p><p>ΔQ = ΔU + W
+4,012 = 0 + 4,012
+<strong>4,012 = 4,012</strong> ✓</p><p><strong>Physical Interpretation:</strong>
+<div class="list-item">• Gas expands at constant temperature</div>
+<div class="list-item">• All heat absorbed goes into doing work on surroundings</div>
+<div class="list-item">• No temperature change means no change in molecular kinetic energy</div>
+<div class="list-item">• This is an idealized process (perfect thermal contact with heat reservoir)</div></p><p>---</p>
+                            </div>
+                            <div class="gemini-section">
+                                <button class="ask-gemini-btn" onclick="askGemini(this, 'Q9.3')">
+                                    <span class="icon">✨</span> Ask Gemini to Explain
+                                </button>
+                                <div class="gemini-response hidden" id="gemini-Q9.3">
+                                    <div class="gemini-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="question-card" id="Q9.4">
+                    <div class="question-header">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="q-checkbox" data-id="Q9.4">
+                            <span class="checkmark"></span>
+                        </label>
+                        <h3 class="question-title">Q9.4: Heat Engine Efficiency [5 marks]</h3>
+                    </div>
+                    <div class="question-body">
+                        <p>A heat engine operates between hot reservoir at 500 K and cold reservoir at 300 K. The engine absorbs 1000 J of heat per cycle from the hot reservoir.
+(a) Calculate maximum theoretical efficiency (Carnot efficiency)
+(b) If actual efficiency is 60% of Carnot efficiency, find actual efficiency
+(c) Find work output
+(d) Find heat rejected to cold reservoir</p>
+                    </div>
+                    <div class="answer-section">
+                        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
+                            <span class="icon">👁️</span> Show Answer
+                        </button>
+                        <div class="answer-content hidden">
+                            <div class="answer-inner">
+                                <p>*</p><p><strong>Given:</strong>
+<div class="list-item">• T<sub>h</sub> = 500 K (hot reservoir)</div>
+<div class="list-item">• T<sub>c</sub> = 300 K (cold reservoir)</div>
+<div class="list-item">• Q<sub>h</sub> = 1000 J (heat absorbed from hot reservoir)</div></p><p><strong>(a) Carnot Efficiency (Maximum Possible):</strong></p><p>η_Carnot = 1 - T<sub>c</sub>/T<sub>h</sub> = 1 - 300/500
+η_Carnot = 1 - 0.6 = 0.4
+<strong>η_Carnot = 40% (maximum possible)</strong></p><p><strong>(b) Actual Efficiency:</strong></p><p>η_actual = 0.6 × η_Carnot = 0.6 × 0.4 = 0.24
+<strong>η_actual = 24%</strong></p><p><strong>(c) Work Output:</strong></p><p>W = η_actual × Q<sub>h</sub> = 0.24 × 1000
+<strong>W = 240 J</strong> (useful work output)</p><p><strong>(d) Heat Rejected:</strong></p><p>From first law (cyclic process, ΔU = 0):
+Q<sub>h</sub> = W + Q<sub>c</sub>
+Q<sub>c</sub> = Q<sub>h</sub> - W = 1000 - 240
+<strong>Q<sub>c</sub> = 760 J</strong> (wasted heat)</p><p><strong>Energy Flow:</strong>
+<div class="list-item">• In: 1000 J from hot source</div>
+<div class="list-item">• Out: 240 J as work, 760 J as heat to cold source</div>
+<div class="list-item">• Efficiency: 240/1000 = 24%</div></p><p><strong>Why Not Carnot Efficiency?</strong></p><p>If actual engine operated at Carnot efficiency (40%):
+<div class="list-item">• W = 0.40 × 1000 = 400 J</div>
+<div class="list-item">• Q<sub>c</sub> = 600 J</div></p><p>But the problem states efficiency is 60% of Carnot (60% of ideal), so:
+<div class="list-item">• W = 240 J</div>
+<div class="list-item">• Q<sub>c</sub> = 760 J</div></p><p><strong>This is more realistic</strong> (real engines are less efficient due to irreversibility).</p><p>---</p><p>## END OF QUESTION BANK</p><p>### FINAL TIPS FOR SUCCESS:</p><p>1. <strong>Cover all theoretical questions first</strong> - they help understand concepts
+2. <strong>Practice all numerical problems</strong> - they build application skills
+3. <strong>Use formulas correctly</strong> - watch for sign conventions (especially in optics)
+4. <strong>Verify with dimensions</strong> - check if your answer makes physical sense
+5. <strong>Learn derivations</strong> - helps remember formulas and understand concepts
+6. <strong>Draw diagrams</strong> - especially for optics and mechanics problems
+7. <strong>Practice unit conversions</strong> - many errors come from unit mistakes
+8. <strong>Understand concepts before problems</strong> - memorizing won&#x27;t help</p><p><strong>GOOD LUCK WITH YOUR EXAMS!</strong> 🚀</p>
+                            </div>
+                            <div class="gemini-section">
+                                <button class="ask-gemini-btn" onclick="askGemini(this, 'Q9.4')">
+                                    <span class="icon">✨</span> Ask Gemini to Explain
+                                </button>
+                                <div class="gemini-response hidden" id="gemini-Q9.4">
+                                    <div class="gemini-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div></section></div>
+        </main>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8. FLUIDS & CONTINUITY</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="brand">
+                <h1>Phoenix Physics</h1>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link ">Home</a>
+                <a href="chapter_1.html" class="nav-link ">1. VECTOR ALGEBRA & RELATIVE VELOCITY</a><a href="chapter_2.html" class="nav-link ">2. PROJECTILE MOTION</a><a href="chapter_3.html" class="nav-link ">3. WORK, ENERGY & MOMENTUM</a><a href="chapter_4.html" class="nav-link ">4. ADVANCED MECHANICS (ROTATION, GRAVITATION, ORBITS)</a><a href="chapter_5.html" class="nav-link ">5. OSCILLATIONS & SIMPLE HARMONIC MOTION</a><a href="chapter_6.html" class="nav-link ">6. WAVE OPTICS (INTERFERENCE & DIFFRACTION)</a><a href="chapter_7.html" class="nav-link ">7. GEOMETRICAL OPTICS (LENSES & MIRRORS)</a><a href="chapter_8.html" class="nav-link active">8. FLUIDS & CONTINUITY</a><a href="chapter_9.html" class="nav-link ">9. THERMODYNAMICS</a><a href="chapter_10.html" class="nav-link ">10. WAVES & SOUND</a>
+            </nav>
+        </aside>
+        
+        <main class="content-area">
+            
+        <header class="chapter-header">
+            <h1>8. FLUIDS & CONTINUITY</h1>
+            <div class="chapter-progress-container">
+                 <span id="chapter-progress-text">0/0 Completed</span>
+                 <div class="progress-bar-bg"><div class="progress-bar-fill" id="chapter-progress-bar"></div></div>
+            </div>
+        </header>
+        <div class="chapter-content">
+        
+            <section class="section-block">
+                <h2 class="section-title">A. THEORETICAL QUESTIONS (3 marks each)</h2>
+                <div class="questions-list">
+            
+                <div class="question-card" id="Q8.1">
+                    <div class="question-header">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="q-checkbox" data-id="Q8.1">
+                            <span class="checkmark"></span>
+                        </label>
+                        <h3 class="question-title">Q8.1: Bernoulli's Principle [3 marks]</h3>
+                    </div>
+                    <div class="question-body">
+                        <p>State Bernoulli&#x27;s principle and derive Bernoulli&#x27;s equation. Explain its assumptions.</p>
+                    </div>
+                    <div class="answer-section">
+                        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
+                            <span class="icon">👁️</span> Show Answer
+                        </button>
+                        <div class="answer-content hidden">
+                            <div class="answer-inner">
+                                <p>*
+<strong>Bernoulli&#x27;s Principle:</strong>
+For an ideal fluid flowing along a streamline, the sum of pressure energy, kinetic energy, and potential energy per unit volume remains constant.</p><p><strong>Bernoulli&#x27;s Equation:</strong>
+P + ½ρv² + ρgh = <strong>constant</strong> (along a streamline)</p><p>Or, between two points:
+P₁ + ½ρv₁² + ρgh₁ = P₂ + ½ρv₂² + ρgh₂</p><p><strong>With head terms:</strong>
+(P/ρg) + (v²/2g) + h = <strong>constant</strong></p><p>Where:
+<div class="list-item">• P/ρg = pressure head</div>
+<div class="list-item">• v²/2g = velocity head</div>
+<div class="list-item">• h = gravitational head</div></p><p><strong>Derivation:</strong></p><p>Consider fluid element moving along streamline.
+Work-energy theorem:
+W<sub>total</sub> = ΔKE + ΔPE</p><p>Work by pressure forces:
+W<sub>pressure</sub> = P₁A₁L₁ - P₂A₂L₂</p><p>Using continuity: A₁L₁ = A₂L₂ = ΔV (volume)
+W<sub>pressure</sub> = (P₁ - P₂)ΔV</p><p>Change in KE:
+ΔKE = ½m(v₂² - v₁²) = ½ρΔV(v₂² - v₁²)</p><p>Change in PE:
+ΔPE = mgΔh = ρgΔVΔh</p><p>Applying work-energy theorem:
+(P₁ - P₂)ΔV = ½ρΔV(v₂² - v₁²) + ρgΔVΔh</p><p>Dividing by ΔV:
+P₁ - P₂ = ½ρ(v₂² - v₁²) + ρgΔh</p><p>Rearranging:
+<strong>P₁ + ½ρv₁² + ρgh₁ = P₂ + ½ρv₂² + ρgh₂</strong> ✓</p><p><strong>Assumptions:</strong></p><p>1. <strong>Incompressible fluid:</strong> Density ρ is constant
+2. <strong>Non-viscous:</strong> No friction/viscous forces
+3. <strong>Steady flow:</strong> Velocity at any point doesn&#x27;t change with time
+4. <strong>Along a streamline:</strong> Valid only for points on same streamline
+5. <strong>No external work:</strong> No pumps or turbines</p><p><strong>Physical Meaning:</strong></p><p>Where velocity is high → pressure is low (and vice versa)</p><p>This explains:
+<div class="list-item">• Airplane wing lift (fast air over top = lower pressure)</div>
+<div class="list-item">• Water jet from pipe narrows (higher velocity in narrower region)</div>
+<div class="list-item">• Venturi effect (pressure decreases in narrow section)</div></p><p>---</p>
+                            </div>
+                            <div class="gemini-section">
+                                <button class="ask-gemini-btn" onclick="askGemini(this, 'Q8.1')">
+                                    <span class="icon">✨</span> Ask Gemini to Explain
+                                </button>
+                                <div class="gemini-response hidden" id="gemini-Q8.1">
+                                    <div class="gemini-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="question-card" id="Q8.2">
+                    <div class="question-header">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="q-checkbox" data-id="Q8.2">
+                            <span class="checkmark"></span>
+                        </label>
+                        <h3 class="question-title">Q8.2: Continuity Equation [3 marks]</h3>
+                    </div>
+                    <div class="question-body">
+                        <p>Derive the continuity equation. Show that A₁v₁ = A₂v₂ for incompressible fluid flow.</p>
+                    </div>
+                    <div class="answer-section">
+                        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
+                            <span class="icon">👁️</span> Show Answer
+                        </button>
+                        <div class="answer-content hidden">
+                            <div class="answer-inner">
+                                <p>*
+<strong>Continuity Equation (Conservation of Mass):</strong></p><p>For incompressible, steady flow through a pipe:
+<strong>A₁v₁ = A₂v₂</strong> (mass flow rate is constant)</p><p>Or: <strong>A·v = constant</strong> (volumetric flow rate is constant)</p><p><strong>Derivation:</strong></p><p>Consider a pipe with varying cross-section.
+In time dt, fluid travels distances:
+<div class="list-item">• At section 1: L₁ = v₁ dt</div>
+<div class="list-item">• At section 2: L₂ = v₂ dt</div></p><p><strong>Volume entering at section 1:</strong>
+V₁ = A₁ × L₁ = A₁ × v₁ × dt</p><p><strong>Volume leaving at section 2:</strong>
+V₂ = A₂ × L₂ = A₂ × v₂ × dt</p><p>For incompressible fluid (ρ = constant):
+<strong>Mass entering = Mass leaving</strong></p><p>ρA₁v₁dt = ρA₂v₂dt</p><p>Canceling ρdt:
+<strong>A₁v₁ = A₂v₂</strong> ✓</p><p><strong>Volumetric Flow Rate:</strong>
+Q = A × v = constant</p><p>Units: m³/s</p><p><strong>Physical Interpretation:</strong></p><p>When pipe narrows:
+<div class="list-item">• A decreases → v must increase</div>
+<div class="list-item">• Faster flow in narrow sections</div>
+<div class="list-item">• Example: Water spraying far from a nozzle (narrower opening → faster water)</div></p><p>When pipe widens:
+<div class="list-item">• A increases → v must decrease</div>
+<div class="list-item">• Slower flow in wide sections</div></p><p><strong>Combined with Bernoulli&#x27;s Equation:</strong></p><p>P + ½ρv² + ρgh = constant</p><p>In narrow section:
+<div class="list-item">• v is large (from continuity)</div>
+<div class="list-item">• P must be small (from Bernoulli)</div>
+<div class="list-item">• This is why pressure drops in narrow sections</div></p><p><strong>Practical Applications:</strong>
+1. <strong>Carburetors:</strong> Narrow passages create low pressure to draw fuel
+2. <strong>Airplane wings:</strong> Curved top surface accelerates air (low pressure = lift)
+3. <strong>Water meters:</strong> Constriction increases velocity, pressure drop indicates flow</p><p>---</p>
+                            </div>
+                            <div class="gemini-section">
+                                <button class="ask-gemini-btn" onclick="askGemini(this, 'Q8.2')">
+                                    <span class="icon">✨</span> Ask Gemini to Explain
+                                </button>
+                                <div class="gemini-response hidden" id="gemini-Q8.2">
+                                    <div class="gemini-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div></section>
+            <section class="section-block">
+                <h2 class="section-title">B. NUMERICAL QUESTIONS (5 marks each)</h2>
+                <div class="questions-list">
+            
+                <div class="question-card" id="Q8.3">
+                    <div class="question-header">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="q-checkbox" data-id="Q8.3">
+                            <span class="checkmark"></span>
+                        </label>
+                        <h3 class="question-title">Q8.3: Bernoulli's Equation Application [5 marks]</h3>
+                    </div>
+                    <div class="question-body">
+                        <p>Water flows through a horizontal pipe that narrows from diameter 10 cm to 5 cm. The pressure at the wide section is 50 kPa and velocity is 1 m/s. Find:
+(a) Velocity in narrow section
+(b) Pressure in narrow section
+(c) Volumetric flow rate
+(d) Why does pressure decrease in the narrow section?</p>
+                    </div>
+                    <div class="answer-section">
+                        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
+                            <span class="icon">👁️</span> Show Answer
+                        </button>
+                        <div class="answer-content hidden">
+                            <div class="answer-inner">
+                                <p>*</p><p><strong>Given:</strong>
+<div class="list-item">• Wide section: D₁ = 10 cm, r₁ = 5 cm, P₁ = 50 kPa = 50,000 Pa, v₁ = 1 m/s</div>
+<div class="list-item">• Narrow section: D₂ = 5 cm, r₂ = 2.5 cm</div>
+<div class="list-item">• ρ = 1000 kg/m³ (water)</div></p><p><strong>(a) Velocity in Narrow Section:</strong></p><p>Using continuity equation: A₁v₁ = A₂v₂</p><p>A₁ = πr₁² = π(0.05)² = 0.00785 m²
+A₂ = πr₂² = π(0.025)² = 0.00196 m²</p><p>v₂ = A₁v₁/A₂ = (0.00785 × 1)/0.00196
+v₂ = 0.00785/0.00196 = <strong>4 m/s</strong></p><p>Check: (0.05/0.025)² = 2² = 4 (area ratio inverse = velocity ratio) ✓</p><p><strong>(b) Pressure in Narrow Section:</strong></p><p>Using Bernoulli&#x27;s equation (horizontal pipe, h₁ = h₂):
+P₁ + ½ρv₁² = P₂ + ½ρv₂²</p><p>P₂ = P₁ + ½ρ(v₁² - v₂²)
+P₂ = 50,000 + ½(1000)(1² - 4²)
+P₂ = 50,000 + 500(1 - 16)
+P₂ = 50,000 + 500(-15)
+P₂ = 50,000 - 7,500
+<strong>P₂ = 42,500 Pa = 42.5 kPa</strong></p><p><strong>Pressure drops by 7.5 kPa (15% drop)</strong></p><p><strong>(c) Volumetric Flow Rate:</strong></p><p>Q = A₁v₁ = 0.00785 × 1 = <strong>0.00785 m³/s = 7.85 L/s</strong></p><p>Or: Q = A₂v₂ = 0.00196 × 4 = 0.00784 ≈ 0.00785 m³/s ✓</p><p><strong>(d) Why Pressure Decreases:</strong></p><p>From Bernoulli&#x27;s principle:
+<div class="list-item">• As water enters narrow section, it must speed up (continuity)</div>
+<div class="list-item">• Higher speed → higher kinetic energy (½ρv²)</div>
+<div class="list-item">• Total energy must be constant</div>
+<div class="list-item">• Therefore, pressure energy (P) must decrease</div>
+<div class="list-item">• <strong>Pressure converts to kinetic energy</strong></div></p><p>This is characteristic of Bernoulli&#x27;s principle:
+<div class="list-item">• Pressure head + Velocity head + Elevation head = constant</div>
+<div class="list-item">• High velocity region has low pressure</div>
+<div class="list-item">• Low velocity region has high pressure</div></p><p>---</p>
+                            </div>
+                            <div class="gemini-section">
+                                <button class="ask-gemini-btn" onclick="askGemini(this, 'Q8.3')">
+                                    <span class="icon">✨</span> Ask Gemini to Explain
+                                </button>
+                                <div class="gemini-response hidden" id="gemini-Q8.3">
+                                    <div class="gemini-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div></section></div>
+        </main>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>

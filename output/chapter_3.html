@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3. WORK, ENERGY & MOMENTUM</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="brand">
+                <h1>Phoenix Physics</h1>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link ">Home</a>
+                <a href="chapter_1.html" class="nav-link ">1. VECTOR ALGEBRA & RELATIVE VELOCITY</a><a href="chapter_2.html" class="nav-link ">2. PROJECTILE MOTION</a><a href="chapter_3.html" class="nav-link active">3. WORK, ENERGY & MOMENTUM</a><a href="chapter_4.html" class="nav-link ">4. ADVANCED MECHANICS (ROTATION, GRAVITATION, ORBITS)</a><a href="chapter_5.html" class="nav-link ">5. OSCILLATIONS & SIMPLE HARMONIC MOTION</a><a href="chapter_6.html" class="nav-link ">6. WAVE OPTICS (INTERFERENCE & DIFFRACTION)</a><a href="chapter_7.html" class="nav-link ">7. GEOMETRICAL OPTICS (LENSES & MIRRORS)</a><a href="chapter_8.html" class="nav-link ">8. FLUIDS & CONTINUITY</a><a href="chapter_9.html" class="nav-link ">9. THERMODYNAMICS</a><a href="chapter_10.html" class="nav-link ">10. WAVES & SOUND</a>
+            </nav>
+        </aside>
+        
+        <main class="content-area">
+            
+        <header class="chapter-header">
+            <h1>3. WORK, ENERGY & MOMENTUM</h1>
+            <div class="chapter-progress-container">
+                 <span id="chapter-progress-text">0/0 Completed</span>
+                 <div class="progress-bar-bg"><div class="progress-bar-fill" id="chapter-progress-bar"></div></div>
+            </div>
+        </header>
+        <div class="chapter-content">
+        
+            <section class="section-block">
+                <h2 class="section-title">A. THEORETICAL QUESTIONS (3 marks each)</h2>
+                <div class="questions-list">
+            
+                <div class="question-card" id="Q3.1">
+                    <div class="question-header">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="q-checkbox" data-id="Q3.1">
+                            <span class="checkmark"></span>
+                        </label>
+                        <h3 class="question-title">Q3.1: Work by Variable Force [3 marks]</h3>
+                    </div>
+                    <div class="question-body">
+                        <p>Define work done by a variable force. How is it different from constant force? Explain using a spring as an example.</p>
+                    </div>
+                    <div class="answer-section">
+                        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
+                            <span class="icon">👁️</span> Show Answer
+                        </button>
+                        <div class="answer-content hidden">
+                            <div class="answer-inner">
+                                <p>*
+<strong>Work by Constant Force:</strong>
+W = F · s = Fs cosθ
+Work is simply force multiplied by displacement.</p><p><strong>Work by Variable Force:</strong>
+W = ∫ F(x) dx (from initial to final position)
+The force changes with position, so we cannot use simple multiplication.</p><p><strong>Derivation for Spring:</strong>
+For a spring obeying Hooke&#x27;s Law: F = -kx (restoring force)
+When stretching the spring by distance x, work done against spring force:</p><p>W = ∫₀ˣ kx&#x27; dx&#x27; = k[x&#x27;²/2]₀ˣ = <strong>½kx²</strong></p><p><strong>Physical Differences:</strong>
+1. <strong>Graphical Interpretation:</strong>
+<div class="list-item">• Constant force: W = F × s (rectangle under F-s graph)</div>
+<div class="list-item">• Variable force: W = Area under F-s curve</div></p><p>2. <strong>Spring Comparison:</strong>
+<div class="list-item">• Initial force: 0 (at natural length)</div>
+<div class="list-item">• Final force: kx (at extension x)</div>
+<div class="list-item">• Average force: kx/2</div>
+<div class="list-item">• Work = average force × displacement = (kx/2) × x = ½kx²</div></p><p>3. <strong>Energy Stored:</strong>
+<div class="list-item">• In spring, work done equals elastic potential energy stored</div>
+<div class="list-item">• This energy is recoverable (when spring returns to natural length)</div></p><p>4. <strong>Calculus Necessity:</strong>
+<div class="list-item">• Constant force: Simple algebra</div>
+<div class="list-item">• Variable force: Integration required because F changes continuously</div></p><p><strong>Real-world Examples:</strong>
+<div class="list-item">• Spring compression/extension: W = ½kx²</div>
+<div class="list-item">• Gravitational force (at large distances): W = GMm/r (integration of F = GMm/r²)</div>
+<div class="list-item">• Friction with varying normal force: W = ∫ μ(x)mg dx</div></p><p>---</p>
+                            </div>
+                            <div class="gemini-section">
+                                <button class="ask-gemini-btn" onclick="askGemini(this, 'Q3.1')">
+                                    <span class="icon">✨</span> Ask Gemini to Explain
+                                </button>
+                                <div class="gemini-response hidden" id="gemini-Q3.1">
+                                    <div class="gemini-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="question-card" id="Q3.2">
+                    <div class="question-header">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="q-checkbox" data-id="Q3.2">
+                            <span class="checkmark"></span>
+                        </label>
+                        <h3 class="question-title">Q3.2: Work-Energy Theorem [3 marks]</h3>
+                    </div>
+                    <div class="question-body">
+                        <p>State and derive the work-energy theorem. Explain what it means physically.</p>
+                    </div>
+                    <div class="answer-section">
+                        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
+                            <span class="icon">👁️</span> Show Answer
+                        </button>
+                        <div class="answer-content hidden">
+                            <div class="answer-inner">
+                                <p>*
+<strong>Statement:</strong> The net work done on an object equals the change in its kinetic energy.
+<strong>W<sub>net</sub> = ΔKE = KE<sub>final</sub> - KE<sub>initial</sub></strong></p><p><strong>Derivation:</strong>
+Starting with Newton&#x27;s second law:
+F<sub>net</sub> = ma</p><p>Taking dot product with displacement ds:
+F<sub>net</sub> · ds = ma · ds</p><p>Integrating from initial to final position:
+∫ F<sub>net</sub> · ds = ∫ ma · ds</p><p>Since a = dv/dt and ds = v dt:
+W<sub>net</sub> = ∫ m(dv/dt) × v dt = ∫ m v dv = m[v²/2]ᵤᵥ</p><p><strong>W<sub>net</sub> = ½mv² - ½mu² = ½m(v² - u²)</strong></p><p><strong>Therefore: W<sub>net</sub> = ΔKE</strong> ✓</p><p><strong>Physical Meaning:</strong>
+1. <strong>Positive Work:</strong> W &gt; 0 → ΔKE &gt; 0 → Object speeds up
+   (Force and displacement in similar directions)</p><p>2. <strong>Negative Work:</strong> W &lt; 0 → ΔKE &lt; 0 → Object slows down
+   (Force opposes motion)</p><p>3. <strong>Zero Work:</strong> W = 0 → ΔKE = 0 → Constant speed
+   (Force perpendicular to motion, like circular motion)</p><p><strong>Practical Applications:</strong>
+<div class="list-item">• <strong>Braking:</strong> Friction does negative work, reducing KE</div>
+<div class="list-item">• <strong>Acceleration:</strong> Engine force does positive work, increasing KE</div>
+<div class="list-item">• <strong>Circular motion:</strong> Centripetal force does zero work (perpendicular), speed stays constant</div>
+<div class="list-item">• <strong>Incline:</strong> Component of gravity along motion does work</div></p><p><strong>Advantage over Newton&#x27;s Laws:</strong>
+<div class="list-item">• Newton: Requires knowledge of acceleration (complex for variable forces)</div>
+<div class="list-item">• Work-Energy: Only need initial and final velocities (simpler!)</div></p><p>---</p>
+                            </div>
+                            <div class="gemini-section">
+                                <button class="ask-gemini-btn" onclick="askGemini(this, 'Q3.2')">
+                                    <span class="icon">✨</span> Ask Gemini to Explain
+                                </button>
+                                <div class="gemini-response hidden" id="gemini-Q3.2">
+                                    <div class="gemini-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="question-card" id="Q3.3">
+                    <div class="question-header">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="q-checkbox" data-id="Q3.3">
+                            <span class="checkmark"></span>
+                        </label>
+                        <h3 class="question-title">Q3.3: Impulse and Momentum [3 marks]</h3>
+                    </div>
+                    <div class="question-body">
+                        <p>Define impulse and explain how it relates to momentum change. Why do airbags in cars extend the time of impact?</p>
+                    </div>
+                    <div class="answer-section">
+                        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
+                            <span class="icon">👁️</span> Show Answer
+                        </button>
+                        <div class="answer-content hidden">
+                            <div class="answer-inner">
+                                <p>*
+<strong>Momentum (p):</strong>
+p = mv (product of mass and velocity)
+Direction: same as velocity
+It represents the &quot;quantity of motion&quot; of a body.</p><p><strong>Impulse (J):</strong>
+J = Δp = p<sub>final</sub> - p<sub>initial</sub> (change in momentum)
+Also: J = F<sub>avg</sub> × Δt (average force × time interval)</p><p><strong>Impulse-Momentum Theorem:</strong>
+J = F<sub>avg</sub> × Δt = Δp = m(v<sub>f</sub> - v<sub>i</sub>)</p><p>Therefore: <strong>F<sub>avg</sub> = Δp / Δt = m(v<sub>f</sub> - v<sub>i</sub>) / Δt</strong></p><p><strong>Derivation:</strong>
+From Newton&#x27;s second law: F = dp/dt
+Integrating: ∫ F dt = ∫ dp = Δp
+Therefore: J = ∫ F dt = Δp ✓</p><p><strong>Why Airbags Extend Impact Time:</strong></p><p><strong>Without Airbag:</strong>
+<div class="list-item">• Collision time: Δt₁ = very small (0.01 s)</div>
+<div class="list-item">• Momentum change: Δp = same (from v to 0)</div>
+<div class="list-item">• Required force: F₁ = Δp / Δt₁ = <strong>VERY LARGE</strong></div>
+<div class="list-item">• Result: Person gets crushed by large impact force</div></p><p><strong>With Airbag:</strong>
+<div class="list-item">• Collision time: Δt₂ = larger (0.1 s) (airbag cushions gradually)</div>
+<div class="list-item">• Momentum change: Δp = same (from v to 0)</div>
+<div class="list-item">• Required force: F₂ = Δp / Δt₂ = <strong>MUCH SMALLER</strong></div>
+<div class="list-item">• Result: Person experiences reduced force, survives impact</div></p><p><strong>Mathematical Comparison:</strong>
+If Δt₂ = 10 × Δt₁, then F₂ = F₁/10 (force reduces by 90%!)</p><p><strong>Other Examples:</strong>
+<div class="list-item">• Cricket fielder pulling arms back while catching (extends time)</div>
+<div class="list-item">• Gymnastics landing on mat vs concrete (mat extends time)</div>
+<div class="list-item">• Crumple zones in cars (extend deformation time, reduce peak force)</div></p><p>---</p>
+                            </div>
+                            <div class="gemini-section">
+                                <button class="ask-gemini-btn" onclick="askGemini(this, 'Q3.3')">
+                                    <span class="icon">✨</span> Ask Gemini to Explain
+                                </button>
+                                <div class="gemini-response hidden" id="gemini-Q3.3">
+                                    <div class="gemini-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="question-card" id="Q3.4">
+                    <div class="question-header">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="q-checkbox" data-id="Q3.4">
+                            <span class="checkmark"></span>
+                        </label>
+                        <h3 class="question-title">Q3.4: Momentum Conservation in Collisions [3 marks]</h3>
+                    </div>
+                    <div class="question-body">
+                        <p>State the law of conservation of momentum. Explain why momentum is conserved in collisions but kinetic energy is not conserved in inelastic collisions.</p>
+                    </div>
+                    <div class="answer-section">
+                        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
+                            <span class="icon">👁️</span> Show Answer
+                        </button>
+                        <div class="answer-content hidden">
+                            <div class="answer-inner">
+                                <p>*
+<strong>Law of Conservation of Momentum:</strong>
+In an isolated system (no external forces), the total momentum before any collision equals the total momentum after the collision.</p><p><strong>p<sub>before</sub> = p<sub>after</sub></strong>
+<strong>m₁u₁ + m₂u₂ = m₁v₁ + m₂v₂</strong></p><p><strong>Why Momentum is Always Conserved in Collisions:</strong></p><p>The collision forces are <strong>internal forces</strong> between the two objects.
+<div class="list-item">• By Newton&#x27;s 3rd Law: F₁₂ = -F₂₁ (equal and opposite)</div>
+<div class="list-item">• Impulse on object 1: J₁ = -Impulse on object 2: J₂</div>
+<div class="list-item">• Change in p₁ = -Change in p₂</div>
+<div class="list-item">• Therefore: Δ(m₁u₁ + m₂u₂) = 0</div>
+<div class="list-item">• <strong>Total momentum unchanged</strong> ✓</div></p><p>External forces (air resistance, friction with ground) are negligible during brief collision.</p><p><strong>Why Kinetic Energy is NOT Conserved in Inelastic Collisions:</strong></p><p><strong>Elastic Collision (KE Conserved):</strong>
+<div class="list-item">• No deformation of objects</div>
+<div class="list-item">• All kinetic energy converted back to motion</div>
+<div class="list-item">• ½m₁u₁² + ½m₂u₂² = ½m₁v₁² + ½m₂v₂²</div>
+<div class="list-item">• Example: Billiard balls colliding</div></p><p><strong>Inelastic Collision (KE NOT Conserved):</strong>
+<div class="list-item">• Objects deform, stick together, or produce sound</div>
+<div class="list-item">• Some kinetic energy converts to other forms:</div>
+<div class="list-item">• Heat energy</div>
+<div class="list-item">• Sound energy</div>
+<div class="list-item">• Deformation/strain energy</div>
+<div class="list-item">• Internal energy</div></p><p><strong>Perfectly Inelastic Collision:</strong>
+Objects stick together after collision: v₁ = v₂ = v<sub>common</sub></p><p>m₁u₁ + m₂u₂ = (m₁ + m₂)v<sub>common</sub></p><p>KE<sub>before</sub> = ½m₁u₁² + ½m₂u₂²
+KE<sub>after</sub> = ½(m₁ + m₂)v²_common</p><p><strong>KE<sub>after</sub> &lt; KE<sub>before</sub></strong> (energy &quot;lost&quot; to heat, sound, deformation)</p><p><strong>Energy &quot;Loss&quot; Calculation:</strong>
+ΔKE = KE<sub>after</sub> - KE<sub>before</sub> &lt; 0 (negative means energy lost)</p><p>This &quot;lost&quot; energy becomes internal energy, heat, etc.</p><p><strong>Key Point:</strong> Momentum is ALWAYS conserved (vector law), but mechanical energy (KE + PE) is conserved only in elastic processes. Inelastic processes dissipate mechanical energy.</p><p>---</p>
+                            </div>
+                            <div class="gemini-section">
+                                <button class="ask-gemini-btn" onclick="askGemini(this, 'Q3.4')">
+                                    <span class="icon">✨</span> Ask Gemini to Explain
+                                </button>
+                                <div class="gemini-response hidden" id="gemini-Q3.4">
+                                    <div class="gemini-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div></section>
+            <section class="section-block">
+                <h2 class="section-title">B. NUMERICAL QUESTIONS (5 marks each)</h2>
+                <div class="questions-list">
+            
+                <div class="question-card" id="Q3.5">
+                    <div class="question-header">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="q-checkbox" data-id="Q3.5">
+                            <span class="checkmark"></span>
+                        </label>
+                        <h3 class="question-title">Q3.5: Work by Variable Force [5 marks]</h3>
+                    </div>
+                    <div class="question-body">
+                        <p>A force F = 3x + 2 (in Newtons, where x is in meters) acts on a 2 kg object. Find the work done when the object moves from x = 0 to x = 4 m. Also find the final velocity if it starts from rest.</p>
+                    </div>
+                    <div class="answer-section">
+                        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
+                            <span class="icon">👁️</span> Show Answer
+                        </button>
+                        <div class="answer-content hidden">
+                            <div class="answer-inner">
+                                <p>*</p><p><strong>Given:</strong> F(x) = 3x + 2, m = 2 kg, initial position = 0, final position = 4 m, u = 0</p><p><strong>(a) Work Done:</strong>
+W = ∫₀⁴ F(x) dx = ∫₀⁴ (3x + 2) dx</p><p>W = [3x²/2 + 2x]₀⁴</p><p>W = [3(4)²/2 + 2(4)] - [0]</p><p>W = [3(16)/2 + 8] = [24 + 8]</p><p><strong>W = 32 Joules</strong></p><p><strong>(b) Final Velocity:</strong>
+Using work-energy theorem: W = ΔKE = ½mv² - ½mu²</p><p>32 = ½(2)v² - 0</p><p>32 = v²</p><p><strong>v = √32 = 4√2 = 5.66 m/s</strong></p><p><strong>Verification using integration:</strong>
+Using F = ma = m(dv/dt):
+3x + 2 = 2(dv/dt)</p><p>Using dv/dt = v(dv/dx):
+3x + 2 = 2v(dv/dx)</p><p>(3x + 2)dx = 2v dv</p><p>Integrating both sides:
+∫₀⁴ (3x + 2)dx = ∫₀ᵥ 2v dv</p><p>32 = [v²]₀ᵥ = v² ✓</p><p>---</p>
+                            </div>
+                            <div class="gemini-section">
+                                <button class="ask-gemini-btn" onclick="askGemini(this, 'Q3.5')">
+                                    <span class="icon">✨</span> Ask Gemini to Explain
+                                </button>
+                                <div class="gemini-response hidden" id="gemini-Q3.5">
+                                    <div class="gemini-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="question-card" id="Q3.6">
+                    <div class="question-header">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="q-checkbox" data-id="Q3.6">
+                            <span class="checkmark"></span>
+                        </label>
+                        <h3 class="question-title">Q3.6: Momentum Conservation - Perfectly Inelastic Collision [5 marks]</h3>
+                    </div>
+                    <div class="question-body">
+                        <p>A 3 kg object moving at 8 m/s collides head-on with a 2 kg object moving at 5 m/s in the opposite direction. They stick together after collision. Find:
+(a) Velocity and direction after collision
+(b) Loss in kinetic energy
+(c) Energy converted to other forms</p>
+                    </div>
+                    <div class="answer-section">
+                        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
+                            <span class="icon">👁️</span> Show Answer
+                        </button>
+                        <div class="answer-content hidden">
+                            <div class="answer-inner">
+                                <p>*</p><p><strong>Given:</strong>
+<div class="list-item">• Object 1: m₁ = 3 kg, u₁ = 8 m/s (let&#x27;s say rightward, positive)</div>
+<div class="list-item">• Object 2: m₂ = 2 kg, u₂ = -5 m/s (leftward, opposite, negative)</div></p><p><strong>(a) Velocity After Collision:</strong></p><p>Using conservation of momentum:
+m₁u₁ + m₂u₂ = (m₁ + m₂)v</p><p>3(8) + 2(-5) = (3 + 2)v</p><p>24 - 10 = 5v</p><p>14 = 5v</p><p><strong>v = 2.8 m/s</strong> (rightward, positive direction)</p><p><strong>(b) Kinetic Energy Before and After:</strong></p><p>KE<sub>before</sub> = ½m₁u₁² + ½m₂u₂²
+= ½(3)(8)² + ½(2)(5)²
+= ½(3)(64) + ½(2)(25)
+= 96 + 25
+= <strong>121 Joules</strong></p><p>KE<sub>after</sub> = ½(m₁ + m₂)v²
+= ½(5)(2.8)²
+= ½(5)(7.84)
+= <strong>19.6 Joules</strong></p><p><strong>(c) Loss in Kinetic Energy:</strong></p><p>ΔKE = KE<sub>after</sub> - KE<sub>before</sub>
+= 19.6 - 121
+= <strong>-101.4 Joules</strong></p><p><strong>Energy &quot;lost&quot; (converted to other forms) = 101.4 J</strong></p><p>This energy becomes:
+<div class="list-item">• Heat (warming objects)</div>
+<div class="list-item">• Sound (collision noise)</div>
+<div class="list-item">• Deformation energy</div>
+<div class="list-item">• Internal energy</div></p><p><strong>Percentage of energy lost:</strong>
+= (101.4 / 121) × 100% = <strong>83.8%</strong></p><p>Only 16.2% of initial KE remains in the moving combined mass.</p><p>---</p>
+                            </div>
+                            <div class="gemini-section">
+                                <button class="ask-gemini-btn" onclick="askGemini(this, 'Q3.6')">
+                                    <span class="icon">✨</span> Ask Gemini to Explain
+                                </button>
+                                <div class="gemini-response hidden" id="gemini-Q3.6">
+                                    <div class="gemini-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="question-card" id="Q3.7">
+                    <div class="question-header">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="q-checkbox" data-id="Q3.7">
+                            <span class="checkmark"></span>
+                        </label>
+                        <h3 class="question-title">Q3.7: Elastic Collision [5 marks]</h3>
+                    </div>
+                    <div class="question-body">
+                        <p>A 4 kg ball moving at 6 m/s elastically collides with a 2 kg ball initially at rest. Find the velocities of both balls after collision.</p>
+                    </div>
+                    <div class="answer-section">
+                        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
+                            <span class="icon">👁️</span> Show Answer
+                        </button>
+                        <div class="answer-content hidden">
+                            <div class="answer-inner">
+                                <p>*</p><p><strong>Given:</strong>
+<div class="list-item">• m₁ = 4 kg, u₁ = 6 m/s</div>
+<div class="list-item">• m₂ = 2 kg, u₂ = 0</div></p><p><strong>For Elastic Collision, we use two equations:</strong></p><p>1) <strong>Conservation of Momentum:</strong>
+m₁u₁ + m₂u₂ = m₁v₁ + m₂v₂
+4(6) + 2(0) = 4v₁ + 2v₂
+24 = 4v₁ + 2v₂  ... (1)</p><p>2) <strong>Conservation of KE:</strong>
+½m₁u₁² + ½m₂u₂² = ½m₁v₁² + ½m₂v₂²
+½(4)(36) + 0 = ½(4)v₁² + ½(2)v₂²
+72 = 2v₁² + v₂²  ... (2)</p><p><strong>Using Formulas for Elastic Collision:</strong></p><p>v₁ = ((m₁ - m₂)u₁ + 2m₂u₂) / (m₁ + m₂)
+v₁ = ((4 - 2)(6) + 0) / (4 + 2)
+v₁ = (2 × 6) / 6
+<strong>v₁ = 2 m/s</strong></p><p>v₂ = ((m₂ - m₁)u₂ + 2m₁u₁) / (m₁ + m₂)
+v₂ = ((2 - 4)(0) + 2(4)(6)) / 6
+v₂ = (0 + 48) / 6
+<strong>v₂ = 8 m/s</strong></p><p><strong>Verification:</strong>
+Momentum before: 4(6) + 2(0) = 24 kg·m/s
+Momentum after: 4(2) + 2(8) = 8 + 16 = 24 kg·m/s ✓</p><p>KE before: ½(4)(36) + 0 = 72 J
+KE after: ½(4)(4) + ½(2)(64) = 8 + 64 = 72 J ✓</p><p><strong>Physical Interpretation:</strong>
+<div class="list-item">• Ball 1 slows from 6 m/s to 2 m/s (hits ball 2)</div>
+<div class="list-item">• Ball 2 accelerates from 0 to 8 m/s (being struck)</div>
+<div class="list-item">• Ball 2 moves faster than ball 1 after collision (characteristic of elastic collision with lighter object)</div></p><p>---</p>
+                            </div>
+                            <div class="gemini-section">
+                                <button class="ask-gemini-btn" onclick="askGemini(this, 'Q3.7')">
+                                    <span class="icon">✨</span> Ask Gemini to Explain
+                                </button>
+                                <div class="gemini-response hidden" id="gemini-Q3.7">
+                                    <div class="gemini-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="question-card" id="Q3.8">
+                    <div class="question-header">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="q-checkbox" data-id="Q3.8">
+                            <span class="checkmark"></span>
+                        </label>
+                        <h3 class="question-title">Q3.8: Impulse-Momentum Problem [5 marks]</h3>
+                    </div>
+                    <div class="question-body">
+                        <p>A car of mass 1500 kg moving at 20 m/s hits a wall. The collision lasts 0.1 seconds. The car comes to rest. Find:
+(a) Change in momentum
+(b) Average force during collision
+(c) If with an airbag the collision time extends to 0.5 seconds, what is the new average force?
+(d) How many times is the force reduced?</p>
+                    </div>
+                    <div class="answer-section">
+                        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
+                            <span class="icon">👁️</span> Show Answer
+                        </button>
+                        <div class="answer-content hidden">
+                            <div class="answer-inner">
+                                <p>*</p><p><strong>Given:</strong> m = 1500 kg, u = 20 m/s, v = 0, t₁ = 0.1 s, t₂ = 0.5 s</p><p><strong>(a) Change in Momentum:</strong>
+Δp = m(v - u) = 1500(0 - 20) = <strong>-30,000 kg·m/s</strong></p><p>The negative sign indicates the momentum change is opposite to initial motion.
+Magnitude: |Δp| = 30,000 kg·m/s</p><p><strong>(b) Average Force Without Airbag:</strong>
+Using impulse-momentum theorem:
+F<sub>avg</sub> = |Δp| / t₁ = 30,000 / 0.1 = <strong>300,000 N = 300 kN</strong></p><p>This is an enormous force! (equivalent to weight of 30,000 kg or 30 tons!)</p><p><strong>(c) Average Force With Airbag:</strong>
+F<sub>avg</sub>&#x27; = |Δp| / t₂ = 30,000 / 0.5 = <strong>60,000 N = 60 kN</strong></p><p><strong>(d) Force Reduction Factor:</strong>
+Ratio = F<sub>avg</sub> / F<sub>avg</sub>&#x27; = 300,000 / 60,000 = <strong>5 times reduction</strong></p><p>Or: Ratio = t₂ / t₁ = 0.5 / 0.1 = 5</p><p><strong>Physical Implications:</strong>
+<div class="list-item">• Without airbag: 300 kN can cause severe injuries, crushing organs</div>
+<div class="list-item">• With airbag: 60 kN spread over body, survivable force level</div>
+<div class="list-item">• By extending collision time 5×, force reduced by 5×</div>
+<div class="list-item">• Typical airbag force threshold for survival: 40-80 kN</div>
+<div class="list-item">• Therefore, airbag keeps force within survivable range</div></p><p><strong>This demonstrates why airbags are crucial safety devices!</strong></p><p>---</p>
+                            </div>
+                            <div class="gemini-section">
+                                <button class="ask-gemini-btn" onclick="askGemini(this, 'Q3.8')">
+                                    <span class="icon">✨</span> Ask Gemini to Explain
+                                </button>
+                                <div class="gemini-response hidden" id="gemini-Q3.8">
+                                    <div class="gemini-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div></section></div>
+        </main>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>

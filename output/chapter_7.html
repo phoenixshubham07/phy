@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7. GEOMETRICAL OPTICS (LENSES & MIRRORS)</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="brand">
+                <h1>Phoenix Physics</h1>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link ">Home</a>
+                <a href="chapter_1.html" class="nav-link ">1. VECTOR ALGEBRA & RELATIVE VELOCITY</a><a href="chapter_2.html" class="nav-link ">2. PROJECTILE MOTION</a><a href="chapter_3.html" class="nav-link ">3. WORK, ENERGY & MOMENTUM</a><a href="chapter_4.html" class="nav-link ">4. ADVANCED MECHANICS (ROTATION, GRAVITATION, ORBITS)</a><a href="chapter_5.html" class="nav-link ">5. OSCILLATIONS & SIMPLE HARMONIC MOTION</a><a href="chapter_6.html" class="nav-link ">6. WAVE OPTICS (INTERFERENCE & DIFFRACTION)</a><a href="chapter_7.html" class="nav-link active">7. GEOMETRICAL OPTICS (LENSES & MIRRORS)</a><a href="chapter_8.html" class="nav-link ">8. FLUIDS & CONTINUITY</a><a href="chapter_9.html" class="nav-link ">9. THERMODYNAMICS</a><a href="chapter_10.html" class="nav-link ">10. WAVES & SOUND</a>
+            </nav>
+        </aside>
+        
+        <main class="content-area">
+            
+        <header class="chapter-header">
+            <h1>7. GEOMETRICAL OPTICS (LENSES & MIRRORS)</h1>
+            <div class="chapter-progress-container">
+                 <span id="chapter-progress-text">0/0 Completed</span>
+                 <div class="progress-bar-bg"><div class="progress-bar-fill" id="chapter-progress-bar"></div></div>
+            </div>
+        </header>
+        <div class="chapter-content">
+        
+            <section class="section-block">
+                <h2 class="section-title">A. THEORETICAL QUESTIONS (3 marks each)</h2>
+                <div class="questions-list">
+            
+                <div class="question-card" id="Q7.1">
+                    <div class="question-header">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="q-checkbox" data-id="Q7.1">
+                            <span class="checkmark"></span>
+                        </label>
+                        <h3 class="question-title">Q7.1: Lens Formula Derivation [3 marks]</h3>
+                    </div>
+                    <div class="question-body">
+                        <p>Derive the lens formula. Explain the sign conventions used.</p>
+                    </div>
+                    <div class="answer-section">
+                        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
+                            <span class="icon">👁️</span> Show Answer
+                        </button>
+                        <div class="answer-content hidden">
+                            <div class="answer-inner">
+                                <p>*
+<strong>Lens Formula Derivation:</strong></p><p>Consider a convex lens of focal length f forming an image of an object.
+<div class="list-item">• Object distance: u (from lens)</div>
+<div class="list-item">• Image distance: v (from lens)</div>
+<div class="list-item">• Object height: h</div>
+<div class="list-item">• Image height: h&#x27;</div></p><p>Using similar triangles in the ray diagram:</p><p>From the right triangle (object side):
+h/u = (focal point to image height)/f</p><p>From similar triangles (image side):
+h&#x27;/v = (focal point to object height)/f</p><p><strong>Combining geometry:</strong>
+Through triangle similarity and algebraic manipulation:</p><p>1/u + 1/v = 1/f</p><p><strong>This is the Lens Formula: 1/f = 1/u + 1/v</strong></p><p>Or equivalently: <strong>1/f = 1/u + 1/v</strong> (Newton form)</p><p><strong>Alternative forms:</strong>
+<div class="list-item">• v = uf/(u-f)</div>
+<div class="list-item">• u = vf/(v-f)</div></p><p><strong>Sign Conventions (Cartesian):</strong></p><p>1. <strong>Distances measured from lens:</strong>
+<div class="list-item">• (+) to the right of lens</div>
+<div class="list-item">• (-) to the left of lens</div></p><p>2. <strong>Object distance (u):</strong>
+<div class="list-item">• <strong>Always negative</strong> (objects are in front of lens)</div>
+<div class="list-item">• u &lt; 0 for real objects</div></p><p>3. <strong>Image distance (v):</strong>
+<div class="list-item">• Negative for real images (on opposite side, below axis)</div>
+<div class="list-item">• Positive for virtual images (same side as object, above axis)</div></p><p>4. <strong>Focal length (f):</strong>
+<div class="list-item">• Positive for convex lens (converging)</div>
+<div class="list-item">• Negative for concave lens (diverging)</div></p><p>5. <strong>Heights (object &amp; image):</strong>
+<div class="list-item">• Positive above principal axis</div>
+<div class="list-item">• Negative below principal axis</div></p><p><strong>Magnification:</strong>
+m = -v/u = h&#x27;/h
+<div class="list-item">• m &lt; 0: Image is inverted</div>
+<div class="list-item">• m &gt; 0: Image is erect</div>
+<div class="list-item">• |m| &gt; 1: Image is enlarged</div>
+<div class="list-item">• |m| &lt; 1: Image is diminished</div></p><p>---</p>
+                            </div>
+                            <div class="gemini-section">
+                                <button class="ask-gemini-btn" onclick="askGemini(this, 'Q7.1')">
+                                    <span class="icon">✨</span> Ask Gemini to Explain
+                                </button>
+                                <div class="gemini-response hidden" id="gemini-Q7.1">
+                                    <div class="gemini-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="question-card" id="Q7.2">
+                    <div class="question-header">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="q-checkbox" data-id="Q7.2">
+                            <span class="checkmark"></span>
+                        </label>
+                        <h3 class="question-title">Q7.2: Mirror Formula and Types of Images [3 marks]</h3>
+                    </div>
+                    <div class="question-body">
+                        <p>Derive the mirror formula and compare the images formed by concave and convex mirrors.</p>
+                    </div>
+                    <div class="answer-section">
+                        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
+                            <span class="icon">👁️</span> Show Answer
+                        </button>
+                        <div class="answer-content hidden">
+                            <div class="answer-inner">
+                                <p>*
+<strong>Mirror Formula Derivation:</strong></p><p>Using same geometry and similar triangles as lens formula:</p><p><strong>Mirror Formula: 1/f = 1/u + 1/v</strong></p><p>(Same as lens formula mathematically!)</p><p><strong>Sign Conventions for Mirrors:</strong></p><p>1. <strong>Distances from mirror pole:</strong>
+<div class="list-item">• Positive in front of mirror (real)</div>
+<div class="list-item">• Negative behind mirror (virtual)</div></p><p>2. <strong>Focal length:</strong>
+<div class="list-item">• Positive for concave mirror (converging)</div>
+<div class="list-item">• Negative for convex mirror (diverging)</div></p><p>3. <strong>Center of curvature:</strong> C = 2f (behind for concave, in front for convex)</p><p><strong>Concave Mirror Images:</strong></p><p>| Object Position | Image | Type | Size | Nature |
+|---|---|---|---|---|
+| Beyond C (u &gt; 2f) | Between f and C | Real | Diminished | Inverted |
+| At C (u = 2f) | At C (v = 2f) | Real | Equal | Inverted |
+| Between C and f (f &lt; u &lt; 2f) | Beyond C | Real | Enlarged | Inverted |
+| At f (u = f) | At ∞ | Real | ∞ | Inverted |
+| Between f and P (u &lt; f) | Behind mirror | Virtual | Enlarged | Erect |</p><p><strong>Concave mirror characteristics:</strong>
+<div class="list-item">• Real, inverted images when u &gt; f</div>
+<div class="list-item">• Virtual, erect images when u &lt; f (acts as magnifying glass)</div></p><p><strong>Convex Mirror Images:</strong></p><p>For all object positions:
+<div class="list-item">• Image is always <strong>virtual</strong></div>
+<div class="list-item">• Image is always <strong>erect</strong></div>
+<div class="list-item">• Image is always <strong>diminished</strong> (|m| &lt; 1)</div>
+<div class="list-item">• Image always lies between pole and focus</div></p><p><strong>Why?</strong>
+<div class="list-item">• Focal length is negative (f &lt; 0)</div>
+<div class="list-item">• Using mirror formula: v = uf/(u-f) → always v &lt; 0 (behind mirror)</div>
+<div class="list-item">• Magnification m = -v/u → always positive (erect)</div></p><p><strong>Convex mirror applications:</strong>
+<div class="list-item">• Rear-view mirrors in vehicles (wide field of view, diminished images)</div>
+<div class="list-item">• Shop security mirrors (see wide area)</div></p><p>---</p>
+                            </div>
+                            <div class="gemini-section">
+                                <button class="ask-gemini-btn" onclick="askGemini(this, 'Q7.2')">
+                                    <span class="icon">✨</span> Ask Gemini to Explain
+                                </button>
+                                <div class="gemini-response hidden" id="gemini-Q7.2">
+                                    <div class="gemini-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div></section>
+            <section class="section-block">
+                <h2 class="section-title">B. NUMERICAL QUESTIONS (5 marks each)</h2>
+                <div class="questions-list">
+            
+                <div class="question-card" id="Q7.3">
+                    <div class="question-header">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="q-checkbox" data-id="Q7.3">
+                            <span class="checkmark"></span>
+                        </label>
+                        <h3 class="question-title">Q7.3: Convex Lens - Image Formation [5 marks]</h3>
+                    </div>
+                    <div class="question-body">
+                        <p>A convex lens of focal length 15 cm forms an image of an object placed at:
+(a) 45 cm
+(b) 20 cm
+(c) 10 cm</p><p>For each case, find image distance, magnification, and nature of image.</p>
+                    </div>
+                    <div class="answer-section">
+                        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
+                            <span class="icon">👁️</span> Show Answer
+                        </button>
+                        <div class="answer-content hidden">
+                            <div class="answer-inner">
+                                <p>*</p><p><strong>Given:</strong> f = 15 cm = +0.15 m (convex lens)
+Using lens formula: 1/f = 1/u + 1/v</p><p>Solving for v: v = uf/(u-f)</p><p><strong>(a) Object at u = 45 cm:</strong></p><p>v = (45 × 15)/(45 - 15) = 675/30 = <strong>22.5 cm</strong></p><p><strong>Nature:</strong> Real, inverted (v &gt; 0)</p><p><strong>Magnification:</strong>
+m = -v/u = -22.5/45 = <strong>-0.5</strong> (half-size, inverted)</p><p><strong>Position:</strong> Between f and 2f
+<div class="list-item">• Object beyond 2f → Image between f and 2f ✓</div></p><p><strong>(b) Object at u = 20 cm:</strong></p><p>v = (20 × 15)/(20 - 15) = 300/5 = <strong>60 cm</strong></p><p><strong>Nature:</strong> Real, inverted (v &gt; 0)</p><p><strong>Magnification:</strong>
+m = -60/20 = <strong>-3</strong> (3× enlarged, inverted)</p><p><strong>Position:</strong> Beyond 2f
+<div class="list-item">• Object between f and 2f → Image beyond 2f ✓</div></p><p><strong>(c) Object at u = 10 cm:</strong></p><p>v = (10 × 15)/(10 - 15) = 150/(-5) = <strong>-30 cm</strong></p><p><strong>Nature:</strong> Virtual, erect (v &lt; 0, behind lens)</p><p><strong>Magnification:</strong>
+m = -(-30)/10 = <strong>+3</strong> (3× enlarged, erect)</p><p><strong>Position:</strong> Behind lens
+<div class="list-item">• Object between pole and f (u &lt; f) → Virtual image ✓</div></p><p><strong>This is magnifying glass behavior!</strong></p><p>---</p>
+                            </div>
+                            <div class="gemini-section">
+                                <button class="ask-gemini-btn" onclick="askGemini(this, 'Q7.3')">
+                                    <span class="icon">✨</span> Ask Gemini to Explain
+                                </button>
+                                <div class="gemini-response hidden" id="gemini-Q7.3">
+                                    <div class="gemini-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="question-card" id="Q7.4">
+                    <div class="question-header">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="q-checkbox" data-id="Q7.4">
+                            <span class="checkmark"></span>
+                        </label>
+                        <h3 class="question-title">Q7.4: Concave Mirror - Real and Virtual Images [5 marks]</h3>
+                    </div>
+                    <div class="question-body">
+                        <p>A concave mirror of focal length 20 cm is used to form images. Find image position and magnification when object is at:
+(a) 60 cm
+(b) 30 cm
+(c) 10 cm</p>
+                    </div>
+                    <div class="answer-section">
+                        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
+                            <span class="icon">👁️</span> Show Answer
+                        </button>
+                        <div class="answer-content hidden">
+                            <div class="answer-inner">
+                                <p>*</p><p><strong>Given:</strong> f = 20 cm (concave mirror)
+Mirror formula: 1/f = 1/u + 1/v
+v = uf/(u-f)</p><p><strong>(a) Object at u = 60 cm (beyond C where C = 2f = 40 cm):</strong></p><p>v = (60 × 20)/(60 - 20) = 1200/40 = <strong>30 cm</strong></p><p><strong>Nature:</strong> Real, inverted (v &gt; 0)</p><p><strong>Magnification:</strong>
+m = -v/u = -30/60 = <strong>-0.5</strong> (diminished)</p><p><strong>Position:</strong> Between f and C
+<div class="list-item">• Object beyond C → Image between f and C ✓</div>
+<div class="list-item">• Image smaller than object ✓</div></p><p><strong>(b) Object at u = 30 cm (between C and f, since 20 &lt; 30 &lt; 40):</strong></p><p>v = (30 × 20)/(30 - 20) = 600/10 = <strong>60 cm</strong></p><p><strong>Nature:</strong> Real, inverted (v &gt; 0)</p><p><strong>Magnification:</strong>
+m = -60/30 = <strong>-2</strong> (2× enlarged)</p><p><strong>Position:</strong> Beyond C
+<div class="list-item">• Object between C and f → Image beyond C ✓</div>
+<div class="list-item">• Image larger than object ✓</div></p><p><strong>(c) Object at u = 10 cm (between P and f, since 10 &lt; 20):</strong></p><p>v = (10 × 20)/(10 - 20) = 200/(-10) = <strong>-20 cm</strong></p><p><strong>Nature:</strong> Virtual, erect (v &lt; 0, behind mirror)</p><p><strong>Magnification:</strong>
+m = -(-20)/10 = <strong>+2</strong> (2× enlarged, erect)</p><p><strong>Position:</strong> Behind mirror
+<div class="list-item">• Object between P and f → Virtual image ✓</div>
+<div class="list-item">• Acts as <strong>magnifying mirror</strong></div></p><p>---</p>
+                            </div>
+                            <div class="gemini-section">
+                                <button class="ask-gemini-btn" onclick="askGemini(this, 'Q7.4')">
+                                    <span class="icon">✨</span> Ask Gemini to Explain
+                                </button>
+                                <div class="gemini-response hidden" id="gemini-Q7.4">
+                                    <div class="gemini-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div></section></div>
+        </main>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>

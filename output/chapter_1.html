@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1. VECTOR ALGEBRA & RELATIVE VELOCITY</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="brand">
+                <h1>Phoenix Physics</h1>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link ">Home</a>
+                <a href="chapter_1.html" class="nav-link active">1. VECTOR ALGEBRA & RELATIVE VELOCITY</a><a href="chapter_2.html" class="nav-link ">2. PROJECTILE MOTION</a><a href="chapter_3.html" class="nav-link ">3. WORK, ENERGY & MOMENTUM</a><a href="chapter_4.html" class="nav-link ">4. ADVANCED MECHANICS (ROTATION, GRAVITATION, ORBITS)</a><a href="chapter_5.html" class="nav-link ">5. OSCILLATIONS & SIMPLE HARMONIC MOTION</a><a href="chapter_6.html" class="nav-link ">6. WAVE OPTICS (INTERFERENCE & DIFFRACTION)</a><a href="chapter_7.html" class="nav-link ">7. GEOMETRICAL OPTICS (LENSES & MIRRORS)</a><a href="chapter_8.html" class="nav-link ">8. FLUIDS & CONTINUITY</a><a href="chapter_9.html" class="nav-link ">9. THERMODYNAMICS</a><a href="chapter_10.html" class="nav-link ">10. WAVES & SOUND</a>
+            </nav>
+        </aside>
+        
+        <main class="content-area">
+            
+        <header class="chapter-header">
+            <h1>1. VECTOR ALGEBRA & RELATIVE VELOCITY</h1>
+            <div class="chapter-progress-container">
+                 <span id="chapter-progress-text">0/0 Completed</span>
+                 <div class="progress-bar-bg"><div class="progress-bar-fill" id="chapter-progress-bar"></div></div>
+            </div>
+        </header>
+        <div class="chapter-content">
+        
+            <section class="section-block">
+                <h2 class="section-title">A. THEORETICAL QUESTIONS (3 marks each)</h2>
+                <div class="questions-list">
+            
+                <div class="question-card" id="Q1.1">
+                    <div class="question-header">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="q-checkbox" data-id="Q1.1">
+                            <span class="checkmark"></span>
+                        </label>
+                        <h3 class="question-title">Q1.1: Scalars vs Vectors [3 marks]</h3>
+                    </div>
+                    <div class="question-body">
+                        <p>Define scalar and vector quantities. Give three examples of each and explain why position is a vector but distance is a scalar.</p>
+                    </div>
+                    <div class="answer-section">
+                        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
+                            <span class="icon">👁️</span> Show Answer
+                        </button>
+                        <div class="answer-content hidden">
+                            <div class="answer-inner">
+                                <p>*
+<strong>Scalars:</strong> Physical quantities that have only magnitude, no direction.
+<div class="list-item">• Examples: Mass (5 kg), Temperature (30°C), Speed (25 m/s), Energy (100 J), Density (800 kg/m³)</div></p><p><strong>Vectors:</strong> Physical quantities that have both magnitude and direction.
+<div class="list-item">• Examples: Displacement (50 m, North), Velocity (25 m/s, East), Force (100 N, downward), Acceleration (9.8 m/s², downward), Momentum (p = mv, in direction of motion)</div></p><p><strong>Why position is a vector but distance is a scalar:</strong>
+<div class="list-item">• <strong>Distance:</strong> The total length of path traveled—only tells &quot;how much&quot; without direction. It&#x27;s always positive and path-dependent.</div>
+<div class="list-item">• <strong>Position:</strong> Describes &quot;where&quot; an object is relative to a reference point with both magnitude AND direction. A person at 50 m North vs 50 m South is at different positions despite same distance from origin.</div></p><p>---</p>
+                            </div>
+                            <div class="gemini-section">
+                                <button class="ask-gemini-btn" onclick="askGemini(this, 'Q1.1')">
+                                    <span class="icon">✨</span> Ask Gemini to Explain
+                                </button>
+                                <div class="gemini-response hidden" id="gemini-Q1.1">
+                                    <div class="gemini-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="question-card" id="Q1.2">
+                    <div class="question-header">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="q-checkbox" data-id="Q1.2">
+                            <span class="checkmark"></span>
+                        </label>
+                        <h3 class="question-title">Q1.2: Vector Addition Methods [3 marks]</h3>
+                    </div>
+                    <div class="question-body">
+                        <p>Explain the triangle law and parallelogram law of vector addition. When would you use each method?</p>
+                    </div>
+                    <div class="answer-section">
+                        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
+                            <span class="icon">👁️</span> Show Answer
+                        </button>
+                        <div class="answer-content hidden">
+                            <div class="answer-inner">
+                                <p>*
+<strong>Triangle Law of Vector Addition:</strong>
+<div class="list-item">• When two vectors <strong>A</strong> and <strong>B</strong> are represented as two sides of a triangle, their resultant <strong>R</strong> = <strong>A</strong> + <strong>B</strong> is represented by the third side of the triangle.</div>
+<div class="list-item">• The resultant vector is drawn from the starting point of the first vector to the endpoint of the second vector.</div>
+<div class="list-item">• <strong>Formula:</strong> |<strong>R</strong>| = √(A² + B² + 2AB cosθ)</div>
+<div class="list-item">• <strong>Use when:</strong> Adding vectors in sequence (e.g., displacement in two stages)</div></p><p><strong>Parallelogram Law of Vector Addition:</strong>
+<div class="list-item">• When two vectors <strong>A</strong> and <strong>B</strong> are represented as adjacent sides of a parallelogram, their resultant <strong>R</strong> is represented by the diagonal of the parallelogram.</div>
+<div class="list-item">• Both vectors start from the same point.</div>
+<div class="list-item">• <strong>Use when:</strong> Two forces/velocities/displacements act simultaneously from the same point</div></p><p><strong>Key Difference:</strong> Triangle law is sequential (one after another), parallelogram law is simultaneous (from same point).</p><p>---</p>
+                            </div>
+                            <div class="gemini-section">
+                                <button class="ask-gemini-btn" onclick="askGemini(this, 'Q1.2')">
+                                    <span class="icon">✨</span> Ask Gemini to Explain
+                                </button>
+                                <div class="gemini-response hidden" id="gemini-Q1.2">
+                                    <div class="gemini-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="question-card" id="Q1.3">
+                    <div class="question-header">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="q-checkbox" data-id="Q1.3">
+                            <span class="checkmark"></span>
+                        </label>
+                        <h3 class="question-title">Q1.3: Dot Product Applications [3 marks]</h3>
+                    </div>
+                    <div class="question-body">
+                        <p>What is the dot product of two vectors? Show how it&#x27;s used to find the angle between them and explain why A·B = 0 means perpendicular vectors.</p>
+                    </div>
+                    <div class="answer-section">
+                        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
+                            <span class="icon">👁️</span> Show Answer
+                        </button>
+                        <div class="answer-content hidden">
+                            <div class="answer-inner">
+                                <p>*
+<strong>Dot Product Definition:</strong>
+The dot product of vectors <strong>A</strong> and <strong>B</strong> is: <strong>A</strong> · <strong>B</strong> = AB cosθ</p><p>Where A and B are magnitudes, θ is the angle between them.</p><p><strong>Algebraic Form:</strong> <strong>A</strong> · <strong>B</strong> = A<sub>x</sub> B<sub>x</sub> + A<sub>y</sub> B<sub>y</sub> + A<sub>z</sub> B<sub>z</sub></p><p><strong>Finding Angle Between Vectors:</strong>
+cosθ = (<strong>A</strong> · <strong>B</strong>) / (|<strong>A</strong>| |<strong>B</strong>|)
+θ = cos⁻¹[(<strong>A</strong> · <strong>B</strong>) / (|<strong>A</strong>| |<strong>B</strong>|)]</p><p><strong>Why A·B = 0 means perpendicular:</strong>
+If <strong>A</strong> · <strong>B</strong> = AB cosθ = 0, and A ≠ 0, B ≠ 0, then cosθ = 0
+This means θ = 90°, indicating perpendicular vectors.</p><p><strong>Geometric Interpretation:</strong> Dot product measures how much one vector &quot;points in the direction&quot; of another. If they point at right angles, there&#x27;s zero projection, hence zero dot product.</p><p>---</p>
+                            </div>
+                            <div class="gemini-section">
+                                <button class="ask-gemini-btn" onclick="askGemini(this, 'Q1.3')">
+                                    <span class="icon">✨</span> Ask Gemini to Explain
+                                </button>
+                                <div class="gemini-response hidden" id="gemini-Q1.3">
+                                    <div class="gemini-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="question-card" id="Q1.4">
+                    <div class="question-header">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="q-checkbox" data-id="Q1.4">
+                            <span class="checkmark"></span>
+                        </label>
+                        <h3 class="question-title">Q1.4: Relative Velocity Concept [3 marks]</h3>
+                    </div>
+                    <div class="question-body">
+                        <p>Define relative velocity. A boat moves at 10 m/s in still water. If the river current is 4 m/s, what does it mean when we say the boat&#x27;s velocity relative to the ground? Draw a velocity diagram.</p>
+                    </div>
+                    <div class="answer-section">
+                        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
+                            <span class="icon">👁️</span> Show Answer
+                        </button>
+                        <div class="answer-content hidden">
+                            <div class="answer-inner">
+                                <p>*
+<strong>Relative Velocity Definition:</strong> The velocity of an object as observed from another moving reference frame.</p><p><strong>Boat Problem Setup:</strong>
+<div class="list-item">• <strong>v<sub>boat</sub> (in water)</strong> = 10 m/s (boat&#x27;s speed relative to water)</div>
+<div class="list-item">• <strong>v<sub>river</sub> (current)</strong> = 4 m/s (water&#x27;s speed relative to ground)</div>
+<div class="list-item">• <strong>v<sub>boat</sub> relative to ground</strong> = <strong>v<sub>boat</sub></strong> + <strong>v<sub>river</sub></strong> (vector addition)</div></p><p><strong>Velocity Diagram:</strong>
+<pre><code>
+        v<sub>boat</sub> = 10 m/s (upriver)
+             ↑
+             |
+             |___→ v<sub>river</sub> = 4 m/s
+            /
+           / v<sub>resultant</sub>
+          / (boat relative to ground)
+</code></pre></p><p><strong>If boat moves perpendicular to river:</strong>
+|v<sub>resultant</sub>| = √(10² + 4²) = √116 = 10.77 m/s at angle tan⁻¹(4/10) = 21.8° downstream</p><p><strong>If boat moves directly upriver (opposite to current):</strong>
+|v<sub>resultant</sub>| = 10 - 4 = 6 m/s upstream</p><p><strong>Meaning:</strong> The velocity relative to the ground is what an observer standing on the bank would measure. It&#x27;s the combination of the boat&#x27;s motion through water AND the water&#x27;s motion.</p><p>---</p>
+                            </div>
+                            <div class="gemini-section">
+                                <button class="ask-gemini-btn" onclick="askGemini(this, 'Q1.4')">
+                                    <span class="icon">✨</span> Ask Gemini to Explain
+                                </button>
+                                <div class="gemini-response hidden" id="gemini-Q1.4">
+                                    <div class="gemini-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div></section>
+            <section class="section-block">
+                <h2 class="section-title">B. NUMERICAL QUESTIONS (5 marks each)</h2>
+                <div class="questions-list">
+            
+                <div class="question-card" id="Q1.5">
+                    <div class="question-header">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="q-checkbox" data-id="Q1.5">
+                            <span class="checkmark"></span>
+                        </label>
+                        <h3 class="question-title">Q1.5: Resultant of Two Vectors [5 marks]</h3>
+                    </div>
+                    <div class="question-body">
+                        <p>Two forces of 12 N and 16 N act on a point at an angle of 60° to each other. Find (a) the magnitude of the resultant, (b) the angle it makes with the 12 N force, and (c) the angle it makes with the 16 N force.</p>
+                    </div>
+                    <div class="answer-section">
+                        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
+                            <span class="icon">👁️</span> Show Answer
+                        </button>
+                        <div class="answer-content hidden">
+                            <div class="answer-inner">
+                                <p>*
+Given: F₁ = 12 N, F₂ = 16 N, θ = 60°</p><p><strong>(a) Magnitude of Resultant:</strong>
+R = √(F₁² + F₂² + 2F₁F₂ cosθ)
+R = √(12² + 16² + 2(12)(16) cos60°)
+R = √(144 + 256 + 2(12)(16)(0.5))
+R = √(144 + 256 + 192)
+R = √592 = <strong>24.33 N</strong></p><p><strong>(b) Angle with 12 N force (α):</strong>
+Using sine rule: sin(α)/F₂ = sin(θ)/R
+sin(α) = F₂ sin(θ) / R
+sin(α) = 16 × sin(60°) / 24.33
+sin(α) = 16 × 0.866 / 24.33
+sin(α) = 13.856 / 24.33 = 0.569
+<strong>α = 34.7°</strong></p><p><strong>(c) Angle with 16 N force (β):</strong>
+β = θ - α = 60° - 34.7° = <strong>25.3°</strong></p><p>Or using: sin(β)/F₁ = sin(θ)/R
+sin(β) = 12 × sin(60°) / 24.33 = 0.427
+<strong>β = 25.3°</strong></p><p>---</p>
+                            </div>
+                            <div class="gemini-section">
+                                <button class="ask-gemini-btn" onclick="askGemini(this, 'Q1.5')">
+                                    <span class="icon">✨</span> Ask Gemini to Explain
+                                </button>
+                                <div class="gemini-response hidden" id="gemini-Q1.5">
+                                    <div class="gemini-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="question-card" id="Q1.6">
+                    <div class="question-header">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="q-checkbox" data-id="Q1.6">
+                            <span class="checkmark"></span>
+                        </label>
+                        <h3 class="question-title">Q1.6: River-Boat Problem [5 marks]</h3>
+                    </div>
+                    <div class="question-body">
+                        <p>A boat capable of moving at 8 m/s in still water wants to cross a river of width 240 m. The current flows at 6 m/s. 
+(a) In what direction should the boat head to cross perpendicular to the banks?
+(b) How long will it take to cross?
+(c) What is the resultant velocity of the boat?</p>
+                    </div>
+                    <div class="answer-section">
+                        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
+                            <span class="icon">👁️</span> Show Answer
+                        </button>
+                        <div class="answer-content hidden">
+                            <div class="answer-inner">
+                                <p>*</p><p><strong>(a) Direction to head perpendicular to banks:</strong>
+To go perpendicular, the boat&#x27;s velocity component parallel to the current must equal and opposite to the current.</p><p>Let θ be the angle upstream from perpendicular.
+<div class="list-item">• Perpendicular component needed: v_⊥ = √(8² - 6²) = √(64 - 36) = √28 = 5.29 m/s</div>
+<div class="list-item">• Parallel component (upstream): v_∥ = 6 m/s</div></p><p>sin(θ) = 6/8 = 0.75
+<strong>θ = 48.6° upstream from perpendicular</strong> (or 41.4° from the bank)</p><p><strong>(b) Time to cross:</strong>
+The perpendicular component carries the boat across:
+t = width / v_⊥ = 240 / 5.29 = <strong>45.4 seconds</strong></p><p><strong>(c) Resultant velocity:</strong>
+Since boat crosses perpendicular, resultant velocity = perpendicular component = <strong>5.29 m/s perpendicular to banks</strong></p><p>(The parallel components cancel, so the boat moves straight across)</p><p>---</p>
+                            </div>
+                            <div class="gemini-section">
+                                <button class="ask-gemini-btn" onclick="askGemini(this, 'Q1.6')">
+                                    <span class="icon">✨</span> Ask Gemini to Explain
+                                </button>
+                                <div class="gemini-response hidden" id="gemini-Q1.6">
+                                    <div class="gemini-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="question-card" id="Q1.7">
+                    <div class="question-header">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="q-checkbox" data-id="Q1.7">
+                            <span class="checkmark"></span>
+                        </label>
+                        <h3 class="question-title">Q1.7: Relative Velocity - Two Objects [5 marks]</h3>
+                    </div>
+                    <div class="question-body">
+                        <p>A car A travels due East at 60 km/h. Car B travels due North at 80 km/h. Both pass through the same point. Find the velocity of car B relative to car A and the angle it makes.</p>
+                    </div>
+                    <div class="answer-section">
+                        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
+                            <span class="icon">👁️</span> Show Answer
+                        </button>
+                        <div class="answer-content hidden">
+                            <div class="answer-inner">
+                                <p>*</p><p><strong>Given:</strong>
+<div class="list-item">• <strong>v<sub>A</sub></strong> = 60 km/h due East</div>
+<div class="list-item">• <strong>v<sub>B</sub></strong> = 80 km/h due North</div></p><p><strong>Velocity of B relative to A:</strong>
+<strong>v<sub>BA</sub></strong> = <strong>v<sub>B</sub></strong> - <strong>v<sub>A</sub></strong></p><p>In component form:
+<div class="list-item">• <strong>v<sub>A</sub></strong> = 60<strong>i</strong> + 0<strong>j</strong> km/h</div>
+<div class="list-item">• <strong>v<sub>B</sub></strong> = 0<strong>i</strong> + 80<strong>j</strong> km/h</div>
+<div class="list-item">• <strong>v<sub>BA</sub></strong> = (0-60)<strong>i</strong> + (80-0)<strong>j</strong> = -60<strong>i</strong> + 80<strong>j</strong> km/h</div></p><p><strong>Magnitude:</strong>
+|<strong>v<sub>BA</sub></strong>| = √((-60)² + 80²) = √(3600 + 6400) = √10000 = <strong>100 km/h</strong></p><p><strong>Direction:</strong>
+The velocity of B relative to A makes an angle with the negative x-axis (West direction):
+tan(φ) = 80/60 = 4/3
+φ = 53.1° <strong>North of West</strong> (or 126.9° from East)</p><p><strong>Interpretation:</strong> From car A&#x27;s perspective, car B appears to move at 100 km/h in a direction 53.1° North of West.</p><p>---</p>
+                            </div>
+                            <div class="gemini-section">
+                                <button class="ask-gemini-btn" onclick="askGemini(this, 'Q1.7')">
+                                    <span class="icon">✨</span> Ask Gemini to Explain
+                                </button>
+                                <div class="gemini-response hidden" id="gemini-Q1.7">
+                                    <div class="gemini-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div></section></div>
+        </main>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4. ADVANCED MECHANICS (ROTATION, GRAVITATION, ORBITS)</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="brand">
+                <h1>Phoenix Physics</h1>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link ">Home</a>
+                <a href="chapter_1.html" class="nav-link ">1. VECTOR ALGEBRA & RELATIVE VELOCITY</a><a href="chapter_2.html" class="nav-link ">2. PROJECTILE MOTION</a><a href="chapter_3.html" class="nav-link ">3. WORK, ENERGY & MOMENTUM</a><a href="chapter_4.html" class="nav-link active">4. ADVANCED MECHANICS (ROTATION, GRAVITATION, ORBITS)</a><a href="chapter_5.html" class="nav-link ">5. OSCILLATIONS & SIMPLE HARMONIC MOTION</a><a href="chapter_6.html" class="nav-link ">6. WAVE OPTICS (INTERFERENCE & DIFFRACTION)</a><a href="chapter_7.html" class="nav-link ">7. GEOMETRICAL OPTICS (LENSES & MIRRORS)</a><a href="chapter_8.html" class="nav-link ">8. FLUIDS & CONTINUITY</a><a href="chapter_9.html" class="nav-link ">9. THERMODYNAMICS</a><a href="chapter_10.html" class="nav-link ">10. WAVES & SOUND</a>
+            </nav>
+        </aside>
+        
+        <main class="content-area">
+            
+        <header class="chapter-header">
+            <h1>4. ADVANCED MECHANICS (ROTATION, GRAVITATION, ORBITS)</h1>
+            <div class="chapter-progress-container">
+                 <span id="chapter-progress-text">0/0 Completed</span>
+                 <div class="progress-bar-bg"><div class="progress-bar-fill" id="chapter-progress-bar"></div></div>
+            </div>
+        </header>
+        <div class="chapter-content">
+        
+            <section class="section-block">
+                <h2 class="section-title">A. THEORETICAL QUESTIONS (3 marks each)</h2>
+                <div class="questions-list">
+            
+                <div class="question-card" id="Q4.1">
+                    <div class="question-header">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="q-checkbox" data-id="Q4.1">
+                            <span class="checkmark"></span>
+                        </label>
+                        <h3 class="question-title">Q4.1: Moment of Inertia [3 marks]</h3>
+                    </div>
+                    <div class="question-body">
+                        <p>Define moment of inertia and explain how it&#x27;s different from mass. Derive the moment of inertia of a uniform rod about one end.</p>
+                    </div>
+                    <div class="answer-section">
+                        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
+                            <span class="icon">👁️</span> Show Answer
+                        </button>
+                        <div class="answer-content hidden">
+                            <div class="answer-inner">
+                                <p>*
+<strong>Moment of Inertia (I) Definition:</strong>
+I = Σ mᵢrᵢ² (for discrete masses)
+I = ∫ r² dm (for continuous distribution)</p><p>It represents the rotational inertia—the resistance of an object to change in rotational motion.
+Units: kg·m²</p><p><strong>Difference from Mass:</strong>
+<div class="list-item">• <strong>Mass (m):</strong> Resistance to linear acceleration (F = ma)</div>
+<div class="list-item">• <strong>Moment of Inertia (I):</strong> Resistance to angular acceleration (τ = Iα)</div>
+<div class="list-item">• Both are properties of resistance, but to different types of motion</div>
+<div class="list-item">• I depends on mass distribution (axis dependent), m doesn&#x27;t</div></p><p><strong>Derivation for Uniform Rod About One End:</strong></p><p>Consider a uniform rod of length L and mass M.
+Take the end as origin, x-axis along rod.</p><p><strong>Mass element:</strong> dm = (M/L) dx (uniform density)</p><p><strong>Distance from axis:</strong> r = x</p><p><strong>Moment of Inertia:</strong>
+I = ∫ r² dm = ∫₀ᴸ x² (M/L) dx</p><p>I = (M/L) ∫₀ᴸ x² dx</p><p>I = (M/L) [x³/3]₀ᴸ</p><p>I = (M/L) × (L³/3)</p><p><strong>I = (1/3) ML²</strong></p><p><strong>Comparison with Other Axes:</strong>
+<div class="list-item">• About center: I<sub>center</sub> = (1/12) ML²</div>
+<div class="list-item">• About one end: I<sub>end</sub> = (1/3) ML² = 4 × I<sub>center</sub></div></p><p><strong>Why? </strong>At the end, most mass is farther from axis, hence larger I.</p><p>---</p>
+                            </div>
+                            <div class="gemini-section">
+                                <button class="ask-gemini-btn" onclick="askGemini(this, 'Q4.1')">
+                                    <span class="icon">✨</span> Ask Gemini to Explain
+                                </button>
+                                <div class="gemini-response hidden" id="gemini-Q4.1">
+                                    <div class="gemini-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="question-card" id="Q4.2">
+                    <div class="question-header">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="q-checkbox" data-id="Q4.2">
+                            <span class="checkmark"></span>
+                        </label>
+                        <h3 class="question-title">Q4.2: Rolling Motion on Incline [3 marks]</h3>
+                    </div>
+                    <div class="question-body">
+                        <p>Explain rolling without slipping. Show that a rolling object down an incline has different velocity than a sliding object on a frictionless incline.</p>
+                    </div>
+                    <div class="answer-section">
+                        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
+                            <span class="icon">👁️</span> Show Answer
+                        </button>
+                        <div class="answer-content hidden">
+                            <div class="answer-inner">
+                                <p>*
+<strong>Rolling Without Slipping Condition:</strong>
+At any instant, the point of contact with the ground has zero velocity.</p><p>This creates the constraint: <strong>v = ωr</strong>
+where v = linear velocity of center, ω = angular velocity, r = radius</p><p><strong>Total Kinetic Energy in Rolling:</strong>
+KE<sub>total</sub> = KE<sub>translational</sub> + KE<sub>rotational</sub>
+KE<sub>total</sub> = ½mv² + ½Iω²</p><p>Using ω = v/r and I = kmr² (k depends on shape):
+KE<sub>total</sub> = ½mv² + ½(kmr²)(v/r)²
+KE<sub>total</sub> = ½mv² + ½kmv²
+<strong>KE<sub>total</sub> = ½mv²(1 + k)</strong></p><p><strong>Rolling vs Sliding Down Incline:</strong></p><p><strong>For Rolling Sphere (I = ⅖mr²), k = ⅖:</strong></p><p>Using energy conservation from height h:
+mgh = ½mv² + ½(⅖mr²)(v/r)²
+mgh = ½mv² + ⅕mv²
+mgh = (7/10)mv²
+<strong>v<sub>rolling</sub> = √(10gh/7)</strong></p><p><strong>For Sliding (frictionless):</strong>
+No rotational energy
+mgh = ½mv²
+<strong>v<sub>sliding</sub> = √(2gh)</strong></p><p><strong>Comparison:</strong>
+v<sub>rolling</sub> / v<sub>sliding</sub> = √(10gh/7) / √(2gh) = √(10/(7×2)) = √(5/7) ≈ 0.845</p><p><strong>Rolling sphere is 15.5% slower than sliding</strong> (for same height)</p><p><strong>Physical Reason:</strong>
+Some gravitational potential energy goes into rotational motion, not just translation.
+Therefore, translational velocity is lower.</p><p>---</p>
+                            </div>
+                            <div class="gemini-section">
+                                <button class="ask-gemini-btn" onclick="askGemini(this, 'Q4.2')">
+                                    <span class="icon">✨</span> Ask Gemini to Explain
+                                </button>
+                                <div class="gemini-response hidden" id="gemini-Q4.2">
+                                    <div class="gemini-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="question-card" id="Q4.3">
+                    <div class="question-header">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="q-checkbox" data-id="Q4.3">
+                            <span class="checkmark"></span>
+                        </label>
+                        <h3 class="question-title">Q4.3: Geostationary Satellites [3 marks]</h3>
+                    </div>
+                    <div class="question-body">
+                        <p>What is a geostationary satellite? Explain the three conditions required for a satellite to be geostationary. Why is the orbital radius always 42,000 km?</p>
+                    </div>
+                    <div class="answer-section">
+                        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
+                            <span class="icon">👁️</span> Show Answer
+                        </button>
+                        <div class="answer-content hidden">
+                            <div class="answer-inner">
+                                <p>*
+<strong>Definition:</strong> A geostationary satellite appears stationary relative to Earth—it remains over the same point on the equator throughout its orbit.</p><p><strong>Three Essential Conditions:</strong></p><p>1) <strong>Orbital Period = Earth&#x27;s Rotation Period</strong>
+<div class="list-item">• T = 24 hours = 86,400 seconds</div>
+<div class="list-item">• If T ≠ 24 hours, satellite will drift relative to Earth&#x27;s surface</div></p><p>2) <strong>Orbit Above Equator</strong>
+<div class="list-item">• The orbital plane must coincide with Earth&#x27;s equatorial plane</div>
+<div class="list-item">• Any other orbital plane would result in the satellite moving North-South relative to ground</div></p><p>3) <strong>Same Direction as Earth&#x27;s Rotation</strong>
+<div class="list-item">• West-to-East (counterclockwise from North Pole view)</div>
+<div class="list-item">• Must revolve in same direction as Earth, not against it</div></p><p><strong>Why Orbital Radius is Always 42,000 km:</strong></p><p>For circular orbit, gravitational force provides centripetal force:
+GMm/r² = mω²r = m(2π/T)²r</p><p>GM/r² = (4π²/T²)r</p><p>r³ = (GMT²)/(4π²)</p><p><strong>r = ∛[GMT²/(4π²)]</strong></p><p>Substituting values:
+<div class="list-item">• G = 6.67 × 10⁻¹¹ N·m²/kg²</div>
+<div class="list-item">• M = 5.97 × 10²⁴ kg (Earth&#x27;s mass)</div>
+<div class="list-item">• T = 86,400 s</div></p><p>r³ = (6.67 × 10⁻¹¹ × 5.97 × 10²⁴ × 86400²) / (4π²)
+r³ ≈ 7.496 × 10²² m³
+<strong>r ≈ 4.22 × 10⁷ m = 42,200 km</strong> (from Earth&#x27;s center)</p><p><strong>Height above surface:</strong>
+h = r - R<sub>Earth</sub> = 42,200 - 6,371 = <strong>35,829 km ≈ 36,000 km</strong></p><p><strong>This orbital radius is UNIQUE and FIXED</strong> because:
+<div class="list-item">• Increase T → need larger r (farther away)</div>
+<div class="list-item">• Decrease T → need smaller r (closer)</div>
+<div class="list-item">• Only one r satisfies T = 24 hours</div></p><p><strong>Applications of Geostationary Satellites:</strong>
+<div class="list-item">• Telecommunications</div>
+<div class="list-item">• Weather monitoring</div>
+<div class="list-item">• TV broadcasting</div>
+<div class="list-item">• Must always stay over same spot</div></p><p>---</p>
+                            </div>
+                            <div class="gemini-section">
+                                <button class="ask-gemini-btn" onclick="askGemini(this, 'Q4.3')">
+                                    <span class="icon">✨</span> Ask Gemini to Explain
+                                </button>
+                                <div class="gemini-response hidden" id="gemini-Q4.3">
+                                    <div class="gemini-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div></section>
+            <section class="section-block">
+                <h2 class="section-title">B. NUMERICAL QUESTIONS (5 marks each)</h2>
+                <div class="questions-list">
+            
+                <div class="question-card" id="Q4.4">
+                    <div class="question-header">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="q-checkbox" data-id="Q4.4">
+                            <span class="checkmark"></span>
+                        </label>
+                        <h3 class="question-title">Q4.4: Rolling Sphere on Incline [5 marks]</h3>
+                    </div>
+                    <div class="question-body">
+                        <p>A uniform solid sphere of radius 0.2 m and mass 2 kg rolls without slipping down an incline of height 5 m. Find:
+(a) Velocity of center of mass at bottom
+(b) Angular velocity at bottom
+(c) Rotational kinetic energy at bottom
+(d) Translational kinetic energy at bottom</p><p>(For solid sphere, I = ⅖mr², g = 10 m/s²)</p>
+                    </div>
+                    <div class="answer-section">
+                        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
+                            <span class="icon">👁️</span> Show Answer
+                        </button>
+                        <div class="answer-content hidden">
+                            <div class="answer-inner">
+                                <p>*</p><p><strong>Given:</strong> r = 0.2 m, m = 2 kg, h = 5 m, I = ⅖mr² = ⅖(2)(0.2)² = 0.032 kg·m²</p><p><strong>Using Energy Conservation:</strong>
+mgh = ½mv² + ½Iω²</p><p>With ω = v/r:
+mgh = ½mv² + ½(⅖mr²)(v/r)²
+mgh = ½mv² + ⅕mv²
+mgh = (7/10)mv²</p><p><strong>(a) Velocity at Bottom:</strong>
+v² = (10gh)/7 = (10 × 10 × 5)/7 = 500/7 = 71.43
+<strong>v = 8.45 m/s</strong></p><p><strong>(b) Angular Velocity at Bottom:</strong>
+ω = v/r = 8.45/0.2 = <strong>42.25 rad/s</strong></p><p><strong>(c) Rotational Kinetic Energy:</strong>
+KE<sub>rot</sub> = ½Iω²
+= ½(0.032)(42.25)²
+= ½(0.032)(1785)
+= <strong>28.56 Joules</strong></p><p><strong>(d) Translational Kinetic Energy:</strong>
+KE<sub>trans</sub> = ½mv²
+= ½(2)(8.45)²
+= (1)(71.4)
+= <strong>71.4 Joules</strong></p><p><strong>Verification:</strong>
+KE<sub>total</sub> = 28.56 + 71.4 = 99.96 ≈ 100 J
+mgh = 2 × 10 × 5 = 100 J ✓</p><p><strong>Ratio Check:</strong>
+KE<sub>rot</sub> / KE<sub>trans</sub> = (⅕mv²) / (½mv²) = (2/5) / (1/2) = 4/5 = 0.8
+28.56 / 71.4 ≈ 0.4 (which is 2/5 of translational) ✓</p><p>---</p>
+                            </div>
+                            <div class="gemini-section">
+                                <button class="ask-gemini-btn" onclick="askGemini(this, 'Q4.4')">
+                                    <span class="icon">✨</span> Ask Gemini to Explain
+                                </button>
+                                <div class="gemini-response hidden" id="gemini-Q4.4">
+                                    <div class="gemini-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="question-card" id="Q4.5">
+                    <div class="question-header">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="q-checkbox" data-id="Q4.5">
+                            <span class="checkmark"></span>
+                        </label>
+                        <h3 class="question-title">Q4.5: Geostationary Satellite Orbital Velocity [5 marks]</h3>
+                    </div>
+                    <div class="question-body">
+                        <p>Calculate the orbital velocity of a geostationary satellite. Use:
+<div class="list-item">• Earth&#x27;s mass: M = 6 × 10²⁴ kg</div>
+<div class="list-item">• G = 6.67 × 10⁻¹¹ N·m²/kg²</div>
+<div class="list-item">• Orbital radius: r = 4.2 × 10⁷ m</div></p><p>Also find the velocity change needed if the satellite moves to a polar orbit at radius 6.6 × 10⁶ m.</p>
+                    </div>
+                    <div class="answer-section">
+                        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
+                            <span class="icon">👁️</span> Show Answer
+                        </button>
+                        <div class="answer-content hidden">
+                            <div class="answer-inner">
+                                <p>*</p><p><strong>(a) Geostationary Orbital Velocity:</strong></p><p>For circular orbit:
+v = √(GM/r)</p><p>v<sub>geo</sub> = √(6.67 × 10⁻¹¹ × 6 × 10²⁴ / (4.2 × 10⁷))</p><p>v<sub>geo</sub> = √(40.02 × 10¹³ / (4.2 × 10⁷))</p><p>v<sub>geo</sub> = √(9.53 × 10⁶)</p><p><strong>v<sub>geo</sub> = 3,087 m/s = 3.09 km/s</strong></p><p><strong>Verification using T = 24 hours:</strong>
+v = 2πr/T = (2π × 4.2 × 10⁷) / 86,400 = 2.64 × 10⁸ / 86,400 = 3,056 m/s ✓
+(Close match, slight difference due to rounding)</p><p><strong>(b) Polar Orbit at Lower Altitude:</strong></p><p>r<sub>polar</sub> = 6.6 × 10⁶ m</p><p>v<sub>polar</sub> = √(GM/r<sub>polar</sub>)</p><p>v<sub>polar</sub> = √(6.67 × 10⁻¹¹ × 6 × 10²⁴ / (6.6 × 10⁶))</p><p>v<sub>polar</sub> = √(40.02 × 10¹³ / (6.6 × 10⁶))</p><p>v<sub>polar</sub> = √(6.06 × 10⁶)</p><p><strong>v<sub>polar</sub> = 2,462 m/s = 2.46 km/s</strong></p><p><strong>(c) Change in Velocity:</strong>
+Δv = v<sub>geo</sub> - v<sub>polar</sub> = 3,087 - 2,462 = <strong>625 m/s</strong></p><p>This is the <strong>reduction</strong> in orbital velocity when moving to lower orbit (higher speed needed to be closer to Earth for same period).</p><p><strong>Note:</strong> Actually, for a polar orbit to be stable, we need different equations, but this shows the basic orbital mechanics principle: closer orbits require lower velocities.</p><p>---</p>
+                            </div>
+                            <div class="gemini-section">
+                                <button class="ask-gemini-btn" onclick="askGemini(this, 'Q4.5')">
+                                    <span class="icon">✨</span> Ask Gemini to Explain
+                                </button>
+                                <div class="gemini-response hidden" id="gemini-Q4.5">
+                                    <div class="gemini-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="question-card" id="Q4.6">
+                    <div class="question-header">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="q-checkbox" data-id="Q4.6">
+                            <span class="checkmark"></span>
+                        </label>
+                        <h3 class="question-title">Q4.6: Moment of Inertia Calculation [5 marks]</h3>
+                    </div>
+                    <div class="question-body">
+                        <p>A uniform disk of radius R = 0.3 m and mass M = 5 kg is rotated about its center. A point mass m = 1 kg is placed at distance r = 0.2 m from the axis. Find:
+(a) Moment of inertia of disk alone
+(b) Moment of inertia of point mass
+(c) Total moment of inertia
+(d) Angular acceleration if a torque of 2 N·m is applied</p>
+                    </div>
+                    <div class="answer-section">
+                        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
+                            <span class="icon">👁️</span> Show Answer
+                        </button>
+                        <div class="answer-content hidden">
+                            <div class="answer-inner">
+                                <p>*</p><p><strong>(a) Moment of Inertia of Uniform Disk:</strong>
+For disk about center:
+I<sub>disk</sub> = ½MR² = ½(5)(0.3)² = ½(5)(0.09) = <strong>0.225 kg·m²</strong></p><p><strong>(b) Moment of Inertia of Point Mass:</strong>
+I<sub>mass</sub> = mr² = 1 × (0.2)² = <strong>0.04 kg·m²</strong></p><p><strong>(c) Total Moment of Inertia:</strong>
+I<sub>total</sub> = I<sub>disk</sub> + I<sub>mass</sub> = 0.225 + 0.04 = <strong>0.265 kg·m²</strong></p><p><strong>(d) Angular Acceleration:</strong>
+Using τ = Iα:
+α = τ / I<sub>total</sub> = 2 / 0.265 = <strong>7.55 rad/s²</strong></p><p><strong>Physical Interpretation:</strong>
+<div class="list-item">• The disk contributes 85% of total rotational inertia (0.225/0.265)</div>
+<div class="list-item">• The point mass contributes only 15%</div>
+<div class="list-item">• Even though the point mass is small, its effect on angular acceleration is significant</div>
+<div class="list-item">• The system resists angular acceleration with I = 0.265 kg·m²</div></p><p>---</p>
+                            </div>
+                            <div class="gemini-section">
+                                <button class="ask-gemini-btn" onclick="askGemini(this, 'Q4.6')">
+                                    <span class="icon">✨</span> Ask Gemini to Explain
+                                </button>
+                                <div class="gemini-response hidden" id="gemini-Q4.6">
+                                    <div class="gemini-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div></section></div>
+        </main>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>

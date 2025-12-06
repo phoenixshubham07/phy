@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10. WAVES & SOUND</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="brand">
+                <h1>Phoenix Physics</h1>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link ">Home</a>
+                <a href="chapter_1.html" class="nav-link ">1. VECTOR ALGEBRA & RELATIVE VELOCITY</a><a href="chapter_2.html" class="nav-link ">2. PROJECTILE MOTION</a><a href="chapter_3.html" class="nav-link ">3. WORK, ENERGY & MOMENTUM</a><a href="chapter_4.html" class="nav-link ">4. ADVANCED MECHANICS (ROTATION, GRAVITATION, ORBITS)</a><a href="chapter_5.html" class="nav-link ">5. OSCILLATIONS & SIMPLE HARMONIC MOTION</a><a href="chapter_6.html" class="nav-link ">6. WAVE OPTICS (INTERFERENCE & DIFFRACTION)</a><a href="chapter_7.html" class="nav-link ">7. GEOMETRICAL OPTICS (LENSES & MIRRORS)</a><a href="chapter_8.html" class="nav-link ">8. FLUIDS & CONTINUITY</a><a href="chapter_9.html" class="nav-link ">9. THERMODYNAMICS</a><a href="chapter_10.html" class="nav-link active">10. WAVES & SOUND</a>
+            </nav>
+        </aside>
+        
+        <main class="content-area">
+            
+        <header class="chapter-header">
+            <h1>10. WAVES & SOUND</h1>
+            <div class="chapter-progress-container">
+                 <span id="chapter-progress-text">0/0 Completed</span>
+                 <div class="progress-bar-bg"><div class="progress-bar-fill" id="chapter-progress-bar"></div></div>
+            </div>
+        </header>
+        <div class="chapter-content">
+        
+            <section class="section-block">
+                <h2 class="section-title">A. THEORETICAL QUESTIONS (3 marks each)</h2>
+                <div class="questions-list">
+            
+                <div class="question-card" id="Q10.1">
+                    <div class="question-header">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="q-checkbox" data-id="Q10.1">
+                            <span class="checkmark"></span>
+                        </label>
+                        <h3 class="question-title">Q10.1: Standing Waves on a String [3 marks]</h3>
+                    </div>
+                    <div class="question-body">
+                        <p>Explain how standing waves are formed on a stretched string. Define nodes and antinodes. What is the formula for the speed of a transverse wave on a string?</p>
+                    </div>
+                    <div class="answer-section">
+                        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
+                            <span class="icon">👁️</span> Show Answer
+                        </button>
+                        <div class="answer-content hidden">
+                            <div class="answer-inner">
+                                <p>*
+<strong>Formation of Standing Waves:</strong>
+Standing waves are formed when two identical waves traveling in opposite directions superpose (interfere). On a stretched string fixed at both ends, the incident wave reflects from the fixed ends and interferes with the incoming wave.</p><p><strong>Nodes and Antinodes:</strong>
+<div class="list-item">• <strong>Nodes:</strong> Points of zero displacement (amplitude = 0). They occur where destructive interference is complete. At fixed ends, nodes always form.</div>
+<div class="list-item">• <strong>Antinodes:</strong> Points of maximum displacement (amplitude = max). They occur where constructive interference is complete.</div></p><p><strong>Wave Speed Formula:</strong>
+The speed of a transverse wave on a stretched string is given by:
+<strong>v = √(T/μ)</strong></p><p>Where:
+<div class="list-item">• v = wave speed (m/s)</div>
+<div class="list-item">• T = tension in the string (N)</div>
+<div class="list-item">• μ = linear mass density (mass per unit length, kg/m)</div></p><p><strong>Harmonics:</strong>
+The string vibrates in natural modes called harmonics.
+Length L = n(λ/2), where n = 1, 2, 3...
+Frequency f<sub>n</sub> = n(v/2L)</p><p>---</p>
+                            </div>
+                            <div class="gemini-section">
+                                <button class="ask-gemini-btn" onclick="askGemini(this, 'Q10.1')">
+                                    <span class="icon">✨</span> Ask Gemini to Explain
+                                </button>
+                                <div class="gemini-response hidden" id="gemini-Q10.1">
+                                    <div class="gemini-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="question-card" id="Q10.2">
+                    <div class="question-header">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="q-checkbox" data-id="Q10.2">
+                            <span class="checkmark"></span>
+                        </label>
+                        <h3 class="question-title">Q10.2: Doppler Effect [3 marks]</h3>
+                    </div>
+                    <div class="question-body">
+                        <p>Define the Doppler effect. Giving the general formula for apparent frequency, explain how frequency changes when a source approaches an observer.</p>
+                    </div>
+                    <div class="answer-section">
+                        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
+                            <span class="icon">👁️</span> Show Answer
+                        </button>
+                        <div class="answer-content hidden">
+                            <div class="answer-inner">
+                                <p>*
+<strong>Definition:</strong>
+The Doppler effect is the apparent change in frequency of a wave detected by an observer because of relative motion between the source of the wave and the observer.</p><p><strong>General Formula:</strong>
+<strong>f&#x27; = f [(v ± v<sub>o</sub>) / (v ∓ v<sub>s</sub>)]</strong></p><p>Where:
+<div class="list-item">• f&#x27; = apparent frequency</div>
+<div class="list-item">• f = actual source frequency</div>
+<div class="list-item">• v = speed of sound in the medium</div>
+<div class="list-item">• v<sub>o</sub> = speed of observer</div>
+<div class="list-item">• v<sub>s</sub> = speed of source</div></p><p><strong>Sign Convention (Source Approaching Observer):</strong>
+<div class="list-item">• Observer is stationary (v<sub>o</sub> = 0)</div>
+<div class="list-item">• Source moves towards observer (v<sub>s</sub> is positive in direction of sound, but effectively reduces wavelength)</div>
+<div class="list-item">• Formula becomes: f&#x27; = f [v / (v - v<sub>s</sub>)]</div>
+<div class="list-item">• Since denominator (v - v<sub>s</sub>) is smaller than v, the ratio is &gt; 1.</div>
+<div class="list-item">• Therefore, <strong>f&#x27; &gt; f</strong> (Frequency increases).</div>
+<div class="list-item">• Pitch appears higher.</div></p><p>---</p>
+                            </div>
+                            <div class="gemini-section">
+                                <button class="ask-gemini-btn" onclick="askGemini(this, 'Q10.2')">
+                                    <span class="icon">✨</span> Ask Gemini to Explain
+                                </button>
+                                <div class="gemini-response hidden" id="gemini-Q10.2">
+                                    <div class="gemini-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div></section>
+            <section class="section-block">
+                <h2 class="section-title">B. NUMERICAL QUESTIONS (5 marks each)</h2>
+                <div class="questions-list">
+            
+                <div class="question-card" id="Q10.3">
+                    <div class="question-header">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="q-checkbox" data-id="Q10.3">
+                            <span class="checkmark"></span>
+                        </label>
+                        <h3 class="question-title">Q10.3: String Tension and Frequency [5 marks]</h3>
+                    </div>
+                    <div class="question-body">
+                        <p>A guitar string of length 0.8 m and mass 4 grams is under a tension of 500 N.
+(a) Calculate the speed of the wave on the string.
+(b) Find the fundamental frequency (1st harmonic).
+(c) Find the frequency of the 3rd harmonic.</p>
+                    </div>
+                    <div class="answer-section">
+                        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
+                            <span class="icon">👁️</span> Show Answer
+                        </button>
+                        <div class="answer-content hidden">
+                            <div class="answer-inner">
+                                <p>*</p><p><strong>Given:</strong>
+<div class="list-item">• L = 0.8 m</div>
+<div class="list-item">• m = 4 g = 0.004 kg</div>
+<div class="list-item">• T = 500 N</div></p><p><strong>Linear Mass Density (μ):</strong>
+μ = m/L = 0.004 / 0.8 = <strong>0.005 kg/m</strong></p><p><strong>(a) Wave Speed:</strong>
+v = √(T/μ)
+v = √(500 / 0.005)
+v = √(100,000)
+<strong>v = 316.2 m/s</strong></p><p><strong>(b) Fundamental Frequency (n=1):</strong>
+For fundamental mode, L = λ/2 → λ = 2L
+f₁ = v / λ = v / 2L
+f₁ = 316.2 / (2 × 0.8)
+f₁ = 316.2 / 1.6
+<strong>f₁ = 197.6 Hz</strong></p><p><strong>(c) Third Harmonic (n=3):</strong>
+f₃ = 3 × f₁
+f₃ = 3 × 197.6
+<strong>f₃ = 592.8 Hz</strong></p><p>(This produces a higher pitch note, an overtone)</p><p>---</p>
+                            </div>
+                            <div class="gemini-section">
+                                <button class="ask-gemini-btn" onclick="askGemini(this, 'Q10.3')">
+                                    <span class="icon">✨</span> Ask Gemini to Explain
+                                </button>
+                                <div class="gemini-response hidden" id="gemini-Q10.3">
+                                    <div class="gemini-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="question-card" id="Q10.4">
+                    <div class="question-header">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="q-checkbox" data-id="Q10.4">
+                            <span class="checkmark"></span>
+                        </label>
+                        <h3 class="question-title">Q10.4: Doppler Effect Calculation [5 marks]</h3>
+                    </div>
+                    <div class="question-body">
+                        <p>A train blowing its whistle at frequency 400 Hz approaches a stationary observer on the platform at a speed of 36 km/h. The speed of sound in air is 340 m/s.
+(a) What is the apparent frequency heard by the observer as the train approaches?
+(b) What is the apparent frequency heard after the train passes the observer?
+(c) What is the change in frequency?</p>
+                    </div>
+                    <div class="answer-section">
+                        <button class="toggle-answer-btn" onclick="toggleAnswer(this)">
+                            <span class="icon">👁️</span> Show Answer
+                        </button>
+                        <div class="answer-content hidden">
+                            <div class="answer-inner">
+                                <p>*</p><p><strong>Given:</strong>
+<div class="list-item">• f = 400 Hz</div>
+<div class="list-item">• v<sub>s</sub> = 36 km/h = 36 × (5/18) = <strong>10 m/s</strong></div>
+<div class="list-item">• v<sub>o</sub> = 0 (observer stationary)</div>
+<div class="list-item">• v = 340 m/s</div></p><p><strong>(a) Train Approaching:</strong>
+Formula: f&#x27; = f [v / (v - v<sub>s</sub>)]
+f<sub>approach</sub> = 400 [340 / (340 - 10)]
+f<sub>approach</sub> = 400 [340 / 330]
+f<sub>approach</sub> = 400 × 1.0303
+<strong>f<sub>approach</sub> = 412.1 Hz</strong></p><p><strong>(b) Train Receding (Moving Away):</strong>
+Formula: f&#x27;&#x27; = f [v / (v + v<sub>s</sub>)]
+f<sub>recede</sub> = 400 [340 / (340 + 10)]
+f<sub>recede</sub> = 400 [340 / 350]
+f<sub>recede</sub> = 400 × 0.9714
+<strong>f<sub>recede</sub> = 388.6 Hz</strong></p><p><strong>(c) Change in Frequency:</strong>
+Δf = f<sub>approach</sub> - f<sub>recede</sub>
+Δf = 412.1 - 388.6
+<strong>Δf = 23.5 Hz</strong></p><p>(This sudden drop in pitch is characteristic of the Doppler effect on passing)</p><p>---</p>
+                            </div>
+                            <div class="gemini-section">
+                                <button class="ask-gemini-btn" onclick="askGemini(this, 'Q10.4')">
+                                    <span class="icon">✨</span> Ask Gemini to Explain
+                                </button>
+                                <div class="gemini-response hidden" id="gemini-Q10.4">
+                                    <div class="gemini-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div></section></div>
+        </main>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
